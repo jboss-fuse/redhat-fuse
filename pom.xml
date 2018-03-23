@@ -44,6 +44,7 @@
         <version.karaf>4.2.0.fuse-000191-redhat-1</version.karaf>
         <version.bom.wildfly.camel>5.1.0.fuse-000035-redhat-1</version.bom.wildfly.camel>
         <version.fusesource.camel.sap>7.0.0.fuse-000188-redhat-2</version.fusesource.camel.sap>
+        <karaf.plugin.version>4.2.0.fuse-000192</karaf.plugin.version>
 
         <version.cxf.xjc-utils></version.cxf.xjc-utils>
         <version.hawtio>2.0.0.fuse-000145-redhat-1</version.hawtio>
