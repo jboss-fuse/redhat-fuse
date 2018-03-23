@@ -42,7 +42,21 @@
         <version.karaf>4.2.0.fuse-000191-redhat-1</version.karaf>
         <version.bom.wildfly.camel>5.1.0.fuse-000035-redhat-1</version.bom.wildfly.camel>
         <version.fusesource.camel.sap>7.0.0.fuse-000188-redhat-2</version.fusesource.camel.sap>
+
+        <version.cxf.xjc-utils></version.cxf.xjc-utils>
+        <version.hawtio>2.0.0.fuse-000145-redhat-1</version.hawtio>
+        <version.camel.extra>2.21.0.fuse-000032-redhat-2</version.camel.extra>
+        <version.hawtio.online>1.0.0.fuse-000016-redhat-1</version.hawtio.online>
+        <version.hawtio.integration>1.0.0.fuse-000021-redhat-2</version.hawtio.integration>
         
+        <version.kubernetes.model>2.0.8.fuse-000004-redhat-1</version.kubernetes.model>
+        <version.kubernetes.client>3.0.3.fuse-000018-redhat-1</version.kubernetes.client>
+
+        <version.docker.maven.plugin>0.23.0.fuse-000015-redhat-1</version.docker.maven.plugin>
+        <version.fuse.patch>3.0.0.fuse-000018-redhat-1</version.fuse.patch>
+        <version.wildfly.camel.examples>5.1.0.fuse-000014-redhat-1</version.wildfly.camel.examples>
+        <version.fuse.eap>7.0.0.fuse-000059-redhat-1</version.fuse.eap>
+
         <!--
           CONVENTIONS:
           - A version property must be specified in the format "version.{groupId}", optionally with a suffix to make it unique.
