@@ -25,7 +25,7 @@ Note: we assume that you add the `fuse.version` property to your build and set i
       <dependencies>
         <dependency>
           <groupId>org.jboss.redhat-fuse</groupId>
-          <artifactId>fuse-esp-bom</artifactId>
+          <artifactId>fuse-eap-bom</artifactId>
           <version>${fuse.version}</version>
           <type>pom</type>
           <scope>import</scope>
