@@ -33,6 +33,7 @@ Note: we assume that you add the `fuse.version` property to your build and set i
       </dependencies>
     </dependencyManagement>
 
+
 ## For Spring Boot
 
     <dependencyManagement>
@@ -48,4 +49,31 @@ Note: we assume that you add the `fuse.version` property to your build and set i
     </dependencyManagement>
 
 
+# Maven Plugin Dependencies
 
+You can also stay aligned with the the Fuse recommended version of a few critical Maven plugins.  Note that Fuse
+repackages these Maven plugins with a different group id and version from their upstream versions.
+
+## fabric8-maven-plugin
+
+    <plugin>
+      <groupId>org.jboss.redhat-fuse</groupId>
+      <artifactId>fabric8-maven-plugin</artifactId>
+      <version>${fuse.version}</version>
+    </plugin>
+
+## karaf-maven-plugin
+
+    <plugin>
+      <groupId>org.jboss.redhat-fuse</groupId>
+      <artifactId>karaf-maven-plugin</artifactId>
+      <version>${fuse.version}</version>
+    </plugin>
+
+## spring-boot-maven-plugin
+
+    <plugin>
+      <groupId>org.jboss.redhat-fuse</groupId>
+      <artifactId>spring-boot-maven-plugin</artifactId>
+      <version>${fuse.version}</version>
+    </plugin>
