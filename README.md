@@ -1,11 +1,13 @@
 # Red Hat Fuse
-This project defines the Fuse product BOMs so that Fuse users can have a consistent set of maven bom GAVs to import into their projects regardless of the platform they are using (Karaf, EAP, or SpringBoot).
+This project defines set of platform BOMs and maven plugins so that Fuse users can have a consistent set of maven bom GAVs to import into their projects regardless of the platform they are using (Karaf, EAP, or SpringBoot) all controled via a single version.
+
+## Dependency Management via BOMs
 
 You just need to add the `<dependencyManagement>..</dependencyManagement>` scection to your maven build to pick up the correct set of Fuse supported artifacts.
 
 Note: we assume that you add the `fuse.version` property to your build and set it to a released version of this project.
 
-## For Karaf
+### For Karaf
 
     <dependencyManagement>
       <dependencies>
@@ -19,7 +21,7 @@ Note: we assume that you add the `fuse.version` property to your build and set i
       </dependencies>
     </dependencyManagement>
 
-## For EAP
+### For EAP
 
     <dependencyManagement>
       <dependencies>
@@ -34,7 +36,7 @@ Note: we assume that you add the `fuse.version` property to your build and set i
     </dependencyManagement>
 
 
-## For Spring Boot
+### For Spring Boot
 
     <dependencyManagement>
       <dependencies>
@@ -49,12 +51,12 @@ Note: we assume that you add the `fuse.version` property to your build and set i
     </dependencyManagement>
 
 
-# Maven Plugin Dependencies
+## Maven Plugin Dependencies
 
 You can also stay aligned with the the Fuse recommended version of a few critical Maven plugins.  Note that Fuse
 repackages these Maven plugins with a different group id and version from their upstream versions.
 
-## fabric8-maven-plugin
+### fabric8-maven-plugin
 
     <plugin>
       <groupId>org.jboss.redhat-fuse</groupId>
@@ -62,7 +64,7 @@ repackages these Maven plugins with a different group id and version from their 
       <version>${fuse.version}</version>
     </plugin>
 
-## karaf-maven-plugin
+### karaf-maven-plugin
 
     <plugin>
       <groupId>org.jboss.redhat-fuse</groupId>
@@ -70,7 +72,7 @@ repackages these Maven plugins with a different group id and version from their 
       <version>${fuse.version}</version>
     </plugin>
 
-## spring-boot-maven-plugin
+### spring-boot-maven-plugin
 
     <plugin>
       <groupId>org.jboss.redhat-fuse</groupId>
