@@ -35,9 +35,11 @@
         <!-- Build properties (overridable in profiles) -->
         <enforcer.pluginVersions.banSnapshots>false</enforcer.pluginVersions.banSnapshots>
 
+        <spring-boot.version>1.5.4.RELEASE</spring-boot.version>
         <version.camel>2.21.0.fuse-000055-redhat-2</version.camel>
         <version.cxf>3.1.11.fuse-000199-redhat-1</version.cxf>
         <version.fabric8>3.0.8.fuse-000023-redhat-2</version.fabric8>
+        <version.fabric8.maven.plugin>3.5.33.fuse-000023-redhat-2</version.fabric8.maven.plugin>
         <version.bom.fuse>7.0.0.fuse-000163-redhat-2</version.bom.fuse>
         <version.karaf>4.2.0.fuse-000191-redhat-1</version.karaf>
         <version.bom.wildfly.camel>5.1.0.fuse-000035-redhat-1</version.bom.wildfly.camel>
@@ -67,9 +69,11 @@
     </properties>
 
     <modules>
+        <module>fuse-tools</module>
         <module>fuse-karaf</module>
         <module>fuse-eap</module>
         <module>fuse-springboot</module>
+        <module>fuse-maven-plugins</module>
     </modules>
 
     <repositories>
