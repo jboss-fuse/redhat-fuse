@@ -56,7 +56,7 @@
                 <artifactId>maven-plugin-plugin</artifactId>
                 <version>3.5.1</version>
                 <configuration>
-                    <skip>true</skip>
+                    <skipDescriptor>true</skipDescriptor>
                 </configuration>
             </plugin>
         </plugins>
