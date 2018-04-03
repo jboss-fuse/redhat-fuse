@@ -1,9 +1,9 @@
 # Red Hat Fuse
-This project defines set of platform BOMs and maven plugins so that Fuse users can have a consistent set of maven bom GAVs to import into their projects regardless of the platform they are using (Karaf, EAP, or SpringBoot) all controled via a single version.
+This project defines set of platform BOMs and Maven plugins so that Fuse users can have a consistent set of Maven bom GAVs to import into their projects regardless of the platform they are using (Karaf, EAP, or SpringBoot) all controlled via a single version.
 
 ## Dependency Management via BOMs
 
-You just need to add the `<dependencyManagement>..</dependencyManagement>` scection to your maven build to pick up the correct set of Fuse supported artifacts.
+You just need to add the `<dependencyManagement>..</dependencyManagement>` section to your Maven build to pick up the correct set of Fuse supported artifacts.
 
 Note: we assume that you add the `fuse.version` property to your build and set it to a released version of this project.
 
@@ -53,7 +53,7 @@ Note: we assume that you add the `fuse.version` property to your build and set i
 
 ## Maven Plugin Dependencies
 
-You can also stay aligned with the the Fuse recommended version of a few critical Maven plugins.  Note that Fuse
+You can also stay aligned with the the Fuse recommended version of a few critical Maven plugins. Note that Fuse
 repackages these Maven plugins with a different group id and version from their upstream versions.
 
 ### fabric8-maven-plugin
