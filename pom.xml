@@ -37,6 +37,7 @@
 
         <spring-boot.version>1.5.4.RELEASE</spring-boot.version>
         <version.camel>2.21.0.fuse-000055-redhat-2</version.camel>
+        <version.camel.extra>2.21.0.fuse-000032-redhat-2</version.camel.extra>
         <version.cxf>3.1.11.fuse-000199-redhat-1</version.cxf>
         <version.fabric8>3.0.8.fuse-000023-redhat-2</version.fabric8>
         <version.fabric8.maven.plugin>3.5.33.fuse-000023-redhat-2</version.fabric8.maven.plugin>
@@ -46,9 +47,7 @@
         <version.fusesource.camel.sap>7.0.0.fuse-000188-redhat-2</version.fusesource.camel.sap>
         <karaf.plugin.version>4.2.0.fuse-000192</karaf.plugin.version>
 
-        <version.cxf.xjc-utils></version.cxf.xjc-utils>
         <version.hawtio>2.0.0.fuse-000145-redhat-1</version.hawtio>
-        <version.camel.extra>2.21.0.fuse-000032-redhat-2</version.camel.extra>
         <version.hawtio.online>1.0.0.fuse-000016-redhat-1</version.hawtio.online>
         <version.hawtio.integration>1.0.0.fuse-000021-redhat-2</version.hawtio.integration>
         
