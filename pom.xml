@@ -49,7 +49,6 @@
 
         <version.hawtio>2.0.0.fuse-000157</version.hawtio>
         <version.hawtio.online>1.0.0.fuse-000016-redhat-1</version.hawtio.online>
-        <version.hawtio.integration>1.0.0.fuse-000021-redhat-2</version.hawtio.integration>
         
         <version.kubernetes.model>2.0.8.fuse-000004-redhat-1</version.kubernetes.model>
         <version.kubernetes.client>3.0.3.fuse-000018-redhat-1</version.kubernetes.client>
@@ -228,4 +227,93 @@
         </license>
     </licenses>
 
+    <!-- These are place holder dependency management entries -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.apache.camel</groupId>
+                <artifactId>camel</artifactId>
+                <version>${version.camel}</version>
+                <type>pom</type>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.fusesource</groupId>
+                <artifactId>camel-sap-parent</artifactId>
+                <version>${version.fusesource.camel.sap}</version>
+                <type>pom</type>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.cxf.xjc-utils</groupId>
+                <artifactId>xjc-utils</artifactId>
+                <version>${version.cxf.xjc-utils}</version>
+                <type>pom</type>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.hawt</groupId>
+                <artifactId>project</artifactId>
+                <version>${version.hawtio}</version>
+                <type>pom</type>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache-extras.camel-extra</groupId>
+                <artifactId>camel-parent</artifactId>
+                <version>${version.camel.extra}</version>
+                <type>pom</type>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.hawt</groupId>
+                <artifactId>hawtio-online</artifactId>
+                <version>${version.hawtio.online}</version>
+                <type>pom</type>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.fabric8</groupId>
+                <artifactId>kubernetes-model-generator</artifactId>
+                <version>${version.kubernetes.model}</version>
+                <type>pom</type>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.fabric8</groupId>
+                <artifactId>kubernetes-client-project</artifactId>
+                <version>${version.kubernetes.client}</version>
+                <type>pom</type>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.fabric8</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>${version.docker.maven.plugin}</version>
+                <type>pom</type>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.wildfly.extras.patch</groupId>
+                <artifactId>fuse-patch</artifactId>
+                <version>${version.fuse.patch}</version>
+                <type>pom</type>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.wildfly.camel.example</groupId>
+                <artifactId>example-camel</artifactId>
+                <version>${version.wildfly.camel.examples}</version>
+                <type>pom</type>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.redhat.fuse.eap</groupId>
+                <artifactId>fuse-eap</artifactId>
+                <version>${version.fuse.eap}</version>
+                <type>pom</type>
+                <scope>provided</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
