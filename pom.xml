@@ -22,7 +22,7 @@
 
     <groupId>org.jboss.redhat-fuse</groupId>
     <artifactId>redhat-fuse</artifactId>
-    <version>7.0.1.fuse-000008</version>
+    <version>7.0.1.fuse-000008-redhat-2</version>
     <packaging>pom</packaging>
 
     <name>Red Hat Fuse :: ${project.artifactId}</name>
@@ -36,27 +36,27 @@
         <enforcer.pluginVersions.banSnapshots>false</enforcer.pluginVersions.banSnapshots>
 
         <spring-boot.version>1.5.13.RELEASE</spring-boot.version>
-        <version.camel>2.21.0.fuse-000112</version.camel>
-        <version.camel.extra>2.21.0.fuse-000088</version.camel.extra>
-        <version.cxf>3.1.11.fuse-000281</version.cxf>
-        <version.fabric8>3.0.11.fuse-000065</version.fabric8>
-        <version.fabric8.maven.plugin>3.5.33.fuse-000089</version.fabric8.maven.plugin>
-        <version.bom.fuse>7.0.1.fuse-000011</version.bom.fuse>
-        <version.karaf>4.2.0.fuse-000280</version.karaf>
-        <version.bom.wildfly.camel>5.1.0.fuse-000083</version.bom.wildfly.camel>
-        <version.fusesource.camel.sap>7.0.1.fuse-000012</version.fusesource.camel.sap>
-        <karaf.plugin.version>4.2.0.fuse-000280</karaf.plugin.version>
+        <version.camel>2.21.0.fuse-000112-redhat-3</version.camel>
+        <version.camel.extra>2.21.0.fuse-000088-redhat-3</version.camel.extra>
+        <version.cxf>3.1.11.fuse-000281-redhat-3</version.cxf>
+        <version.fabric8>3.0.11.fuse-000065-redhat-2</version.fabric8>
+        <version.fabric8.maven.plugin>3.5.33.fuse-000089-redhat-2</version.fabric8.maven.plugin>
+        <version.bom.fuse>7.0.1.fuse-000011-redhat-2</version.bom.fuse>
+        <version.karaf>4.2.0.fuse-000280-redhat-4</version.karaf>
+        <version.bom.wildfly.camel>5.1.0.fuse-000083-redhat-2</version.bom.wildfly.camel>
+        <version.fusesource.camel.sap>7.0.1.fuse-000012-redhat-3</version.fusesource.camel.sap>
+        <karaf.plugin.version>4.2.0.fuse-000280-redhat-4</karaf.plugin.version>
 
-        <version.hawtio>2.0.0.fuse-000201</version.hawtio>
-        <version.hawtio.online>1.0.0.fuse-000069</version.hawtio.online>
+        <version.hawtio>2.0.0.fuse-000201-redhat-2</version.hawtio>
+        <version.hawtio.online>1.0.0.fuse-000069-redhat-1</version.hawtio.online>
         
-        <version.kubernetes.model>2.0.9.fuse-000029</version.kubernetes.model>
-        <version.kubernetes.client>3.0.3.fuse-000065</version.kubernetes.client>
+        <version.kubernetes.model>2.0.9.fuse-000029-redhat-1</version.kubernetes.model>
+        <version.kubernetes.client>3.0.3.fuse-000065-redhat-1</version.kubernetes.client>
 
-        <version.docker.maven.plugin>0.23.0.fuse-000060</version.docker.maven.plugin>
-        <version.fuse.patch>3.0.0.fuse-000083</version.fuse.patch>
-        <version.wildfly.camel.examples>5.1.0.fuse-000059</version.wildfly.camel.examples>
-        <version.fuse.eap>7.0.1.fuse-000008</version.fuse.eap>
+        <version.docker.maven.plugin>0.23.0.fuse-000060-redhat-1</version.docker.maven.plugin>
+        <version.fuse.patch>3.0.0.fuse-000083-redhat-1</version.fuse.patch>
+        <version.wildfly.camel.examples>5.1.0.fuse-000059-redhat-2</version.wildfly.camel.examples>
+        <version.fuse.eap>7.0.1.fuse-000008-redhat-2</version.fuse.eap>
 
         <!--
           CONVENTIONS:
@@ -75,126 +75,6 @@
         <module>fuse-maven-plugins</module>
     </modules>
 
-    <repositories>
-        <repository>
-            <id>redhat-ga-repository</id>
-            <url>https://maven.repository.redhat.com/ga</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>redhat-ea-repository</id>
-            <url>https://maven.repository.redhat.com/earlyaccess/all</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>jboss-ea</id>
-            <url>https://repository.jboss.org/nexus/content/groups/ea</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <!-- For Narayana 5.5.30.Final-redhat-1 -->
-            <id>jb-eap-7.1-brew</id>
-            <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <!-- For Artemis -->
-            <id>jb-amq-7-brew</id>
-            <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-amq-7-build/latest/maven/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>apache-snapshots-repository</id>
-            <url>https://repository.apache.org/content/groups/snapshots</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>daily</updatePolicy>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>ops4j-snapshots-repository</id>
-            <url>https://oss.sonatype.org/content/repositories/ops4j-snapshots</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>redhat-ga-repository</id>
-            <url>https://maven.repository.redhat.com/ga</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-        <pluginRepository>
-            <id>redhat-ea-repository</id>
-            <url>https://maven.repository.redhat.com/earlyaccess/all</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-        <pluginRepository>
-            <id>jboss-ea</id>
-            <url>https://origin-repository.jboss.org/nexus/content/groups/ea</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-        <pluginRepository>
-            <id>apache-snapshots-repository</id>
-            <url>https://repository.apache.org/content/groups/snapshots</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>interval:120</updatePolicy>
-            </snapshots>
-        </pluginRepository>
-    </pluginRepositories>
-
     <url>https://developers.redhat.com/products/fuse/overview</url>
 
     <scm>
@@ -212,7 +92,7 @@
         <developer>
             <id>fuseteam</id>
             <name>Red Hat Fuse Development Team</name>
-            <organization>Red Hat </organization>
+            <organization>Red Hat</organization>
             <organizationUrl>http://jboss.org/</organizationUrl>
         </developer>
     </developers>
@@ -316,4 +196,27 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+    <build>
+    <pluginManagement></pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.commonjava.maven.plugins</groupId>
+        <artifactId>project-sources-maven-plugin</artifactId>
+        <version>1.0</version>
+        <executions>
+          <execution>
+            <id>project-sources-archive</id>
+            <phase>initialize</phase>
+            <goals>
+              <goal>archive</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 </project>
+<!--
+Modified by POM Manipulation Extension for Maven 2.13.1 ( SHA: 7bd176c6 ) 
+-->
+
