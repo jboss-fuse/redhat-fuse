@@ -72,6 +72,14 @@ repackages these Maven plugins with a different group id and version from their 
       <version>${fuse.version}</version>
     </plugin>
 
+### karaf-services-maven-plugin
+
+    <plugin>
+      <groupId>org.jboss.redhat-fuse</groupId>
+      <artifactId>karaf-services-maven-plugin</artifactId>
+      <version>${fuse.version}</version>
+    </plugin>
+
 ### spring-boot-maven-plugin
 
     <plugin>

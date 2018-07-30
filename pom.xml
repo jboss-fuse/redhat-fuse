@@ -42,10 +42,10 @@
         <version.fabric8>3.0.8.fuse-000023-redhat-4</version.fabric8>
         <version.fabric8.maven.plugin>3.5.33.fuse-000023-redhat-3</version.fabric8.maven.plugin>
         <version.bom.fuse>7.0.0.fuse-000163-redhat-2</version.bom.fuse>
-        <version.karaf>4.2.0.fuse-000191-redhat-1</version.karaf>
+        <version.karaf>4.2.0.fuse-000280-redhat-4</version.karaf>
         <version.bom.wildfly.camel>5.1.0.fuse-000035-redhat-1</version.bom.wildfly.camel>
         <version.fusesource.camel.sap>7.0.0.fuse-000188-redhat-2</version.fusesource.camel.sap>
-        <karaf.plugin.version>4.2.0.fuse-000192</karaf.plugin.version>
+        <karaf.plugin.version>4.2.0.fuse-000280-redhat-4</karaf.plugin.version>
 
         <version.hawtio>2.0.0.fuse-000157</version.hawtio>
         <version.hawtio.online>1.0.0.fuse-000016-redhat-1</version.hawtio.online>
