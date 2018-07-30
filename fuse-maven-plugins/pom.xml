@@ -34,6 +34,11 @@
         <module>spring-boot-maven-plugin</module>
         <module>fabric8-maven-plugin</module>
         <module>karaf-maven-plugin</module>
+        <module>camel-maven-plugin</module>
+        <module>camel-salesforce-maven-plugin</module>
+        <module>camel-package-maven-plugin</module>
+        <module>camel-api-component-maven-plugin</module>
+        <module>camel-restdsl-swagger-plugin</module>
     </modules>
 
     <build>
