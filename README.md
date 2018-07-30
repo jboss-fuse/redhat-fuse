@@ -79,3 +79,44 @@ repackages these Maven plugins with a different group id and version from their 
       <artifactId>spring-boot-maven-plugin</artifactId>
       <version>${fuse.version}</version>
     </plugin>
+
+### camel-maven-plugin
+
+    <plugin>
+      <groupId>org.jboss.redhat-fuse</groupId>
+      <artifactId>camel-maven-plugin</artifactId>
+      <version>${fuse.version}</version>
+    </plugin>
+
+### camel-api-component-maven-plugin
+
+    <plugin>
+      <groupId>org.jboss.redhat-fuse</groupId>
+      <artifactId>camel-api-component-maven-plugin</artifactId>
+      <version>${fuse.version}</version>
+    </plugin>
+
+### camel-package-maven-plugin
+
+    <plugin>
+      <groupId>org.jboss.redhat-fuse</groupId>
+      <artifactId>camel-package-maven-plugin</artifactId>
+      <version>${fuse.version}</version>
+    </plugin>
+
+### camel-restdsl-swagger-plugin
+
+    <plugin>
+      <groupId>org.jboss.redhat-fuse</groupId>
+      <artifactId>camel-restdsl-swagger-plugin</artifactId>
+      <version>${fuse.version}</version>
+    </plugin>
+
+### camel-salesforce-maven-plugin
+
+    <plugin>
+      <groupId>org.jboss.redhat-fuse</groupId>
+      <artifactId>camel-salesforce-maven-plugin</artifactId>
+      <version>${fuse.version}</version>
+    </plugin>
+
