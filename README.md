@@ -120,3 +120,52 @@ repackages these Maven plugins with a different group id and version from their 
       <version>${fuse.version}</version>
     </plugin>
 
+### cxf-codegen-plugin
+
+    <plugin>
+      <groupId>org.jboss.redhat-fuse</groupId>
+      <artifactId>cxf-codegen-plugin</artifactId>
+      <version>${fuse.version}</version>
+    </plugin>
+
+### cxf-java2swagger-plugin
+
+    <plugin>
+      <groupId>org.jboss.redhat-fuse</groupId>
+      <artifactId>cxf-java2swagger-plugin</artifactId>
+      <version>${fuse.version}</version>
+    </plugin>
+
+### cxf-java2wadl-plugin
+
+    <plugin>
+      <groupId>org.jboss.redhat-fuse</groupId>
+      <artifactId>cxf-java2wadl-plugin</artifactId>
+      <version>${fuse.version}</version>
+    </plugin>
+
+### cxf-java2ws-plugin
+
+    <plugin>
+      <groupId>org.jboss.redhat-fuse</groupId>
+      <artifactId>cxf-java2ws-plugin</artifactId>
+      <version>${fuse.version}</version>
+    </plugin>
+
+### cxf-wadl2java-plugin
+
+    <plugin>
+      <groupId>org.jboss.redhat-fuse</groupId>
+      <artifactId>cxf-wadl2java-plugin</artifactId>
+      <version>${fuse.version}</version>
+    </plugin>
+
+### cxf-wsdl-validator-plugin
+
+    <plugin>
+      <groupId>org.jboss.redhat-fuse</groupId>
+      <artifactId>cxf-wsdl-validator-plugin</artifactId>
+      <version>${fuse.version}</version>
+    </plugin>
+
+
