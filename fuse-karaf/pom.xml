@@ -23,7 +23,7 @@
     <parent>
         <groupId>org.jboss.redhat-fuse</groupId>
         <artifactId>redhat-fuse</artifactId>
-        <version>7.1.0.fuse-710007</version>
+        <version>7.1.0.fuse-710007-redhat-00001</version>
     </parent>
 
     <artifactId>fuse-karaf</artifactId>
