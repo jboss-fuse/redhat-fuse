@@ -54,9 +54,6 @@
         <version.kubernetes.client>3.1.4.fuse-710001</version.kubernetes.client>
 
         <version.docker.maven.plugin>0.23.0.fuse-710016</version.docker.maven.plugin>
-        <version.fuse.patch>3.1.0.fuse-710015</version.fuse.patch>
-        <version.wildfly.camel.examples>5.2.0.fuse-710012</version.wildfly.camel.examples>
-        <version.fuse.eap>7.1.0.fuse-710012</version.fuse.eap>
 
         <!--
           CONVENTIONS:
@@ -290,27 +287,6 @@
                 <groupId>io.fabric8</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>${version.docker.maven.plugin}</version>
-                <type>pom</type>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.wildfly.extras.patch</groupId>
-                <artifactId>fuse-patch</artifactId>
-                <version>${version.fuse.patch}</version>
-                <type>pom</type>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.wildfly.camel.example</groupId>
-                <artifactId>example-camel</artifactId>
-                <version>${version.wildfly.camel.examples}</version>
-                <type>pom</type>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.redhat.fuse.eap</groupId>
-                <artifactId>fuse-eap</artifactId>
-                <version>${version.fuse.eap}</version>
                 <type>pom</type>
                 <scope>provided</scope>
             </dependency>
