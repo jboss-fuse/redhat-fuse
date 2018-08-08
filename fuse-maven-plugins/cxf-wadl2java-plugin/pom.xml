@@ -36,6 +36,12 @@
             <artifactId>cxf-wadl2java-plugin</artifactId>
             <version>${version.cxf}</version>
         </dependency>
+        <dependency>
+            <groupId>org.sonatype.plexus</groupId>
+            <artifactId>plexus-build-api</artifactId>
+            <version>0.0.7</version>
+            <optional>true</optional>
+        </dependency>
     </dependencies>
 
 </project>
