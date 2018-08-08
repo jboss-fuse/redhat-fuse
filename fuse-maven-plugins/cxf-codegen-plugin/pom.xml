@@ -30,12 +30,47 @@
     <packaging>maven-plugin</packaging>
     <name>Red Hat Fuse :: ${project.artifactId}</name>
 
+    <dependencyManagement>
+      <dependencies>
+        <dependency>
+            <groupId>io.fabric8</groupId>
+            <artifactId>fabric8-project-bom-camel-spring-boot</artifactId>
+            <version>${version.fabric8}</version>
+            <scope>import</scope>
+            <type>pom</type>
+        </dependency>
+      </dependencies>
+    </dependencyManagement>
+
     <dependencies>
         <dependency>
             <groupId>org.apache.cxf</groupId>
             <artifactId>cxf-codegen-plugin</artifactId>
             <version>${version.cxf}</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.sonatype.plexus</groupId>
+            <artifactId>plexus-build-api</artifactId>
+            <version>0.0.7</version>
+            <optional>true</optional>
+        </dependency>
+
     </dependencies>
 
 </project>
