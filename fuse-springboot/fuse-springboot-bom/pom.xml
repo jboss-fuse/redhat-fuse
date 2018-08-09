@@ -23,7 +23,7 @@
     <parent>
         <groupId>org.jboss.redhat-fuse</groupId>
         <artifactId>fuse-springboot</artifactId>
-        <version>7.1.0.fuse-710014</version>
+        <version>7.1.0.fuse-710014-redhat-00002</version>
     </parent>
 
     <artifactId>fuse-springboot-bom</artifactId>
