@@ -249,6 +249,13 @@
                 <scope>provided</scope>
             </dependency>
             <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf</artifactId>
+                <version>${version.cxf}</version>
+                <type>pom</type>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
                 <groupId>io.hawt</groupId>
                 <artifactId>project</artifactId>
                 <version>${version.hawtio}</version>
