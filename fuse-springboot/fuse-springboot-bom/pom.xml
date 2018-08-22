@@ -50,6 +50,33 @@
                 <type>pom</type>
             </dependency>
 
+            <!-- Narayana Spring Boot dependencies -->
+            <dependency>
+                <groupId>me.snowdrop</groupId>
+                <artifactId>narayana-spring-boot-starter</artifactId>
+                <version>${version.narayana.spring.boot}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>me.snowdrop</groupId>
+                <artifactId>narayana-spring-boot-recovery-controller</artifactId>
+                <version>${version.narayana.spring.boot}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>me.snowdrop</groupId>
+                <artifactId>narayana-spring-boot-core</artifactId>
+                <version>${version.narayana.spring.boot}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>me.snowdrop</groupId>
+                <artifactId>narayana-spring-boot-starter-it</artifactId>
+                <version>${version.narayana.spring.boot}</version>
+            </dependency>
+
+
+
         </dependencies>
     </dependencyManagement>
 
