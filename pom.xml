@@ -55,6 +55,8 @@
 
         <version.docker.maven.plugin>0.23.0.fuse-710016</version.docker.maven.plugin>
 
+        <version.apicurito>1.0</version.apicurito>
+
         <!--
           CONVENTIONS:
           - A version property must be specified in the format "version.{groupId}", optionally with a suffix to make it unique.
