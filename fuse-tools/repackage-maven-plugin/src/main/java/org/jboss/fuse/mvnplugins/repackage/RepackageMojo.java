@@ -86,7 +86,6 @@ public class RepackageMojo extends AbstractMojo {
         ClassRealm realm = createDependenciesRealm();
         Document document = parsePluginDescriptor(realm.getResource(PLUGIN_DESCRIPTOR_PATH));
 
-        Element plugin = document.getRootElement();
         Node node = document.selectSingleNode("//plugin/groupId");
         String originalGroupId = node.getText();
         node.setText(groupId);
