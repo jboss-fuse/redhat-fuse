@@ -21,9 +21,13 @@ package org.jboss.fuse.mvnplugins.repackage;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
 import java.util.Set;
 
 import org.apache.maven.artifact.Artifact;
@@ -56,7 +60,9 @@ import org.dom4j.io.XMLWriter;
 )
 public class RepackageMojo extends AbstractMojo {
 
-    public static final String PLUGIN_DESCRIPTOR_PATH = "META-INF/maven/plugin.xml";
+    private static final String M2E_LIFECYCLE_MAPPING_METADATA_PATH = "META-INF/m2e/lifecycle-mapping-metadata.xml";
+
+	public static final String PLUGIN_DESCRIPTOR_PATH = "META-INF/maven/plugin.xml";
 
     @Parameter(defaultValue = "${project}", readonly = true, required = true)
     private MavenProject project;
@@ -109,6 +115,26 @@ public class RepackageMojo extends AbstractMojo {
         dependencies.content().add(0, dependency);
 
         writePluginDescriptor(document);
+        writeM2eConfiguration(realm);
+    }
+
+    private void writeM2eConfiguration(ClassRealm realm) throws MojoExecutionException {
+        URL m2eFileUrl = realm.getResource(M2E_LIFECYCLE_MAPPING_METADATA_PATH);
+        try (InputStream inputStream = m2eFileUrl.openStream()) {
+            writeM2eConfiguration(inputStream);
+        } catch (IOException e) {
+            // there is no m2e file, so nothing to copy
+        }
+    }
+
+    private void writeM2eConfiguration(InputStream inputStream) throws MojoExecutionException {
+        File file = new File(outputDirectory, M2E_LIFECYCLE_MAPPING_METADATA_PATH);
+        file.getParentFile().mkdirs();
+        try {
+            Files.copy(inputStream, file.toPath(), StandardCopyOption.REPLACE_EXISTING);
+        } catch (IOException exceptionWritingFile) {
+            throw new MojoExecutionException("Could not write the m2e config file", exceptionWritingFile);
+        }
     }
 
     private void writePluginDescriptor(Document document) throws MojoExecutionException {
