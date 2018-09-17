@@ -23,6 +23,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.Set;
 
 import org.apache.maven.artifact.Artifact;
@@ -115,7 +116,7 @@ public class RepackageMojo extends AbstractMojo {
         file.getParentFile().mkdirs();
         try (FileOutputStream os = new FileOutputStream(file)) {
             OutputFormat format = OutputFormat.createPrettyPrint();
-            format.setEncoding("UTF-8");
+            format.setEncoding(StandardCharsets.UTF_8.name());
             XMLWriter writer = new XMLWriter(os, format);
             writer.write(document);
             writer.flush();
