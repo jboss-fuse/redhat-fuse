@@ -21,8 +21,13 @@ package org.jboss.fuse.mvnplugins.repackage;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
 import java.util.Set;
 
 import org.apache.maven.artifact.Artifact;
@@ -55,6 +60,8 @@ import org.dom4j.io.XMLWriter;
 )
 public class RepackageMojo extends AbstractMojo {
 
+    private static final String M2E_LIFECYCLE_MAPPING_METADATA_PATH = "META-INF/m2e/lifecycle-mapping-metadata.xml";
+
     public static final String PLUGIN_DESCRIPTOR_PATH = "META-INF/maven/plugin.xml";
 
     @Parameter(defaultValue = "${project}", readonly = true, required = true)
@@ -86,7 +93,6 @@ public class RepackageMojo extends AbstractMojo {
         ClassRealm realm = createDependenciesRealm();
         Document document = parsePluginDescriptor(realm.getResource(PLUGIN_DESCRIPTOR_PATH));
 
-        Element plugin = document.getRootElement();
         Node node = document.selectSingleNode("//plugin/groupId");
         String originalGroupId = node.getText();
         node.setText(groupId);
@@ -109,6 +115,24 @@ public class RepackageMojo extends AbstractMojo {
         dependencies.content().add(0, dependency);
 
         writePluginDescriptor(document);
+        writeM2eConfiguration(realm);
+    }
+
+    private void writeM2eConfiguration(ClassRealm realm) throws MojoExecutionException {
+        URL m2eFileUrl = realm.getResource(M2E_LIFECYCLE_MAPPING_METADATA_PATH);
+        if (m2eFileUrl != null) {
+            try (InputStream inputStream = m2eFileUrl.openStream()) {
+                writeM2eConfiguration(inputStream);
+            } catch (IOException e) {
+                throw new MojoExecutionException("Could not write the m2e config file", e);
+            }
+        }
+    }
+
+    private void writeM2eConfiguration(InputStream inputStream) throws IOException {
+        File file = new File(outputDirectory, M2E_LIFECYCLE_MAPPING_METADATA_PATH);
+        file.getParentFile().mkdirs();
+        Files.copy(inputStream, file.toPath(), StandardCopyOption.REPLACE_EXISTING);
     }
 
     private void writePluginDescriptor(Document document) throws MojoExecutionException {
@@ -116,7 +140,7 @@ public class RepackageMojo extends AbstractMojo {
         file.getParentFile().mkdirs();
         try (FileOutputStream os = new FileOutputStream(file)) {
             OutputFormat format = OutputFormat.createPrettyPrint();
-            format.setEncoding("UTF-8");
+            format.setEncoding(StandardCharsets.UTF_8.name());
             XMLWriter writer = new XMLWriter(os, format);
             writer.write(document);
             writer.flush();
