@@ -46,6 +46,7 @@
         <version.bom.wildfly.camel>5.2.0.fuse-720015</version.bom.wildfly.camel>
         <version.fusesource.camel.sap>7.2.0.fuse-720025</version.fusesource.camel.sap>
         <karaf.plugin.version>4.2.0.fuse-720035</karaf.plugin.version>
+        <version.fuse.eap>7.2.0.fuse-720010</version.fuse.eap>
 
         <version.hawtio>2.0.0.fuse-720024</version.hawtio>
         <version.hawtio.online>1.0.0.fuse-720023</version.hawtio.online>
