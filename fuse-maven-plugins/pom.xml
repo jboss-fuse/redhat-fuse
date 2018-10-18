@@ -34,6 +34,8 @@
         <module>spring-boot-maven-plugin</module>
         <module>fabric8-maven-plugin</module>
 
+        <module>maven-bundle-plugin</module>
+
         <module>karaf-maven-plugin</module>
         <module>karaf-services-maven-plugin</module>
 
