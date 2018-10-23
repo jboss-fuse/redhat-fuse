@@ -252,7 +252,7 @@
             </dependency>
             <dependency>
                 <groupId>org.apache.cxf</groupId>
-                <artifactId>cxf</artifactId>
+                <artifactId>cxf-parent</artifactId>
                 <version>${version.cxf}</version>
                 <type>pom</type>
                 <scope>provided</scope>
