@@ -23,7 +23,7 @@
     <parent>
         <groupId>org.jboss.redhat-fuse</groupId>
         <artifactId>fuse-maven-plugins</artifactId>
-        <version>7.1.0.fuse-710019</version>
+        <version>7.1.0.fuse-710021</version>
     </parent>
 
     <artifactId>camel-maven-plugin</artifactId>
