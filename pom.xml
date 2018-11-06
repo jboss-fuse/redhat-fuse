@@ -22,7 +22,7 @@
 
     <groupId>org.jboss.redhat-fuse</groupId>
     <artifactId>redhat-fuse</artifactId>
-    <version>7.2.0-SNAPSHOT</version>
+    <version>7.3.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Red Hat Fuse :: ${project.artifactId}</name>
@@ -36,26 +36,26 @@
         <enforcer.pluginVersions.banSnapshots>false</enforcer.pluginVersions.banSnapshots>
 
         <spring-boot.version>1.5.16.RELEASE</spring-boot.version>
-        <version.camel>2.21.0.fuse-720029</version.camel>
-        <version.camel.extra>2.21.0.fuse-720029</version.camel.extra>
-        <version.cxf>3.1.11.fuse-720033</version.cxf>
-        <version.fabric8>3.0.11.fuse-720017</version.fabric8>
-        <version.fabric8.maven.plugin>3.5.33.fuse-720017</version.fabric8.maven.plugin>
-        <version.bom.fuse>7.2.0.fuse-720023</version.bom.fuse>
-        <version.karaf>4.2.0.fuse-720035</version.karaf>
-        <version.bom.wildfly.camel>5.2.0.fuse-720015</version.bom.wildfly.camel>
-        <version.fusesource.camel.sap>7.2.0.fuse-720025</version.fusesource.camel.sap>
-        <karaf.plugin.version>4.2.0.fuse-720035</karaf.plugin.version>
+        <version.camel>2.21.0.fuse-720040</version.camel>
+        <version.camel.extra>2.21.0.fuse-720040</version.camel.extra>
+        <version.cxf>3.1.11.fuse-720047</version.cxf>
+        <version.fabric8>3.0.11.fuse-720023</version.fabric8>
+        <version.fabric8.maven.plugin>3.5.33.fuse-720022</version.fabric8.maven.plugin>
+        <version.bom.fuse>7.2.0.fuse-720029</version.bom.fuse>
+        <version.karaf>4.2.0.fuse-720049</version.karaf>
+        <version.bom.wildfly.camel>5.2.0.fuse-720019</version.bom.wildfly.camel>
+        <version.fusesource.camel.sap>7.2.0.fuse-720036</version.fusesource.camel.sap>
+        <karaf.plugin.version>4.2.0.fuse-720049</karaf.plugin.version>
 
-        <version.hawtio>2.0.0.fuse-720024</version.hawtio>
-        <version.hawtio.online>1.0.0.fuse-720023</version.hawtio.online>
+        <version.hawtio>2.0.0.fuse-720034</version.hawtio>
+        <version.hawtio.online>1.0.0.fuse-720033</version.hawtio.online>
         
-        <version.kubernetes.model>2.0.10.fuse-720018</version.kubernetes.model>
-        <version.kubernetes.client>3.1.4.fuse-720021</version.kubernetes.client>
+        <version.kubernetes.model>2.0.10.fuse-720024</version.kubernetes.model>
+        <version.kubernetes.client>3.1.4.fuse-720027</version.kubernetes.client>
 
-        <version.docker.maven.plugin>0.23.0.fuse-720020</version.docker.maven.plugin>
+        <version.docker.maven.plugin>0.23.0.fuse-720026</version.docker.maven.plugin>
 
-        <version.apicurito>1.0.0.fuse-720010</version.apicurito>
+        <version.apicurito>1.0.0.fuse-720014</version.apicurito>
 
         <version.felix.bundle-plugin>3.3.0</version.felix.bundle-plugin>
 
