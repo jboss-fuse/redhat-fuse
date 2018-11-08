@@ -42,14 +42,6 @@
                 <type>pom</type>
             </dependency>
 
-            <dependency>
-                <groupId>io.hawt</groupId>
-                <artifactId>hawtio-bom</artifactId>
-                <version>${version.hawtio}</version>
-                <scope>import</scope>
-                <type>pom</type>
-            </dependency>
-
         </dependencies>
     </dependencyManagement>
 
