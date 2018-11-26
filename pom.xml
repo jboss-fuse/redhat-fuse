@@ -62,7 +62,6 @@
         <version.plugin.maven-deploy-plugin>2.8.2</version.plugin.maven-deploy-plugin>
         <version.plugin.maven-install-plugin>2.5.2</version.plugin.maven-install-plugin>
         <version.plugin.maven-resources-plugin>3.0.2</version.plugin.maven-resources-plugin>
-        <version.plugin.maven-surefire-plugin>2.20.1</version.plugin.maven-surefire-plugin>
 
         <!--
           CONVENTIONS:

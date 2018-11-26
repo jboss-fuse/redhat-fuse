@@ -39,7 +39,6 @@
         <module>maven-deploy-plugin</module>
         <module>maven-install-plugin</module>
         <module>maven-resources-plugin</module>
-        <module>maven-surefire-plugin</module>
 
         <module>karaf-maven-plugin</module>
         <module>karaf-services-maven-plugin</module>
