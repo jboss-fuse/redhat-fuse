@@ -35,6 +35,11 @@
         <module>fabric8-maven-plugin</module>
 
         <module>maven-bundle-plugin</module>
+        <module>maven-compiler-plugin</module>
+        <module>maven-deploy-plugin</module>
+        <module>maven-install-plugin</module>
+        <module>maven-resources-plugin</module>
+        <module>maven-surefire-plugin</module>
 
         <module>karaf-maven-plugin</module>
         <module>karaf-services-maven-plugin</module>

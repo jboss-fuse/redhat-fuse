@@ -58,6 +58,11 @@
         <version.apicurito>1.0.0.fuse-720014</version.apicurito>
 
         <version.felix.bundle-plugin>3.5.1</version.felix.bundle-plugin>
+        <version.plugin.maven-compiler-plugin>3.7.0</version.plugin.maven-compiler-plugin>
+        <version.plugin.maven-deploy-plugin>2.8.2</version.plugin.maven-deploy-plugin>
+        <version.plugin.maven-install-plugin>2.5.2</version.plugin.maven-install-plugin>
+        <version.plugin.maven-resources-plugin>3.0.2</version.plugin.maven-resources-plugin>
+        <version.plugin.maven-surefire-plugin>2.20.1</version.plugin.maven-surefire-plugin>
 
         <!--
           CONVENTIONS:
