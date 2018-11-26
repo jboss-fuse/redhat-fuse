@@ -57,7 +57,7 @@
 
         <version.apicurito>1.0.0.fuse-720014</version.apicurito>
 
-        <version.felix.bundle-plugin>3.3.0</version.felix.bundle-plugin>
+        <version.felix.bundle-plugin>3.5.1</version.felix.bundle-plugin>
 
         <!--
           CONVENTIONS:
