@@ -37,7 +37,7 @@
             <dependency>
                 <groupId>org.jboss.fuse</groupId>
                 <artifactId>jboss-fuse-parent</artifactId>
-                <version>${version.bom.fuse}</version>
+                <version>${version.fuse-karaf}</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
