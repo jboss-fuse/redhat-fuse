@@ -35,7 +35,7 @@
         <!-- Build properties (overridable in profiles) -->
         <enforcer.pluginVersions.banSnapshots>false</enforcer.pluginVersions.banSnapshots>
 
-        <spring-boot.version>1.5.16.RELEASE</spring-boot.version>
+        <spring-boot.version>1.5.17.RELEASE</spring-boot.version>
         <version.camel>2.21.0.fuse-730060</version.camel>
         <version.camel.extra>2.21.0.fuse-730035</version.camel.extra>
         <version.cxf>3.2.7.fuse-730011</version.cxf>
@@ -49,7 +49,7 @@
 
         <version.hawtio>2.0.0.fuse-730029</version.hawtio>
         <version.hawtio.online>1.0.0.fuse-730009</version.hawtio.online>
-        
+
         <version.kubernetes.model>2.0.10.fuse-730011</version.kubernetes.model>
         <version.kubernetes.client>3.1.12.fuse-730007</version.kubernetes.client>
 
