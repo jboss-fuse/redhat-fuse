@@ -22,7 +22,7 @@
 
     <groupId>org.jboss.redhat-fuse</groupId>
     <artifactId>redhat-fuse</artifactId>
-    <version>7.4.0-SNAPSHOT</version>
+    <version>7.4.0.fuse-740008</version>
     <packaging>pom</packaging>
 
     <name>Red Hat Fuse :: ${project.artifactId}</name>
@@ -36,19 +36,19 @@
         <enforcer.pluginVersions.banSnapshots>false</enforcer.pluginVersions.banSnapshots>
 
         <spring-boot.version>1.5.17.RELEASE</spring-boot.version>
-        <version.camel>2.21.0.fuse-740006</version.camel>
-        <version.camel.extra>2.21.0.fuse-740005</version.camel.extra>
-        <version.cxf>3.2.7.fuse-740003</version.cxf>
-        <version.fabric8>3.0.11.fuse-740003</version.fabric8>
-        <version.fabric8.maven.plugin>3.5.33.fuse-740003</version.fabric8.maven.plugin>
+        <version.camel>2.23.2.fuse-740001</version.camel>
+        <version.camel.extra>7.4.0.sb2.fuse001</version.camel.extra>
+        <version.cxf>3.2.7.fuse-740004</version.cxf>
+        <version.fabric8>3.0.11.sb2.fuse-740012</version.fabric8>
+        <version.fabric8.maven.plugin>4.0.0.fuse-740001</version.fabric8.maven.plugin>
         <version.fuse-karaf>7.4.0.fuse-740003</version.fuse-karaf>
-        <version.karaf>4.2.0.fuse-740002</version.karaf>
+        <version.karaf>4.2.0.fuse-740004</version.karaf>
         <version.bom.wildfly.camel>5.3.0.fuse-740003</version.bom.wildfly.camel>
-        <version.fusesource.camel.sap>7.4.0.fuse-740004</version.fusesource.camel.sap>
-        <karaf.plugin.version>4.2.0.fuse-740002</karaf.plugin.version>
+        <version.fusesource.camel.sap>7.4.0.fuse-740009</version.fusesource.camel.sap>
+        <karaf.plugin.version>4.2.0.fuse-740004</karaf.plugin.version>
 
-        <version.hawtio>2.0.0.fuse-740003</version.hawtio>
-        <version.hawtio.online>1.0.0.fuse-740002</version.hawtio.online>
+        <version.hawtio>2.0.0.sb2.fuse001</version.hawtio>
+        <version.hawtio.online>1.0.0.sb2.fuse001</version.hawtio.online>
 
         <version.kubernetes.model>2.0.10.fuse-740002</version.kubernetes.model>
         <version.kubernetes.client>3.1.12.fuse-740002</version.kubernetes.client>
