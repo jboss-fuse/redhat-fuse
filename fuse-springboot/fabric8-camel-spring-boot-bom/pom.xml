@@ -1466,6 +1466,14 @@
 
     <dependencyManagement>
         <dependencies>
+    <parent>
+        <groupId>org.jboss.redhat-fuse</groupId>
+        <artifactId>redhat-fuse</artifactId>
+        <version>${project.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+    </parent>
+
             <dependency>
                 <groupId>io.fabric8</groupId>
                 <artifactId>fabric8-apt</artifactId>
