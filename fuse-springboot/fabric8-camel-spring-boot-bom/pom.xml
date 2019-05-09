@@ -1466,13 +1466,13 @@
 
     <dependencyManagement>
         <dependencies>
-    <parent>
+    <dependency>
         <groupId>org.jboss.redhat-fuse</groupId>
         <artifactId>redhat-fuse</artifactId>
         <version>${project.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
-    </parent>
+    </dependency>
 
             <dependency>
                 <groupId>io.fabric8</groupId>
