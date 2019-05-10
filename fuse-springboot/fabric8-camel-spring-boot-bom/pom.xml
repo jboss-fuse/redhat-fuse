@@ -102,10 +102,10 @@
         <version.org.fusesource.camel-activemq>${version.fusesource.camel.sap}</version.org.fusesource.camel-activemq>
         <version.org.fusesource.camel-sap>${version.fusesource.camel.sap}</version.org.fusesource.camel-sap>
         <version.org.fusesource.camel-sap-starter>${version.fusesource.camel.sap}</version.org.fusesource.camel-sap-starter>
-        <version.me.snowdrop.narayana-spring-boot-starter>${narayana-spring-boot.version}</version.me.snowdrop.narayana-spring-boot-starter>
-        <version.me.snowdrop.narayana-spring-boot-recovery-controller>${narayana-spring-boot.version}</version.me.snowdrop.narayana-spring-boot-recovery-controller>
-        <version.me.snowdrop.narayana-spring-boot-core>${narayana-spring-boot.version}</version.me.snowdrop.narayana-spring-boot-core>
-        <version.me.snowdrop.narayana-spring-boot-starter-it>${narayana-spring-boot.version}</version.me.snowdrop.narayana-spring-boot-starter-it>
+        <version.me.snowdrop.narayana-spring-boot-starter>${version.narayana-spring-boot}</version.me.snowdrop.narayana-spring-boot-starter>
+        <version.me.snowdrop.narayana-spring-boot-recovery-controller>${version.narayana-spring-boot}</version.me.snowdrop.narayana-spring-boot-recovery-controller>
+        <version.me.snowdrop.narayana-spring-boot-core>${version.narayana-spring-boot}</version.me.snowdrop.narayana-spring-boot-core>
+        <version.me.snowdrop.narayana-spring-boot-starter-it>${version.narayana-spring-boot}</version.me.snowdrop.narayana-spring-boot-starter-it>
         <version.io.undertow.undertow-core>2.0.15.Final-redhat-00001</version.io.undertow.undertow-core>
         <version.io.undertow.undertow-servlet>2.0.15.Final-redhat-00001</version.io.undertow.undertow-servlet>
         <version.io.undertow.undertow-websockets-jsr>2.0.15.Final-redhat-00001</version.io.undertow.undertow-websockets-jsr>
