@@ -1347,7 +1347,7 @@
         <version.javax.mail.javax.mail-api>1.5.6</version.javax.mail.javax.mail-api>
         <version.javax.servlet.jstl>1.2</version.javax.servlet.jstl>
         <version.javax.transaction.javax.transaction-api>1.2</version.javax.transaction.javax.transaction-api>
-        <version.javax.validation.validation-api>1.1.0.Final</version.javax.validation.validation-api>
+        <version.javax.validation.validation-api>2.0.1.Final</version.javax.validation.validation-api>
         <version.org.springframework.cloud.spring-cloud-cloudfoundry-connector>1.2.6.RELEASE</version.org.springframework.cloud.spring-cloud-cloudfoundry-connector>
         <version.org.springframework.cloud.spring-cloud-core>1.2.6.RELEASE</version.org.springframework.cloud.spring-cloud-core>
         <version.org.springframework.cloud.spring-cloud-heroku-connector>1.2.6.RELEASE</version.org.springframework.cloud.spring-cloud-heroku-connector>
