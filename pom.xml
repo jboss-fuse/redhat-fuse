@@ -56,6 +56,8 @@
         <version.docker.maven.plugin>0.23.0.fuse-740002</version.docker.maven.plugin>
 
         <version.apicurito>1.0.1.fuse-740003</version.apicurito>
+        <version.spring-cloud-kubernetes>0.1.6.fuse-740003</version.spring-cloud-kubernetes>
+
 
         <version.felix.bundle-plugin>3.5.1</version.felix.bundle-plugin>
 

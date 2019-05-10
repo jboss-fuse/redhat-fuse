@@ -1336,7 +1336,7 @@
         <version.org.arquillian.cube.arquillian-cube-kubernetes-reporter>1.9.0</version.org.arquillian.cube.arquillian-cube-kubernetes-reporter>
         <version.org.arquillian.cube.arquillian-cube-kubernetes-fabric8>1.9.0</version.org.arquillian.cube.arquillian-cube-kubernetes-fabric8>
         <version.org.arquillian.cube.arquillian-cube-openshift>1.9.0</version.org.arquillian.cube.arquillian-cube-openshift>
-        <version.io.fabric8.spring-cloud-kubernetes-core>${spring-cloud-kubernetes.version}</version.io.fabric8.spring-cloud-kubernetes-core>
+        <version.io.fabric8.spring-cloud-kubernetes-core>${version.spring-cloud-kubernetes}</version.io.fabric8.spring-cloud-kubernetes-core>
         <version.commons-beanutils.commons-beanutils>1.9.3</version.commons-beanutils.commons-beanutils>
         <version.commons-collections.commons-collections>3.2.2</version.commons-collections.commons-collections>
         <version.commons-codec.commons-codec>1.10</version.commons-codec.commons-codec>
