@@ -112,7 +112,7 @@
         <repository>
             <!-- For Narayana 5.5.30.Final-redhat-1 -->
             <id>jb-eap-7.1-brew</id>
-            <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven</url>
+            <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -123,7 +123,7 @@
         <repository>
             <!-- For Artemis -->
             <id>jb-amq-7-brew</id>
-            <url>http://download.eng.bos.redhat.com/brewroot/repos/jb-amq-7-build/latest/maven/</url>
+            <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-amq-7-build/latest/maven/</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
