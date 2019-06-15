@@ -35,7 +35,6 @@
         <!-- Build properties (overridable in profiles) -->
         <enforcer.pluginVersions.banSnapshots>false</enforcer.pluginVersions.banSnapshots>
 
-        <spring-boot.version>1.5.17.RELEASE</spring-boot.version>
         <version.camel>2.23.2.fuse-740002</version.camel>
         <version.camel.extra>2.21.0.fuse-740020</version.camel.extra>
         <version.cxf>3.2.7.fuse-740015</version.cxf>

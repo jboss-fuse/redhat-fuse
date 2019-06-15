@@ -55,6 +55,7 @@
         </developers>
 
     <properties>
+        <rhoar.version>2.1.3.Final-redhat-00001</rhoar.version>
         <version.io.fabric8.fabric8-apt>${version.fabric8}</version.io.fabric8.fabric8-apt>
         <version.io.fabric8.fabric8-utils>${version.fabric8}</version.io.fabric8.fabric8-utils>
         <version.io.fabric8.jaxrs-utils>${version.fabric8}</version.io.fabric8.jaxrs-utils>
@@ -102,11 +103,9 @@
         <version.org.fusesource.camel-activemq>${version.fusesource.camel.sap}</version.org.fusesource.camel-activemq>
         <version.org.fusesource.camel-sap>${version.fusesource.camel.sap}</version.org.fusesource.camel-sap>
         <version.org.fusesource.camel-sap-starter>${version.fusesource.camel.sap}</version.org.fusesource.camel-sap-starter>
-        <version.me.snowdrop.narayana-spring-boot-starter>${version.narayana-spring-boot}</version.me.snowdrop.narayana-spring-boot-starter>
         <version.me.snowdrop.narayana-spring-boot-recovery-controller>${version.narayana-spring-boot}</version.me.snowdrop.narayana-spring-boot-recovery-controller>
         <version.me.snowdrop.narayana-spring-boot-core>${version.narayana-spring-boot}</version.me.snowdrop.narayana-spring-boot-core>
         <version.me.snowdrop.narayana-spring-boot-starter-it>${version.narayana-spring-boot}</version.me.snowdrop.narayana-spring-boot-starter-it>
-        <version.io.undertow.undertow-core>2.0.15.Final-redhat-00001</version.io.undertow.undertow-core>
         <version.io.undertow.undertow-servlet>2.0.15.Final-redhat-00001</version.io.undertow.undertow-servlet>
         <version.io.undertow.undertow-websockets-jsr>2.0.15.Final-redhat-00001</version.io.undertow.undertow-websockets-jsr>
         <version.org.slf4j.slf4j-api>1.7.22.redhat-2</version.org.slf4j.slf4j-api>
@@ -118,13 +117,10 @@
         <version.junit.junit>4.12</version.junit.junit>
         <version.org.assertj.assertj-core>2.4.1</version.org.assertj.assertj-core>
         <version.org.jolokia.jolokia-core>1.5.0.redhat-1</version.org.jolokia.jolokia-core>
-        <version.org.hibernate.hibernate-validator>5.3.5.Final-redhat-2</version.org.hibernate.hibernate-validator>
         <version.javax.enterprise.cdi-api>1.2</version.javax.enterprise.cdi-api>
-        <version.javax.el.javax.el-api>2.2.5</version.javax.el.javax.el-api>
         <version.org.slf4j.log4j-over-slf4j>1.7.22.redhat-2</version.org.slf4j.log4j-over-slf4j>
         <version.javax.annotation.jsr250-api>1.0</version.javax.annotation.jsr250-api>
         <version.org.apache.httpcomponents.httpcore-nio>4.4.10</version.org.apache.httpcomponents.httpcore-nio>
-        <version.org.hibernate.hibernate-entitymanager>5.2.16.Final</version.org.hibernate.hibernate-entitymanager>
         <version.xml-apis.xml-apis>1.4.01</version.xml-apis.xml-apis>
         <version.org.apache.cxf.cxf-rt-rs-service-description-openapi-v3>${version.cxf}</version.org.apache.cxf.cxf-rt-rs-service-description-openapi-v3>
         <version.org.apache.cxf.cxf-spring-boot-starter-jaxrs>${version.cxf}</version.org.apache.cxf.cxf-spring-boot-starter-jaxrs>
@@ -202,47 +198,10 @@
         <version.org.apache.httpcomponents.fluent-hc>4.5.5</version.org.apache.httpcomponents.fluent-hc>
         <version.javax.activation.activation>1.1.1</version.javax.activation.activation>
         <version.org.jboss.shrinkwrap.resolver.shrinkwrap-resolver-spi-maven-archive>2.2.2</version.org.jboss.shrinkwrap.resolver.shrinkwrap-resolver-spi-maven-archive>
-        <version.org.springframework.boot.spring-boot-starter>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-starter>
-        <version.org.springframework.boot.spring-boot-starter-test>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-starter-test>
-        <version.org.springframework.boot.spring-boot-starter-tomcat>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-starter-tomcat>
-        <version.org.springframework.boot.spring-boot-starter-undertow>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-starter-undertow>
-        <version.org.springframework.boot.spring-boot-starter-web>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-starter-web>
-        <version.org.springframework.boot.spring-boot-starter-data-jpa>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-starter-data-jpa>
-        <version.org.springframework.boot.spring-boot-starter-jdbc>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-starter-jdbc>
-        <version.org.springframework.boot.spring-boot-starter-actuator>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-starter-actuator>
-        <version.org.springframework.cloud.spring-cloud-starter-kubernetes>1.0.1.RELEASE</version.org.springframework.cloud.spring-cloud-starter-kubernetes>
-        <version.org.springframework.cloud.spring-cloud-starter-kubernetes-config>1.0.1.RELEASE</version.org.springframework.cloud.spring-cloud-starter-kubernetes-config>
-        <version.org.springframework.boot.spring-boot-starter-activemq>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-starter-activemq>
-        <version.org.apache.tomcat.embed.tomcat-embed-core>8.0.36.redhat-35</version.org.apache.tomcat.embed.tomcat-embed-core>
         <version.org.apache.tomcat.embed.tomcat-embed-el>8.0.36.redhat-35</version.org.apache.tomcat.embed.tomcat-embed-el>
         <version.org.apache.tomcat.embed.tomcat-embed-jasper>8.0.36.redhat-35</version.org.apache.tomcat.embed.tomcat-embed-jasper>
         <version.org.apache.tomcat.embed.tomcat-embed-websocket>8.0.36.redhat-35</version.org.apache.tomcat.embed.tomcat-embed-websocket>
         <version.org.apache.tomcat.tomcat-jdbc>8.0.36.redhat-35</version.org.apache.tomcat.tomcat-jdbc>
-        <version.org.springframework.boot.spring-boot>2.1.3.RELEASE</version.org.springframework.boot.spring-boot>
-        <version.org.springframework.boot.spring-boot-test>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-test>
-        <version.org.springframework.boot.spring-boot-test-autoconfigure>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-test-autoconfigure>
-        <version.org.springframework.boot.spring-boot-actuator>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-actuator>
-        <version.org.springframework.boot.spring-boot-actuator-autoconfigure>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-actuator-autoconfigure>
-        <version.org.springframework.boot.spring-boot-autoconfigure>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-autoconfigure>
-        <version.org.springframework.boot.spring-boot-autoconfigure-processor>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-autoconfigure-processor>
-        <version.org.springframework.boot.spring-boot-configuration-metadata>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-configuration-metadata>
-        <version.org.springframework.boot.spring-boot-configuration-processor>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-configuration-processor>
-        <version.org.springframework.boot.spring-boot-devtools>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-devtools>
-        <version.org.springframework.boot.spring-boot-loader>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-loader>
-        <version.org.springframework.boot.spring-boot-loader-tools>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-loader-tools>
-        <version.org.springframework.boot.spring-boot-properties-migrator>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-properties-migrator>
-        <version.org.springframework.boot.spring-boot-starter-amqp>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-starter-amqp>
-        <version.org.springframework.boot.spring-boot-starter-cache>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-starter-cache>
-        <version.org.springframework.boot.spring-boot-starter-data-cassandra-reactive>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-starter-data-cassandra-reactive>
-        <version.org.springframework.boot.spring-boot-starter-data-couchbase-reactive>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-starter-data-couchbase-reactive>
-        <version.org.springframework.boot.spring-boot-starter-data-jdbc>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-starter-data-jdbc>
-        <version.org.springframework.boot.spring-boot-starter-data-mongodb-reactive>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-starter-data-mongodb-reactive>
-        <version.org.springframework.boot.spring-boot-starter-json>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-starter-json>
-        <version.org.springframework.boot.spring-boot-starter-logging>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-starter-logging>
-        <version.org.springframework.boot.spring-boot-starter-oauth2-client>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-starter-oauth2-client>
-        <version.org.springframework.boot.spring-boot-starter-oauth2-resource-server>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-starter-oauth2-resource-server>
-        <version.org.springframework.boot.spring-boot-starter-quartz>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-starter-quartz>
-        <version.org.springframework.boot.spring-boot-starter-security>2.1.3.RELEASE</version.org.springframework.boot.spring-boot-starter-security>
         <version.com.datastax.cassandra.cassandra-driver-core>3.6.0</version.com.datastax.cassandra.cassandra-driver-core>
         <version.com.datastax.cassandra.cassandra-driver-mapping>3.6.0</version.com.datastax.cassandra.cassandra-driver-mapping>
         <version.com.github.ben-manes.caffeine.caffeine>2.6.2</version.com.github.ben-manes.caffeine.caffeine>
@@ -1339,7 +1298,6 @@
         <version.io.fabric8.spring-cloud-kubernetes-core>${version.spring-cloud-kubernetes}</version.io.fabric8.spring-cloud-kubernetes-core>
         <version.commons-beanutils.commons-beanutils>1.9.3</version.commons-beanutils.commons-beanutils>
         <version.commons-collections.commons-collections>3.2.2</version.commons-collections.commons-collections>
-        <version.commons-codec.commons-codec>1.10</version.commons-codec.commons-codec>
         <version.commons-dbcp.commons-dbcp>1.4</version.commons-dbcp.commons-dbcp>
         <version.commons-digester.commons-digester>2.1</version.commons-digester.commons-digester>
         <version.javax.cache.cache-api>1.0.0</version.javax.cache.cache-api>
@@ -1348,11 +1306,7 @@
         <version.javax.servlet.jstl>1.2</version.javax.servlet.jstl>
         <version.javax.transaction.javax.transaction-api>1.2</version.javax.transaction.javax.transaction-api>
         <version.javax.validation.validation-api>2.0.1.Final</version.javax.validation.validation-api>
-        <version.org.springframework.cloud.spring-cloud-cloudfoundry-connector>1.2.6.RELEASE</version.org.springframework.cloud.spring-cloud-cloudfoundry-connector>
         <version.org.springframework.cloud.spring-cloud-core>1.2.6.RELEASE</version.org.springframework.cloud.spring-cloud-core>
-        <version.org.springframework.cloud.spring-cloud-heroku-connector>1.2.6.RELEASE</version.org.springframework.cloud.spring-cloud-heroku-connector>
-        <version.org.springframework.cloud.spring-cloud-localconfig-connector>1.2.6.RELEASE</version.org.springframework.cloud.spring-cloud-localconfig-connector>
-        <version.org.springframework.cloud.spring-cloud-spring-service-connector>1.2.6.RELEASE</version.org.springframework.cloud.spring-cloud-spring-service-connector>
         <version.org.springframework.cloud.spring-cloud-commons>1.1.7.RELEASE</version.org.springframework.cloud.spring-cloud-commons>
         <version.org.springframework.cloud.spring-cloud-context>1.1.7.RELEASE</version.org.springframework.cloud.spring-cloud-context>
         <version.org.springframework.cloud.spring-cloud-starter>1.1.7.RELEASE</version.org.springframework.cloud.spring-cloud-starter>
@@ -1459,20 +1413,27 @@
         <version.org.apache.qpid.qpid-jms-client>0.37.0.redhat-00001</version.org.apache.qpid.qpid-jms-client>
         <version.org.apache.qpid.proton-j>0.29.0.redhat-00001</version.org.apache.qpid.proton-j>
         <version.javax.el.javax.el-api>3.0.0</version.javax.el.javax.el-api>
-        <version.org.hibernate.hibernate-core>5.3.7.Final-redhat-00001</version.org.hibernate.hibernate-core>
         <version.io.fabric8.hawt-app-maven-plugin>3.0.11.sb2.redhat-SNAPSHOT</version.io.fabric8.hawt-app-maven-plugin>
         <version.io.fabric8.docker-maven-plugin>0.23.0.fuse-730009</version.io.fabric8.docker-maven-plugin>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-    <dependency>
-        <groupId>org.jboss.redhat-fuse</groupId>
-        <artifactId>redhat-fuse</artifactId>
-        <version>${project.version}</version>
+            <dependency>
+                <groupId>org.jboss.redhat-fuse</groupId>
+                <artifactId>redhat-fuse</artifactId>
+                <version>${project.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
-    </dependency>
+            </dependency>
+
+            <dependency>
+                <groupId>me.snowdrop</groupId>
+                <artifactId>spring-boot-bom</artifactId>
+                <version>${rhoar.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
 
             <dependency>
                 <groupId>io.fabric8</groupId>
@@ -1712,11 +1673,6 @@
             </dependency>
             <dependency>
                 <groupId>me.snowdrop</groupId>
-                <artifactId>narayana-spring-boot-starter</artifactId>
-                <version>${version.me.snowdrop.narayana-spring-boot-starter}</version>
-            </dependency>
-            <dependency>
-                <groupId>me.snowdrop</groupId>
                 <artifactId>narayana-spring-boot-recovery-controller</artifactId>
                 <version>${version.me.snowdrop.narayana-spring-boot-recovery-controller}</version>
             </dependency>
@@ -1729,21 +1685,6 @@
                 <groupId>me.snowdrop</groupId>
                 <artifactId>narayana-spring-boot-starter-it</artifactId>
                 <version>${version.me.snowdrop.narayana-spring-boot-starter-it}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.undertow</groupId>
-                <artifactId>undertow-core</artifactId>
-                <version>${version.io.undertow.undertow-core}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.undertow</groupId>
-                <artifactId>undertow-servlet</artifactId>
-                <version>${version.io.undertow.undertow-servlet}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.undertow</groupId>
-                <artifactId>undertow-websockets-jsr</artifactId>
-                <version>${version.io.undertow.undertow-websockets-jsr}</version>
             </dependency>
             <dependency>
                 <groupId>org.slf4j</groupId>
@@ -1791,19 +1732,9 @@
                 <version>${version.org.jolokia.jolokia-core}</version>
             </dependency>
             <dependency>
-                <groupId>org.hibernate</groupId>
-                <artifactId>hibernate-validator</artifactId>
-                <version>${version.org.hibernate.hibernate-validator}</version>
-            </dependency>
-            <dependency>
                 <groupId>javax.enterprise</groupId>
                 <artifactId>cdi-api</artifactId>
                 <version>${version.javax.enterprise.cdi-api}</version>
-            </dependency>
-            <dependency>
-                <groupId>javax.el</groupId>
-                <artifactId>javax.el-api</artifactId>
-                <version>${version.javax.el.javax.el-api}</version>
             </dependency>
             <dependency>
                 <groupId>org.slf4j</groupId>
@@ -1819,11 +1750,6 @@
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpcore-nio</artifactId>
                 <version>${version.org.apache.httpcomponents.httpcore-nio}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.hibernate</groupId>
-                <artifactId>hibernate-entitymanager</artifactId>
-                <version>${version.org.hibernate.hibernate-entitymanager}</version>
             </dependency>
             <dependency>
                 <groupId>xml-apis</groupId>
@@ -2217,223 +2143,6 @@
                 <groupId>org.jboss.shrinkwrap.resolver</groupId>
                 <artifactId>shrinkwrap-resolver-spi-maven-archive</artifactId>
                 <version>${version.org.jboss.shrinkwrap.resolver.shrinkwrap-resolver-spi-maven-archive}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-starter}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>commons-logging</groupId>
-                        <artifactId>commons-logging</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-test</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-starter-test}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>commons-logging</groupId>
-                        <artifactId>commons-logging</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-tomcat</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-starter-tomcat}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-undertow</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-starter-undertow}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-web</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-starter-web}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-data-jpa</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-starter-data-jpa}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-jdbc</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-starter-jdbc}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-actuator</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-starter-actuator}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-kubernetes</artifactId>
-                <version>${version.org.springframework.cloud.spring-cloud-starter-kubernetes}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-kubernetes-config</artifactId>
-                <version>${version.org.springframework.cloud.spring-cloud-starter-kubernetes-config}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-activemq</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-starter-activemq}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.tomcat.embed</groupId>
-                <artifactId>tomcat-embed-core</artifactId>
-                <version>${version.org.apache.tomcat.embed.tomcat-embed-core}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.tomcat.embed</groupId>
-                <artifactId>tomcat-embed-el</artifactId>
-                <version>${version.org.apache.tomcat.embed.tomcat-embed-el}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.tomcat.embed</groupId>
-                <artifactId>tomcat-embed-jasper</artifactId>
-                <version>${version.org.apache.tomcat.embed.tomcat-embed-jasper}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.tomcat.embed</groupId>
-                <artifactId>tomcat-embed-websocket</artifactId>
-                <version>${version.org.apache.tomcat.embed.tomcat-embed-websocket}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.tomcat</groupId>
-                <artifactId>tomcat-jdbc</artifactId>
-                <version>${version.org.apache.tomcat.tomcat-jdbc}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot</artifactId>
-                <version>${version.org.springframework.boot.spring-boot}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-test</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-test}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-test-autoconfigure</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-test-autoconfigure}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-actuator</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-actuator}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-actuator-autoconfigure</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-actuator-autoconfigure}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-autoconfigure</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-autoconfigure}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-autoconfigure-processor</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-autoconfigure-processor}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-configuration-metadata</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-configuration-metadata}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-configuration-processor</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-configuration-processor}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-devtools</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-devtools}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-loader</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-loader}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-loader-tools</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-loader-tools}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-properties-migrator</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-properties-migrator}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-amqp</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-starter-amqp}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-cache</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-starter-cache}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-data-cassandra-reactive</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-starter-data-cassandra-reactive}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-data-couchbase-reactive</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-starter-data-couchbase-reactive}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-data-jdbc</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-starter-data-jdbc}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-data-mongodb-reactive</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-starter-data-mongodb-reactive}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-json</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-starter-json}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-logging</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-starter-logging}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-oauth2-client</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-starter-oauth2-client}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-starter-oauth2-resource-server}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-quartz</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-starter-quartz}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-security</artifactId>
-                <version>${version.org.springframework.boot.spring-boot-starter-security}</version>
             </dependency>
             <dependency>
                 <groupId>com.datastax.cassandra</groupId>
@@ -8111,11 +7820,6 @@
                 <version>${version.commons-collections.commons-collections}</version>
             </dependency>
             <dependency>
-                <groupId>commons-codec</groupId>
-                <artifactId>commons-codec</artifactId>
-                <version>${version.commons-codec.commons-codec}</version>
-            </dependency>
-            <dependency>
                 <groupId>commons-dbcp</groupId>
                 <artifactId>commons-dbcp</artifactId>
                 <version>${version.commons-dbcp.commons-dbcp}</version>
@@ -8157,28 +7861,8 @@
             </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-cloudfoundry-connector</artifactId>
-                <version>${version.org.springframework.cloud.spring-cloud-cloudfoundry-connector}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-core</artifactId>
                 <version>${version.org.springframework.cloud.spring-cloud-core}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-heroku-connector</artifactId>
-                <version>${version.org.springframework.cloud.spring-cloud-heroku-connector}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-localconfig-connector</artifactId>
-                <version>${version.org.springframework.cloud.spring-cloud-localconfig-connector}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-spring-service-connector</artifactId>
-                <version>${version.org.springframework.cloud.spring-cloud-spring-service-connector}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
@@ -8709,11 +8393,6 @@
                 <groupId>javax.el</groupId>
                 <artifactId>javax.el-api</artifactId>
                 <version>${version.javax.el.javax.el-api}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.hibernate</groupId>
-                <artifactId>hibernate-core</artifactId>
-                <version>${version.org.hibernate.hibernate-core}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
