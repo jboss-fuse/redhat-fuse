@@ -1307,8 +1307,8 @@
         <version.javax.transaction.javax.transaction-api>1.2</version.javax.transaction.javax.transaction-api>
         <version.javax.validation.validation-api>2.0.1.Final</version.javax.validation.validation-api>
         <version.org.springframework.cloud.spring-cloud-core>1.2.6.RELEASE</version.org.springframework.cloud.spring-cloud-core>
-        <version.org.springframework.cloud.spring-cloud-commons>1.1.7.RELEASE</version.org.springframework.cloud.spring-cloud-commons>
-        <version.org.springframework.cloud.spring-cloud-context>1.1.7.RELEASE</version.org.springframework.cloud.spring-cloud-context>
+        <version.org.springframework.cloud.spring-cloud-commons>2.1.1.RELEASE</version.org.springframework.cloud.spring-cloud-commons>
+        <version.org.springframework.cloud.spring-cloud-context>2.1.1.RELEASE</version.org.springframework.cloud.spring-cloud-context>
         <version.org.springframework.cloud.spring-cloud-starter>1.1.7.RELEASE</version.org.springframework.cloud.spring-cloud-starter>
         <version.org.springframework.cloud.spring-cloud-starter-archaius>1.2.5.RELEASE</version.org.springframework.cloud.spring-cloud-starter-archaius>
         <version.org.springframework.cloud.spring-cloud-starter-atlas>1.2.5.RELEASE</version.org.springframework.cloud.spring-cloud-starter-atlas>
