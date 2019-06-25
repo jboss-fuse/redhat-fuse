@@ -1,18 +1,18 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 
     <parent>
         <groupId>org.jboss.redhat-fuse</groupId>
         <artifactId>fuse-springboot</artifactId>
-        <version>7.4.0.fuse-sb2-740006</version>
+        <version>7.4.0.fuse-sb2-740006-redhat-00001</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.jboss.redhat-fuse</groupId>
     <artifactId>fabric8-project-bom-camel-spring-boot</artifactId>
-    <version>7.4.0.fuse-sb2-740006</version>
+    <version>7.4.0.fuse-sb2-740006-redhat-00001</version>
     <name>Fabric8 :: Project :: Bom for Camel and Spring-Boot</name>
     <packaging>pom</packaging>
     <description>Bill of material</description>
@@ -94,9 +94,9 @@
         <version.io.fabric8.fabric8-karaf-itests>${version.fabric8}</version.io.fabric8.fabric8-karaf-itests>
         <version.io.fabric8.swagger-annotator>${version.fabric8}</version.io.fabric8.swagger-annotator>
         <version.io.fabric8.swagger-model>${version.fabric8}</version.io.fabric8.swagger-model>
-        <version.io.fabric8.hawt-app-maven-plugin>${version.fabric8}</version.io.fabric8.hawt-app-maven-plugin>
+        <version.io.fabric8.hawt-app-maven-plugin>3.0.11.sb2.redhat-SNAPSHOT</version.io.fabric8.hawt-app-maven-plugin>
         <version.javax.servlet.javax.servlet-api>4.0.1</version.javax.servlet.javax.servlet-api>
-        <version.javax.ws.rs.javax.ws.rs-api>2.1.1</version.javax.ws.rs.javax.ws.rs-api>
+        <version.javax.ws.rs.javax.ws.rs-api>2.1.1.redhat-00002</version.javax.ws.rs.javax.ws.rs-api>
         <version.io.fabric8.kubernetes-client>4.1.0</version.io.fabric8.kubernetes-client>
         <version.io.fabric8.openshift-client>4.1.0</version.io.fabric8.openshift-client>
         <version.io.fabric8.openshift-server-mock>4.1.0</version.io.fabric8.openshift-server-mock>
@@ -114,10 +114,10 @@
         <version.org.slf4j.slf4j-jdk14>1.7.22.redhat-2</version.org.slf4j.slf4j-jdk14>
         <version.org.slf4j.jul-to-slf4j>1.7.22.redhat-2</version.org.slf4j.jul-to-slf4j>
         <version.io.swagger.swagger-jaxrs>1.5.18.fuse70-1-redhat-1</version.io.swagger.swagger-jaxrs>
-        <version.junit.junit>4.12</version.junit.junit>
+        <version.junit.junit>4.12.0.redhat-003</version.junit.junit>
         <version.org.assertj.assertj-core>2.4.1</version.org.assertj.assertj-core>
         <version.org.jolokia.jolokia-core>1.5.0.redhat-1</version.org.jolokia.jolokia-core>
-        <version.javax.enterprise.cdi-api>1.2</version.javax.enterprise.cdi-api>
+        <version.javax.enterprise.cdi-api>1.2.0.redhat-2</version.javax.enterprise.cdi-api>
         <version.org.slf4j.log4j-over-slf4j>1.7.22.redhat-2</version.org.slf4j.log4j-over-slf4j>
         <version.javax.annotation.jsr250-api>1.0</version.javax.annotation.jsr250-api>
         <version.org.apache.httpcomponents.httpcore-nio>4.4.10</version.org.apache.httpcomponents.httpcore-nio>
@@ -166,13 +166,13 @@
         <version.org.jboss.arquillian.testenricher.arquillian-testenricher-ejb>1.1.12.Final</version.org.jboss.arquillian.testenricher.arquillian-testenricher-ejb>
         <version.org.jboss.arquillian.testenricher.arquillian-testenricher-resource>1.1.12.Final</version.org.jboss.arquillian.testenricher.arquillian-testenricher-resource>
         <version.org.jboss.arquillian.testenricher.arquillian-testenricher-initialcontext>1.1.12.Final</version.org.jboss.arquillian.testenricher.arquillian-testenricher-initialcontext>
-        <version.org.jboss.shrinkwrap.shrinkwrap-api>1.2.6</version.org.jboss.shrinkwrap.shrinkwrap-api>
-        <version.org.jboss.shrinkwrap.shrinkwrap-spi>1.2.6</version.org.jboss.shrinkwrap.shrinkwrap-spi>
-        <version.org.jboss.shrinkwrap.shrinkwrap-impl-base>1.2.6</version.org.jboss.shrinkwrap.shrinkwrap-impl-base>
-        <version.org.jboss.shrinkwrap.shrinkwrap-api-nio2>1.2.6</version.org.jboss.shrinkwrap.shrinkwrap-api-nio2>
-        <version.org.jboss.shrinkwrap.shrinkwrap-impl-nio2>1.2.6</version.org.jboss.shrinkwrap.shrinkwrap-impl-nio2>
-        <version.org.jboss.shrinkwrap.shrinkwrap-depchain>1.2.6</version.org.jboss.shrinkwrap.shrinkwrap-depchain>
-        <version.org.jboss.shrinkwrap.shrinkwrap-depchain-java7>1.2.6</version.org.jboss.shrinkwrap.shrinkwrap-depchain-java7>
+        <version.org.jboss.shrinkwrap.shrinkwrap-api>1.2.6.redhat-118</version.org.jboss.shrinkwrap.shrinkwrap-api>
+        <version.org.jboss.shrinkwrap.shrinkwrap-spi>1.2.6.redhat-118</version.org.jboss.shrinkwrap.shrinkwrap-spi>
+        <version.org.jboss.shrinkwrap.shrinkwrap-impl-base>1.2.6.redhat-118</version.org.jboss.shrinkwrap.shrinkwrap-impl-base>
+        <version.org.jboss.shrinkwrap.shrinkwrap-api-nio2>1.2.6.redhat-118</version.org.jboss.shrinkwrap.shrinkwrap-api-nio2>
+        <version.org.jboss.shrinkwrap.shrinkwrap-impl-nio2>1.2.6.redhat-118</version.org.jboss.shrinkwrap.shrinkwrap-impl-nio2>
+        <version.org.jboss.shrinkwrap.shrinkwrap-depchain>1.2.6.redhat-118</version.org.jboss.shrinkwrap.shrinkwrap-depchain>
+        <version.org.jboss.shrinkwrap.shrinkwrap-depchain-java7>1.2.6.redhat-118</version.org.jboss.shrinkwrap.shrinkwrap-depchain-java7>
         <version.org.jboss.shrinkwrap.descriptors.shrinkwrap-descriptors-api-base>2.0.0-alpha-10</version.org.jboss.shrinkwrap.descriptors.shrinkwrap-descriptors-api-base>
         <version.org.jboss.shrinkwrap.descriptors.shrinkwrap-descriptors-api-javaee>2.0.0-alpha-10</version.org.jboss.shrinkwrap.descriptors.shrinkwrap-descriptors-api-javaee>
         <version.org.jboss.shrinkwrap.descriptors.shrinkwrap-descriptors-api-jboss>2.0.0-alpha-10</version.org.jboss.shrinkwrap.descriptors.shrinkwrap-descriptors-api-jboss>
@@ -184,7 +184,7 @@
         <version.org.jboss.shrinkwrap.descriptors.shrinkwrap-descriptors-depchain>2.0.0-alpha-10</version.org.jboss.shrinkwrap.descriptors.shrinkwrap-descriptors-depchain>
         <version.io.fabric8.openshift-client>4.1.0</version.io.fabric8.openshift-client>
         <version.io.fabric8.kubernetes-client>4.1.0</version.io.fabric8.kubernetes-client>
-        <version.javax.inject.javax.inject>1</version.javax.inject.javax.inject>
+        <version.javax.inject.javax.inject>1.0.0.redhat-6</version.javax.inject.javax.inject>
         <version.javax.javaee-api>7.0</version.javax.javaee-api>
         <version.org.jboss.arquillian.container.arquillian-weld-ee-embedded-1.1>1.0.0.CR9</version.org.jboss.arquillian.container.arquillian-weld-ee-embedded-1.1>
         <version.io.swagger.swagger-core>1.5.18.fuse70-1-redhat-1</version.io.swagger.swagger-core>
@@ -196,7 +196,7 @@
         <version.javax.servlet.jsp.jsp-api>2.1</version.javax.servlet.jsp.jsp-api>
         <version.javax.ws.rs.jsr311-api>1.1.1</version.javax.ws.rs.jsr311-api>
         <version.org.apache.httpcomponents.fluent-hc>4.5.5</version.org.apache.httpcomponents.fluent-hc>
-        <version.javax.activation.activation>1.1.1</version.javax.activation.activation>
+        <version.javax.activation.activation>1.1.1.redhat-5</version.javax.activation.activation>
         <version.org.jboss.shrinkwrap.resolver.shrinkwrap-resolver-spi-maven-archive>2.2.2</version.org.jboss.shrinkwrap.resolver.shrinkwrap-resolver-spi-maven-archive>
         <version.org.apache.tomcat.embed.tomcat-embed-el>8.0.36.redhat-35</version.org.apache.tomcat.embed.tomcat-embed-el>
         <version.org.apache.tomcat.embed.tomcat-embed-jasper>8.0.36.redhat-35</version.org.apache.tomcat.embed.tomcat-embed-jasper>
@@ -204,61 +204,61 @@
         <version.org.apache.tomcat.tomcat-jdbc>8.0.36.redhat-35</version.org.apache.tomcat.tomcat-jdbc>
         <version.com.datastax.cassandra.cassandra-driver-core>3.6.0</version.com.datastax.cassandra.cassandra-driver-core>
         <version.com.datastax.cassandra.cassandra-driver-mapping>3.6.0</version.com.datastax.cassandra.cassandra-driver-mapping>
-        <version.com.github.ben-manes.caffeine.caffeine>2.6.2</version.com.github.ben-manes.caffeine.caffeine>
-        <version.com.google.code.gson.gson>2.8.5</version.com.google.code.gson.gson>
-        <version.commons-codec.commons-codec>1.11</version.commons-codec.commons-codec>
-        <version.commons-pool.commons-pool>1.6</version.commons-pool.commons-pool>
+        <version.com.github.ben-manes.caffeine.caffeine>2.6.2.redhat-1</version.com.github.ben-manes.caffeine.caffeine>
+        <version.com.google.code.gson.gson>2.8.5.redhat-00001</version.com.google.code.gson.gson>
+        <version.commons-codec.commons-codec>1.11.0.redhat-00001</version.commons-codec.commons-codec>
+        <version.commons-pool.commons-pool>1.6.0.redhat-10</version.commons-pool.commons-pool>
         <version.de.flapdoodle.embed.de.flapdoodle.embed.mongo>2.1.2</version.de.flapdoodle.embed.de.flapdoodle.embed.mongo>
         <version.mysql.mysql-connector-java>8.0.15</version.mysql.mysql-connector-java>
         <version.net.sf.ehcache.ehcache>2.10.6</version.net.sf.ehcache.ehcache>
-        <version.org.apache.activemq.activemq-amqp>5.11.0.redhat-630377</version.org.apache.activemq.activemq-amqp>
-        <version.org.apache.activemq.activemq-blueprint>5.11.0.redhat-630377</version.org.apache.activemq.activemq-blueprint>
-        <version.org.apache.activemq.activemq-broker>5.11.0.redhat-630377</version.org.apache.activemq.activemq-broker>
-        <version.org.apache.activemq.activemq-client>5.11.0.redhat-630377</version.org.apache.activemq.activemq-client>
-        <version.org.apache.activemq.activemq-console>5.11.0.redhat-630377</version.org.apache.activemq.activemq-console>
-        <version.org.apache.activemq.activemq-http>5.11.0.redhat-630377</version.org.apache.activemq.activemq-http>
-        <version.org.apache.activemq.activemq-jaas>5.11.0.redhat-630377</version.org.apache.activemq.activemq-jaas>
-        <version.org.apache.activemq.activemq-jdbc-store>5.11.0.redhat-630377</version.org.apache.activemq.activemq-jdbc-store>
-        <version.org.apache.activemq.activemq-jms-pool>5.11.0.redhat-630377</version.org.apache.activemq.activemq-jms-pool>
-        <version.org.apache.activemq.activemq-kahadb-store>5.11.0.redhat-630377</version.org.apache.activemq.activemq-kahadb-store>
-        <version.org.apache.activemq.activemq-karaf>5.11.0.redhat-630377</version.org.apache.activemq.activemq-karaf>
-        <version.org.apache.activemq.activemq-leveldb-store>5.11.0.redhat-630377</version.org.apache.activemq.activemq-leveldb-store>
-        <version.org.apache.activemq.activemq-log4j-appender>5.11.0.redhat-630377</version.org.apache.activemq.activemq-log4j-appender>
-        <version.org.apache.activemq.activemq-mqtt>5.11.0.redhat-630377</version.org.apache.activemq.activemq-mqtt>
-        <version.org.apache.activemq.activemq-openwire-generator>5.11.0.redhat-630377</version.org.apache.activemq.activemq-openwire-generator>
-        <version.org.apache.activemq.activemq-openwire-legacy>5.11.0.redhat-630377</version.org.apache.activemq.activemq-openwire-legacy>
-        <version.org.apache.activemq.activemq-osgi>5.11.0.redhat-630377</version.org.apache.activemq.activemq-osgi>
-        <version.org.apache.activemq.activemq-partition>5.11.0.redhat-630377</version.org.apache.activemq.activemq-partition>
-        <version.org.apache.activemq.activemq-pool>5.11.0.redhat-630377</version.org.apache.activemq.activemq-pool>
-        <version.org.apache.activemq.activemq-ra>5.11.0.redhat-630377</version.org.apache.activemq.activemq-ra>
-        <version.org.apache.activemq.activemq-run>5.11.0.redhat-630377</version.org.apache.activemq.activemq-run>
-        <version.org.apache.activemq.activemq-runtime-config>5.11.0.redhat-630377</version.org.apache.activemq.activemq-runtime-config>
-        <version.org.apache.activemq.activemq-shiro>5.11.0.redhat-630377</version.org.apache.activemq.activemq-shiro>
-        <version.org.apache.activemq.activemq-spring>5.11.0.redhat-630377</version.org.apache.activemq.activemq-spring>
-        <version.org.apache.activemq.activemq-stomp>5.11.0.redhat-630377</version.org.apache.activemq.activemq-stomp>
-        <version.org.apache.activemq.activemq-web>5.11.0.redhat-630377</version.org.apache.activemq.activemq-web>
-        <version.org.apache.activemq.artemis-amqp-protocol>2.6.3.redhat-00015</version.org.apache.activemq.artemis-amqp-protocol>
-        <version.org.apache.activemq.artemis-commons>2.6.3.redhat-00015</version.org.apache.activemq.artemis-commons>
-        <version.org.apache.activemq.artemis-core-client>2.6.3.redhat-00015</version.org.apache.activemq.artemis-core-client>
-        <version.org.apache.activemq.artemis-jms-client>2.6.3.redhat-00015</version.org.apache.activemq.artemis-jms-client>
-        <version.org.apache.activemq.artemis-jms-server>2.6.3.redhat-00015</version.org.apache.activemq.artemis-jms-server>
-        <version.org.apache.activemq.artemis-journal>2.6.3.redhat-00015</version.org.apache.activemq.artemis-journal>
-        <version.org.apache.activemq.artemis-native>2.6.3.redhat-00015</version.org.apache.activemq.artemis-native>
-        <version.org.apache.activemq.artemis-selector>2.6.3.redhat-00015</version.org.apache.activemq.artemis-selector>
-        <version.org.apache.activemq.artemis-server>2.6.3.redhat-00015</version.org.apache.activemq.artemis-server>
-        <version.org.apache.activemq.artemis-service-extensions>2.6.3.redhat-00015</version.org.apache.activemq.artemis-service-extensions>
+        <version.org.apache.activemq.activemq-amqp>5.11.0.redhat-630396</version.org.apache.activemq.activemq-amqp>
+        <version.org.apache.activemq.activemq-blueprint>5.11.0.redhat-630396</version.org.apache.activemq.activemq-blueprint>
+        <version.org.apache.activemq.activemq-broker>5.11.0.redhat-630396</version.org.apache.activemq.activemq-broker>
+        <version.org.apache.activemq.activemq-client>5.11.0.redhat-630396</version.org.apache.activemq.activemq-client>
+        <version.org.apache.activemq.activemq-console>5.11.0.redhat-630396</version.org.apache.activemq.activemq-console>
+        <version.org.apache.activemq.activemq-http>5.11.0.redhat-630396</version.org.apache.activemq.activemq-http>
+        <version.org.apache.activemq.activemq-jaas>5.11.0.redhat-630396</version.org.apache.activemq.activemq-jaas>
+        <version.org.apache.activemq.activemq-jdbc-store>5.11.0.redhat-630396</version.org.apache.activemq.activemq-jdbc-store>
+        <version.org.apache.activemq.activemq-jms-pool>5.11.0.redhat-630396</version.org.apache.activemq.activemq-jms-pool>
+        <version.org.apache.activemq.activemq-kahadb-store>5.11.0.redhat-630396</version.org.apache.activemq.activemq-kahadb-store>
+        <version.org.apache.activemq.activemq-karaf>5.11.0.redhat-630396</version.org.apache.activemq.activemq-karaf>
+        <version.org.apache.activemq.activemq-leveldb-store>5.11.0.redhat-630396</version.org.apache.activemq.activemq-leveldb-store>
+        <version.org.apache.activemq.activemq-log4j-appender>5.11.0.redhat-630396</version.org.apache.activemq.activemq-log4j-appender>
+        <version.org.apache.activemq.activemq-mqtt>5.11.0.redhat-630396</version.org.apache.activemq.activemq-mqtt>
+        <version.org.apache.activemq.activemq-openwire-generator>5.11.0.redhat-630396</version.org.apache.activemq.activemq-openwire-generator>
+        <version.org.apache.activemq.activemq-openwire-legacy>5.11.0.redhat-630396</version.org.apache.activemq.activemq-openwire-legacy>
+        <version.org.apache.activemq.activemq-osgi>5.11.0.redhat-630396</version.org.apache.activemq.activemq-osgi>
+        <version.org.apache.activemq.activemq-partition>5.11.0.redhat-630396</version.org.apache.activemq.activemq-partition>
+        <version.org.apache.activemq.activemq-pool>5.11.0.redhat-630396</version.org.apache.activemq.activemq-pool>
+        <version.org.apache.activemq.activemq-ra>5.11.0.redhat-630396</version.org.apache.activemq.activemq-ra>
+        <version.org.apache.activemq.activemq-run>5.11.0.redhat-630396</version.org.apache.activemq.activemq-run>
+        <version.org.apache.activemq.activemq-runtime-config>5.11.0.redhat-630396</version.org.apache.activemq.activemq-runtime-config>
+        <version.org.apache.activemq.activemq-shiro>5.11.0.redhat-630396</version.org.apache.activemq.activemq-shiro>
+        <version.org.apache.activemq.activemq-spring>5.11.0.redhat-630396</version.org.apache.activemq.activemq-spring>
+        <version.org.apache.activemq.activemq-stomp>5.11.0.redhat-630396</version.org.apache.activemq.activemq-stomp>
+        <version.org.apache.activemq.activemq-web>5.11.0.redhat-630396</version.org.apache.activemq.activemq-web>
+        <version.org.apache.activemq.artemis-amqp-protocol>2.6.3.redhat-00053</version.org.apache.activemq.artemis-amqp-protocol>
+        <version.org.apache.activemq.artemis-commons>2.6.3.redhat-00053</version.org.apache.activemq.artemis-commons>
+        <version.org.apache.activemq.artemis-core-client>2.6.3.redhat-00053</version.org.apache.activemq.artemis-core-client>
+        <version.org.apache.activemq.artemis-jms-client>2.6.3.redhat-00053</version.org.apache.activemq.artemis-jms-client>
+        <version.org.apache.activemq.artemis-jms-server>2.6.3.redhat-00053</version.org.apache.activemq.artemis-jms-server>
+        <version.org.apache.activemq.artemis-journal>2.6.3.redhat-00053</version.org.apache.activemq.artemis-journal>
+        <version.org.apache.activemq.artemis-native>2.6.3.redhat-00053</version.org.apache.activemq.artemis-native>
+        <version.org.apache.activemq.artemis-selector>2.6.3.redhat-00053</version.org.apache.activemq.artemis-selector>
+        <version.org.apache.activemq.artemis-server>2.6.3.redhat-00053</version.org.apache.activemq.artemis-server>
+        <version.org.apache.activemq.artemis-service-extensions>2.6.3.redhat-00053</version.org.apache.activemq.artemis-service-extensions>
         <version.org.apache.commons.commons-dbcp2>2.5.0</version.org.apache.commons.commons-dbcp2>
         <version.org.apache.commons.commons-pool2>2.6.1</version.org.apache.commons.commons-pool2>
         <version.org.apache.derby.derby>10.14.2.0</version.org.apache.derby.derby>
-        <version.org.apache.httpcomponents.httpasyncclient>4.1.4</version.org.apache.httpcomponents.httpasyncclient>
+        <version.org.apache.httpcomponents.httpasyncclient>4.1.4.redhat-00001</version.org.apache.httpcomponents.httpasyncclient>
         <version.org.apache.httpcomponents.httpclient>4.5.7</version.org.apache.httpcomponents.httpclient>
         <version.org.apache.httpcomponents.httpclient-cache>4.5.7</version.org.apache.httpcomponents.httpclient-cache>
         <version.org.apache.httpcomponents.httpclient-osgi>4.5.7</version.org.apache.httpcomponents.httpclient-osgi>
         <version.org.apache.httpcomponents.httpcore>4.4.11</version.org.apache.httpcomponents.httpcore>
         <version.org.apache.httpcomponents.httpmime>4.5.7</version.org.apache.httpcomponents.httpmime>
         <version.org.apache.logging.log4j.log4j-to-slf4j>2.11.2</version.org.apache.logging.log4j.log4j-to-slf4j>
-        <version.org.apache.tomcat.tomcat-annotations-api>8.0.36.redhat-35</version.org.apache.tomcat.tomcat-annotations-api>
-        <version.org.apache.tomcat.tomcat-jsp-api>8.0.36.redhat-35</version.org.apache.tomcat.tomcat-jsp-api>
+        <version.org.apache.tomcat.tomcat-annotations-api>8.0.36.redhat-39</version.org.apache.tomcat.tomcat-annotations-api>
+        <version.org.apache.tomcat.tomcat-jsp-api>8.0.36.redhat-39</version.org.apache.tomcat.tomcat-jsp-api>
         <version.org.codehaus.groovy.groovy>2.5.6</version.org.codehaus.groovy.groovy>
         <version.org.codehaus.groovy.groovy-ant>2.5.6</version.org.codehaus.groovy.groovy-ant>
         <version.org.codehaus.groovy.groovy-backports-compat23>2.5.6</version.org.codehaus.groovy.groovy-backports-compat23>
@@ -289,8 +289,8 @@
         <version.org.eclipse.jetty.jetty-reactive-httpclient>1.0.2</version.org.eclipse.jetty.jetty-reactive-httpclient>
         <version.org.eclipse.jetty.orbit.javax.servlet.jsp>2.2.0.v201112011158</version.org.eclipse.jetty.orbit.javax.servlet.jsp>
         <version.org.hsqldb.hsqldb>2.4.1</version.org.hsqldb.hsqldb>
-        <version.org.jboss.jboss-transaction-spi>7.6.0.Final</version.org.jboss.jboss-transaction-spi>
-        <version.org.jboss.logging.jboss-logging>3.3.2.Final</version.org.jboss.logging.jboss-logging>
+        <version.org.jboss.jboss-transaction-spi>7.6.0.Final-redhat-1</version.org.jboss.jboss-transaction-spi>
+        <version.org.jboss.logging.jboss-logging>3.3.2.Final-redhat-00001</version.org.jboss.logging.jboss-logging>
         <version.org.mockito.mockito-core>2.23.4</version.org.mockito.mockito-core>
         <version.org.mockito.mockito-inline>2.23.4</version.org.mockito.mockito-inline>
         <version.org.mockito.mockito-junit-jupiter>2.23.4</version.org.mockito.mockito-junit-jupiter>
@@ -332,49 +332,49 @@
         <version.org.springframework.ws.spring-ws-support>3.0.6.RELEASE</version.org.springframework.ws.spring-ws-support>
         <version.org.springframework.ws.spring-ws-test>3.0.6.RELEASE</version.org.springframework.ws.spring-ws-test>
         <version.org.springframework.ws.spring-xml>3.0.6.RELEASE</version.org.springframework.ws.spring-xml>
-        <version.com.fasterxml.jackson.core.jackson-annotations>2.9.0</version.com.fasterxml.jackson.core.jackson-annotations>
-        <version.com.fasterxml.jackson.core.jackson-core>2.9.8</version.com.fasterxml.jackson.core.jackson-core>
-        <version.com.fasterxml.jackson.core.jackson-databind>2.9.8</version.com.fasterxml.jackson.core.jackson-databind>
+        <version.com.fasterxml.jackson.core.jackson-annotations>2.9.0.redhat-001</version.com.fasterxml.jackson.core.jackson-annotations>
+        <version.com.fasterxml.jackson.core.jackson-core>2.9.8.redhat-00004</version.com.fasterxml.jackson.core.jackson-core>
+        <version.com.fasterxml.jackson.core.jackson-databind>2.9.8.redhat-00005</version.com.fasterxml.jackson.core.jackson-databind>
         <version.com.fasterxml.jackson.dataformat.jackson-dataformat-avro>2.9.8</version.com.fasterxml.jackson.dataformat.jackson-dataformat-avro>
         <version.com.fasterxml.jackson.dataformat.jackson-dataformat-cbor>2.9.8</version.com.fasterxml.jackson.dataformat.jackson-dataformat-cbor>
-        <version.com.fasterxml.jackson.dataformat.jackson-dataformat-csv>2.9.8</version.com.fasterxml.jackson.dataformat.jackson-dataformat-csv>
+        <version.com.fasterxml.jackson.dataformat.jackson-dataformat-csv>2.9.8.redhat-00004</version.com.fasterxml.jackson.dataformat.jackson-dataformat-csv>
         <version.com.fasterxml.jackson.dataformat.jackson-dataformat-ion>2.9.8</version.com.fasterxml.jackson.dataformat.jackson-dataformat-ion>
-        <version.com.fasterxml.jackson.dataformat.jackson-dataformat-properties>2.9.8</version.com.fasterxml.jackson.dataformat.jackson-dataformat-properties>
+        <version.com.fasterxml.jackson.dataformat.jackson-dataformat-properties>2.9.8.redhat-00004</version.com.fasterxml.jackson.dataformat.jackson-dataformat-properties>
         <version.com.fasterxml.jackson.dataformat.jackson-dataformat-protobuf>2.9.8</version.com.fasterxml.jackson.dataformat.jackson-dataformat-protobuf>
         <version.com.fasterxml.jackson.dataformat.jackson-dataformat-smile>2.9.8</version.com.fasterxml.jackson.dataformat.jackson-dataformat-smile>
         <version.com.fasterxml.jackson.dataformat.jackson-dataformat-xml>2.9.8</version.com.fasterxml.jackson.dataformat.jackson-dataformat-xml>
-        <version.com.fasterxml.jackson.dataformat.jackson-dataformat-yaml>2.9.8</version.com.fasterxml.jackson.dataformat.jackson-dataformat-yaml>
+        <version.com.fasterxml.jackson.dataformat.jackson-dataformat-yaml>2.9.8.redhat-00004</version.com.fasterxml.jackson.dataformat.jackson-dataformat-yaml>
         <version.com.fasterxml.jackson.datatype.jackson-datatype-guava>2.9.8</version.com.fasterxml.jackson.datatype.jackson-datatype-guava>
         <version.com.fasterxml.jackson.datatype.jackson-datatype-hibernate3>2.9.8</version.com.fasterxml.jackson.datatype.jackson-datatype-hibernate3>
         <version.com.fasterxml.jackson.datatype.jackson-datatype-hibernate4>2.9.8</version.com.fasterxml.jackson.datatype.jackson-datatype-hibernate4>
         <version.com.fasterxml.jackson.datatype.jackson-datatype-hibernate5>2.9.8</version.com.fasterxml.jackson.datatype.jackson-datatype-hibernate5>
         <version.com.fasterxml.jackson.datatype.jackson-datatype-hppc>2.9.8</version.com.fasterxml.jackson.datatype.jackson-datatype-hppc>
-        <version.com.fasterxml.jackson.datatype.jackson-datatype-jaxrs>2.9.8</version.com.fasterxml.jackson.datatype.jackson-datatype-jaxrs>
+        <version.com.fasterxml.jackson.datatype.jackson-datatype-jaxrs>2.9.8.redhat-00004</version.com.fasterxml.jackson.datatype.jackson-datatype-jaxrs>
         <version.com.fasterxml.jackson.datatype.jackson-datatype-joda>2.9.8</version.com.fasterxml.jackson.datatype.jackson-datatype-joda>
-        <version.com.fasterxml.jackson.datatype.jackson-datatype-jdk8>2.9.8</version.com.fasterxml.jackson.datatype.jackson-datatype-jdk8>
+        <version.com.fasterxml.jackson.datatype.jackson-datatype-jdk8>2.9.8.redhat-00004</version.com.fasterxml.jackson.datatype.jackson-datatype-jdk8>
         <version.com.fasterxml.jackson.datatype.jackson-datatype-json-org>2.9.8</version.com.fasterxml.jackson.datatype.jackson-datatype-json-org>
-        <version.com.fasterxml.jackson.datatype.jackson-datatype-jsr310>2.9.8</version.com.fasterxml.jackson.datatype.jackson-datatype-jsr310>
+        <version.com.fasterxml.jackson.datatype.jackson-datatype-jsr310>2.9.8.redhat-00004</version.com.fasterxml.jackson.datatype.jackson-datatype-jsr310>
         <version.com.fasterxml.jackson.datatype.jackson-datatype-jsr353>2.9.8</version.com.fasterxml.jackson.datatype.jackson-datatype-jsr353>
         <version.com.fasterxml.jackson.datatype.jackson-datatype-pcollections>2.9.8</version.com.fasterxml.jackson.datatype.jackson-datatype-pcollections>
-        <version.com.fasterxml.jackson.jaxrs.jackson-jaxrs-base>2.9.8</version.com.fasterxml.jackson.jaxrs.jackson-jaxrs-base>
-        <version.com.fasterxml.jackson.jaxrs.jackson-jaxrs-cbor-provider>2.9.8</version.com.fasterxml.jackson.jaxrs.jackson-jaxrs-cbor-provider>
-        <version.com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider>2.9.8</version.com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider>
-        <version.com.fasterxml.jackson.jaxrs.jackson-jaxrs-smile-provider>2.9.8</version.com.fasterxml.jackson.jaxrs.jackson-jaxrs-smile-provider>
-        <version.com.fasterxml.jackson.jaxrs.jackson-jaxrs-xml-provider>2.9.8</version.com.fasterxml.jackson.jaxrs.jackson-jaxrs-xml-provider>
-        <version.com.fasterxml.jackson.jaxrs.jackson-jaxrs-yaml-provider>2.9.8</version.com.fasterxml.jackson.jaxrs.jackson-jaxrs-yaml-provider>
+        <version.com.fasterxml.jackson.jaxrs.jackson-jaxrs-base>2.9.8.redhat-00004</version.com.fasterxml.jackson.jaxrs.jackson-jaxrs-base>
+        <version.com.fasterxml.jackson.jaxrs.jackson-jaxrs-cbor-provider>2.9.8.redhat-00004</version.com.fasterxml.jackson.jaxrs.jackson-jaxrs-cbor-provider>
+        <version.com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider>2.9.8.redhat-00004</version.com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider>
+        <version.com.fasterxml.jackson.jaxrs.jackson-jaxrs-smile-provider>2.9.8.redhat-00004</version.com.fasterxml.jackson.jaxrs.jackson-jaxrs-smile-provider>
+        <version.com.fasterxml.jackson.jaxrs.jackson-jaxrs-xml-provider>2.9.8.redhat-00004</version.com.fasterxml.jackson.jaxrs.jackson-jaxrs-xml-provider>
+        <version.com.fasterxml.jackson.jaxrs.jackson-jaxrs-yaml-provider>2.9.8.redhat-00004</version.com.fasterxml.jackson.jaxrs.jackson-jaxrs-yaml-provider>
         <version.com.fasterxml.jackson.jr.jackson-jr-all>2.9.8</version.com.fasterxml.jackson.jr.jackson-jr-all>
         <version.com.fasterxml.jackson.jr.jackson-jr-objects>2.9.8</version.com.fasterxml.jackson.jr.jackson-jr-objects>
         <version.com.fasterxml.jackson.jr.jackson-jr-retrofit2>2.9.8</version.com.fasterxml.jackson.jr.jackson-jr-retrofit2>
         <version.com.fasterxml.jackson.jr.jackson-jr-stree>2.9.8</version.com.fasterxml.jackson.jr.jackson-jr-stree>
-        <version.com.fasterxml.jackson.module.jackson-module-afterburner>2.9.8</version.com.fasterxml.jackson.module.jackson-module-afterburner>
-        <version.com.fasterxml.jackson.module.jackson-module-guice>2.9.8</version.com.fasterxml.jackson.module.jackson-module-guice>
-        <version.com.fasterxml.jackson.module.jackson-module-jaxb-annotations>2.9.8</version.com.fasterxml.jackson.module.jackson-module-jaxb-annotations>
-        <version.com.fasterxml.jackson.module.jackson-module-jsonSchema>2.9.8</version.com.fasterxml.jackson.module.jackson-module-jsonSchema>
+        <version.com.fasterxml.jackson.module.jackson-module-afterburner>2.9.8.redhat-00004</version.com.fasterxml.jackson.module.jackson-module-afterburner>
+        <version.com.fasterxml.jackson.module.jackson-module-guice>2.9.8.redhat-00004</version.com.fasterxml.jackson.module.jackson-module-guice>
+        <version.com.fasterxml.jackson.module.jackson-module-jaxb-annotations>2.9.8.redhat-00004</version.com.fasterxml.jackson.module.jackson-module-jaxb-annotations>
+        <version.com.fasterxml.jackson.module.jackson-module-jsonSchema>2.9.8.redhat-00001</version.com.fasterxml.jackson.module.jackson-module-jsonSchema>
         <version.com.fasterxml.jackson.module.jackson-module-kotlin>2.9.8</version.com.fasterxml.jackson.module.jackson-module-kotlin>
-        <version.com.fasterxml.jackson.module.jackson-module-mrbean>2.9.8</version.com.fasterxml.jackson.module.jackson-module-mrbean>
-        <version.com.fasterxml.jackson.module.jackson-module-osgi>2.9.8</version.com.fasterxml.jackson.module.jackson-module-osgi>
-        <version.com.fasterxml.jackson.module.jackson-module-parameter-names>2.9.8</version.com.fasterxml.jackson.module.jackson-module-parameter-names>
-        <version.com.fasterxml.jackson.module.jackson-module-paranamer>2.9.8</version.com.fasterxml.jackson.module.jackson-module-paranamer>
+        <version.com.fasterxml.jackson.module.jackson-module-mrbean>2.9.8.redhat-00004</version.com.fasterxml.jackson.module.jackson-module-mrbean>
+        <version.com.fasterxml.jackson.module.jackson-module-osgi>2.9.8.redhat-00004</version.com.fasterxml.jackson.module.jackson-module-osgi>
+        <version.com.fasterxml.jackson.module.jackson-module-parameter-names>2.9.8.redhat-00004</version.com.fasterxml.jackson.module.jackson-module-parameter-names>
+        <version.com.fasterxml.jackson.module.jackson-module-paranamer>2.9.8.redhat-00004</version.com.fasterxml.jackson.module.jackson-module-paranamer>
         <version.com.fasterxml.jackson.module.jackson-module-scala_2.10>2.9.8</version.com.fasterxml.jackson.module.jackson-module-scala_2.10>
         <version.com.fasterxml.jackson.module.jackson-module-scala_2.11>2.9.8</version.com.fasterxml.jackson.module.jackson-module-scala_2.11>
         <version.com.fasterxml.jackson.module.jackson-module-scala_2.12>2.9.8</version.com.fasterxml.jackson.module.jackson-module-scala_2.12>
@@ -396,71 +396,71 @@
         <version.org.apache.logging.log4j.log4j-iostreams>2.11.2</version.org.apache.logging.log4j.log4j-iostreams>
         <version.org.apache.logging.log4j.log4j-jul>2.11.2</version.org.apache.logging.log4j.log4j-jul>
         <version.org.apache.logging.log4j.log4j-liquibase>2.11.2</version.org.apache.logging.log4j.log4j-liquibase>
-        <version.org.eclipse.jetty.apache-jsp>9.4.14.v20181114</version.org.eclipse.jetty.apache-jsp>
-        <version.org.eclipse.jetty.apache-jstl>9.4.14.v20181114</version.org.eclipse.jetty.apache-jstl>
-        <version.org.eclipse.jetty.jetty-alpn-client>9.4.14.v20181114</version.org.eclipse.jetty.jetty-alpn-client>
+        <version.org.eclipse.jetty.apache-jsp>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.apache-jsp>
+        <version.org.eclipse.jetty.apache-jstl>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.apache-jstl>
+        <version.org.eclipse.jetty.jetty-alpn-client>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-alpn-client>
         <version.org.eclipse.jetty.jetty-alpn-java-client>9.4.14.v20181114</version.org.eclipse.jetty.jetty-alpn-java-client>
         <version.org.eclipse.jetty.jetty-alpn-java-server>9.4.14.v20181114</version.org.eclipse.jetty.jetty-alpn-java-server>
-        <version.org.eclipse.jetty.jetty-alpn-openjdk8-client>9.4.14.v20181114</version.org.eclipse.jetty.jetty-alpn-openjdk8-client>
-        <version.org.eclipse.jetty.jetty-alpn-openjdk8-server>9.4.14.v20181114</version.org.eclipse.jetty.jetty-alpn-openjdk8-server>
-        <version.org.eclipse.jetty.jetty-alpn-conscrypt-client>9.4.14.v20181114</version.org.eclipse.jetty.jetty-alpn-conscrypt-client>
-        <version.org.eclipse.jetty.jetty-alpn-conscrypt-server>9.4.14.v20181114</version.org.eclipse.jetty.jetty-alpn-conscrypt-server>
-        <version.org.eclipse.jetty.jetty-alpn-server>9.4.14.v20181114</version.org.eclipse.jetty.jetty-alpn-server>
-        <version.org.eclipse.jetty.jetty-annotations>9.4.14.v20181114</version.org.eclipse.jetty.jetty-annotations>
-        <version.org.eclipse.jetty.jetty-ant>9.4.14.v20181114</version.org.eclipse.jetty.jetty-ant>
-        <version.org.eclipse.jetty.cdi.cdi-core>9.4.14.v20181114</version.org.eclipse.jetty.cdi.cdi-core>
-        <version.org.eclipse.jetty.cdi.cdi-servlet>9.4.14.v20181114</version.org.eclipse.jetty.cdi.cdi-servlet>
-        <version.org.eclipse.jetty.jetty-client>9.4.14.v20181114</version.org.eclipse.jetty.jetty-client>
-        <version.org.eclipse.jetty.jetty-continuation>9.4.14.v20181114</version.org.eclipse.jetty.jetty-continuation>
-        <version.org.eclipse.jetty.jetty-deploy>9.4.14.v20181114</version.org.eclipse.jetty.jetty-deploy>
+        <version.org.eclipse.jetty.jetty-alpn-openjdk8-client>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-alpn-openjdk8-client>
+        <version.org.eclipse.jetty.jetty-alpn-openjdk8-server>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-alpn-openjdk8-server>
+        <version.org.eclipse.jetty.jetty-alpn-conscrypt-client>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-alpn-conscrypt-client>
+        <version.org.eclipse.jetty.jetty-alpn-conscrypt-server>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-alpn-conscrypt-server>
+        <version.org.eclipse.jetty.jetty-alpn-server>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-alpn-server>
+        <version.org.eclipse.jetty.jetty-annotations>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-annotations>
+        <version.org.eclipse.jetty.jetty-ant>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-ant>
+        <version.org.eclipse.jetty.cdi.cdi-core>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.cdi.cdi-core>
+        <version.org.eclipse.jetty.cdi.cdi-servlet>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.cdi.cdi-servlet>
+        <version.org.eclipse.jetty.jetty-client>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-client>
+        <version.org.eclipse.jetty.jetty-continuation>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-continuation>
+        <version.org.eclipse.jetty.jetty-deploy>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-deploy>
+        <version.org.eclipse.jetty.jetty-distribution>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-distribution>
         <version.org.eclipse.jetty.jetty-distribution>9.4.14.v20181114</version.org.eclipse.jetty.jetty-distribution>
-        <version.org.eclipse.jetty.jetty-distribution>9.4.14.v20181114</version.org.eclipse.jetty.jetty-distribution>
-        <version.org.eclipse.jetty.fcgi.fcgi-client>9.4.14.v20181114</version.org.eclipse.jetty.fcgi.fcgi-client>
-        <version.org.eclipse.jetty.fcgi.fcgi-server>9.4.14.v20181114</version.org.eclipse.jetty.fcgi.fcgi-server>
-        <version.org.eclipse.jetty.gcloud.jetty-gcloud-session-manager>9.4.14.v20181114</version.org.eclipse.jetty.gcloud.jetty-gcloud-session-manager>
+        <version.org.eclipse.jetty.fcgi.fcgi-client>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.fcgi.fcgi-client>
+        <version.org.eclipse.jetty.fcgi.fcgi-server>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.fcgi.fcgi-server>
+        <version.org.eclipse.jetty.gcloud.jetty-gcloud-session-manager>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.gcloud.jetty-gcloud-session-manager>
+        <version.org.eclipse.jetty.jetty-home>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-home>
         <version.org.eclipse.jetty.jetty-home>9.4.14.v20181114</version.org.eclipse.jetty.jetty-home>
-        <version.org.eclipse.jetty.jetty-home>9.4.14.v20181114</version.org.eclipse.jetty.jetty-home>
-        <version.org.eclipse.jetty.jetty-http>9.4.14.v20181114</version.org.eclipse.jetty.jetty-http>
-        <version.org.eclipse.jetty.http2.http2-client>9.4.14.v20181114</version.org.eclipse.jetty.http2.http2-client>
-        <version.org.eclipse.jetty.http2.http2-common>9.4.14.v20181114</version.org.eclipse.jetty.http2.http2-common>
-        <version.org.eclipse.jetty.http2.http2-hpack>9.4.14.v20181114</version.org.eclipse.jetty.http2.http2-hpack>
-        <version.org.eclipse.jetty.http2.http2-http-client-transport>9.4.14.v20181114</version.org.eclipse.jetty.http2.http2-http-client-transport>
-        <version.org.eclipse.jetty.http2.http2-server>9.4.14.v20181114</version.org.eclipse.jetty.http2.http2-server>
-        <version.org.eclipse.jetty.jetty-http-spi>9.4.14.v20181114</version.org.eclipse.jetty.jetty-http-spi>
-        <version.org.eclipse.jetty.jetty-infinispan>9.4.14.v20181114</version.org.eclipse.jetty.jetty-infinispan>
-        <version.org.eclipse.jetty.jetty-hazelcast>9.4.14.v20181114</version.org.eclipse.jetty.jetty-hazelcast>
-        <version.org.eclipse.jetty.jetty-io>9.4.14.v20181114</version.org.eclipse.jetty.jetty-io>
-        <version.org.eclipse.jetty.jetty-jaas>9.4.14.v20181114</version.org.eclipse.jetty.jetty-jaas>
-        <version.org.eclipse.jetty.jetty-jaspi>9.4.14.v20181114</version.org.eclipse.jetty.jetty-jaspi>
-        <version.org.eclipse.jetty.jetty-jmx>9.4.14.v20181114</version.org.eclipse.jetty.jetty-jmx>
-        <version.org.eclipse.jetty.jetty-jndi>9.4.14.v20181114</version.org.eclipse.jetty.jetty-jndi>
-        <version.org.eclipse.jetty.memcached.jetty-memcached-sessions>9.4.14.v20181114</version.org.eclipse.jetty.memcached.jetty-memcached-sessions>
-        <version.org.eclipse.jetty.jetty-nosql>9.4.14.v20181114</version.org.eclipse.jetty.jetty-nosql>
-        <version.org.eclipse.jetty.osgi.jetty-osgi-boot>9.4.14.v20181114</version.org.eclipse.jetty.osgi.jetty-osgi-boot>
-        <version.org.eclipse.jetty.osgi.jetty-osgi-boot-jsp>9.4.14.v20181114</version.org.eclipse.jetty.osgi.jetty-osgi-boot-jsp>
-        <version.org.eclipse.jetty.osgi.jetty-osgi-boot-warurl>9.4.14.v20181114</version.org.eclipse.jetty.osgi.jetty-osgi-boot-warurl>
-        <version.org.eclipse.jetty.osgi.jetty-httpservice>9.4.14.v20181114</version.org.eclipse.jetty.osgi.jetty-httpservice>
-        <version.org.eclipse.jetty.jetty-plus>9.4.14.v20181114</version.org.eclipse.jetty.jetty-plus>
-        <version.org.eclipse.jetty.jetty-proxy>9.4.14.v20181114</version.org.eclipse.jetty.jetty-proxy>
-        <version.org.eclipse.jetty.jetty-quickstart>9.4.14.v20181114</version.org.eclipse.jetty.jetty-quickstart>
-        <version.org.eclipse.jetty.jetty-rewrite>9.4.14.v20181114</version.org.eclipse.jetty.jetty-rewrite>
-        <version.org.eclipse.jetty.jetty-security>9.4.14.v20181114</version.org.eclipse.jetty.jetty-security>
-        <version.org.eclipse.jetty.jetty-server>9.4.14.v20181114</version.org.eclipse.jetty.jetty-server>
-        <version.org.eclipse.jetty.jetty-servlet>9.4.14.v20181114</version.org.eclipse.jetty.jetty-servlet>
-        <version.org.eclipse.jetty.jetty-servlets>9.4.14.v20181114</version.org.eclipse.jetty.jetty-servlets>
-        <version.org.eclipse.jetty.jetty-spring>9.4.14.v20181114</version.org.eclipse.jetty.jetty-spring>
-        <version.org.eclipse.jetty.jetty-unixsocket>9.4.14.v20181114</version.org.eclipse.jetty.jetty-unixsocket>
-        <version.org.eclipse.jetty.jetty-util>9.4.14.v20181114</version.org.eclipse.jetty.jetty-util>
-        <version.org.eclipse.jetty.jetty-util-ajax>9.4.14.v20181114</version.org.eclipse.jetty.jetty-util-ajax>
-        <version.org.eclipse.jetty.jetty-webapp>9.4.14.v20181114</version.org.eclipse.jetty.jetty-webapp>
-        <version.org.eclipse.jetty.websocket.javax-websocket-client-impl>9.4.14.v20181114</version.org.eclipse.jetty.websocket.javax-websocket-client-impl>
-        <version.org.eclipse.jetty.websocket.javax-websocket-server-impl>9.4.14.v20181114</version.org.eclipse.jetty.websocket.javax-websocket-server-impl>
-        <version.org.eclipse.jetty.websocket.websocket-api>9.4.14.v20181114</version.org.eclipse.jetty.websocket.websocket-api>
-        <version.org.eclipse.jetty.websocket.websocket-client>9.4.14.v20181114</version.org.eclipse.jetty.websocket.websocket-client>
-        <version.org.eclipse.jetty.websocket.websocket-common>9.4.14.v20181114</version.org.eclipse.jetty.websocket.websocket-common>
-        <version.org.eclipse.jetty.websocket.websocket-server>9.4.14.v20181114</version.org.eclipse.jetty.websocket.websocket-server>
-        <version.org.eclipse.jetty.websocket.websocket-servlet>9.4.14.v20181114</version.org.eclipse.jetty.websocket.websocket-servlet>
-        <version.org.eclipse.jetty.jetty-xml>9.4.14.v20181114</version.org.eclipse.jetty.jetty-xml>
+        <version.org.eclipse.jetty.jetty-http>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-http>
+        <version.org.eclipse.jetty.http2.http2-client>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.http2.http2-client>
+        <version.org.eclipse.jetty.http2.http2-common>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.http2.http2-common>
+        <version.org.eclipse.jetty.http2.http2-hpack>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.http2.http2-hpack>
+        <version.org.eclipse.jetty.http2.http2-http-client-transport>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.http2.http2-http-client-transport>
+        <version.org.eclipse.jetty.http2.http2-server>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.http2.http2-server>
+        <version.org.eclipse.jetty.jetty-http-spi>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-http-spi>
+        <version.org.eclipse.jetty.jetty-infinispan>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-infinispan>
+        <version.org.eclipse.jetty.jetty-hazelcast>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-hazelcast>
+        <version.org.eclipse.jetty.jetty-io>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-io>
+        <version.org.eclipse.jetty.jetty-jaas>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-jaas>
+        <version.org.eclipse.jetty.jetty-jaspi>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-jaspi>
+        <version.org.eclipse.jetty.jetty-jmx>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-jmx>
+        <version.org.eclipse.jetty.jetty-jndi>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-jndi>
+        <version.org.eclipse.jetty.memcached.jetty-memcached-sessions>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.memcached.jetty-memcached-sessions>
+        <version.org.eclipse.jetty.jetty-nosql>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-nosql>
+        <version.org.eclipse.jetty.osgi.jetty-osgi-boot>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.osgi.jetty-osgi-boot>
+        <version.org.eclipse.jetty.osgi.jetty-osgi-boot-jsp>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.osgi.jetty-osgi-boot-jsp>
+        <version.org.eclipse.jetty.osgi.jetty-osgi-boot-warurl>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.osgi.jetty-osgi-boot-warurl>
+        <version.org.eclipse.jetty.osgi.jetty-httpservice>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.osgi.jetty-httpservice>
+        <version.org.eclipse.jetty.jetty-plus>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-plus>
+        <version.org.eclipse.jetty.jetty-proxy>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-proxy>
+        <version.org.eclipse.jetty.jetty-quickstart>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-quickstart>
+        <version.org.eclipse.jetty.jetty-rewrite>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-rewrite>
+        <version.org.eclipse.jetty.jetty-security>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-security>
+        <version.org.eclipse.jetty.jetty-server>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-server>
+        <version.org.eclipse.jetty.jetty-servlet>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-servlet>
+        <version.org.eclipse.jetty.jetty-servlets>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-servlets>
+        <version.org.eclipse.jetty.jetty-spring>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-spring>
+        <version.org.eclipse.jetty.jetty-unixsocket>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-unixsocket>
+        <version.org.eclipse.jetty.jetty-util>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-util>
+        <version.org.eclipse.jetty.jetty-util-ajax>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-util-ajax>
+        <version.org.eclipse.jetty.jetty-webapp>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-webapp>
+        <version.org.eclipse.jetty.websocket.javax-websocket-client-impl>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.websocket.javax-websocket-client-impl>
+        <version.org.eclipse.jetty.websocket.javax-websocket-server-impl>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.websocket.javax-websocket-server-impl>
+        <version.org.eclipse.jetty.websocket.websocket-api>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.websocket.websocket-api>
+        <version.org.eclipse.jetty.websocket.websocket-client>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.websocket.websocket-client>
+        <version.org.eclipse.jetty.websocket.websocket-common>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.websocket.websocket-common>
+        <version.org.eclipse.jetty.websocket.websocket-server>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.websocket.websocket-server>
+        <version.org.eclipse.jetty.websocket.websocket-servlet>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.websocket.websocket-servlet>
+        <version.org.eclipse.jetty.jetty-xml>9.4.14.v20181114-redhat-00001</version.org.eclipse.jetty.jetty-xml>
         <version.org.springframework.spring-aop>5.1.5.RELEASE</version.org.springframework.spring-aop>
         <version.org.springframework.spring-aspects>5.1.5.RELEASE</version.org.springframework.spring-aspects>
         <version.org.springframework.spring-beans>5.1.5.RELEASE</version.org.springframework.spring-beans>
@@ -574,21 +574,21 @@
         <version.com.google.truth.truth>0.30</version.com.google.truth.truth>
         <version.com.lmax.disruptor>3.4.2</version.com.lmax.disruptor>
         <version.com.sna-projects.krati.krati>0.4.9</version.com.sna-projects.krati.krati>
-        <version.com.sun.xml.bind.jaxb-core>2.3.0</version.com.sun.xml.bind.jaxb-core>
-        <version.com.sun.xml.bind.jaxb-impl>2.3.0</version.com.sun.xml.bind.jaxb-impl>
-        <version.com.sun.xml.bind.jaxb-jxc>2.3.0</version.com.sun.xml.bind.jaxb-jxc>
+        <version.com.sun.xml.bind.jaxb-core>2.3.0.redhat-1</version.com.sun.xml.bind.jaxb-core>
+        <version.com.sun.xml.bind.jaxb-impl>2.3.0.redhat-1</version.com.sun.xml.bind.jaxb-impl>
+        <version.com.sun.xml.bind.jaxb-jxc>2.3.0.redhat-1</version.com.sun.xml.bind.jaxb-jxc>
         <version.com.sun.xml.parsers.jaxp-ri>1.4.5</version.com.sun.xml.parsers.jaxp-ri>
-        <version.com.thoughtworks.xstream.xstream>1.4.10</version.com.thoughtworks.xstream.xstream>
-        <version.commons-httpclient.commons-httpclient>3.1</version.commons-httpclient.commons-httpclient>
+        <version.com.thoughtworks.xstream.xstream>1.4.10.redhat-1</version.com.thoughtworks.xstream.xstream>
+        <version.commons-httpclient.commons-httpclient>3.1.0.redhat-8</version.commons-httpclient.commons-httpclient>
         <version.commons-io.commons-io>2.6</version.commons-io.commons-io>
-        <version.commons-logging.commons-logging>1.2</version.commons-logging.commons-logging>
+        <version.commons-logging.commons-logging>1.2.0.redhat-3</version.commons-logging.commons-logging>
         <version.httpunit.httpunit>1.7</version.httpunit.httpunit>
         <version.io.nessus.nessus-ipfs-client>1.0.0.Beta4</version.io.nessus.nessus-ipfs-client>
-        <version.log4j.log4j>1.2.17</version.log4j.log4j>
+        <version.log4j.log4j>1.2.17.redhat-3</version.log4j.log4j>
         <version.net.sf.saxon.Saxon-HE>9.8.0-14</version.net.sf.saxon.Saxon-HE>
         <version.ognl.ognl>3.1.12</version.ognl.ognl>
         <version.org.apache-extras.beanshell.bsh>2.0b6</version.org.apache-extras.beanshell.bsh>
-        <version.org.apache.abdera.abdera-core>1.1.3</version.org.apache.abdera.abdera-core>
+        <version.org.apache.abdera.abdera-core>1.1.3-redhat-1</version.org.apache.abdera.abdera-core>
         <version.org.apache.avro.avro>1.8.2</version.org.apache.avro.avro>
         <version.org.apache.avro.avro-ipc>1.8.2</version.org.apache.avro.avro-ipc>
         <version.org.apache.avro.avro-mapred>1.8.2</version.org.apache.avro.avro-mapred>
@@ -1144,7 +1144,7 @@
         <version.org.apache.camel.camel-zookeeper-master-starter>${version.camel}</version.org.apache.camel.camel-zookeeper-master-starter>
         <version.org.apache.camel.camel-zookeeper-starter>${version.camel}</version.org.apache.camel.camel-zookeeper-starter>
         <version.org.apache.camel.spi-annotations>${version.camel}</version.org.apache.camel.spi-annotations>
-        <version.org.apache.cassandra.cassandra-all>3.7</version.org.apache.cassandra.cassandra-all>
+        <version.org.apache.cassandra.cassandra-all>3.7.0.redhat-2</version.org.apache.cassandra.cassandra-all>
         <version.org.apache.cxf.services.sts.cxf-services-sts-core>${version.cxf}</version.org.apache.cxf.services.sts.cxf-services-sts-core>
         <version.org.apache.cxf.services.ws-discovery.cxf-services-ws-discovery-api>${version.cxf}</version.org.apache.cxf.services.ws-discovery.cxf-services-ws-discovery-api>
         <version.org.apache.cxf.cxf-core>${version.cxf}</version.org.apache.cxf.cxf-core>
@@ -1175,13 +1175,13 @@
         <version.org.apache.cxf.cxf-testutils>${version.cxf}</version.org.apache.cxf.cxf-testutils>
         <version.org.apache.ftpserver.ftplet-api>1.1.1</version.org.apache.ftpserver.ftplet-api>
         <version.org.apache.ftpserver.ftpserver-core>1.1.1</version.org.apache.ftpserver.ftpserver-core>
-        <version.org.apache.geronimo.specs.geronimo-j2ee-connector_1.5_spec>2.0.0</version.org.apache.geronimo.specs.geronimo-j2ee-connector_1.5_spec>
+        <version.org.apache.geronimo.specs.geronimo-j2ee-connector_1.5_spec>2.0.0.redhat-2</version.org.apache.geronimo.specs.geronimo-j2ee-connector_1.5_spec>
         <version.org.apache.geronimo.specs.geronimo-j2ee-jacc_1.0_spec>1.1</version.org.apache.geronimo.specs.geronimo-j2ee-jacc_1.0_spec>
         <version.org.apache.geronimo.specs.geronimo-j2ee-management_1.0_spec>1.1</version.org.apache.geronimo.specs.geronimo-j2ee-management_1.0_spec>
-        <version.org.apache.geronimo.specs.geronimo-jms_1.1_spec>1.1.1</version.org.apache.geronimo.specs.geronimo-jms_1.1_spec>
-        <version.org.apache.geronimo.specs.geronimo-jms_2.0_spec>1.0-alpha-2</version.org.apache.geronimo.specs.geronimo-jms_2.0_spec>
+        <version.org.apache.geronimo.specs.geronimo-jms_1.1_spec>1.1.1.redhat-2</version.org.apache.geronimo.specs.geronimo-jms_1.1_spec>
+        <version.org.apache.geronimo.specs.geronimo-jms_2.0_spec>1.0.0.alpha-2-redhat-2</version.org.apache.geronimo.specs.geronimo-jms_2.0_spec>
         <version.org.apache.geronimo.specs.geronimo-jpa_2.1_spec>1.0-alpha-1</version.org.apache.geronimo.specs.geronimo-jpa_2.1_spec>
-        <version.org.apache.geronimo.specs.geronimo-jta_1.1_spec>1.1.1</version.org.apache.geronimo.specs.geronimo-jta_1.1_spec>
+        <version.org.apache.geronimo.specs.geronimo-jta_1.1_spec>1.1.1.redhat-2</version.org.apache.geronimo.specs.geronimo-jta_1.1_spec>
         <version.org.apache.mina.mina-core>2.0.17</version.org.apache.mina.mina-core>
         <version.org.apache.openjpa.openjpa-persistence-jdbc>2.4.3</version.org.apache.openjpa.openjpa-persistence-jdbc>
         <version.org.apache.pdfbox.fontbox>2.0.12</version.org.apache.pdfbox.fontbox>
@@ -1191,7 +1191,7 @@
         <version.org.apache.ws.commons.axiom.axiom-api>1.2.14</version.org.apache.ws.commons.axiom.axiom-api>
         <version.org.apache.ws.commons.axiom.axiom-impl>1.2.14</version.org.apache.ws.commons.axiom.axiom-impl>
         <version.org.apache.xbean.xbean-spring>4.5</version.org.apache.xbean.xbean-spring>
-        <version.org.apache.zookeeper.zookeeper>3.4.13</version.org.apache.zookeeper.zookeeper>
+        <version.org.apache.zookeeper.zookeeper>3.4.13.redhat-00001</version.org.apache.zookeeper.zookeeper>
         <version.org.awaitility.awaitility>3.1.3</version.org.awaitility.awaitility>
         <version.org.cassandraunit.cassandra-unit>3.1.3.2</version.org.cassandraunit.cassandra-unit>
         <version.org.ccil.cowan.tagsoup.tagsoup>1.2.1</version.org.ccil.cowan.tagsoup.tagsoup>
@@ -1201,74 +1201,74 @@
         <version.org.codehaus.jackson.jackson-mapper-asl>1.9.12</version.org.codehaus.jackson.jackson-mapper-asl>
         <version.org.codehaus.jackson.jackson-xc>1.9.12</version.org.codehaus.jackson.jackson-xc>
         <version.org.codehaus.jettison.jettison>1.4.0</version.org.codehaus.jettison.jettison>
-        <version.org.codehaus.woodstox.woodstox-core-asl>4.4.1</version.org.codehaus.woodstox.woodstox-core-asl>
-        <version.org.jdom.jdom>1.1.3</version.org.jdom.jdom>
-        <version.org.jruby.jruby>1.7.18</version.org.jruby.jruby>
-        <version.org.jruby.jruby-complete>1.7.18</version.org.jruby.jruby-complete>
+        <version.org.codehaus.woodstox.woodstox-core-asl>4.4.1.redhat-1</version.org.codehaus.woodstox.woodstox-core-asl>
+        <version.org.jdom.jdom>1.1.3.redhat-3</version.org.jdom.jdom>
+        <version.org.jruby.jruby>1.7.18.redhat-2</version.org.jruby.jruby>
+        <version.org.jruby.jruby-complete>1.7.18.redhat-2</version.org.jruby.jruby-complete>
         <version.org.knowm.xchange.xchange-core>4.3.12</version.org.knowm.xchange.xchange-core>
         <version.org.mozilla.rhino>1.7.7.1</version.org.mozilla.rhino>
+        <version.org.optaplanner.optaplanner-benchmark>7.14.0.Final-redhat-00004</version.org.optaplanner.optaplanner-benchmark>
         <version.org.optaplanner.optaplanner-benchmark>7.14.0.Final</version.org.optaplanner.optaplanner-benchmark>
         <version.org.optaplanner.optaplanner-benchmark>7.14.0.Final</version.org.optaplanner.optaplanner-benchmark>
         <version.org.optaplanner.optaplanner-benchmark>7.14.0.Final</version.org.optaplanner.optaplanner-benchmark>
-        <version.org.optaplanner.optaplanner-benchmark>7.14.0.Final</version.org.optaplanner.optaplanner-benchmark>
+        <version.org.optaplanner.optaplanner-core>7.14.0.Final-redhat-00004</version.org.optaplanner.optaplanner-core>
         <version.org.optaplanner.optaplanner-core>7.14.0.Final</version.org.optaplanner.optaplanner-core>
         <version.org.optaplanner.optaplanner-core>7.14.0.Final</version.org.optaplanner.optaplanner-core>
         <version.org.optaplanner.optaplanner-core>7.14.0.Final</version.org.optaplanner.optaplanner-core>
-        <version.org.optaplanner.optaplanner-core>7.14.0.Final</version.org.optaplanner.optaplanner-core>
-        <version.org.optaplanner.optaplanner-core-gwt>7.14.0.Final</version.org.optaplanner.optaplanner-core-gwt>
-        <version.org.optaplanner.optaplanner-distribution>7.14.0.Final</version.org.optaplanner.optaplanner-distribution>
-        <version.org.optaplanner.optaplanner-docs>7.14.0.Final</version.org.optaplanner.optaplanner-docs>
+        <version.org.optaplanner.optaplanner-core-gwt>7.14.0.Final-redhat-00004</version.org.optaplanner.optaplanner-core-gwt>
+        <version.org.optaplanner.optaplanner-distribution>7.14.0.Final-redhat-00004</version.org.optaplanner.optaplanner-distribution>
+        <version.org.optaplanner.optaplanner-docs>7.14.0.Final-redhat-00004</version.org.optaplanner.optaplanner-docs>
+        <version.org.optaplanner.optaplanner-examples>7.14.0.Final-redhat-00004</version.org.optaplanner.optaplanner-examples>
         <version.org.optaplanner.optaplanner-examples>7.14.0.Final</version.org.optaplanner.optaplanner-examples>
         <version.org.optaplanner.optaplanner-examples>7.14.0.Final</version.org.optaplanner.optaplanner-examples>
-        <version.org.optaplanner.optaplanner-examples>7.14.0.Final</version.org.optaplanner.optaplanner-examples>
+        <version.org.optaplanner.optaplanner-persistence-common>7.14.0.Final-redhat-00004</version.org.optaplanner.optaplanner-persistence-common>
         <version.org.optaplanner.optaplanner-persistence-common>7.14.0.Final</version.org.optaplanner.optaplanner-persistence-common>
         <version.org.optaplanner.optaplanner-persistence-common>7.14.0.Final</version.org.optaplanner.optaplanner-persistence-common>
         <version.org.optaplanner.optaplanner-persistence-common>7.14.0.Final</version.org.optaplanner.optaplanner-persistence-common>
-        <version.org.optaplanner.optaplanner-persistence-common>7.14.0.Final</version.org.optaplanner.optaplanner-persistence-common>
+        <version.org.optaplanner.optaplanner-persistence-jackson>7.14.0.Final-redhat-00004</version.org.optaplanner.optaplanner-persistence-jackson>
         <version.org.optaplanner.optaplanner-persistence-jackson>7.14.0.Final</version.org.optaplanner.optaplanner-persistence-jackson>
         <version.org.optaplanner.optaplanner-persistence-jackson>7.14.0.Final</version.org.optaplanner.optaplanner-persistence-jackson>
         <version.org.optaplanner.optaplanner-persistence-jackson>7.14.0.Final</version.org.optaplanner.optaplanner-persistence-jackson>
-        <version.org.optaplanner.optaplanner-persistence-jackson>7.14.0.Final</version.org.optaplanner.optaplanner-persistence-jackson>
+        <version.org.optaplanner.optaplanner-persistence-jaxb>7.14.0.Final-redhat-00004</version.org.optaplanner.optaplanner-persistence-jaxb>
         <version.org.optaplanner.optaplanner-persistence-jaxb>7.14.0.Final</version.org.optaplanner.optaplanner-persistence-jaxb>
         <version.org.optaplanner.optaplanner-persistence-jaxb>7.14.0.Final</version.org.optaplanner.optaplanner-persistence-jaxb>
         <version.org.optaplanner.optaplanner-persistence-jaxb>7.14.0.Final</version.org.optaplanner.optaplanner-persistence-jaxb>
-        <version.org.optaplanner.optaplanner-persistence-jaxb>7.14.0.Final</version.org.optaplanner.optaplanner-persistence-jaxb>
+        <version.org.optaplanner.optaplanner-persistence-jpa>7.14.0.Final-redhat-00004</version.org.optaplanner.optaplanner-persistence-jpa>
         <version.org.optaplanner.optaplanner-persistence-jpa>7.14.0.Final</version.org.optaplanner.optaplanner-persistence-jpa>
         <version.org.optaplanner.optaplanner-persistence-jpa>7.14.0.Final</version.org.optaplanner.optaplanner-persistence-jpa>
         <version.org.optaplanner.optaplanner-persistence-jpa>7.14.0.Final</version.org.optaplanner.optaplanner-persistence-jpa>
-        <version.org.optaplanner.optaplanner-persistence-jpa>7.14.0.Final</version.org.optaplanner.optaplanner-persistence-jpa>
+        <version.org.optaplanner.optaplanner-persistence-xstream>7.14.0.Final-redhat-00004</version.org.optaplanner.optaplanner-persistence-xstream>
         <version.org.optaplanner.optaplanner-persistence-xstream>7.14.0.Final</version.org.optaplanner.optaplanner-persistence-xstream>
         <version.org.optaplanner.optaplanner-persistence-xstream>7.14.0.Final</version.org.optaplanner.optaplanner-persistence-xstream>
         <version.org.optaplanner.optaplanner-persistence-xstream>7.14.0.Final</version.org.optaplanner.optaplanner-persistence-xstream>
-        <version.org.optaplanner.optaplanner-persistence-xstream>7.14.0.Final</version.org.optaplanner.optaplanner-persistence-xstream>
+        <version.org.optaplanner.optaplanner-test>7.14.0.Final-redhat-00004</version.org.optaplanner.optaplanner-test>
         <version.org.optaplanner.optaplanner-test>7.14.0.Final</version.org.optaplanner.optaplanner-test>
         <version.org.optaplanner.optaplanner-test>7.14.0.Final</version.org.optaplanner.optaplanner-test>
         <version.org.optaplanner.optaplanner-test>7.14.0.Final</version.org.optaplanner.optaplanner-test>
-        <version.org.optaplanner.optaplanner-test>7.14.0.Final</version.org.optaplanner.optaplanner-test>
+        <version.org.optaplanner.optaplanner-wb-domain-editor-api>7.14.0.Final-redhat-00004</version.org.optaplanner.optaplanner-wb-domain-editor-api>
         <version.org.optaplanner.optaplanner-wb-domain-editor-api>7.14.0.Final</version.org.optaplanner.optaplanner-wb-domain-editor-api>
-        <version.org.optaplanner.optaplanner-wb-domain-editor-api>7.14.0.Final</version.org.optaplanner.optaplanner-wb-domain-editor-api>
+        <version.org.optaplanner.optaplanner-wb-domain-editor-backend>7.14.0.Final-redhat-00004</version.org.optaplanner.optaplanner-wb-domain-editor-backend>
         <version.org.optaplanner.optaplanner-wb-domain-editor-backend>7.14.0.Final</version.org.optaplanner.optaplanner-wb-domain-editor-backend>
-        <version.org.optaplanner.optaplanner-wb-domain-editor-backend>7.14.0.Final</version.org.optaplanner.optaplanner-wb-domain-editor-backend>
+        <version.org.optaplanner.optaplanner-wb-domain-editor-client>7.14.0.Final-redhat-00004</version.org.optaplanner.optaplanner-wb-domain-editor-client>
         <version.org.optaplanner.optaplanner-wb-domain-editor-client>7.14.0.Final</version.org.optaplanner.optaplanner-wb-domain-editor-client>
-        <version.org.optaplanner.optaplanner-wb-domain-editor-client>7.14.0.Final</version.org.optaplanner.optaplanner-wb-domain-editor-client>
+        <version.org.optaplanner.optaplanner-wb-guided-rule-editor-api>7.14.0.Final-redhat-00004</version.org.optaplanner.optaplanner-wb-guided-rule-editor-api>
         <version.org.optaplanner.optaplanner-wb-guided-rule-editor-api>7.14.0.Final</version.org.optaplanner.optaplanner-wb-guided-rule-editor-api>
-        <version.org.optaplanner.optaplanner-wb-guided-rule-editor-api>7.14.0.Final</version.org.optaplanner.optaplanner-wb-guided-rule-editor-api>
+        <version.org.optaplanner.optaplanner-wb-guided-rule-editor-backend>7.14.0.Final-redhat-00004</version.org.optaplanner.optaplanner-wb-guided-rule-editor-backend>
         <version.org.optaplanner.optaplanner-wb-guided-rule-editor-backend>7.14.0.Final</version.org.optaplanner.optaplanner-wb-guided-rule-editor-backend>
-        <version.org.optaplanner.optaplanner-wb-guided-rule-editor-backend>7.14.0.Final</version.org.optaplanner.optaplanner-wb-guided-rule-editor-backend>
+        <version.org.optaplanner.optaplanner-wb-guided-rule-editor-client>7.14.0.Final-redhat-00004</version.org.optaplanner.optaplanner-wb-guided-rule-editor-client>
         <version.org.optaplanner.optaplanner-wb-guided-rule-editor-client>7.14.0.Final</version.org.optaplanner.optaplanner-wb-guided-rule-editor-client>
-        <version.org.optaplanner.optaplanner-wb-guided-rule-editor-client>7.14.0.Final</version.org.optaplanner.optaplanner-wb-guided-rule-editor-client>
+        <version.org.optaplanner.optaplanner-wb-solver-editor-api>7.14.0.Final-redhat-00004</version.org.optaplanner.optaplanner-wb-solver-editor-api>
         <version.org.optaplanner.optaplanner-wb-solver-editor-api>7.14.0.Final</version.org.optaplanner.optaplanner-wb-solver-editor-api>
-        <version.org.optaplanner.optaplanner-wb-solver-editor-api>7.14.0.Final</version.org.optaplanner.optaplanner-wb-solver-editor-api>
+        <version.org.optaplanner.optaplanner-wb-solver-editor-backend>7.14.0.Final-redhat-00004</version.org.optaplanner.optaplanner-wb-solver-editor-backend>
         <version.org.optaplanner.optaplanner-wb-solver-editor-backend>7.14.0.Final</version.org.optaplanner.optaplanner-wb-solver-editor-backend>
-        <version.org.optaplanner.optaplanner-wb-solver-editor-backend>7.14.0.Final</version.org.optaplanner.optaplanner-wb-solver-editor-backend>
+        <version.org.optaplanner.optaplanner-wb-solver-editor-client>7.14.0.Final-redhat-00004</version.org.optaplanner.optaplanner-wb-solver-editor-client>
         <version.org.optaplanner.optaplanner-wb-solver-editor-client>7.14.0.Final</version.org.optaplanner.optaplanner-wb-solver-editor-client>
-        <version.org.optaplanner.optaplanner-wb-solver-editor-client>7.14.0.Final</version.org.optaplanner.optaplanner-wb-solver-editor-client>
-        <version.org.optaplanner.optaplanner-wb-ui>7.14.0.Final</version.org.optaplanner.optaplanner-wb-ui>
+        <version.org.optaplanner.optaplanner-wb-ui>7.14.0.Final-redhat-00004</version.org.optaplanner.optaplanner-wb-ui>
+        <version.org.optaplanner.optaplanner-webexamples>7.14.0.Final-redhat-00004</version.org.optaplanner.optaplanner-webexamples>
         <version.org.optaplanner.optaplanner-webexamples>7.14.0.Final</version.org.optaplanner.optaplanner-webexamples>
-        <version.org.optaplanner.optaplanner-webexamples>7.14.0.Final</version.org.optaplanner.optaplanner-webexamples>
+        <version.org.optaplanner.optaplanner-workbench-models-core>7.14.0.Final-redhat-00004</version.org.optaplanner.optaplanner-workbench-models-core>
         <version.org.optaplanner.optaplanner-workbench-models-core>7.14.0.Final</version.org.optaplanner.optaplanner-workbench-models-core>
-        <version.org.optaplanner.optaplanner-workbench-models-core>7.14.0.Final</version.org.optaplanner.optaplanner-workbench-models-core>
-        <version.org.optaplanner.optaplanner-workbench-models-datamodel-api>7.14.0.Final</version.org.optaplanner.optaplanner-workbench-models-datamodel-api>
+        <version.org.optaplanner.optaplanner-workbench-models-datamodel-api>7.14.0.Final-redhat-00004</version.org.optaplanner.optaplanner-workbench-models-datamodel-api>
         <version.org.optaplanner.optaplanner-workbench-models-datamodel-api>7.14.0.Final</version.org.optaplanner.optaplanner-workbench-models-datamodel-api>
         <version.org.python.jython>2.5.3</version.org.python.jython>
         <version.org.restlet.jee.org.restlet>2.3.12</version.org.restlet.jee.org.restlet>
@@ -1296,16 +1296,16 @@
         <version.org.arquillian.cube.arquillian-cube-kubernetes-fabric8>1.9.0</version.org.arquillian.cube.arquillian-cube-kubernetes-fabric8>
         <version.org.arquillian.cube.arquillian-cube-openshift>1.9.0</version.org.arquillian.cube.arquillian-cube-openshift>
         <version.io.fabric8.spring-cloud-kubernetes-core>${version.spring-cloud-kubernetes}</version.io.fabric8.spring-cloud-kubernetes-core>
-        <version.commons-beanutils.commons-beanutils>1.9.3</version.commons-beanutils.commons-beanutils>
-        <version.commons-collections.commons-collections>3.2.2</version.commons-collections.commons-collections>
-        <version.commons-dbcp.commons-dbcp>1.4</version.commons-dbcp.commons-dbcp>
+        <version.commons-beanutils.commons-beanutils>1.9.3.redhat-1</version.commons-beanutils.commons-beanutils>
+        <version.commons-collections.commons-collections>3.2.2.redhat-2</version.commons-collections.commons-collections>
+        <version.commons-dbcp.commons-dbcp>1.4-redhat-2</version.commons-dbcp.commons-dbcp>
         <version.commons-digester.commons-digester>2.1</version.commons-digester.commons-digester>
-        <version.javax.cache.cache-api>1.0.0</version.javax.cache.cache-api>
+        <version.javax.cache.cache-api>1.0.0.redhat-1</version.javax.cache.cache-api>
         <version.javax.jms.jms-api>1.1-rev-1</version.javax.jms.jms-api>
-        <version.javax.mail.javax.mail-api>1.5.6</version.javax.mail.javax.mail-api>
+        <version.javax.mail.javax.mail-api>1.5.6.redhat-2</version.javax.mail.javax.mail-api>
         <version.javax.servlet.jstl>1.2</version.javax.servlet.jstl>
         <version.javax.transaction.javax.transaction-api>1.2</version.javax.transaction.javax.transaction-api>
-        <version.javax.validation.validation-api>2.0.1.Final</version.javax.validation.validation-api>
+        <version.javax.validation.validation-api>2.0.1.Final-redhat-1</version.javax.validation.validation-api>
         <version.org.springframework.cloud.spring-cloud-core>1.2.6.RELEASE</version.org.springframework.cloud.spring-cloud-core>
         <version.org.springframework.cloud.spring-cloud-commons>1.1.7.RELEASE</version.org.springframework.cloud.spring-cloud-commons>
         <version.org.springframework.cloud.spring-cloud-context>1.1.7.RELEASE</version.org.springframework.cloud.spring-cloud-context>
@@ -1335,7 +1335,7 @@
         <version.org.springframework.cloud.spring-cloud-netflix-turbine-stream>1.2.5.RELEASE</version.org.springframework.cloud.spring-cloud-netflix-turbine-stream>
         <version.commons-configuration.commons-configuration>1.8</version.commons-configuration.commons-configuration>
         <version.io.reactivex.rxjava>1.1.10</version.io.reactivex.rxjava>
-        <version.com.google.guava.guava>18.0</version.com.google.guava.guava>
+        <version.com.google.guava.guava>18.0.0.redhat-1</version.com.google.guava.guava>
         <version.org.springframework.cloud.spring-cloud-stream>1.1.1.RELEASE</version.org.springframework.cloud.spring-cloud-stream>
         <version.org.springframework.cloud.spring-cloud-stream-codec>1.1.1.RELEASE</version.org.springframework.cloud.spring-cloud-stream-codec>
         <version.org.springframework.cloud.spring-cloud-stream-reactive>1.1.1.RELEASE</version.org.springframework.cloud.spring-cloud-stream-reactive>
@@ -1422,7 +1422,7 @@
             <dependency>
                 <groupId>org.jboss.redhat-fuse</groupId>
                 <artifactId>redhat-fuse</artifactId>
-                <version>${project.version}</version>
+                <version>7.4.0.fuse-sb2-740006-redhat-00001</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
