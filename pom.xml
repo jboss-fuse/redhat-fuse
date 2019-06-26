@@ -38,8 +38,8 @@
         <version.camel>2.23.2.fuse-740004-redhat-00001</version.camel>
         <version.camel.extra>2.23.2.fuse-sb2-740004</version.camel.extra>
         <version.cxf>3.2.7.fuse-sb2-740010-redhat-00001</version.cxf>
-        <version.fabric8>3.0.11.fuse-740024-redhat-00001</version.fabric8>
-        <version.fabric8.maven.plugin>3.5.33.fuse-740024-redhat-00001</version.fabric8.maven.plugin>
+        <version.fabric8>3.0.11.sb2-fuse-740041-redhat-00001</version.fabric8>
+        <version.fabric8.maven.plugin>4.0.0.fuse-sb2-740002-redhat-00001</version.fabric8.maven.plugin>
         <version.fuse-karaf>7.4.0.fuse-740015</version.fuse-karaf>
         <version.karaf>4.2.0.fuse-740020</version.karaf>
         <version.bom.wildfly.camel>5.3.0.fuse-740010</version.bom.wildfly.camel>
