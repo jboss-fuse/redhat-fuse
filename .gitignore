@@ -3,3 +3,8 @@
 .project
 .settings
 target
+
+
+.vscode/
+.classpath
+.factorypath
