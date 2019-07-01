@@ -35,8 +35,7 @@
                 <distribution>repo</distribution>
             </license>
         </licenses>
-    
-    
+
         <scm>
             <connection>scm:git:git@github.com:fabric8io/fabric8.git</connection>
             <developerConnection>scm:git:git@github.com:fabric8io/fabric8.git</developerConnection>
@@ -44,7 +43,7 @@
             <tag>fabric8-3.0.11</tag>
         </scm>
     
-            <developers>
+        <developers>
             <developer>
                 <id>geeks</id>
                 <name>Fabric8 Development Team</name>
@@ -56,10 +55,15 @@
 
     <properties>
         <rhoar.version>2.1.3.Final-redhat-00001</rhoar.version>
+
+        <!-- test frameworks versions -->
+        <arquillian.version>1.4.1.Final</arquillian.version>
+        <arquillian.cube.version>1.18.2</arquillian.cube.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <!-- Fuse -->
             <dependency>
                 <groupId>org.jboss.redhat-fuse</groupId>
                 <artifactId>redhat-fuse</artifactId>
@@ -68,6 +72,7 @@
                 <type>pom</type>
             </dependency>
 
+            <!-- Spring Boot -->
             <dependency>
                 <groupId>me.snowdrop</groupId>
                 <artifactId>spring-boot-bom</artifactId>
@@ -76,7 +81,7 @@
                 <type>pom</type>
             </dependency>
 
-        
+            <!-- Camel -->
             <dependency>
                 <groupId>org.apache.camel</groupId>
                 <artifactId>camel-parent</artifactId>
@@ -99,16 +104,18 @@
                 <scope>import</scope>
             </dependency>
             <dependency>
-                <groupId>io.hawt</groupId>
-                <artifactId>project</artifactId>
-                <version>${version.hawtio}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
                 <groupId>org.apache-extras.camel-extra</groupId>
                 <artifactId>camel-parent</artifactId>
                 <version>${version.camel.extra}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- Hawtio -->
+            <dependency>
+                <groupId>io.hawt</groupId>
+                <artifactId>project</artifactId>
+                <version>${version.hawtio}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -119,6 +126,8 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <!-- Kubernetes-client -->
             <dependency>
                 <groupId>io.fabric8</groupId>
                 <artifactId>kubernetes-model-generator</artifactId>
@@ -133,12 +142,28 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <!-- Test frameworks dependencies-->
+            <dependency>
+                <groupId>org.arquillian.cube</groupId>
+                <artifactId>arquillian-cube-bom</artifactId>
+                <version>${arquillian.cube.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.arquillian</groupId>
+                <artifactId>arquillian-bom</artifactId>
+                <version>${arquillian.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+
             <dependency>
                 <groupId>io.fabric8</groupId>
-                <artifactId>docker-maven-plugin</artifactId>
-                <version>${version.docker.maven.plugin}</version>
-                <type>pom</type>
-                <scope>import</scope>
+                <artifactId>kubernetes-assertions</artifactId>
+                <version>${version.fabric8}</version>
+                <scope>test</scope>
             </dependency>
         </dependencies>
  
