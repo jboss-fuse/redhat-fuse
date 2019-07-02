@@ -56,7 +56,7 @@
 
         <version.apicurito>1.0.1.fuse-740010</version.apicurito>
         <version.spring-cloud-kubernetes>0.1.6.fuse-740009</version.spring-cloud-kubernetes>
-        <version.narayana-spring-boot>2.0.2.fuse-740015</version.narayana-spring-boot>
+        <version.narayana-spring-boot>2.1.1.fuse-sb2-740005</version.narayana-spring-boot>
 
         <version.felix.bundle-plugin>3.5.1</version.felix.bundle-plugin>
 
