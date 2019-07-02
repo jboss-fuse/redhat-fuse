@@ -42,12 +42,20 @@
                 <type>pom</type>
             </dependency>
 
+            <!-- Hawtio -->
             <dependency>
                 <groupId>io.hawt</groupId>
-                <artifactId>hawtio-bom</artifactId>
+                <artifactId>project</artifactId>
                 <version>${version.hawtio}</version>
-                <scope>import</scope>
                 <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.hawt</groupId>
+                <artifactId>hawtio-online</artifactId>
+                <version>${version.hawtio.online}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
 
         </dependencies>

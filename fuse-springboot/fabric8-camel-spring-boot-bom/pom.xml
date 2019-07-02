@@ -116,22 +116,6 @@
                 <scope>import</scope>
             </dependency>
 
-            <!-- Hawtio -->
-            <dependency>
-                <groupId>io.hawt</groupId>
-                <artifactId>project</artifactId>
-                <version>${version.hawtio}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>io.hawt</groupId>
-                <artifactId>hawtio-online</artifactId>
-                <version>${version.hawtio.online}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-
             <!-- Kubernetes-client -->
             <dependency>
                 <groupId>io.fabric8</groupId>
@@ -142,7 +126,7 @@
             </dependency>
             <dependency>
                 <groupId>io.fabric8</groupId>
-                <artifactId>kubernetes-client-project</artifactId>
+                <artifactId>kubernetes-client-bom</artifactId>
                 <version>${version.kubernetes.client}</version>
                 <type>pom</type>
                 <scope>import</scope>
