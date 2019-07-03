@@ -63,6 +63,19 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- TODO: [start] remove when cxf and camel opentracing version will be aligned -->
+            <dependency>
+                <groupId>io.opentracing</groupId>
+                <artifactId>opentracing-api</artifactId>
+                <version>0.31.0</version>
+            </dependency>
+            <dependency>
+                <groupId>io.opentracing</groupId>
+                <artifactId>opentracing-util</artifactId>
+                <version>0.31.0</version>
+            </dependency>
+            <!-- TODO: [end] remove when cxf and camel opentracing version will be aligned -->
+
             <!-- Fuse -->
             <dependency>
                 <groupId>org.jboss.redhat-fuse</groupId>
@@ -148,6 +161,7 @@
                 <type>pom</type>
             </dependency>
 
+            <!-- TODO: ideally this should be moved to Arquillian -->
             <dependency>
                 <groupId>io.fabric8</groupId>
                 <artifactId>kubernetes-assertions</artifactId>
