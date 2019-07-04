@@ -34,22 +34,11 @@
         <module>spring-boot-maven-plugin</module>
         <module>fabric8-maven-plugin</module>
 
-        <module>karaf-maven-plugin</module>
-        <module>karaf-services-maven-plugin</module>
-
         <module>camel-maven-plugin</module>
         <module>camel-salesforce-maven-plugin</module>
         <module>camel-package-maven-plugin</module>
         <module>camel-api-component-maven-plugin</module>
         <module>camel-restdsl-swagger-plugin</module>
-<!--
-        <module>cxf-codegen-plugin</module>
-        <module>cxf-java2swagger-plugin</module>
-        <module>cxf-java2wadl-plugin</module>
-        <module>cxf-java2ws-plugin</module>
-        <module>cxf-wadl2java-plugin</module>
-        <module>cxf-wsdl-validator-plugin</module>
--->
     </modules>
 
     <build>

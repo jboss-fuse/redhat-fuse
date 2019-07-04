@@ -71,8 +71,6 @@
 
     <modules>
         <module>fuse-tools</module>
-        <module>fuse-karaf</module>
-        <module>fuse-eap</module>
         <module>fuse-springboot</module>
         <module>fuse-maven-plugins</module>
     </modules>
