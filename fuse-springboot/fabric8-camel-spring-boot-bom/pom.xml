@@ -168,6 +168,61 @@
                 <version>${version.fabric8}</version>
                 <scope>test</scope>
             </dependency>
+            
+  		    <!-- Hibernate Validator-->
+		    <dependency>
+		  	  <groupId>org.hibernate.validator</groupId>
+			  <artifactId>hibernate-validator</artifactId>
+			  <version>${hibernate-validator.version}</version>
+		    </dependency>
+
+		    <!-- Hibernate -->
+		    <dependency>
+			  <groupId>org.hibernate</groupId>
+			  <artifactId>hibernate-core</artifactId>
+			  <version>${hibernate.version}</version>
+			  <exclusions>
+			    <exclusion>
+				  <groupId>org.apache.geronimo.specs</groupId>
+				  <artifactId>geronimo-jta_1.1_spec</artifactId>
+			    </exclusion>
+			  </exclusions>
+		    </dependency>
+		    <dependency>
+			  <groupId>org.hibernate</groupId>
+			  <artifactId>hibernate-entitymanager</artifactId>
+			  <version>${hibernate.version}</version>
+			  <exclusions>
+			    <exclusion>
+				  <groupId>org.apache.geronimo.specs</groupId>
+				  <artifactId>geronimo-jta_1.1_spec</artifactId>
+			    </exclusion>
+			  </exclusions>
+		    </dependency>
+
+		    <!-- Undertow -->
+		    <dependency>
+			  <groupId>io.undertow</groupId>
+			  <artifactId>undertow-core</artifactId>
+			  <version>${undertow.version}</version>
+		    </dependency>
+		    <dependency>
+			  <groupId>io.undertow</groupId>
+			  <artifactId>undertow-servlet</artifactId>
+			  <version>${undertow.version}</version>
+			  <exclusions>
+			    <exclusion>
+				  <groupId>org.jboss.spec.javax.servlet</groupId>
+				  <artifactId>jboss-servlet-api_3.1_spec</artifactId>
+			    </exclusion>
+			  </exclusions>
+		    </dependency>
+		    <dependency>
+			  <groupId>io.undertow</groupId>
+			  <artifactId>undertow-websockets-jsr</artifactId>
+			  <version>${undertow.version}</version>
+		    </dependency>
+					
         </dependencies>
  
     </dependencyManagement>
