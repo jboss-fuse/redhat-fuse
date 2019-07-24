@@ -38,16 +38,16 @@
         <version.camel>2.23.2.fuse-740010</version.camel>
         <version.camel.extra>2.23.2.fuse-sb2-740010</version.camel.extra>
         <version.cxf>3.2.7.fuse-sb2-740015</version.cxf>
-        <version.fabric8>3.0.11.fuse-740028</version.fabric8>
-        <version.fabric8.maven.plugin>3.5.33.fuse-740028</version.fabric8.maven.plugin>
+        <version.fabric8>3.0.11.fuse-740029</version.fabric8>
+        <version.fabric8.maven.plugin>3.5.33.fuse-740029-redhat-00001</version.fabric8.maven.plugin>
         <version.fusesource.camel.sap>7.4.0.fuse-sb2-740009</version.fusesource.camel.sap>
 
         <version.hawtio>2.0.0.fuse-sb2-740008</version.hawtio>
         
-        <version.kubernetes.model>2.0.10.fuse-740009</version.kubernetes.model>
-        <version.kubernetes.client>3.1.12.fuse-740021</version.kubernetes.client>
+        <version.kubernetes.model>2.0.10.fuse-740010-redhat-00001</version.kubernetes.model>
+        <version.kubernetes.client>3.1.12.fuse-740022-redhat-00001</version.kubernetes.client>
 
-        <version.docker.maven.plugin>0.23.0.fuse-740006</version.docker.maven.plugin>
+        <version.docker.maven.plugin>0.23.0.fuse-740006-redhat-00006</version.docker.maven.plugin>
 
         <version.spring-cloud-kubernetes>0.1.6.fuse-740016</version.spring-cloud-kubernetes>
         <version.narayana-spring-boot>2.1.1.fuse-sb2-740009</version.narayana-spring-boot>
