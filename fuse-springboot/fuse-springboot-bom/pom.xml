@@ -32,6 +32,12 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- Hawtio starter -->
+            <dependency>
+                <groupId>io.hawt</groupId>
+                <artifactId>hawtio-springboot</artifactId>
+                <version>${version.hawtio}</version>
+            </dependency>
 
             <!-- Fuse BOM to import all non-plugin dependencies -->
             <dependency>
@@ -41,16 +47,6 @@
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
-
-            <!-- Hawtio -->
-            <dependency>
-                <groupId>io.hawt</groupId>
-                <artifactId>project</artifactId>
-                <version>${version.hawtio}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-
         </dependencies>
     </dependencyManagement>
 
