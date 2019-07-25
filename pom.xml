@@ -53,13 +53,16 @@
         <version.spring-cloud-kubernetes>0.1.6.fuse-740016</version.spring-cloud-kubernetes>
         <version.narayana-spring-boot>2.1.1.fuse-sb2-740009</version.narayana-spring-boot>
 
-        <!-- Overriden from snowdrop Spring Boot BOM-->
+        <!-- Overridden from snowdrop Spring Boot BOM-->
         <hibernate.version>5.3.10.Final-redhat-00001</hibernate.version>
         <hibernate-validator.version>5.3.5.Final-redhat-2</hibernate-validator.version>
         <undertow.version>2.0.20.Final-redhat-00001</undertow.version>
 
         <activemq.version>5.11.0.redhat-630396</activemq.version>
         <artemis.version>2.7.0.redhat-00056</artemis.version>
+
+        <kafka.version>2.1.1.redhat-00002</kafka.version>
+        <!-- END Overridden from snowdrop Spring Boot BOM-->
 
         <!--
           CONVENTIONS:
