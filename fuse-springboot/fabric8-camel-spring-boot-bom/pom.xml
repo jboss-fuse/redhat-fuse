@@ -76,6 +76,19 @@
             </dependency>
             <!-- TODO: [end] remove when cxf and camel opentracing version will be aligned -->
 
+            <!-- Exclude selenium deps -->
+            <dependency>
+                <groupId>org.apache.activemq</groupId>
+                <artifactId>artemis-jms-client</artifactId>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>geronimo-json_1.0_spec</artifactId>
+                        <groupId>org.apache.geronimo.specs</groupId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+
             <!-- Fuse -->
             <dependency>
                 <groupId>org.jboss.redhat-fuse</groupId>
@@ -169,6 +182,7 @@
                 <scope>test</scope>
             </dependency>
 
+            <!-- OVERRIDES -->
             <!-- Hibernate Validator-->
             <dependency>
                 <groupId>org.hibernate</groupId>
@@ -413,7 +427,39 @@
                 <artifactId>artemis-service-extensions</artifactId>
                 <version>${artemis.version}</version>
             </dependency>
-        </dependencies>
 
+            <!-- Kafka -->
+            <dependency>
+                <groupId>org.apache.kafka</groupId>
+                <artifactId>kafka-clients</artifactId>
+                <version>${kafka.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.kafka</groupId>
+                <artifactId>connect-api</artifactId>
+                <version>${kafka.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.kafka</groupId>
+                <artifactId>connect-json</artifactId>
+                <version>${kafka.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.kafka</groupId>
+                <artifactId>kafka-log4j-appender</artifactId>
+                <version>${kafka.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.kafka</groupId>
+                <artifactId>kafka-streams</artifactId>
+                <version>${kafka.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.kafka</groupId>
+                <artifactId>kafka_2.12</artifactId>
+                <version>${kafka.version}</version>
+            </dependency>
+            <!-- END OVERRIDES -->
+        </dependencies>
     </dependencyManagement>
 </project>
