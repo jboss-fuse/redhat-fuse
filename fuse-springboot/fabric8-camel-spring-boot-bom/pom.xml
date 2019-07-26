@@ -76,18 +76,19 @@
             </dependency>
             <!-- TODO: [end] remove when cxf and camel opentracing version will be aligned -->
 
-            <!-- Exclude selenium deps -->
+            <!-- Spring Boot -->
             <dependency>
-                <groupId>org.apache.activemq</groupId>
-                <artifactId>artemis-jms-client</artifactId>
-                <exclusions>
-                    <exclusion>
-                        <artifactId>geronimo-json_1.0_spec</artifactId>
-                        <groupId>org.apache.geronimo.specs</groupId>
-                    </exclusion>
-                </exclusions>
+                <groupId>me.snowdrop</groupId>
+                <artifactId>spring-boot-bom</artifactId>
+                <version>${rhoar.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
             </dependency>
-
+            <dependency>
+                <groupId>me.snowdrop</groupId>
+                <artifactId>narayana-spring-boot-recovery-controller</artifactId>
+                <version>${version.narayana-spring-boot}</version>
+            </dependency>
 
             <!-- Fuse -->
             <dependency>
@@ -113,12 +114,19 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
             <dependency>
                 <groupId>org.apache.cxf</groupId>
                 <artifactId>cxf-parent</artifactId>
                 <version>${version.cxf}</version>
                 <type>pom</type>
                 <scope>import</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>*</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.apache-extras.camel-extra</groupId>
@@ -126,6 +134,12 @@
                 <version>${version.camel.extra}</version>
                 <type>pom</type>
                 <scope>import</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>*</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
 
             <!-- Kubernetes-client -->
@@ -142,20 +156,6 @@
                 <version>${version.kubernetes.client}</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
-
-            <!-- Spring Boot -->
-            <dependency>
-                <groupId>me.snowdrop</groupId>
-                <artifactId>spring-boot-bom</artifactId>
-                <version>${rhoar.version}</version>
-                <scope>import</scope>
-                <type>pom</type>
-            </dependency>
-            <dependency>
-                <groupId>me.snowdrop</groupId>
-                <artifactId>narayana-spring-boot-recovery-controller</artifactId>
-                <version>${version.narayana-spring-boot}</version>
             </dependency>
 
             <!-- Test frameworks dependencies-->
