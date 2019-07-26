@@ -40,7 +40,7 @@
         <version.cxf>3.2.7.fuse-sb2-740015</version.cxf>
 
         <version.fabric8>3.0.11.fuse-740029</version.fabric8>
-        <version.fabric8.maven.plugin>3.5.33.fuse-740029-redhat-00001</version.fabric8.maven.plugin>
+        <version.fabric8.maven.plugin>3.5.33.fuse-740029</version.fabric8.maven.plugin>
         <version.fusesource.camel.sap>7.4.0.fuse-sb2-740009</version.fusesource.camel.sap>
 
         <version.hawtio>2.0.0.fuse-sb2-740008</version.hawtio>
