@@ -35,18 +35,18 @@
         <!-- Build properties (overridable in profiles) -->
         <enforcer.pluginVersions.banSnapshots>false</enforcer.pluginVersions.banSnapshots>
 
-        <version.camel>2.23.2.fuse-750002</version.camel>
-        <version.camel.extra>2.23.2.fuse-sb2-750002</version.camel.extra>
-        <version.cxf>3.2.7.fuse-sb2-750002</version.cxf>
+        <version.camel>2.23.2.fuse-750003</version.camel>
+        <version.camel.extra>2.23.2.fuse-sb2-750003</version.camel.extra>
+        <version.cxf>3.2.7.fuse-sb2-750003</version.cxf>
 
         <version.fabric8>3.0.11.fuse-750006</version.fabric8>
         <version.fabric8.maven.plugin>3.5.33.fuse-750006</version.fabric8.maven.plugin>
-        <version.fusesource.camel.sap>7.5.0.fuse-sb2-750002</version.fusesource.camel.sap>
+        <version.fusesource.camel.sap>7.5.0.fuse-sb2-750003</version.fusesource.camel.sap>
 
         <version.hawtio>2.0.0.fuse-sb2-750002</version.hawtio>
         
-        <version.kubernetes.model>kubernetes-model-2.0.10.fuse-750002</version.kubernetes.model>
-        <version.kubernetes.client>kubernetes-client-3.1.12.fuse-750004</version.kubernetes.client>
+        <version.kubernetes.model>2.0.10.fuse-750002</version.kubernetes.model>
+        <version.kubernetes.client>3.1.12.fuse-750004</version.kubernetes.client>
 
         <version.docker.maven.plugin>0.23.0.fuse-750002</version.docker.maven.plugin>
 
