@@ -35,12 +35,12 @@
         <!-- Build properties (overridable in profiles) -->
         <enforcer.pluginVersions.banSnapshots>false</enforcer.pluginVersions.banSnapshots>
 
-        <spring-boot.version>1.5.17.RELEASE</spring-boot.version>
+        <spring-boot.version>1.5.18.RELEASE</spring-boot.version>
         <version.camel>2.21.0.fuse-740037</version.camel>
         <version.camel.extra>2.21.0.fuse-740034</version.camel.extra>
         <version.cxf>3.2.7.fuse-740024</version.cxf>
         <version.fabric8>3.0.11.fuse-740027</version.fabric8>
-        <version.fabric8.maven.plugin>3.5.33.fuse-740027</version.fabric8.maven.plugin>
+        <version.fabric8.maven.plugin>3.5.33.fuse-740028</version.fabric8.maven.plugin>
         <version.fuse-karaf>7.4.0.fuse-740026</version.fuse-karaf>
         <version.karaf>4.2.0.fuse-740022</version.karaf>
         <version.bom.wildfly.camel>5.3.0.fuse-740020</version.bom.wildfly.camel>
@@ -58,6 +58,8 @@
         <version.apicurito>1.0.1.fuse-740021</version.apicurito>
 
         <version.felix.bundle-plugin>3.5.1</version.felix.bundle-plugin>
+
+        <version.jackson2>2.8.11</version.jackson2>
 
         <!--
           CONVENTIONS:
@@ -300,6 +302,26 @@
                 <version>${version.docker.maven.plugin}</version>
                 <type>pom</type>
                 <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${version.jackson2}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${version.jackson2}.3</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${version.jackson2}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.dataformat</groupId>
+                <artifactId>jackson-dataformat-yaml</artifactId>
+                <version>${version.jackson2}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
