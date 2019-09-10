@@ -183,6 +183,13 @@
                 <scope>test</scope>
             </dependency>
 
+            <dependency>
+                <groupId>io.fabric8</groupId>
+                <artifactId>fabric8-arquillian</artifactId>
+                <version>${version.fabric8}</version>
+                <scope>test</scope>
+            </dependency>
+
             <!-- OVERRIDES -->
             <!-- Hibernate Validator-->
             <dependency>
