@@ -54,9 +54,6 @@
     </developers>
 
     <properties>
-        <rhoar.version>2.1.3.Final-redhat-00001</rhoar.version>
-        <kubernetes.assertions.version>3.0.12</kubernetes.assertions.version>
-
         <!-- test frameworks versions -->
         <arquillian.version>1.4.1.Final</arquillian.version>
         <arquillian.cube.version>1.18.2</arquillian.cube.version>
@@ -179,7 +176,7 @@
             <dependency>
                 <groupId>io.fabric8</groupId>
                 <artifactId>kubernetes-assertions</artifactId>
-                <version>${version.kubernetes.assertions}</version>
+                <version>${version.fabric8}</version>
                 <scope>test</scope>
             </dependency>
 
