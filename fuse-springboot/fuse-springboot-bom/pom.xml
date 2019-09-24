@@ -47,6 +47,15 @@
                 <artifactId>hawtio-springboot</artifactId>
                 <version>${version.hawtio}</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-parent</artifactId>
+                <version>${version.cxf}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
