@@ -23,7 +23,7 @@
     <parent>
         <groupId>org.jboss.redhat-fuse</groupId>
         <artifactId>redhat-fuse</artifactId>
-        <version>7.5.0.fuse-750021</version>
+        <version>7.5.0.fuse-750021-temporary-redhat-00003</version>
     </parent>
 
     <artifactId>fuse-eap</artifactId>
