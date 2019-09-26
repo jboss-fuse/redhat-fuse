@@ -57,6 +57,7 @@
         <!-- test frameworks versions -->
         <arquillian.version>1.4.1.Final</arquillian.version>
         <arquillian.cube.version>1.18.2</arquillian.cube.version>
+        <javax.inject.version>1</javax.inject.version>
     </properties>
 
     <dependencyManagement>
@@ -520,6 +521,14 @@
                 <artifactId>kafka_2.12</artifactId>
                 <version>${kafka.version}</version>
             </dependency>
+
+            <!-- spring-boot 1 carryovers / customer asks -->
+            <dependency>
+                <groupId>javax.inject</groupId>
+                <artifactId>javax.inject</artifactId>
+                <version>${javax.inject.version}</version>
+            </dependency>
+
             <!-- END OVERRIDES -->
         </dependencies>
     </dependencyManagement>
