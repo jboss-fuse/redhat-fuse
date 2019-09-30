@@ -1125,6 +1125,13 @@
                 <version>1.6.3.redhat-2</version>
             </dependency>
 
+            <!-- somehow this is not imported from  CXF's bom -->
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-spring-boot-starter-jaxrs</artifactId>
+                <version>${version.cxf}</version>
+            </dependency>
+
             <!-- END OVERRIDES -->
         </dependencies>
     </dependencyManagement>
