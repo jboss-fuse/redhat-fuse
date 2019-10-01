@@ -47,7 +47,6 @@
 
         <version.kubernetes.model>4.1.0</version.kubernetes.model>
         <version.kubernetes.client>4.1.0</version.kubernetes.client>
-        <version.kubernetes.assertions>3.0.11.fuse-750024</version.kubernetes.assertions>
 
         <version.docker.maven.plugin>0.23.0.fuse-750002</version.docker.maven.plugin>
 
