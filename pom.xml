@@ -39,15 +39,15 @@
         <version.camel>2.21.0.fuse-750029</version.camel>
         <version.camel.extra>2.21.0.fuse-750028</version.camel.extra>
         <version.cxf>3.2.7.fuse-750021</version.cxf>
-        <version.fabric8>3.0.11.fuse-750026</version.fabric8>
+        <version.fabric8>3.0.11.fuse-750030</version.fabric8>
         <version.fabric8.maven.plugin>3.5.33.fuse-750028</version.fabric8.maven.plugin>
-        <version.fuse-karaf>7.5.0.fuse-750028</version.fuse-karaf>
+        <version.fuse-karaf>7.5.0.fuse-750031</version.fuse-karaf>
         <version.karaf>4.2.6.fuse-750014</version.karaf>
-        <version.bom.wildfly.camel>5.3.0.fuse-750018</version.bom.wildfly.camel>
+        <version.bom.wildfly.camel>5.3.0.fuse-750022</version.bom.wildfly.camel>
         <version.fusesource.camel.sap>7.5.0.fuse-750026</version.fusesource.camel.sap>
         <karaf.plugin.version>4.2.6.fuse-750014</karaf.plugin.version>
 
-        <version.hawtio>2.0.0.fuse-750015</version.hawtio>
+        <version.hawtio>2.0.0.fuse-750017</version.hawtio>
         <version.hawtio.online>1.0.0.fuse-750011</version.hawtio.online>
 
         <version.kubernetes.model>2.0.10.fuse-750008</version.kubernetes.model>
