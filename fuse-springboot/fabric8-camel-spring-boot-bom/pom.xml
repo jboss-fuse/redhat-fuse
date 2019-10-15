@@ -157,14 +157,6 @@
                     </exclusion>
                     <exclusion>
                         <groupId>org.apache.camel</groupId>
-                        <artifactId>camel-http</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.apache.camel</groupId>
-                        <artifactId>camel-http-starter</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.apache.camel</groupId>
                         <artifactId>camel-ibatis</artifactId>
                     </exclusion>
                     <exclusion>
@@ -234,22 +226,6 @@
                     <exclusion>
                         <groupId>org.apache.camel</groupId>
                         <artifactId>camel-mina</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.apache.camel</groupId>
-                        <artifactId>camel-netty</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.apache.camel</groupId>
-                        <artifactId>camel-netty-starter</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.apache.camel</groupId>
-                        <artifactId>camel-netty-http</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.apache.camel</groupId>
-                        <artifactId>camel-netty-http-starter</artifactId>
                     </exclusion>
                     <exclusion>
                         <groupId>org.apache.camel</groupId>
