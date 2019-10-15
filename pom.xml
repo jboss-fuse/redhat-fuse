@@ -60,6 +60,7 @@
         <version.felix.bundle-plugin>3.5.1</version.felix.bundle-plugin>
 
         <version.jackson2>2.8.11</version.jackson2>
+        <version.jackson2.databind>2.8.11.3</version.jackson2.databind>
 
         <!--
           CONVENTIONS:
@@ -311,7 +312,7 @@
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-databind</artifactId>
-                <version>${version.jackson2}.3</version>
+                <version>${version.jackson2.databind}</version>
             </dependency>
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
