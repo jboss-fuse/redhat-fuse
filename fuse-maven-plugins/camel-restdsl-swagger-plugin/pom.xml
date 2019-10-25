@@ -23,7 +23,7 @@
     <parent>
         <groupId>org.jboss.redhat-fuse</groupId>
         <artifactId>fuse-maven-plugins</artifactId>
-        <version>7.6.0.fuse-760003</version>
+        <version>7.6.0.fuse-760003-temporary-redhat-00002</version>
     </parent>
 
     <artifactId>camel-restdsl-swagger-plugin</artifactId>
