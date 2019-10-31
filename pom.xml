@@ -43,7 +43,7 @@
         <version.fabric8.maven.plugin>3.5.33.fuse-750028</version.fabric8.maven.plugin>
         <version.fuse-karaf>7.5.0.fuse-750031</version.fuse-karaf>
         <version.karaf>4.2.6.fuse-750014</version.karaf>
-        <version.bom.wildfly.camel>5.3.0.fuse-750022</version.bom.wildfly.camel>
+        <version.wildfly.camel>5.3.0.fuse-750022</version.wildfly.camel>
         <version.fusesource.camel.sap>7.5.0.fuse-750026</version.fusesource.camel.sap>
         <karaf.plugin.version>4.2.6.fuse-750014</karaf.plugin.version>
 
