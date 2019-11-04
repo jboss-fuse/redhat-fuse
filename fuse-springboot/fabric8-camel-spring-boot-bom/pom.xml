@@ -74,6 +74,19 @@
                 <version>0.31.0</version>
             </dependency>
             <!-- TODO: [end] remove when cxf and camel opentracing version will be aligned -->
+  
+            <!-- override the tomcat version slip in from Spring Boot bom-->
+            <dependency>
+                <groupId>org.apache.tomcat</groupId>
+                <artifactId>tomcat-annotations-api</artifactId>
+                <version>9.0.7.redhat-16</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.tomcat</groupId>
+                <artifactId>tomcat-jsp-api</artifactId>
+                <version>9.0.7.redhat-16</version>
+            </dependency>
+
 
             <!-- Spring Boot -->
             <dependency>
