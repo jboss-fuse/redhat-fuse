@@ -57,6 +57,7 @@
         <!-- test frameworks versions -->
         <arquillian.version>1.4.1.Final</arquillian.version>
         <arquillian.cube.version>1.18.2</arquillian.cube.version>
+        <tomcat.version>9.0.7.redhat-16</tomcat.version>
         <javax.inject.version>1</javax.inject.version>
     </properties>
 
@@ -74,6 +75,19 @@
                 <version>0.31.0</version>
             </dependency>
             <!-- TODO: [end] remove when cxf and camel opentracing version will be aligned -->
+  
+            <!-- override the tomcat version slip in from Spring Boot bom-->
+            <dependency>
+                <groupId>org.apache.tomcat</groupId>
+                <artifactId>tomcat-annotations-api</artifactId>
+                <version>${tomcat.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.tomcat</groupId>
+                <artifactId>tomcat-jsp-api</artifactId>
+                <version>${tomcat.version}</version>
+            </dependency>
+
 
             <!-- Spring Boot -->
             <dependency>
