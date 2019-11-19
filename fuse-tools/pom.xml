@@ -23,7 +23,7 @@
     <parent>
         <groupId>org.jboss.redhat-fuse</groupId>
         <artifactId>redhat-fuse</artifactId>
-        <version>7.6.0.fuse-760008</version>
+        <version>7.6.0.fuse-760008-temporary-redhat-00001</version>
     </parent>
 
     <artifactId>fuse-tools</artifactId>
