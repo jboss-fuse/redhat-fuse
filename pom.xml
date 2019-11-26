@@ -60,7 +60,7 @@
         <version.felix.bundle-plugin>3.5.1</version.felix.bundle-plugin>
 
         <version.jackson2>2.8.11</version.jackson2>
-        <version.jackson2.databind>2.8.11.4</version.jackson2.databind>
+        <version.jackson2.databind>2.9.10.1</version.jackson2.databind>
 
         <!--
           CONVENTIONS:
