@@ -23,7 +23,7 @@
     <parent>
         <groupId>org.jboss.redhat-fuse</groupId>
         <artifactId>fuse-maven-plugins</artifactId>
-        <version>7.6.0-SNAPSHOT</version>
+        <version>7.6.0.fuse-760011</version>
     </parent>
 
     <artifactId>cxf-java2wadl-plugin</artifactId>
