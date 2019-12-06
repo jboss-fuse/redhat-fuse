@@ -29,10 +29,6 @@
     <artifactId>camel-restdsl-swagger-plugin</artifactId>
     <packaging>maven-plugin</packaging>
     <name>Red Hat Fuse :: ${project.artifactId}</name>
-    
-    <properties>
-        <version.jackson2>2.9.10</version.jackson2>
-    </properties>
 
     <dependencies>
         <dependency>
