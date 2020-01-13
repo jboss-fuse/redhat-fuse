@@ -302,6 +302,16 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>org.fusesource</groupId>
+                <artifactId>camel-sap</artifactId>
+                <version>${version.fusesource.camel.sap}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.fusesource</groupId>
+                <artifactId>camel-sap-starter</artifactId>
+                <version>${version.fusesource.camel.sap}</version>
+            </dependency>
 
             <dependency>
                 <groupId>org.apache.cxf</groupId>
