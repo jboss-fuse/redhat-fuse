@@ -56,7 +56,7 @@
         <rhoar.version>2.1.6.SP3-redhat-00001</rhoar.version>
 
         <!-- Overridden from snowdrop Spring Boot BOM-->
-        <hibernate.version>5.3.10.Final-redhat-00001</hibernate.version>
+        <hibernate.version>5.3.13.Final-redhat-00001</hibernate.version>
         <hibernate-validator.version>5.3.5.Final-redhat-2</hibernate-validator.version>
         <undertow.version>2.0.23.Final</undertow.version>
 
