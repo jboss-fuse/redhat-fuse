@@ -68,7 +68,7 @@
 
         <version.commons-codec>1.13</version.commons-codec>
         <version.commons-pool>1.6.0.redhat-9</version.commons-pool>
-        <version.netty>4.1.39.Final</version.netty>
+        <version.netty>4.1.42.Final</version.netty>
 
         <version.org.apache.commons.dbcp2>2.1.1</version.org.apache.commons.dbcp2>
         <version.org.apache.commons.lang3>3.9</version.org.apache.commons.lang3>
