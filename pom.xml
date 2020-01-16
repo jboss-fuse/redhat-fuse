@@ -56,19 +56,19 @@
         <rhoar.version>2.1.6.SP3-redhat-00001</rhoar.version>
 
         <!-- Overridden from snowdrop Spring Boot BOM-->
-        <hibernate.version>5.3.10.Final-redhat-00001</hibernate.version>
+        <hibernate.version>5.3.13.Final-redhat-00001</hibernate.version>
         <hibernate-validator.version>5.3.5.Final-redhat-2</hibernate-validator.version>
-        <undertow.version>2.0.23.Final</undertow.version>
+        <undertow.version>2.0.26.SP3-redhat-00001</undertow.version>
 
-        <activemq.version>5.11.0.redhat-630416</activemq.version>
-        <artemis.version>2.9.0.redhat-00005</artemis.version>
+        <activemq.version>5.11.0.redhat-630424</activemq.version>
+        <artemis.version>2.11.0.redhat-00002</artemis.version>
 
         <version.kafka>2.3.0.redhat-00002</version.kafka>
         <version.kafka.upstream>2.3.0</version.kafka.upstream>
 
-        <version.commons-codec>1.12</version.commons-codec>
+        <version.commons-codec>1.13</version.commons-codec>
         <version.commons-pool>1.6.0.redhat-9</version.commons-pool>
-        <version.netty>4.1.39.Final</version.netty>
+        <version.netty>4.1.42.Final</version.netty>
 
         <version.org.apache.commons.dbcp2>2.1.1</version.org.apache.commons.dbcp2>
         <version.org.apache.commons.lang3>3.9</version.org.apache.commons.lang3>
@@ -78,7 +78,7 @@
         <version.org.apache.httpcomponents.httpclient>4.5.5</version.org.apache.httpcomponents.httpclient>
         <version.org.apache.httpcomponents.httpcore>4.4.9</version.org.apache.httpcomponents.httpcore>
 
-        <version.org.eclipse.jetty>9.4.20.v20190813</version.org.eclipse.jetty>
+        <version.org.eclipse.jetty>9.4.25.v20191220</version.org.eclipse.jetty>
 
         <version.cxf.xjc-utils>3.2.4.fuse-750011</version.cxf.xjc-utils>
         <!-- END Overridden from snowdrop Spring Boot BOM-->
