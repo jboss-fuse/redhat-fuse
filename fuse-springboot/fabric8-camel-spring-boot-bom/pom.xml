@@ -57,7 +57,7 @@
         <!-- test frameworks versions -->
         <arquillian.version>1.4.1.Final</arquillian.version>
         <arquillian.cube.version>1.18.2</arquillian.cube.version>
-        <tomcat.version>9.0.7.redhat-16</tomcat.version>
+        <tomcat.version>9.0.7.redhat-19</tomcat.version>
         <javax.inject.version>1</javax.inject.version>
     </properties>
 
@@ -87,7 +87,31 @@
                 <artifactId>tomcat-jsp-api</artifactId>
                 <version>${tomcat.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>org.apache.tomcat</groupId>
+                <artifactId>tomcat-jdbc</artifactId>
+                <version>${tomcat.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.tomcat.embed</groupId>
+                <artifactId>tomcat-embed-core</artifactId>
+                <version>${tomcat.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.tomcat.embed</groupId>
+                <artifactId>tomcat-embed-el</artifactId>
+                <version>${tomcat.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.tomcat.embed</groupId>
+                <artifactId>tomcat-embed-jasper</artifactId>
+                <version>${tomcat.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.tomcat.embed</groupId>
+                <artifactId>tomcat-embed-websocket</artifactId>
+                <version>${tomcat.version}</version>
+            </dependency>
 
             <!-- Spring Boot -->
             <dependency>
