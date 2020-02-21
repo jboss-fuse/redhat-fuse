@@ -362,12 +362,6 @@
 				<artifactId>infinispan-tree</artifactId>
 				<version>${infinispan.version}</version>
 			</dependency>
-
-			<dependency>
-				<groupId>org.infinispan</groupId>
-				<artifactId>infinispan-tree</artifactId>
-				<version>${infinispan.version}</version>
-			</dependency>
                         <dependency>
                                 <groupId>org.apache.kafka</groupId>
                                 <artifactId>kafka-clients</artifactId>
