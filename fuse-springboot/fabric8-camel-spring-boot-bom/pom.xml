@@ -62,6 +62,7 @@
 		<tomcat.version>9.0.7.redhat-19</tomcat.version>
 		<javax.inject.version>1</javax.inject.version>
 		<infinispan.version>9.4.16.Final-redhat-00003</infinispan.version>
+		<kafka.clients.version>2.4.0</kafka.clients.version>
 	</properties>
 
 	<dependencyManagement>
@@ -359,6 +360,11 @@
 				<artifactId>infinispan-tree</artifactId>
 				<version>${infinispan.version}</version>
 			</dependency>
+                        <dependency>
+                                <groupId>org.apache.kafka</groupId>
+                                <artifactId>kafka-clients</artifactId>
+                                <version>${kafka.version}</version>
+                        </dependency>
 
 			<!-- Spring Boot -->
 			<dependency>
