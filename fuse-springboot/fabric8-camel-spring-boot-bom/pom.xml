@@ -62,7 +62,7 @@
 		<tomcat.version>9.0.7.redhat-19</tomcat.version>
 		<javax.inject.version>1</javax.inject.version>
 		<infinispan.version>9.4.16.Final-redhat-00003</infinispan.version>
-		<kafka.clients.version>2.4.0</kafka.clients.version>
+		<kafka.clients.version>2.4.0.redhat-00003</kafka.clients.version>
 	</properties>
 
 	<dependencyManagement>
