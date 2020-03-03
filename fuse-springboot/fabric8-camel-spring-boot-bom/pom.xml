@@ -64,7 +64,6 @@
 		<!-- overidding properties -->
 		<tomcat.version>9.0.7.redhat-19</tomcat.version>
 		<infinispan.version>9.4.16.Final-redhat-00003</infinispan.version>
-                <kafka.clients.version>2.4.0.redhat-00003</kafka.clients.version>
 	</properties>
 
 	<dependencyManagement>
@@ -998,7 +997,7 @@
 			<dependency>
 				<groupId>org.apache.kafka</groupId>
 				<artifactId>kafka-clients</artifactId>
-				<version>${kafka.clients.version}</version>
+				<version>${version.kafka}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.kafka</groupId>
