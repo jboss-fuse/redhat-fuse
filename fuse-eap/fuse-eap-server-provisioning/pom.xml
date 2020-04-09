@@ -22,17 +22,25 @@
 
     <parent>
         <groupId>org.jboss.redhat-fuse</groupId>
-        <artifactId>redhat-fuse</artifactId>
+        <artifactId>fuse-eap</artifactId>
         <version>7.6.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>fuse-eap</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>fuse-eap-server-provisioning</artifactId>
+    <packaging>jar</packaging>
+
     <name>Red Hat Fuse :: ${project.artifactId}</name>
-
-    <modules>
-        <module>fuse-eap-bom</module>
-        <module>fuse-eap-server-provisioning</module>
-    </modules>
-
+    
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>server-provisioning.xml</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+    
 </project>
