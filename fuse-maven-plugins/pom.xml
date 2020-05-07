@@ -32,7 +32,7 @@
 
     <properties>
         <version.jackson2>2.9.10</version.jackson2>
-        <version.jackson2.databind>${version.jackson2}.1</version.jackson2.databind>
+        <version.jackson2.databind>2.9.10.4-redhat-00001</version.jackson2.databind>
     </properties>
 
     <modules>
