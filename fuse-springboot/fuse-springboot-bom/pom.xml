@@ -36,7 +36,7 @@
             <dependency>
                 <groupId>com.fasterxml.jackson</groupId>
                 <artifactId>jackson-bom</artifactId>
-                <version>2.9.10.20200411-redhat-00001</version>
+                <version>${version.jackson2.bom}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -67,9 +67,9 @@
 
             <!-- Overriden version, which is incorrectly defined in jackson-bom -->
             <dependency>
-                <groupId>com.fasterxml.jackson.module</groupId>
-                <artifactId>jackson-module-scala_2.12</artifactId>
-                <version>2.9.10.redhat-00003</version>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${version.jackson2.databind}</version>
             </dependency>
 
         </dependencies>

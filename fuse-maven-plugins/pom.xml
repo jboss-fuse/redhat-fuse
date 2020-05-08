@@ -30,11 +30,6 @@
     <packaging>pom</packaging>
     <name>Red Hat Fuse :: ${project.artifactId}</name>
 
-    <properties>
-        <version.jackson2>2.9.10</version.jackson2>
-        <version.jackson2.databind>2.9.10.4-redhat-00001</version.jackson2.databind>
-    </properties>
-
     <modules>
         <module>spring-boot-maven-plugin</module>
         <module>fabric8-maven-plugin</module>
