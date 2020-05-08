@@ -263,63 +263,54 @@
                 <artifactId>camel</artifactId>
                 <version>${version.camel}</version>
                 <type>pom</type>
-                <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>org.fusesource</groupId>
                 <artifactId>camel-sap-parent</artifactId>
                 <version>${version.fusesource.camel.sap}</version>
                 <type>pom</type>
-                <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>org.apache.cxf.xjc-utils</groupId>
                 <artifactId>xjc-utils</artifactId>
                 <version>${version.cxf.xjc-utils}</version>
                 <type>pom</type>
-                <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>org.apache.cxf</groupId>
                 <artifactId>cxf-parent</artifactId>
                 <version>${version.cxf}</version>
                 <type>pom</type>
-                <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>io.hawt</groupId>
                 <artifactId>project</artifactId>
                 <version>${version.hawtio}</version>
                 <type>pom</type>
-                <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>org.apache-extras.camel-extra</groupId>
                 <artifactId>camel-parent</artifactId>
                 <version>${version.camel.extra}</version>
                 <type>pom</type>
-                <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>io.fabric8</groupId>
                 <artifactId>kubernetes-model-generator</artifactId>
                 <version>${version.kubernetes.model}</version>
                 <type>pom</type>
-                <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>io.fabric8</groupId>
                 <artifactId>kubernetes-client-project</artifactId>
                 <version>${version.kubernetes.client}</version>
                 <type>pom</type>
-                <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>io.fabric8</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>${version.docker.maven.plugin}</version>
                 <type>pom</type>
-                <scope>provided</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
