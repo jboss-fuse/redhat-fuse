@@ -63,7 +63,7 @@
 
 		<!-- overidding properties -->
 		<tomcat.version>9.0.7.redhat-19</tomcat.version>
-		<infinispan.version>9.4.16.Final-redhat-00003</infinispan.version>
+		<infinispan.version>9.4.18.Final-redhat-00001</infinispan.version>
 	</properties>
 
 	<dependencyManagement>
