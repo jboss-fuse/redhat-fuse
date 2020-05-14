@@ -23,7 +23,7 @@
     <parent>
         <groupId>org.jboss.redhat-fuse</groupId>
         <artifactId>redhat-fuse</artifactId>
-        <version>7.7.0.fuse-770004</version>
+        <version>7.7.0.fuse-770004-redhat-00001</version>
     </parent>
 
     <artifactId>fuse-maven-plugins</artifactId>
