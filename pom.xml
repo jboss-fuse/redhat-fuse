@@ -243,12 +243,6 @@
                 <type>pom</type>
             </dependency>
             <dependency>
-                <groupId>org.fusesource</groupId>
-                <artifactId>camel-sap-parent</artifactId>
-                <version>${version.fusesource.camel.sap}</version>
-                <type>pom</type>
-            </dependency>
-            <dependency>
                 <groupId>org.apache.cxf.xjc-utils</groupId>
                 <artifactId>xjc-utils</artifactId>
                 <version>${version.cxf.xjc-utils}</version>
