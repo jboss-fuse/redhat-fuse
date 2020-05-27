@@ -56,6 +56,11 @@
                 <artifactId>hawtio-springboot</artifactId>
                 <version>${version.hawtio}</version>
             </dependency>
+            <dependency>
+                <groupId>io.hawt</groupId>
+                <artifactId>hawtio-springboot-keycloak</artifactId>
+                <version>${version.hawtio}</version>
+            </dependency>
 
             <dependency>
                 <groupId>org.apache.cxf</groupId>
