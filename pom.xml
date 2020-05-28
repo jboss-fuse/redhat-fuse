@@ -64,6 +64,8 @@
         <version.jackson2>2.8.11</version.jackson2>
         <version.jackson2.databind>2.8.11.6-redhat-00001</version.jackson2.databind>
 
+        <version.com.google.guava>27.1-jre</version.com.google.guava>
+
         <!--
           CONVENTIONS:
           - A version property must be specified in the format "version.{groupId}", optionally with a suffix to make it unique.
