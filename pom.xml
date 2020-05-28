@@ -87,7 +87,6 @@
 
         <version.com.google.guava>27.1-jre</version.com.google.guava>
 
-        <version.cxf.xjc-utils>3.2.4.fuse-750011</version.cxf.xjc-utils>
         <!-- END Overridden from snowdrop Spring Boot BOM-->
 
         <!--
