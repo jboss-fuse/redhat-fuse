@@ -61,7 +61,7 @@
         <undertow.version>2.0.30.SP1-redhat-00001</undertow.version>
 
         <activemq.version>5.11.0.redhat-630446</activemq.version>
-        <artemis.version>2.11.0.redhat-00005</artemis.version>
+        <artemis.version>2.13.0.redhat-00003</artemis.version>
 
         <version.kafka>2.5.0</version.kafka>
         <version.kafka.upstream>2.5.0</version.kafka.upstream>
@@ -84,6 +84,8 @@
         <version.jackson2.bom>2.9.10.20200411</version.jackson2.bom>
         <version.jackson2>2.9.10</version.jackson2>
         <version.jackson2.databind>2.9.10.4-redhat-00001</version.jackson2.databind>
+
+        <version.com.google.guava>27.1-jre</version.com.google.guava>
 
         <version.cxf.xjc-utils>3.2.4.fuse-750011</version.cxf.xjc-utils>
         <!-- END Overridden from snowdrop Spring Boot BOM-->
