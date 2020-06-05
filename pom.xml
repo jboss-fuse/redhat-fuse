@@ -63,7 +63,7 @@
         <activemq.version>5.11.0.redhat-630446</activemq.version>
         <artemis.version>2.13.0.redhat-00003</artemis.version>
 
-        <version.kafka>2.5.0</version.kafka>
+        <version.kafka>2.5.0.redhat-00003</version.kafka>
         <version.kafka.upstream>2.5.0</version.kafka.upstream>
 
         <version.commons-codec>1.13</version.commons-codec>
