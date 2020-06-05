@@ -659,6 +659,22 @@
 				<version>${hibernate-validator.version}</version>
 			</dependency>
 
+			<dependency>
+				<groupId>org.hibernate.validator</groupId>
+				<artifactId>hibernate-validator</artifactId>
+				<version>${hibernate-validator6.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate.validator</groupId>
+				<artifactId>hibernate-validator-cdi</artifactId>
+				<version>${hibernate-validator6.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate.validator</groupId>
+				<artifactId>hibernate-validator-annotation-processor</artifactId>
+				<version>${hibernate-validator6.version}</version>
+			</dependency>
+
 			<!-- Hibernate -->
 			<dependency>
 				<groupId>org.hibernate</groupId>
