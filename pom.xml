@@ -88,6 +88,8 @@
 
         <version.com.google.guava>27.1-jre</version.com.google.guava>
 
+        <version.org.apache.logging.log4j2>2.13.2</version.org.apache.logging.log4j2>
+
         <!-- END Overridden from snowdrop Spring Boot BOM-->
 
         <!--
