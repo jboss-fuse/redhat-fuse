@@ -103,6 +103,8 @@
 
     <modules>
         <module>fuse-tools</module>
+        <module>fuse-karaf</module>
+        <module>fuse-eap</module>
         <module>fuse-springboot</module>
         <module>fuse-maven-plugins</module>
     </modules>
@@ -309,6 +311,26 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>${version.docker.maven.plugin}</version>
                 <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${version.jackson2}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${version.jackson2.databind}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${version.jackson2}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.dataformat</groupId>
+                <artifactId>jackson-dataformat-yaml</artifactId>
+                <version>${version.jackson2}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

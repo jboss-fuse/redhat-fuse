@@ -42,6 +42,13 @@
                 <type>pom</type>
             </dependency>
 
+            <!-- Guava override to establish single, managed version of this library -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${version.com.google.guava}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
