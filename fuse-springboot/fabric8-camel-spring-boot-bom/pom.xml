@@ -1866,6 +1866,11 @@
 				<version>${version.org.apache.logging.log4j2}</version>
 			</dependency>
 
+			<dependency>
+				<groupId>org.postgresql</groupId>
+				<artifactId>postgresql</artifactId>
+				<version>${version.org.postgresql}</version>
+			</dependency>
 			<!-- END OVERRIDES -->
 		</dependencies>
 	</dependencyManagement>
