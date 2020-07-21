@@ -22,7 +22,7 @@
 
     <groupId>org.jboss.redhat-fuse</groupId>
     <artifactId>redhat-fuse</artifactId>
-    <version>7.8.0-SNAPSHOT</version>
+    <version>7.8.0.fuse-sb2-780003</version>
     <packaging>pom</packaging>
 
     <name>Red Hat Fuse :: ${project.artifactId}</name>
@@ -40,7 +40,7 @@
         <version.cxf>3.3.6.fuse-780004</version.cxf>
         <version.cxf.xjc-utils>3.3.1.fuse-780003</version.cxf.xjc-utils>
 
-        <version.fabric8>3.0.12</version.fabric8>
+        <version.fabric8>3.0.11.fuse-sb2-780003</version.fabric8>
         <version.fabric8.maven.plugin>3.5.42.fuse-780003</version.fabric8.maven.plugin>
         <version.fuse-karaf>7.8.0.fuse-780005</version.fuse-karaf>
         <version.karaf>4.2.9.fuse-780002</version.karaf>
