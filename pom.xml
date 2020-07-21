@@ -42,7 +42,11 @@
 
         <version.fabric8>3.0.12</version.fabric8>
         <version.fabric8.maven.plugin>3.5.33.fuse-740029-redhat-00001</version.fabric8.maven.plugin>
+        <version.fuse-karaf>7.8.0.fuse-780003</version.fuse-karaf>
+        <version.karaf>4.2.9.fuse-780001</version.karaf>
+<!--        <version.wildfly.camel>5.5.0.fuse-770005</version.wildfly.camel>-->
         <version.fusesource.camel.sap>7.5.0.fuse-sb2-750014</version.fusesource.camel.sap>
+        <karaf.plugin.version>4.2.9.fuse-780001</karaf.plugin.version>
 
         <version.hawtio>2.0.0.fuse-sb2-750009</version.hawtio>
 
@@ -51,7 +55,11 @@
 
         <version.docker.maven.plugin>0.23.0.fuse-750002</version.docker.maven.plugin>
 
+        <version.apicurito>1.2.2.fuse-780001</version.apicurito>
+
         <version.narayana-spring-boot>2.1.1.fuse-sb2-750012</version.narayana-spring-boot>
+
+        <version.felix.bundle-plugin>3.5.1</version.felix.bundle-plugin>
 
         <rhoar.version>2.1.13.Final-redhat-00001</rhoar.version>
 
