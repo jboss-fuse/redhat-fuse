@@ -1871,6 +1871,11 @@
 				<artifactId>postgresql</artifactId>
 				<version>${version.org.postgresql}</version>
 			</dependency>
+			<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>${version.mysql}</version>
+			</dependency>
 			<!-- END OVERRIDES -->
 		</dependencies>
 	</dependencyManagement>
