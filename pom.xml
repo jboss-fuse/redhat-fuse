@@ -53,7 +53,7 @@
 
         <version.narayana-spring-boot>2.1.1.fuse-sb2-750012</version.narayana-spring-boot>
 
-        <rhoar.version>2.1.6.SP3-redhat-00001</rhoar.version>
+        <rhoar.version>2.1.13.Final-redhat-00001</rhoar.version>
 
         <!-- Overridden from snowdrop Spring Boot BOM-->
         <hibernate.version>5.3.15.Final-redhat-00001</hibernate.version>
