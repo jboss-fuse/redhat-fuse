@@ -63,6 +63,7 @@
 
         <rhoar.version>2.1.13.Final-redhat-00001</rhoar.version>
         <spring.security.version>5.1.10.RELEASE</spring.security.version>
+        <version.snakeyaml>1.26</version.snakeyaml>
 
         <!-- Overridden from snowdrop Spring Boot BOM-->
         <hibernate.version>5.3.17.Final-redhat-00001</hibernate.version>
