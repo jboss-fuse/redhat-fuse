@@ -66,7 +66,7 @@
         <version.kafka>2.5.0.redhat-00003</version.kafka>
         <version.kafka.upstream>2.5.0</version.kafka.upstream>
 
-        <version.commons-codec>1.13</version.commons-codec>
+        <version.commons-codec>1.14</version.commons-codec>
         <version.commons-pool>1.6.0.redhat-9</version.commons-pool>
         <version.netty>4.1.48.Final-redhat-00001</version.netty>
 
