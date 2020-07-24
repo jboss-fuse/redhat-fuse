@@ -59,9 +59,9 @@
             </dependency>
 
             <dependency>
-                <groupId>io.fabric8</groupId>
+                <groupId>org.jboss.redhat-fuse</groupId>
                 <artifactId>fabric8-project-bom-fuse-karaf</artifactId>
-                <version>${version.fabric8}</version>
+                <version>${project.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
