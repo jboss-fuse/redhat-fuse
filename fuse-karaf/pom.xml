@@ -31,6 +31,7 @@
     <name>Red Hat Fuse :: ${project.artifactId}</name>
     
     <modules>
+        <module>fabric8-project-bom-fuse-karaf</module>
         <module>fuse-karaf-bom</module>
     </modules>
 
