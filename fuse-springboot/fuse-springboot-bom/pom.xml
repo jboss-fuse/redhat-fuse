@@ -70,6 +70,18 @@
                 <scope>import</scope>
             </dependency>
 
+            <dependency>
+                <groupId>io.fabric8</groupId>
+                <artifactId>kubernetes-model</artifactId>
+                <version>${version.kubernetes.model}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.fabric8</groupId>
+                <artifactId>kubernetes-client</artifactId>
+                <version>${version.kubernetes.client}</version>
+            </dependency>
+
             <!-- Overriden version, which is incorrectly defined in jackson-bom -->
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
