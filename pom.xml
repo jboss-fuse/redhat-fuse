@@ -61,6 +61,8 @@
 
         <version.felix.bundle-plugin>3.5.1</version.felix.bundle-plugin>
 
+        <version.openshift.maven.plugin>1.0.0-rc-1</version.openshift.maven.plugin>
+
         <rhoar.version>2.1.13.Final-redhat-00001</rhoar.version>
         <spring.security.version>5.1.10.RELEASE</spring.security.version>
         <version.snakeyaml>1.26</version.snakeyaml>
