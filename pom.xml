@@ -50,8 +50,8 @@
 
         <version.hawtio>2.0.0.fuse-sb2-780003</version.hawtio>
 
-        <version.kubernetes.model>4.2.2</version.kubernetes.model>
-        <version.kubernetes.client>4.2.2</version.kubernetes.client>
+        <version.kubernetes.model>4.6.2</version.kubernetes.model>
+        <version.kubernetes.client>4.6.2</version.kubernetes.client>
 
         <version.docker.maven.plugin>7.8.0.fuse-780002</version.docker.maven.plugin>
 
