@@ -1754,6 +1754,11 @@
 				<artifactId>jetty-xml</artifactId>
 				<version>${version.org.eclipse.jetty}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-openid</artifactId>
+				<version>${version.org.eclipse.jetty}</version>
+			</dependency>
 
 			<dependency>
 				<groupId>wsdl4j</groupId>
