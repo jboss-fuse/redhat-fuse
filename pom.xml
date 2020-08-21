@@ -72,7 +72,7 @@
         <hibernate-validator6.version>6.0.20.Final-redhat-00001</hibernate-validator6.version>
         <undertow.version>2.0.30.SP4-redhat-00001</undertow.version>
 
-        <activemq.version>5.11.0.redhat-630446</activemq.version>
+        <activemq.version>5.11.0.redhat-630475</activemq.version>
         <artemis.version>2.13.0.redhat-00006</artemis.version>
 
         <version.kafka>2.5.0.redhat-00003</version.kafka>
