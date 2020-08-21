@@ -536,10 +536,17 @@
 			</dependency>
 
 			<!-- Spring Boot -->
+<!--			<dependency>-->
+<!--				<groupId>dev.snowdrop</groupId>-->
+<!--				<artifactId>spring-boot-bom</artifactId>-->
+<!--				<version>${rhoar.version}</version>-->
+<!--				<scope>import</scope>-->
+<!--				<type>pom</type>-->
+<!--			</dependency>-->
 			<dependency>
-				<groupId>me.snowdrop</groupId>
-				<artifactId>spring-boot-bom</artifactId>
-				<version>${rhoar.version}</version>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>${spring.boot.version}</version>
 				<scope>import</scope>
 				<type>pom</type>
 			</dependency>

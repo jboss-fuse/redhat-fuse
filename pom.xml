@@ -63,8 +63,14 @@
 
         <version.openshift.maven.plugin>1.0.0-rc-1</version.openshift.maven.plugin>
 
-        <rhoar.version>2.1.13.Final-redhat-00001</rhoar.version>
-        <spring.security.version>5.1.10.RELEASE</spring.security.version>
+        <!--
+            this version won't be used before 2.3.x is available in
+            https://maven.repository.redhat.com/ga/dev/snowdrop/snowdrop-dependencies/
+            and we use org.springframework.boot:spring-boot-dependencies instead
+        -->
+<!--        <rhoar.version>2.1.13.Final-redhat-00001</rhoar.version>-->
+        <spring.boot.version>2.3.2.RELEASE</spring.boot.version>
+        <spring.security.version>5.3.3.RELEASE</spring.security.version>
         <version.snakeyaml>1.26</version.snakeyaml>
 
         <!-- Overridden from snowdrop Spring Boot BOM-->
