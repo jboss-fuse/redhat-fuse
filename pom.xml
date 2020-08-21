@@ -63,8 +63,14 @@
 
         <version.openshift.maven.plugin>1.0.0-rc-1</version.openshift.maven.plugin>
 
-        <rhoar.version>2.1.13.Final-redhat-00001</rhoar.version>
-        <spring.security.version>5.1.10.RELEASE</spring.security.version>
+        <!--
+            this version won't be used before 2.3.x is available in
+            https://maven.repository.redhat.com/ga/dev/snowdrop/snowdrop-dependencies/
+            and we use org.springframework.boot:spring-boot-dependencies instead
+        -->
+<!--        <rhoar.version>2.1.13.Final-redhat-00001</rhoar.version>-->
+        <spring.boot.version>2.3.2.RELEASE</spring.boot.version>
+        <spring.security.version>5.3.3.RELEASE</spring.security.version>
         <version.snakeyaml>1.26</version.snakeyaml>
 
         <!-- Overridden from snowdrop Spring Boot BOM-->
@@ -72,7 +78,7 @@
         <hibernate-validator6.version>6.0.20.Final-redhat-00001</hibernate-validator6.version>
         <undertow.version>2.0.30.SP4-redhat-00001</undertow.version>
 
-        <activemq.version>5.11.0.redhat-630446</activemq.version>
+        <activemq.version>5.11.0.redhat-630475</activemq.version>
         <artemis.version>2.13.0.redhat-00006</artemis.version>
 
         <version.kafka>2.5.0.redhat-00003</version.kafka>
@@ -103,6 +109,8 @@
 
         <version.org.postgresql>42.2.14</version.org.postgresql>
         <version.mysql>8.0.21</version.mysql>
+
+        <version.javax.xml.bind>2.2.12</version.javax.xml.bind>
 
         <!-- END Overridden from snowdrop Spring Boot BOM-->
 
