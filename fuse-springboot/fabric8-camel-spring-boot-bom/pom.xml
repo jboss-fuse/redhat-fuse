@@ -1981,6 +1981,12 @@
 				<version>${version.snakeyaml}</version>
 			</dependency>
 
+			<dependency>
+				<groupId>javax.xml.bind</groupId>
+				<artifactId>jaxb-api</artifactId>
+				<version>${version.javax.xml.bind}</version>
+			</dependency>
+
 			<!-- END OVERRIDES -->
 		</dependencies>
 	</dependencyManagement>

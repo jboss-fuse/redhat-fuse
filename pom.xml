@@ -104,6 +104,8 @@
         <version.org.postgresql>42.2.14</version.org.postgresql>
         <version.mysql>8.0.21</version.mysql>
 
+        <version.javax.xml.bind>2.2.12</version.javax.xml.bind>
+
         <!-- END Overridden from snowdrop Spring Boot BOM-->
 
         <!--
