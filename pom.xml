@@ -60,6 +60,8 @@
         <version.narayana-starter>2.3.1</version.narayana-starter>
         <version.narayana-spring-boot>2.1.1.fuse-sb2-780004</version.narayana-spring-boot>
 
+	<version.spring-cloud-kubernetes>1.0.4.RELEASE</version.spring-cloud-kubernetes>
+
         <version.felix.bundle-plugin>3.5.1</version.felix.bundle-plugin>
 
         <version.openshift.maven.plugin>1.0.0-rc-1</version.openshift.maven.plugin>
