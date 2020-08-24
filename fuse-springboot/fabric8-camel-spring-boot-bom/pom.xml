@@ -550,6 +550,11 @@
 				<scope>import</scope>
 				<type>pom</type>
 			</dependency>
+                        <dependency>
+                                <groupId>me.snowdrop</groupId>
+                                <artifactId>narayana-spring-boot-starter</artifactId>
+                                <version>${version.narayana-starter}</version>
+                        </dependency>
 			<dependency>
 				<groupId>me.snowdrop</groupId>
 				<artifactId>narayana-spring-boot-recovery-controller</artifactId>

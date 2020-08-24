@@ -57,6 +57,7 @@
 
         <version.apicurito>1.2.2.fuse-780003</version.apicurito>
 
+        <version.narayana-starter>2.3.1</version.narayana-starter>
         <version.narayana-spring-boot>2.1.1.fuse-sb2-780004</version.narayana-spring-boot>
 
         <version.felix.bundle-plugin>3.5.1</version.felix.bundle-plugin>
