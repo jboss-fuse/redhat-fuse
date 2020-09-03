@@ -114,6 +114,8 @@
         <version.mysql>8.0.21</version.mysql>
 
         <version.javax.xml.bind>2.2.12</version.javax.xml.bind>
+        <version.org.jboss.xnio>3.5.9.Final</version.org.jboss.xnio>
+
 
         <!-- END Overridden from snowdrop Spring Boot BOM-->
 
