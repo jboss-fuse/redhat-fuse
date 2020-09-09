@@ -2005,6 +2005,20 @@
 				<version>${version.javax.xml.bind}</version>
 			</dependency>
 
+			<!-- tika -->
+
+			<dependency>
+				<groupId>org.apache.tika</groupId>
+				<artifactId>tika-core</artifactId>
+				<version>${version.tika}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.tika</groupId>
+				<artifactId>tika-parsers</artifactId>
+				<version>${version.tika}</version>
+			</dependency>
+
 			<!-- END OVERRIDES -->
 		</dependencies>
 	</dependencyManagement>
