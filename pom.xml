@@ -115,7 +115,7 @@
         <version.org.postgresql>42.2.14</version.org.postgresql>
         <version.mysql>8.0.21</version.mysql>
 
-        <version.javax.xml.bind>2.2.12</version.javax.xml.bind>
+        <version.javax.xml.bind>2.3.0</version.javax.xml.bind>
         <version.org.jboss.xnio>3.5.9.Final</version.org.jboss.xnio>
 
 
