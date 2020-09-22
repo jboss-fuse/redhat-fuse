@@ -62,7 +62,7 @@
 		<javax.inject.version>1</javax.inject.version>
 
 		<!-- overidding properties -->
-		<tomcat.version>9.0.7.redhat-19</tomcat.version>
+		<tomcat.version>9.0.21.redhat-4</tomcat.version>
 		<infinispan.version>9.4.19.Final-redhat-00001</infinispan.version>
 	</properties>
 
