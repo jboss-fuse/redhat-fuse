@@ -183,6 +183,29 @@
                 <version>${version.netty}</version>
                 <classifier>osx-x86_64</classifier>
             </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-resolver-dns-native-macos</artifactId>
+                <version>${version.netty}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-resolver-dns-native-macos</artifactId>
+                <version>${version.netty}</version>
+                <classifier>osx-x86_64</classifier>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-transport-native-unix-common</artifactId>
+                <version>${version.netty}</version>
+                <classifier>linux-aarch64</classifier>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-transport-native-epoll</artifactId>
+                <version>${version.netty}</version>
+                <classifier>linux-aarch64</classifier>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
