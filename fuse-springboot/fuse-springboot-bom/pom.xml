@@ -23,7 +23,7 @@
     <parent>
         <groupId>org.jboss.redhat-fuse</groupId>
         <artifactId>fuse-springboot</artifactId>
-        <version>7.8.0.fuse-sb2-780023</version>
+        <version>7.8.0.fuse-sb2-780023-redhat-00001</version>
     </parent>
 
     <artifactId>fuse-springboot-bom</artifactId>
@@ -45,7 +45,7 @@
             <dependency>
                 <groupId>org.jboss.redhat-fuse</groupId>
                 <artifactId>fabric8-project-bom-camel-spring-boot</artifactId>
-                <version>${project.version}</version>
+                <version>7.8.0.fuse-sb2-780023-redhat-00001</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
