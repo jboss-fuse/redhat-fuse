@@ -1,21 +1,19 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <parent>
         <groupId>org.jboss.redhat-fuse</groupId>
         <artifactId>fuse-karaf</artifactId>
-        <version>7.8.0.fuse-sb2-780023</version>
+        <version>7.8.0.fuse-sb2-780023-redhat-00001</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.jboss.redhat-fuse</groupId>
     <artifactId>fabric8-project-bom-fuse-karaf</artifactId>
-    <version>7.8.0.fuse-sb2-780023</version>
+    <version>7.8.0.fuse-sb2-780023-redhat-00001</version>
     <name>Fabric8 :: Project :: Bom for Fuse Applications on Karaf</name>
     <packaging>pom</packaging>
-
-    <properties></properties>
 
     <dependencyManagement>
         <dependencies>
