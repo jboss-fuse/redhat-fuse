@@ -60,7 +60,7 @@
         <version.narayana-starter>2.3.1</version.narayana-starter>
         <version.narayana-spring-boot>2.1.1.fuse-sb2-780004</version.narayana-spring-boot>
 
-	<version.spring-cloud-kubernetes>1.0.4.RELEASE</version.spring-cloud-kubernetes>
+        <version.spring-cloud-kubernetes>1.0.4.RELEASE</version.spring-cloud-kubernetes>
 
         <version.felix.bundle-plugin>3.5.1</version.felix.bundle-plugin>
 
@@ -103,10 +103,9 @@
 
         <version.tika>1.24.1</version.tika>
 
-        <!-- Don't use 2.9.10.20200411-redhat-00001 which misses some versions -->
-        <version.jackson2.bom>2.9.10.20200411</version.jackson2.bom>
         <version.jackson2>2.9.10</version.jackson2>
         <version.jackson2.databind>2.9.10.4-redhat-00001</version.jackson2.databind>
+        <version.jackson2.jsonSchema>2.9.10.redhat-00005</version.jackson2.jsonSchema>
 
         <version.com.google.guava>27.1-jre</version.com.google.guava>
 
