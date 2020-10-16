@@ -33,6 +33,7 @@
     <modules>
         <module>fabric8-project-bom-fuse-karaf</module>
         <module>fuse-karaf-bom</module>
+        <module>fuse-karaf-patch-repository</module>
     </modules>
 
 </project>

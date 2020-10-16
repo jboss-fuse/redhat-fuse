@@ -29,9 +29,220 @@
     <artifactId>fuse-tools</artifactId>
     <packaging>pom</packaging>
     <name>Red Hat Fuse :: ${project.artifactId}</name>
-    
+
+    <properties>
+        <!-- versions of Maven dependencies (sorted and groupped)  -->
+
+        <version.junit>4.13</version.junit>
+        <version.org.apache.logging.log4j>2.13.3</version.org.apache.logging.log4j>
+        <version.org.apache.maven>3.6.3</version.org.apache.maven>
+        <version.org.apache.maven.plugin-tools>3.6.0</version.org.apache.maven.plugin-tools>
+        <version.org.apache.maven.resolver>1.4.1</version.org.apache.maven.resolver>
+        <version.org.apache.maven.wagon>3.4.1</version.org.apache.maven.wagon>
+        <version.org.assertj>3.15.0</version.org.assertj>
+        <version.org.mockito>3.3.3</version.org.mockito>
+        <version.org.slf4j>1.7.30</version.org.slf4j>
+
+        <!-- versions of Maven plugins -->
+
+        <!-- Maven plugins from org.apache.maven.plugins (and their dependencies) -->
+        <plugin.maven-assembly-plugin>3.2.0</plugin.maven-assembly-plugin>
+        <plugin.maven-clean-plugin>3.1.0</plugin.maven-clean-plugin>
+        <plugin.maven-compiler-plugin>3.8.1</plugin.maven-compiler-plugin>
+        <plugin.maven-dependency-plugin>3.1.2</plugin.maven-dependency-plugin>
+        <plugin.maven-deploy-plugin>3.0.0-M1</plugin.maven-deploy-plugin>
+        <plugin.maven-install-plugin>3.0.0-M1</plugin.maven-install-plugin>
+        <plugin.maven-invoker-plugin>3.2.1</plugin.maven-invoker-plugin>
+        <plugin.maven-jar-plugin>3.2.0</plugin.maven-jar-plugin>
+        <plugin.maven-javadoc-plugin>3.2.0</plugin.maven-javadoc-plugin>
+        <plugin.maven-plugin-plugin>3.6.0</plugin.maven-plugin-plugin>
+        <plugin.maven-release-plugin>3.0.0-M1</plugin.maven-release-plugin>
+        <plugin.maven-resources-plugin>3.2.0</plugin.maven-resources-plugin>
+        <plugin.maven-site-plugin>3.9.1</plugin.maven-site-plugin>
+        <plugin.maven-source-plugin>3.2.1</plugin.maven-source-plugin>
+        <plugin.maven-surefire-plugin>3.0.0-M5</plugin.maven-surefire-plugin>
+
+        <!-- Other Maven plugins (and their dependencies) -->
+        <plugin.codehaus.plexus-component-metadata>2.1.0</plugin.codehaus.plexus-component-metadata>
+        <plugin.mojo.build-helper-maven-plugin>3.2.0</plugin.mojo.build-helper-maven-plugin>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <!-- versions of dependencies used only by fuse-tools subprojects -->
+
+            <!-- Maven -->
+
+            <dependency>
+                <groupId>org.apache.maven</groupId>
+                <artifactId>maven-core</artifactId>
+                <version>${version.org.apache.maven}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.maven.plugin-tools</groupId>
+                <artifactId>maven-plugin-annotations</artifactId>
+                <version>${version.org.apache.maven.plugin-tools}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.maven</groupId>
+                <artifactId>maven-plugin-api</artifactId>
+                <version>${version.org.apache.maven}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.maven</groupId>
+                <artifactId>maven-embedder</artifactId>
+                <version>${version.org.apache.maven}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.maven</groupId>
+                <artifactId>maven-compat</artifactId>
+                <version>${version.org.apache.maven}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.maven.resolver</groupId>
+                <artifactId>maven-resolver-connector-basic</artifactId>
+                <version>${version.org.apache.maven.resolver}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.maven.resolver</groupId>
+                <artifactId>maven-resolver-transport-file</artifactId>
+                <version>${version.org.apache.maven.resolver}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-file</artifactId>
+                <version>${version.org.apache.maven.wagon}</version>
+            </dependency>
+
+            <!-- Test -->
+
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${version.junit}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
     <modules>
         <module>repackage-maven-plugin</module>
+        <module>patch-maven-plugin</module>
     </modules>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+
+                <!-- Core plugins -->
+
+                <plugin>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>${plugin.maven-clean-plugin}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${plugin.maven-compiler-plugin}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>${plugin.maven-deploy-plugin}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-install-plugin</artifactId>
+                    <version>${plugin.maven-install-plugin}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>${plugin.maven-resources-plugin}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>${plugin.maven-site-plugin}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>${plugin.maven-surefire-plugin}</version>
+                </plugin>
+
+                <!-- Packaging types / tools -->
+
+                <plugin>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>${plugin.maven-jar-plugin}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>${plugin.maven-source-plugin}</version>
+                </plugin>
+
+                <!-- Reporting plugins -->
+
+                <plugin>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>${plugin.maven-javadoc-plugin}</version>
+                </plugin>
+
+                <!-- Tools -->
+
+                <plugin>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <version>${plugin.maven-assembly-plugin}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>${plugin.maven-dependency-plugin}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-invoker-plugin</artifactId>
+                    <version>${plugin.maven-invoker-plugin}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-plugin-plugin</artifactId>
+                    <version>${plugin.maven-plugin-plugin}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <version>${plugin.maven-release-plugin}</version>
+                </plugin>
+
+                <!-- Codehaus / Mojohaus -->
+
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>build-helper-maven-plugin</artifactId>
+                    <version>${plugin.mojo.build-helper-maven-plugin}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.plexus</groupId>
+                    <artifactId>plexus-component-metadata</artifactId>
+                    <version>${plugin.codehaus.plexus-component-metadata}</version>
+                </plugin>
+
+            </plugins>
+        </pluginManagement>
+
+        <plugins>
+
+            <!-- Core plugins -->
+
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <runOrder>alphabetical</runOrder>
+                    <redirectTestOutputToFile>true</redirectTestOutputToFile>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
 
 </project>

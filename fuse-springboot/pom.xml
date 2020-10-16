@@ -33,6 +33,7 @@
     <modules>
         <module>fabric8-camel-spring-boot-bom</module>
         <module>fuse-springboot-bom</module>
+        <module>fuse-springboot-patch-repository</module>
     </modules>
 
 </project>
