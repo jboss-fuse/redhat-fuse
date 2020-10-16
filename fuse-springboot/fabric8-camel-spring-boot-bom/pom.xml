@@ -1175,6 +1175,16 @@
 				<artifactId>kafka-streams-scala_2.11</artifactId>
 				<version>${version.kafka.upstream}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.apache.kafka</groupId>
+				<artifactId>kafka_2.13</artifactId>
+				<version>${version.kafka.upstream}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.kafka</groupId>
+				<artifactId>kafka-streams-scala_2.13</artifactId>
+				<version>${version.kafka.upstream}</version>
+			</dependency>
 
 			<!-- spring-boot 1 carryovers / customer asks -->
 			<dependency>
