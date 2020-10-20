@@ -1167,12 +1167,12 @@
 
 			<dependency>
 				<groupId>org.apache.kafka</groupId>
-				<artifactId>kafka_2.11</artifactId>
+				<artifactId>kafka_2.12</artifactId>
 				<version>${version.kafka.upstream}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.kafka</groupId>
-				<artifactId>kafka-streams-scala_2.11</artifactId>
+				<artifactId>kafka-streams-scala_2.12</artifactId>
 				<version>${version.kafka.upstream}</version>
 			</dependency>
 			<dependency>
@@ -1457,16 +1457,6 @@
 			</dependency>
 
 			<dependency>
-				<groupId>org.eclipse.jetty.cdi</groupId>
-				<artifactId>cdi-core</artifactId>
-				<version>${version.org.eclipse.jetty}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.eclipse.jetty.cdi</groupId>
-				<artifactId>cdi-servlet</artifactId>
-				<version>${version.org.eclipse.jetty}</version>
-			</dependency>
-			<dependency>
 				<groupId>org.eclipse.jetty.fcgi</groupId>
 				<artifactId>fcgi-client</artifactId>
 				<version>${version.org.eclipse.jetty}</version>
@@ -1509,11 +1499,6 @@
 			<dependency>
 				<groupId>org.eclipse.jetty.memcached</groupId>
 				<artifactId>jetty-memcached-sessions</artifactId>
-				<version>${version.org.eclipse.jetty}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.eclipse.jetty.orbit</groupId>
-				<artifactId>javax.servlet.jsp</artifactId>
 				<version>${version.org.eclipse.jetty}</version>
 			</dependency>
 			<dependency>
@@ -1743,11 +1728,6 @@
 			<dependency>
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-quickstart</artifactId>
-				<version>${version.org.eclipse.jetty}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.eclipse.jetty</groupId>
-				<artifactId>jetty-reactive-httpclient</artifactId>
 				<version>${version.org.eclipse.jetty}</version>
 			</dependency>
 			<dependency>
