@@ -55,8 +55,6 @@
 
         <version.docker.maven.plugin>7.8.0.fuse-780012</version.docker.maven.plugin>
 
-        <version.apicurito>1.2.2.fuse-780017</version.apicurito>
-
         <version.narayana-starter>2.3.1</version.narayana-starter>
         <version.narayana-spring-boot>2.1.1.fuse-sb2-780029</version.narayana-spring-boot>
 
