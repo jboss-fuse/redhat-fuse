@@ -4,18 +4,16 @@
     <parent>
         <groupId>org.jboss.redhat-fuse</groupId>
         <artifactId>fuse-karaf</artifactId>
-        <version>7.8.0.fuse-sb2-780027</version>
+        <version>7.8.0.fuse-sb2-780027-redhat-00002</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.jboss.redhat-fuse</groupId>
     <artifactId>fabric8-project-bom-fuse-karaf</artifactId>
-    <version>7.8.0.fuse-sb2-780027</version>
+    <version>7.8.0.fuse-sb2-780027-redhat-00002</version>
     <name>Fabric8 :: Project :: Bom for Fuse Applications on Karaf</name>
     <packaging>pom</packaging>
-
-    <properties></properties>
 
     <dependencyManagement>
         <dependencies>
