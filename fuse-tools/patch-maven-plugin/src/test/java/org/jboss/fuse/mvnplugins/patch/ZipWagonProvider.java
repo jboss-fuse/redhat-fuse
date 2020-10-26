@@ -13,19 +13,26 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.jboss.fuse.mvnplugins.patch.extensions;
+package org.jboss.fuse.mvnplugins.patch;
 
-import org.eclipse.aether.RepositorySystemSession;
-import org.eclipse.aether.repository.RemoteRepository;
-import org.eclipse.aether.spi.connector.layout.RepositoryLayout;
-import org.eclipse.aether.spi.connector.layout.RepositoryLayoutProvider;
-import org.eclipse.aether.transfer.NoRepositoryLayoutException;
+import org.apache.maven.wagon.Wagon;
+import org.codehaus.plexus.component.annotations.Component;
+import org.eclipse.aether.transport.wagon.WagonProvider;
+import org.jboss.fuse.mvnplugins.patch.extensions.ZipWagon;
 
-public class ZipRepositoryLayoutProvider implements RepositoryLayoutProvider {
+//@Component(role = WagonProvider.class)
+public class ZipWagonProvider implements WagonProvider {
 
     @Override
-    public RepositoryLayout newRepositoryLayout(RepositorySystemSession repositorySystemSession, RemoteRepository remoteRepository) throws NoRepositoryLayoutException {
+    public Wagon lookup(String roleHint) throws Exception {
+        if (roleHint.equals("zip")) {
+            return new ZipWagon();
+        }
         return null;
+    }
+
+    @Override
+    public void release(Wagon wagon) {
     }
 
 }
