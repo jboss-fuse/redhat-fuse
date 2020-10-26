@@ -15,12 +15,8 @@
  */
 package org.jboss.fuse.mvnplugins.patch.extensions;
 
-import java.net.URI;
-import java.util.List;
-
+import org.codehaus.plexus.component.annotations.Component;
 import org.eclipse.aether.RepositorySystemSession;
-import org.eclipse.aether.artifact.Artifact;
-import org.eclipse.aether.metadata.Metadata;
 import org.eclipse.aether.repository.RemoteRepository;
 import org.eclipse.aether.spi.connector.layout.RepositoryLayout;
 import org.eclipse.aether.spi.connector.layout.RepositoryLayoutFactory;
@@ -28,6 +24,7 @@ import org.eclipse.aether.spi.locator.Service;
 import org.eclipse.aether.spi.locator.ServiceLocator;
 import org.eclipse.aether.transfer.NoRepositoryLayoutException;
 
+@Component(role = RepositoryLayoutFactory.class)
 public class ZipRepositoryLayoutFactory implements RepositoryLayoutFactory, Service {
 
     @Override
@@ -36,30 +33,11 @@ public class ZipRepositoryLayoutFactory implements RepositoryLayoutFactory, Serv
     }
 
     @Override
-    public RepositoryLayout newInstance(RepositorySystemSession repositorySystemSession, final RemoteRepository remoteRepository) throws NoRepositoryLayoutException {
-        return new RepositoryLayout() {
-            @Override
-            public URI getLocation(Artifact artifact, boolean b) {
-                return URI.create("zip:" + remoteRepository.getUrl() + "!/" + "system/commons-io/commons-io/42.0/commons-io-42.0.pom");
-//                remoteRepository.getUrl();
-//                return null;
-            }
-
-            @Override
-            public URI getLocation(Metadata metadata, boolean b) {
-                return null;
-            }
-
-            @Override
-            public List<Checksum> getChecksums(Artifact artifact, boolean b, URI uri) {
-                return null;
-            }
-
-            @Override
-            public List<Checksum> getChecksums(Metadata metadata, boolean b, URI uri) {
-                return null;
-            }
-        };
+    public RepositoryLayout newInstance(RepositorySystemSession repositorySystemSession, final RemoteRepository repository) throws NoRepositoryLayoutException {
+        if (!"zip".equals(repository.getContentType())) {
+            throw new NoRepositoryLayoutException(repository);
+        }
+        return new ZipRepositoryLayout(repository);
     }
 
     @Override
