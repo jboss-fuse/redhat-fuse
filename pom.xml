@@ -22,7 +22,7 @@
 
     <groupId>org.jboss.redhat-fuse</groupId>
     <artifactId>redhat-fuse</artifactId>
-    <version>7.8.0-SNAPSHOT</version>
+    <version>7.8.0.fuse-sb2-780028</version>
     <packaging>pom</packaging>
 
     <name>Red Hat Fuse :: ${project.artifactId}</name>
@@ -35,28 +35,28 @@
         <!-- Build properties (overridable in profiles) -->
         <enforcer.pluginVersions.banSnapshots>false</enforcer.pluginVersions.banSnapshots>
 
-        <version.camel>2.23.2.fuse-780004</version.camel>
-        <version.camel.extra>2.23.2.fuse-sb2-780004</version.camel.extra>
-        <version.cxf>3.3.6.fuse-780004</version.cxf>
-        <version.cxf.xjc-utils>3.3.1.fuse-780003</version.cxf.xjc-utils>
+        <version.camel>2.23.2.fuse-780032</version.camel>
+        <version.camel.extra>2.23.2.fuse-sb2-780032</version.camel.extra>
+        <version.cxf>3.3.6.fuse-780025</version.cxf>
+        <version.cxf.xjc-utils>3.3.1.fuse-780015</version.cxf.xjc-utils>
 
         <version.fabric8>3.0.12</version.fabric8>
-        <version.fabric8.maven.plugin>3.5.42.fuse-780003</version.fabric8.maven.plugin>
-        <version.fuse-karaf>7.8.0.fuse-780005</version.fuse-karaf>
-        <version.karaf>4.2.9.fuse-780002</version.karaf>
-        <version.wildfly.camel>5.5.0.fuse-770010-redhat-00003</version.wildfly.camel>
-        <version.fusesource.camel.sap>7.8.0.fuse-sb2-780004</version.fusesource.camel.sap>
-        <karaf.plugin.version>4.2.9.fuse-780002</karaf.plugin.version>
+        <version.fabric8.maven.plugin>4.3.0.fuse-780009</version.fabric8.maven.plugin>
+        <version.fuse-karaf>7.8.0.fuse-780031</version.fuse-karaf>
+        <version.karaf>4.2.9.fuse-780019</version.karaf>
+        <version.wildfly.camel>5.6.0.fuse-780019</version.wildfly.camel>
+        <version.fusesource.camel.sap>7.8.0.fuse-sb2-780031</version.fusesource.camel.sap>
+        <karaf.plugin.version>4.2.9.fuse-780019</karaf.plugin.version>
 
-        <version.hawtio>2.0.0.fuse-sb2-780003</version.hawtio>
+        <version.hawtio>2.0.0.fuse-sb2-780019</version.hawtio>
 
         <version.kubernetes.model>4.6.2</version.kubernetes.model>
         <version.kubernetes.client>4.6.2</version.kubernetes.client>
 
-        <version.docker.maven.plugin>7.8.0.fuse-780002</version.docker.maven.plugin>
+        <version.docker.maven.plugin>0.31.0.fuse-780001</version.docker.maven.plugin>
 
         <version.narayana-starter>2.3.1</version.narayana-starter>
-        <version.narayana-spring-boot>2.1.1.fuse-sb2-780004</version.narayana-spring-boot>
+        <version.narayana-spring-boot>2.1.1.fuse-sb2-780030</version.narayana-spring-boot>
 
         <version.spring-cloud-kubernetes>1.0.4.RELEASE</version.spring-cloud-kubernetes>
 
