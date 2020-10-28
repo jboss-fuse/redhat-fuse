@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+
+     Copyright 2005-2020 Red Hat, Inc.
+
+     Red Hat licenses this file to you under the Apache License, version
+     2.0 (the "License"); you may not use this file except in compliance
+     with the License.  You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+     implied.  See the License for the specific language governing
+     permissions and limitations under the License.
+
+-->
+<metadata xmlns="urn:redhat:fuse:patch-metadata:1">
+    <product-bom groupId="org.jboss.redhat-fuse" artifactId="fuse-karaf-bom" versions="[7.8,7.9)" />
+    <cves>
+<!--        <cve id="CVE-2020-xyz" description="Jetty ..."-->
+<!--                cve-link="" bz-link="">-->
+<!--            <affects groupId="org.eclipse.jetty" artifactId="jetty-*" versions="[9.4,9.4.32)" fix="9.4.32.v20200930" />-->
+<!--        </cve>-->
+    </cves>
+    <fixes />
+</metadata>
