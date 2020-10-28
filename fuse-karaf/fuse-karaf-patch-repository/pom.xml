@@ -22,16 +22,16 @@
 
     <parent>
         <groupId>org.jboss.redhat-fuse</groupId>
-        <artifactId>fuse-springboot</artifactId>
+        <artifactId>fuse-karaf</artifactId>
         <version>7.8.0.fuse-sb2-780025</version>
     </parent>
 
-    <artifactId>fuse-springboot-patch-repository</artifactId>
+    <artifactId>fuse-karaf-patch-repository</artifactId>
     <packaging>pom</packaging>
     <name>Red Hat Fuse :: ${project.artifactId}</name>
 
     <description>
-        Offline repository with patched artifacts and patch metadata for Fuse Spring Boot applications
+        Offline repository with patched artifacts and patch metadata for Fuse Karaf applications
     </description>
 
     <dependencies>
@@ -42,19 +42,30 @@
         -->
         <dependency>
             <groupId>org.jboss.redhat-fuse</groupId>
-            <artifactId>fuse-springboot-patch-metadata</artifactId>
+            <artifactId>fuse-karaf-patch-metadata</artifactId>
             <version>${project.version}</version>
             <type>xml</type>
         </dependency>
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
         <pluginManagement>
             <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-dependency-plugin</artifactId>
                     <version>${plugin.maven-dependency-plugin}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>${plugin.maven-resources-plugin}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -81,6 +92,18 @@
                             <addParentPoms>true</addParentPoms>
                             <excludeTransitive>false</excludeTransitive>
                         </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>default</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>resources</goal>
+                        </goals>
                     </execution>
                 </executions>
             </plugin>

@@ -33,8 +33,16 @@
     <modules>
         <module>fabric8-camel-spring-boot-bom</module>
         <module>fuse-springboot-bom</module>
-        <module>fuse-springboot-patch-metadata</module>
-        <module>fuse-springboot-patch-repository</module>
     </modules>
+
+    <profiles>
+        <profile>
+            <id>maintenance</id>
+            <modules>
+                <module>fuse-springboot-patch-metadata</module>
+                <module>fuse-springboot-patch-repository</module>
+            </modules>
+        </profile>
+    </profiles>
 
 </project>

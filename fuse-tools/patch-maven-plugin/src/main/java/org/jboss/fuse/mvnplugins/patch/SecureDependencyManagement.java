@@ -132,7 +132,7 @@ public class SecureDependencyManagement extends AbstractMavenLifecycleParticipan
             return;
         }
 
-        logger.info("\n\n========== Idea about CVE fix delivery ==========\n");
+        logger.info("\n\n========== Red Hat Fuse Maven patching ==========\n");
 
         try {
             // detect which BOM we're using - we can't have both Karaf and Spring Boot bom for example
@@ -180,7 +180,7 @@ public class SecureDependencyManagement extends AbstractMavenLifecycleParticipan
                 logger.warn("[PATCH] Can't find latest patch metadata for {} in any of configured repositories.",
                         String.format("%s/%s/%s BOM", bom.getGroupId(), bom.getArtifactId(), bom.getVersion()));
                 if (!logger.isDebugEnabled()) {
-                    logger.warn("[PATCH] Please debug logging (-X) to see more details."
+                    logger.warn("[PATCH] Please enable debug logging (-X) to see more details."
                             + " Perhaps the metadata was previously downloaded from different repository?");
                 }
                 return;

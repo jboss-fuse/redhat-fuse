@@ -18,6 +18,11 @@
 -->
 <metadata xmlns="urn:redhat:fuse:patch-metadata:1">
     <product-bom groupId="org.jboss.redhat-fuse" artifactId="fuse-springboot-bom" versions="[7.8,7.9)" />
-    <cves />
+    <cves>
+<!--        <cve id="CVE-2020-xyz" description="Jetty ..."-->
+<!--                cve-link="" bz-link="">-->
+<!--            <affects groupId="org.eclipse.jetty" artifactId="jetty-*" versions="[9.4,9.4.32)" fix="9.4.32.v20200930" />-->
+<!--        </cve>-->
+    </cves>
     <fixes />
 </metadata>
