@@ -128,6 +128,11 @@
           - Maven plugins - whatever that improves readability
         -->
 
+        <plugin.mojo.build-helper-maven-plugin>3.2.0</plugin.mojo.build-helper-maven-plugin>
+        <plugin.maven-assembly-plugin>3.3.0</plugin.maven-assembly-plugin>
+        <plugin.maven-dependency-plugin>3.1.2</plugin.maven-dependency-plugin>
+        <plugin.maven-resources-plugin>3.2.0</plugin.maven-resources-plugin>
+
     </properties>
 
     <modules>
