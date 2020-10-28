@@ -30,6 +30,27 @@
     <packaging>jar</packaging>
     <name>Red Hat Fuse :: ${project.artifactId}</name>
 
+    <!--
+        This fuse-springboot-patch-metadata project has two goals:
+         - provide a metadata.xml artifact with org.jboss.redhat-fuse:fuse-springboot-patch-metadata GA
+           that can be consumed by patch-maven-plugin in projects using Fuse Spring Boot BOM
+         - provide a list of dependencies that will be picked by fuse-springboot-patch-repository assembly in
+           transitive way. At assembly definition level we can further filter the dependencies (no need to get old
+           parent POMs for example), but keeping the dependencies here is crucial
+    -->
+
+    <properties>
+<!--        <project.update.org.eclipse.jetty>9.4.32.v20200930</project.update.org.eclipse.jetty>-->
+    </properties>
+
+    <dependencies>
+<!--        <dependency>-->
+<!--            <groupId>org.eclipse.jetty</groupId>-->
+<!--            <artifactId>jetty-server</artifactId>-->
+<!--            <version>${project.update.org.eclipse.jetty}</version>-->
+<!--        </dependency>-->
+    </dependencies>
+
     <build>
         <pluginManagement>
             <plugins>
