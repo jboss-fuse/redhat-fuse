@@ -61,6 +61,7 @@
 		<!-- overidding properties -->
 		<tomcat.version>9.0.21.redhat-4</tomcat.version>
 		<infinispan.version>9.4.19.Final-redhat-00001</infinispan.version>
+		<version.mongodb>3.12.7</version.mongodb>
 	</properties>
 
 	<dependencyManagement>
@@ -2047,6 +2048,35 @@
 				<groupId>org.apache.tika</groupId>
 				<artifactId>tika-parsers</artifactId>
 				<version>${version.tika}</version>
+			</dependency>
+
+			<!-- MongoDB -->
+
+			<dependency>
+				<groupId>org.mongodb</groupId>
+				<artifactId>bson</artifactId>
+				<version>${version.mongodb}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.mongodb</groupId>
+				<artifactId>mongodb-driver-core</artifactId>
+				<version>${version.mongodb}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.mongodb</groupId>
+				<artifactId>mongodb-driver-legacy</artifactId>
+				<version>${version.mongodb}</version>
+			</dependency>
+			<!-- mongodb-driver-reactivestreams has only versions 1.x and 4.x -->
+<!--			<dependency>-->
+<!--				<groupId>org.mongodb</groupId>-->
+<!--				<artifactId>mongodb-driver-reactivestreams</artifactId>-->
+<!--				<version>${version.mongodb}</version>-->
+<!--			</dependency>-->
+			<dependency>
+				<groupId>org.mongodb</groupId>
+				<artifactId>mongodb-driver-sync</artifactId>
+				<version>${version.mongodb}</version>
 			</dependency>
 
 			<!-- END OVERRIDES -->
