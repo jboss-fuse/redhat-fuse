@@ -65,12 +65,14 @@ public class CVE {
 
     @Override
     public String toString() {
+        String cveLink = this.cveLink != null && !this.cveLink.trim().equals("") ? this.cveLink : null;
+        String bzLink = this.bzLink != null && !this.bzLink.trim().equals("") ? this.bzLink : null;
         if (cveLink != null && bzLink != null) {
-            return id + ": " + description + "(" + cveLink + ", " + bzLink + ")";
+            return id + ": " + description + " (" + cveLink + ", " + bzLink + ")";
         } else if (cveLink != null) {
-            return id + ": " + description + "(" + cveLink + ")";
+            return id + ": " + description + " (" + cveLink + ")";
         } else if (bzLink != null) {
-            return id + ": " + description + "(" + bzLink + ")";
+            return id + ": " + description + " (" + bzLink + ")";
         } else {
             return id + ": " + description;
         }
