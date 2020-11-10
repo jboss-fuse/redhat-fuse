@@ -51,6 +51,50 @@
 <!--        </dependency>-->
     </dependencies>
 
+    <profiles>
+        <profile>
+            <!--
+                If this profile is included, fuse-karaf-patch-repository will also contain patching bundles.
+                This should be explicit decision when building artfacts from maintenance branch.
+            -->
+            <id>include-patching-bundles</id>
+            <dependencies>
+                <dependency>
+                    <groupId>org.jboss.fuse.modules.patch</groupId>
+                    <artifactId>patch-management</artifactId>
+                    <version>${version.fuse-karaf}</version>
+                    <scope>runtime</scope>
+                </dependency>
+                <dependency>
+                    <groupId>org.jboss.fuse.modules.patch</groupId>
+                    <artifactId>patch-core-api</artifactId>
+                    <version>${version.fuse-karaf}</version>
+                    <scope>runtime</scope>
+                </dependency>
+                <dependency>
+                    <groupId>org.jboss.fuse.modules.patch</groupId>
+                    <artifactId>patch-core</artifactId>
+                    <version>${version.fuse-karaf}</version>
+                    <scope>runtime</scope>
+                </dependency>
+                <dependency>
+                    <groupId>org.jboss.fuse.modules.patch</groupId>
+                    <artifactId>patch-commands</artifactId>
+                    <version>${version.fuse-karaf}</version>
+                    <scope>runtime</scope>
+                </dependency>
+                <dependency>
+                    <groupId>org.jboss.fuse.modules.patch</groupId>
+                    <artifactId>patch-features</artifactId>
+                    <type>xml</type>
+                    <classifier>features</classifier>
+                    <version>${version.fuse-karaf}</version>
+                    <scope>runtime</scope>
+                </dependency>
+            </dependencies>
+        </profile>
+    </profiles>
+
     <build>
         <pluginManagement>
             <plugins>
