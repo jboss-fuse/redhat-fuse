@@ -557,7 +557,7 @@
                         <dependency>
                                 <groupId>me.snowdrop</groupId>
                                 <artifactId>narayana-spring-boot-starter</artifactId>
-                                <version>${version.narayana-starter}</version>
+                                <version>${version.narayana-spring-boot}</version>
                         </dependency>
 			<dependency>
 				<groupId>me.snowdrop</groupId>
