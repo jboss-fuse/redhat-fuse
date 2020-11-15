@@ -1,20 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 
 	<parent>
 		<groupId>org.jboss.redhat-fuse</groupId>
 		<artifactId>fuse-springboot</artifactId>
-		<version>7.8.0.fuse-sb2-780034</version>
+		<version>7.8.0.fuse-sb2-780034-redhat-00001</version>
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.jboss.redhat-fuse</groupId>
 	<artifactId>fabric8-project-bom-camel-spring-boot</artifactId>
-	<version>7.8.0.fuse-sb2-780034</version>
+	<version>7.8.0.fuse-sb2-780034-redhat-00001</version>
 	<name>Fabric8 :: Project :: Bom for Camel and Spring-Boot</name>
 	<packaging>pom</packaging>
 	<description>Bill of material</description>
@@ -56,7 +54,7 @@
 	</developers>
 
 	<properties>
-		<javax.inject.version>1</javax.inject.version>
+		<javax.inject.version>1.0.0.redhat-6</javax.inject.version>
 
 		<!-- overidding properties -->
 		<tomcat.version>9.0.21.redhat-4</tomcat.version>
@@ -71,12 +69,12 @@
 			<dependency>
 				<groupId>io.opentracing</groupId>
 				<artifactId>opentracing-api</artifactId>
-				<version>0.31.0</version>
+				<version>0.31.0.redhat-00008</version>
 			</dependency>
 			<dependency>
 				<groupId>io.opentracing</groupId>
 				<artifactId>opentracing-util</artifactId>
-				<version>0.31.0</version>
+				<version>0.31.0.redhat-00008</version>
 			</dependency>
 			<!-- TODO: [end] remove when cxf and camel opentracing version will be 
 				aligned -->
@@ -569,7 +567,7 @@
 			<dependency>
 				<groupId>org.jboss.redhat-fuse</groupId>
 				<artifactId>redhat-fuse</artifactId>
-				<version>${project.version}</version>
+				<version>7.8.0.fuse-sb2-780034-redhat-00001</version>
 				<scope>import</scope>
 				<type>pom</type>
 			</dependency>
