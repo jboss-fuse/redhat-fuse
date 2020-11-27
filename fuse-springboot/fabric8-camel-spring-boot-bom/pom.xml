@@ -59,7 +59,10 @@
 		<javax.inject.version>1</javax.inject.version>
 
 		<!-- overidding properties -->
-		<tomcat.version>9.0.21.redhat-4</tomcat.version>
+		<tomcat.version>9.0.36.redhat-5</tomcat.version>
+		<!-- there's no productized version of tomcat-annotations-api
+			 fallback to upstream version for the moment-->
+		<tomcat-annotations-api.version>9.0.36</tomcat-annotations-api.version>
 		<infinispan.version>9.4.19.Final-redhat-00001</infinispan.version>
 		<version.mongodb>3.12.7</version.mongodb>
 	</properties>
@@ -85,7 +88,7 @@
 			<dependency>
 				<groupId>org.apache.tomcat</groupId>
 				<artifactId>tomcat-annotations-api</artifactId>
-				<version>${tomcat.version}</version>
+				<version>${tomcat-annotations-api.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.tomcat</groupId>
@@ -118,11 +121,11 @@
 				<version>${tomcat.version}</version>
 			</dependency>
 
-                        <dependency>
-                                <groupId>org.springframework.cloud</groupId>
-                                <artifactId>spring-cloud-starter-kubernetes-config</artifactId>
-                                <version>${version.spring-cloud-kubernetes}</version>
-                       </dependency>
+			<dependency>
+            	<groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-kubernetes-config</artifactId>
+                <version>${version.spring-cloud-kubernetes}</version>
+			</dependency>
 
 			<dependency>
 				<groupId>org.infinispan</groupId>
