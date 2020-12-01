@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <profiles>
+    <profile>
+      <repositories>
+        <repository>
+          <releases />
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>redhat-ga-repository</id>
+          <name>redhat-ga-repository</name>
+          <url>https://maven.repository.redhat.com/ga</url>
+        </repository>
+        <repository>
+          <releases />
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>redhat-ea-repository</id>
+          <name>redhat-ea-repository</name>
+          <url>https://maven.repository.redhat.com/earlyaccess/all</url>
+        </repository>
+        <repository>
+          <releases />
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>jboss-ea</id>
+          <name>jboss-ea</name>
+          <url>https://repository.jboss.org/nexus/content/groups/ea</url>
+        </repository>
+        <repository>
+          <releases />
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>jb-eap-7.1-brew</id>
+          <name>jb-eap-7.1-brew</name>
+          <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven</url>
+        </repository>
+        <repository>
+          <releases />
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>jb-amq-7-brew</id>
+          <name>jb-amq-7-brew</name>
+          <url>https://download.eng.bos.redhat.com/brewroot/repos/jb-amq-7-build/latest/maven/</url>
+        </repository>
+        <repository>
+          <releases>
+            <enabled>false</enabled>
+          </releases>
+          <snapshots>
+            <updatePolicy>daily</updatePolicy>
+          </snapshots>
+          <id>apache-snapshots-repository</id>
+          <name>apache-snapshots-repository</name>
+          <url>https://repository.apache.org/content/groups/snapshots</url>
+        </repository>
+        <repository>
+          <releases>
+            <enabled>false</enabled>
+          </releases>
+          <snapshots />
+          <id>ops4j-snapshots-repository</id>
+          <name>ops4j-snapshots-repository</name>
+          <url>https://oss.sonatype.org/content/repositories/ops4j-snapshots</url>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <releases />
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>redhat-ga-repository</id>
+          <name>redhat-ga-repository</name>
+          <url>https://maven.repository.redhat.com/ga</url>
+        </pluginRepository>
+        <pluginRepository>
+          <releases />
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>redhat-ea-repository</id>
+          <name>redhat-ea-repository</name>
+          <url>https://maven.repository.redhat.com/earlyaccess/all</url>
+        </pluginRepository>
+        <pluginRepository>
+          <releases />
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>jboss-ea</id>
+          <name>jboss-ea</name>
+          <url>https://origin-repository.jboss.org/nexus/content/groups/ea</url>
+        </pluginRepository>
+        <pluginRepository>
+          <releases>
+            <enabled>false</enabled>
+          </releases>
+          <snapshots>
+            <updatePolicy>interval:120</updatePolicy>
+          </snapshots>
+          <id>apache-snapshots-repository</id>
+          <name>apache-snapshots-repository</name>
+          <url>https://repository.apache.org/content/groups/snapshots</url>
+        </pluginRepository>
+      </pluginRepositories>
+      <id>removed-by-pme</id>
+    </profile>
+  </profiles>
+  <activeProfiles>
+    <activeProfile>removed-by-pme</activeProfile>
+  </activeProfiles>
+</settings>
