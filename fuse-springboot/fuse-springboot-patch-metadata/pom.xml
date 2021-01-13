@@ -44,11 +44,14 @@
     </properties>
 
     <dependencies>
-<!--        <dependency>-->
-<!--            <groupId>org.eclipse.jetty</groupId>-->
-<!--            <artifactId>jetty-server</artifactId>-->
-<!--            <version>${project.update.org.eclipse.jetty}</version>-->
-<!--        </dependency>-->
+
+        <!-- https://issues.redhat.com/browse/ENTESB-15511 -->
+        <dependency>
+          <groupId>org.bouncycastle</groupId>
+          <artifactId>bcprov-jdk15on</artifactId>
+          <version>${patch.org.bouncycastle}</version>
+        </dependency>
+
     </dependencies>
 
     <build>

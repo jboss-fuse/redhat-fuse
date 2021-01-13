@@ -120,6 +120,10 @@
 
         <!-- END Overridden from snowdrop Spring Boot BOM-->
 
+        <!-- Versions used for patching (metadata, repositories and assembly descriptors) -->
+
+        <patch.org.bouncycastle>1.68</patch.org.bouncycastle>
+
         <!--
           CONVENTIONS:
           - A version property must be specified in the format "version.{groupId}", optionally with a suffix to make it unique.
