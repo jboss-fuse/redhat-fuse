@@ -15,7 +15,22 @@
 #
 
 id = fuse-karaf-maintenance-patch-${project.version}
-#bundle.0 = mvn:org.apache.commons/commons-lang3/3.11
-#bundle.0.range = [3,4)
-#bundle.count = 1
-bundle.count = 0
+bundle.0 = mvn:org.bouncycastle/bcprov-jdk15on/${patch.org.bouncycastle}
+bundle.0.range = [1.50,2)
+bundle.1 = mvn:org.bouncycastle/bcprov-ext-jdk15on/${patch.org.bouncycastle}
+bundle.1.range = [1.50,2)
+bundle.2 = mvn:org.bouncycastle/bcpkix-jdk15on/${patch.org.bouncycastle}
+bundle.2.range = [1.50,2)
+bundle.3 = mvn:org.bouncycastle/bcmail-jdk15on/${patch.org.bouncycastle}
+bundle.3.range = [1.50,2)
+bundle.4 = mvn:org.bouncycastle/bcpg-jdk15on/${patch.org.bouncycastle}
+bundle.4.range = [1.50,2)
+bundle.count = 5
+configPackage.0 = org.bouncycastle/${patch.org.bouncycastle}
+configPackage.0.range = [1.66,1.68)
+configPackage.count = 1
+file.0 = lib/ext/bcprov-jdk15on-${patch.org.bouncycastle}.jar
+file.0.delete = lib/ext/bcprov-jdk15on-*.jar
+file.1 = lib/ext/bcpkix-jdk15on-${patch.org.bouncycastle}.jar
+file.1.delete = lib/ext/bcpkix-jdk15on-*.jar
+file.count = 2

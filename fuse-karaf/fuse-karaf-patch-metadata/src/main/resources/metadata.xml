@@ -19,10 +19,12 @@
 <metadata xmlns="urn:redhat:fuse:patch-metadata:1">
     <product-bom groupId="org.jboss.redhat-fuse" artifactId="fuse-karaf-bom" versions="[7.8,7.9)" />
     <cves>
-<!--        <cve id="CVE-2020-xyz" description="Jetty ..."-->
-<!--                cve-link="" bz-link="">-->
-<!--            <affects groupId="org.eclipse.jetty" artifactId="jetty-*" versions="[9.4,9.4.32)" fix="9.4.32.v20200930" />-->
-<!--        </cve>-->
+        <!-- https://issues.redhat.com/browse/ENTESB-15511 -->
+        <cve id="CVE-2020-28052" description="bouncycastle: password bypass in OpenBSDBCrypt.checkPassword utility possible"
+                cve-link="https://cve.mitre.org/cgi-bin/cvename.cgi?name=2020-28052"
+                bz-link="https://bugzilla.redhat.com/show_bug.cgi?id=1912881">
+            <affects groupId="org.bouncycastle" artifactId="*" versions="[1.66,1.68)" fix="1.68" />
+        </cve>
     </cves>
     <fixes />
 </metadata>
