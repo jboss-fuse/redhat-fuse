@@ -123,6 +123,7 @@
         <!-- Versions used for patching (metadata, repositories and assembly descriptors) -->
 
         <patch.org.bouncycastle>1.68</patch.org.bouncycastle>
+        <patch.org.apache.aries.proxy>1.1.8</patch.org.apache.aries.proxy>
 
         <!--
           CONVENTIONS:

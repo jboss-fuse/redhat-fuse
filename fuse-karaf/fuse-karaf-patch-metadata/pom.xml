@@ -72,6 +72,13 @@
           <version>${patch.org.bouncycastle}</version>
         </dependency>
 
+        <!-- https://issues.redhat.com/browse/ENTESB-15526 -->
+        <dependency>
+          <groupId>org.apache.aries.proxy</groupId>
+          <artifactId>org.apache.aries.proxy</artifactId>
+          <version>${patch.org.apache.aries.proxy}</version>
+        </dependency>
+
     </dependencies>
 
     <build>
