@@ -43,6 +43,7 @@
                 <include>org/jboss/**</include>
                 <include>org/bouncycastle/bcprov-jdk15on/**</include>
                 <include>org/bouncycastle/bcpkix-jdk15on/**</include>
+                <include>org/apache/aries/proxy/**</include>
             </includes>
         </fileSet>
         <!--
