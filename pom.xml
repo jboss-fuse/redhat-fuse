@@ -124,6 +124,7 @@
 
         <patch.org.bouncycastle>1.68</patch.org.bouncycastle>
         <patch.org.apache.aries.proxy>1.1.8</patch.org.apache.aries.proxy>
+        <patch.org.apache.servicemix.bundles.jaxb>2.3.1_1</patch.org.apache.servicemix.bundles.jaxb>
 
         <!--
           CONVENTIONS:
