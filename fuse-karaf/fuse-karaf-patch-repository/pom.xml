@@ -23,7 +23,7 @@
     <parent>
         <groupId>org.jboss.redhat-fuse</groupId>
         <artifactId>fuse-karaf</artifactId>
-        <version>7.8.0.fuse-sb2-780038-redhat-00001</version>
+        <version>7.8.0.fuse-sb2-780042</version>
     </parent>
 
     <artifactId>fuse-karaf-patch-repository</artifactId>
@@ -43,7 +43,7 @@
         <dependency>
             <groupId>org.jboss.redhat-fuse</groupId>
             <artifactId>fuse-karaf-patch-metadata</artifactId>
-            <version>7.8.0.fuse-sb2-780038-redhat-00001</version>
+            <version>7.8.0.fuse-sb2-780042</version>
             <type>xml</type>
         </dependency>
 
