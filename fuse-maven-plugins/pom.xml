@@ -23,7 +23,7 @@
     <parent>
         <groupId>org.jboss.redhat-fuse</groupId>
         <artifactId>redhat-fuse</artifactId>
-        <version>7.8.0.fuse-sb2-780038-redhat-00001</version>
+        <version>7.8.0.fuse-sb2-780043</version>
     </parent>
 
     <artifactId>fuse-maven-plugins</artifactId>
@@ -57,7 +57,7 @@
             <plugin>
                 <groupId>org.jboss.redhat-fuse</groupId>
                 <artifactId>repackage-maven-plugin</artifactId>
-                <version>7.8.0.fuse-sb2-780038-redhat-00001</version>
+                <version>7.8.0.fuse-sb2-780043</version>
                 <executions>
                     <execution>
                         <id>repackage</id>
