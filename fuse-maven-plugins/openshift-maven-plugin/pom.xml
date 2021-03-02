@@ -36,6 +36,12 @@
             <artifactId>openshift-maven-plugin</artifactId>
             <version>${version.openshift.maven.plugin}</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.jkube</groupId>
+            <artifactId>jkube-kit-enricher-specific</artifactId>
+            <version>${version.openshift.maven.plugin}</version>
+        </dependency>
     </dependencies>
 
 </project>
