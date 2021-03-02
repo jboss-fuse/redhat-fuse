@@ -61,7 +61,7 @@
 
         <version.felix.bundle-plugin>3.5.1</version.felix.bundle-plugin>
 
-        <version.openshift.maven.plugin>1.0.2</version.openshift.maven.plugin>
+        <version.openshift.maven.plugin>1.1.1</version.openshift.maven.plugin>
 
         <!--
             this version won't be used before 2.3.x is available in
