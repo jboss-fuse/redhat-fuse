@@ -69,21 +69,6 @@
 
 	<dependencyManagement>
 		<dependencies>
-			<!-- TODO: [start] remove when cxf and camel opentracing version will 
-				be aligned -->
-			<dependency>
-				<groupId>io.opentracing</groupId>
-				<artifactId>opentracing-api</artifactId>
-				<version>0.31.0</version>
-			</dependency>
-			<dependency>
-				<groupId>io.opentracing</groupId>
-				<artifactId>opentracing-util</artifactId>
-				<version>0.31.0</version>
-			</dependency>
-			<!-- TODO: [end] remove when cxf and camel opentracing version will be 
-				aligned -->
-
 			<!-- override the tomcat version slip in from Spring Boot bom -->
 			<dependency>
 				<groupId>org.apache.tomcat</groupId>
