@@ -95,7 +95,7 @@
         <version.org.apache.httpcomponents.httpclient>4.5.13</version.org.apache.httpcomponents.httpclient>
         <version.org.apache.httpcomponents.httpcore>4.4.14</version.org.apache.httpcomponents.httpcore>
 
-        <version.org.eclipse.jetty>9.4.30.v20200611</version.org.eclipse.jetty>
+        <version.org.eclipse.jetty>9.4.35.v20201120</version.org.eclipse.jetty>
 
         <version.tika>1.24.1</version.tika>
 
