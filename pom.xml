@@ -68,8 +68,8 @@
         <version.snakeyaml>1.26</version.snakeyaml>
 
         <!-- Overridden from snowdrop Spring Boot BOM-->
-        <hibernate.version>5.3.17.Final-redhat-00001</hibernate.version>
-        <hibernate-validator6.version>6.0.20.Final-redhat-00001</hibernate-validator6.version>
+        <hibernate.version>5.3.20.Final-redhat-00001</hibernate.version>
+        <hibernate-validator6.version>6.0.22.Final-redhat-00002</hibernate-validator6.version>
         <undertow.version>2.0.30.SP4-redhat-00001</undertow.version>
 
         <activemq.version>5.11.0.redhat-630475</activemq.version>
