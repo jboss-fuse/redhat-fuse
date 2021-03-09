@@ -63,13 +63,8 @@
 
         <version.openshift.maven.plugin>1.1.1</version.openshift.maven.plugin>
 
-        <!--
-            this version won't be used before 2.3.x is available in
-            https://maven.repository.redhat.com/ga/dev/snowdrop/snowdrop-dependencies/
-            and we use org.springframework.boot:spring-boot-dependencies instead
-        -->
-        <spring.boot.version>2.3.6.RELEASE</spring.boot.version>
-        <spring.security.version>5.3.5.RELEASE</spring.security.version>
+        <spring.boot.version>2.3.9.RELEASE</spring.boot.version>
+        <spring.security.version>5.3.8.RELEASE</spring.security.version>
         <version.snakeyaml>1.26</version.snakeyaml>
 
         <!-- Overridden from snowdrop Spring Boot BOM-->
