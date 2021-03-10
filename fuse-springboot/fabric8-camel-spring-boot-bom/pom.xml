@@ -59,10 +59,10 @@
 		<javax.inject.version>1</javax.inject.version>
 
 		<!-- overidding properties -->
-		<tomcat.version>9.0.36.redhat-5</tomcat.version>
-		<!-- there's no productized version of tomcat-annotations-api
-			 fallback to upstream version for the moment-->
-		<tomcat-annotations-api.version>9.0.36</tomcat-annotations-api.version>
+		<tomcat.version>9.0.36.redhat-00010</tomcat.version>
+		<!-- there was no productized version of tomcat-annotations-api 9.0.36.redhat-5
+			 Let's leave separate property in case this situation happens again -->
+		<tomcat-annotations-api.version>9.0.36.redhat-00010</tomcat-annotations-api.version>
 		<infinispan.version>9.4.19.Final-redhat-00001</infinispan.version>
 		<version.mongodb>3.12.7</version.mongodb>
 	</properties>
