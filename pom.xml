@@ -63,39 +63,34 @@
 
         <version.openshift.maven.plugin>1.1.1</version.openshift.maven.plugin>
 
-        <!--
-            this version won't be used before 2.3.x is available in
-            https://maven.repository.redhat.com/ga/dev/snowdrop/snowdrop-dependencies/
-            and we use org.springframework.boot:spring-boot-dependencies instead
-        -->
-        <spring.boot.version>2.3.6.RELEASE</spring.boot.version>
-        <spring.security.version>5.3.5.RELEASE</spring.security.version>
+        <spring.boot.version>2.3.9.RELEASE</spring.boot.version>
+        <spring.security.version>5.3.8.RELEASE</spring.security.version>
         <version.snakeyaml>1.26</version.snakeyaml>
 
         <!-- Overridden from snowdrop Spring Boot BOM-->
-        <hibernate.version>5.3.17.Final-redhat-00001</hibernate.version>
-        <hibernate-validator6.version>6.0.20.Final-redhat-00001</hibernate-validator6.version>
-        <undertow.version>2.0.30.SP4-redhat-00001</undertow.version>
+        <hibernate.version>5.3.20.Final-redhat-00001</hibernate.version>
+        <hibernate-validator6.version>6.0.22.Final-redhat-00002</hibernate-validator6.version>
+        <undertow.version>2.2.5.Final</undertow.version>
 
-        <activemq.version>5.11.0.redhat-630475</activemq.version>
-        <artemis.version>2.13.0.redhat-00006</artemis.version>
+        <activemq.version>5.11.0.redhat-630495</activemq.version>
+        <artemis.version>2.16.0.redhat-00012</artemis.version>
 
         <version.kafka>2.5.0.redhat-00003</version.kafka>
         <version.kafka.upstream>2.5.0</version.kafka.upstream>
 
-        <version.commons-codec>1.14</version.commons-codec>
+        <version.commons-codec>1.15</version.commons-codec>
         <version.commons-pool>1.6.0.redhat-9</version.commons-pool>
-        <version.netty>4.1.48.Final-redhat-00001</version.netty>
+        <version.netty>4.1.51.Final-redhat-00001</version.netty>
 
-        <version.org.apache.commons.dbcp2>2.7.0</version.org.apache.commons.dbcp2>
-        <version.org.apache.commons.lang3>3.10</version.org.apache.commons.lang3>
-        <version.org.apache.commons.pool2>2.8.0</version.org.apache.commons.pool2>
+        <version.org.apache.commons.dbcp2>2.8.0</version.org.apache.commons.dbcp2>
+        <version.org.apache.commons.lang3>3.12.0</version.org.apache.commons.lang3>
+        <version.org.apache.commons.pool2>2.9.0</version.org.apache.commons.pool2>
 
         <version.org.apache.httpcomponents.httpasyncclient>4.1.3.redhat-2</version.org.apache.httpcomponents.httpasyncclient>
         <version.org.apache.httpcomponents.httpclient>4.5.13</version.org.apache.httpcomponents.httpclient>
         <version.org.apache.httpcomponents.httpcore>4.4.14</version.org.apache.httpcomponents.httpcore>
 
-        <version.org.eclipse.jetty>9.4.30.v20200611</version.org.eclipse.jetty>
+        <version.org.eclipse.jetty>9.4.38.v20210224</version.org.eclipse.jetty>
 
         <version.tika>1.24.1</version.tika>
 
@@ -105,13 +100,13 @@
 
         <version.com.google.guava>27.1-jre</version.com.google.guava>
 
-        <version.org.apache.logging.log4j2>2.13.2</version.org.apache.logging.log4j2>
+        <version.org.apache.logging.log4j2>2.14.0</version.org.apache.logging.log4j2>
 
-        <version.org.postgresql>42.2.14</version.org.postgresql>
+        <version.org.postgresql>42.2.19</version.org.postgresql>
         <version.mysql>8.0.21</version.mysql>
 
         <version.javax.xml.bind>2.3.0</version.javax.xml.bind>
-        <version.org.jboss.xnio>3.5.9.Final</version.org.jboss.xnio>
+        <version.org.jboss.xnio>3.8.4.Final</version.org.jboss.xnio>
 
         <!-- test frameworks versions -->
         <arquillian.version>1.4.1.Final</arquillian.version>
