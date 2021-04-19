@@ -70,7 +70,7 @@
         <!-- Overridden from snowdrop Spring Boot BOM-->
         <hibernate.version>5.3.20.Final-redhat-00001</hibernate.version>
         <hibernate-validator6.version>6.0.22.Final-redhat-00002</hibernate-validator6.version>
-        <undertow.version>2.2.5.Final</undertow.version>
+        <undertow.version>2.2.5.Final-redhat-00001</undertow.version>
 
         <activemq.version>5.11.0.redhat-630495</activemq.version>
         <artemis.version>2.16.0.redhat-00012</artemis.version>
@@ -106,7 +106,7 @@
         <version.mysql>8.0.21</version.mysql>
 
         <version.javax.xml.bind>2.3.0</version.javax.xml.bind>
-        <version.org.jboss.xnio>3.8.4.Final</version.org.jboss.xnio>
+        <version.org.jboss.xnio>3.8.4.Final-redhat-00001</version.org.jboss.xnio>
 
         <!-- test frameworks versions -->
         <arquillian.version>1.4.1.Final</arquillian.version>
