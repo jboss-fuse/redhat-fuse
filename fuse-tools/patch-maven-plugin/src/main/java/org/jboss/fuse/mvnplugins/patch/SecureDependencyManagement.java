@@ -454,7 +454,7 @@ public class SecureDependencyManagement extends AbstractMavenLifecycleParticipan
         MavenProject _mp = mp;
         while (_mp != null) {
             projects.push(_mp);
-            _mp = mp.getParent();
+            _mp = _mp.getParent();
         }
         while (projects.size() > 0) {
             Properties _props = projects.pop().getProperties();
