@@ -44,7 +44,9 @@ public class AffectedArtifactSpec {
         String a = dependency.getArtifactId();
         Version v = null;
         try {
-            v = GVS.parseVersion(dependency.getVersion());
+            if (dependency.getVersion() != null) {
+                v = GVS.parseVersion(dependency.getVersion());
+            }
         } catch (InvalidVersionSpecificationException e) {
             LOG.warn("[PATCH] Problem parsing managed dependency version: {}", e.getMessage(), e);
         }
