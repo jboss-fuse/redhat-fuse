@@ -30,6 +30,8 @@ import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Deque;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -49,6 +51,7 @@ import org.apache.maven.model.Dependency;
 import org.apache.maven.model.DependencyManagement;
 import org.apache.maven.model.Model;
 import org.apache.maven.model.Plugin;
+import org.apache.maven.model.Profile;
 import org.apache.maven.model.building.DefaultModelBuildingRequest;
 import org.apache.maven.model.building.ModelBuildingRequest;
 import org.apache.maven.model.interpolation.StringVisitorModelInterpolator;
@@ -228,6 +231,7 @@ public class SecureDependencyManagement extends AbstractMavenLifecycleParticipan
                     for (AffectedArtifactSpec spec : cve.getAffected()) {
                         logger.info("[PATCH]   Applying change {}", spec);
                         for (MavenProject project : session.getProjects()) {
+                            logger.info("[PATCH]   Project {}:{}", project.getGroupId(), project.getArtifactId());
                             if (project.getDependencyManagement() != null) {
                                 for (Dependency dependency : project.getDependencyManagement().getDependencies()) {
                                     if (spec.matches(dependency)) {
@@ -389,7 +393,7 @@ public class SecureDependencyManagement extends AbstractMavenLifecycleParticipan
      * @return
      */
     private Dependency findProductBOM(MavenSession session) {
-        List<Dependency> result = new LinkedList<>();
+        Set<Dependency> result = new LinkedHashSet<>();
 
         for (MavenProject mp : session.getProjects()) {
             MavenProject _mp = mp;
@@ -403,6 +407,29 @@ public class SecureDependencyManagement extends AbstractMavenLifecycleParticipan
                         }
                     }
                     result.addAll(interpolate(session, _mp, projectDependencies));
+                }
+                if (_mp.getOriginalModel().getProfiles() != null) {
+                    Set<String> activeProfiles = new HashSet<>();
+                    if (_mp.getActiveProfiles() != null) {
+                        for (Profile ap : _mp.getActiveProfiles()) {
+                            activeProfiles.add(ap.getId());
+                        }
+                    }
+                    for (Profile profile : _mp.getOriginalModel().getProfiles()) {
+                        if (activeProfiles.contains(profile.getId())) {
+
+                            DependencyManagement pdm = profile.getDependencyManagement();
+                            if (pdm != null) {
+                                List<Dependency> projectDependencies = new LinkedList<>();
+                                for (Dependency d : pdm.getDependencies()) {
+                                    if ("import".equals(d.getScope()) && "pom".equals(d.getType())) {
+                                        projectDependencies.add(d);
+                                    }
+                                }
+                                result.addAll(interpolate(session, _mp, projectDependencies));
+                            }
+                        }
+                    }
                 }
                 _mp = _mp.getParent();
             }
