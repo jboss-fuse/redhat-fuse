@@ -5,14 +5,14 @@
 	<parent>
 		<groupId>org.jboss.redhat-fuse</groupId>
 		<artifactId>fuse-springboot</artifactId>
-		<version>7.8.0.fuse-sb2-780046</version>
+		<version>7.8.0.fuse-sb2-780046-redhat-00001</version>
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.jboss.redhat-fuse</groupId>
 	<artifactId>fabric8-project-bom-camel-spring-boot</artifactId>
-	<version>7.8.0.fuse-sb2-780046</version>
+	<version>7.8.0.fuse-sb2-780046-redhat-00001</version>
 	<name>Fabric8 :: Project :: Bom for Camel and Spring-Boot</name>
 	<packaging>pom</packaging>
 	<description>Bill of material</description>
@@ -54,7 +54,7 @@
 	</developers>
 
 	<properties>
-		<javax.inject.version>1.0.0.redhat-6</javax.inject.version>
+		<javax.inject.version>1.0.0.redhat-00008</javax.inject.version>
 
 		<!-- overidding properties -->
 		<tomcat.version>9.0.21.redhat-4</tomcat.version>
@@ -567,7 +567,7 @@
 			<dependency>
 				<groupId>org.jboss.redhat-fuse</groupId>
 				<artifactId>redhat-fuse</artifactId>
-				<version>${project.version}</version>
+				<version>7.8.0.fuse-sb2-780046-redhat-00001</version>
 				<scope>import</scope>
 				<type>pom</type>
 			</dependency>
