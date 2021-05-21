@@ -44,6 +44,7 @@
                 <include>org/bouncycastle/bcprov-jdk15on/**</include>
                 <include>org/bouncycastle/bcpkix-jdk15on/**</include>
                 <include>org/apache/aries/proxy/**</include>
+                <include>org/apache/cxf/cxf-rt-transports-http-undertow/**</include>
             </includes>
         </fileSet>
         <!--
