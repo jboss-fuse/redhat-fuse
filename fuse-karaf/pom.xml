@@ -41,6 +41,7 @@
             <modules>
                 <module>fuse-karaf-patch-metadata</module>
                 <module>fuse-karaf-patch-repository</module>
+                <module>fuse-karaf-patches</module>
             </modules>
         </profile>
     </profiles>

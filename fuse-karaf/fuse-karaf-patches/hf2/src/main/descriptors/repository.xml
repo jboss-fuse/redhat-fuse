@@ -20,7 +20,7 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.1.0 http://maven.apache.org/xsd/assembly-2.1.0.xsd">
 
-    <id>fuse-karaf-patch-repository</id>
+    <id>fuse-karaf-patch-hf2</id>
 
     <formats>
         <format>zip</format>
@@ -29,29 +29,13 @@
     <includeBaseDirectory>false</includeBaseDirectory>
 
     <fileSets>
-        <!--
-            This is the main file set for Fuse Karaf patches - a set that creates Maven repository structure.
-            We always have transitive dependencies in target/patch-repository, but this means we may get some apache
-            or jboss-parent poms we don't need.
-            Remember - this file set impacts the content of actual Fuse patch and it's important to manage the content
-            properly.
-        -->
         <fileSet>
             <outputDirectory>system</outputDirectory>
             <directory>${project.build.directory}/patch-repository</directory>
             <includes>
-                <include>org/jboss/fuse/**</include>
-                <include>org/jboss/redhat-fuse/**</include>
-                <include>org/bouncycastle/bcprov-jdk15on/**</include>
-                <include>org/bouncycastle/bcpkix-jdk15on/**</include>
-                <include>org/apache/aries/proxy/**</include>
+                <include>org/apache/camel/camel-mllp/**</include>
             </includes>
         </fileSet>
-        <!--
-            Second set adds just one file which should be maintained separately and should be the patch descriptor
-            for Fuse Karaf patching mechanism.
-            Maybe there's a way to generate it, but for Fuse Karaf hotfix patches we have to write it manually for now.
-        -->
         <fileSet>
             <outputDirectory>/</outputDirectory>
             <directory>${project.build.outputDirectory}</directory>
@@ -60,16 +44,5 @@
             </includes>
         </fileSet>
     </fileSets>
-
-    <dependencySets>
-        <dependencySet>
-            <outputDirectory>lib/ext</outputDirectory>
-            <includes>
-                <!-- https://issues.redhat.com/browse/ENTESB-15511 -->
-                <include>org.bouncycastle:bcprov-jdk15on</include>
-                <include>org.bouncycastle:bcpkix-jdk15on</include>
-            </includes>
-        </dependencySet>
-    </dependencySets>
 
 </assembly>
