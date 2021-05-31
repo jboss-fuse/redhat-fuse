@@ -95,9 +95,9 @@
 
         <version.tika>1.24.1</version.tika>
 
-        <version.jackson2>2.9.10</version.jackson2>
-        <version.jackson2.databind>2.9.10.4-redhat-00001</version.jackson2.databind>
-        <version.jackson2.jsonSchema>2.9.10.redhat-00005</version.jackson2.jsonSchema>
+        <version.jackson2>2.12.1</version.jackson2>
+        <version.jackson2.databind>2.12.1</version.jackson2.databind>
+        <version.jackson2.jsonSchema>2.12.1</version.jackson2.jsonSchema>
 
         <version.com.google.guava>27.1-jre</version.com.google.guava>
 
