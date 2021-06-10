@@ -1167,6 +1167,23 @@
 				<version>${version.kafka.upstream}</version>
 			</dependency>
 
+			<dependency>
+				<groupId>org.apache.zookeeper</groupId>
+				<artifactId>zookeeper</artifactId>
+				<version>${version.kafka.zookeeper}</version>
+				<exclusions>
+					<exclusion>
+						<artifactId>spotbugs-annotations</artifactId>
+						<groupId>com.github.spotbugs</groupId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.scala-lang</groupId>
+				<artifactId>scala-library</artifactId>
+				<version>${version.kafka.scala}</version>
+			</dependency>
+
 			<!-- spring-boot 1 carryovers / customer asks -->
 			<dependency>
 				<groupId>javax.inject</groupId>
