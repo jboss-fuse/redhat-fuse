@@ -78,6 +78,8 @@
 
         <version.kafka>2.5.0.redhat-00003</version.kafka>
         <version.kafka.upstream>2.5.0</version.kafka.upstream>
+        <version.kafka.zookeeper>3.5.7</version.kafka.zookeeper>
+        <version.kafka.scala>2.12.11</version.kafka.scala>
 
         <version.commons-codec>1.15</version.commons-codec>
         <version.commons-pool>1.6.0.redhat-9</version.commons-pool>
