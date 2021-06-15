@@ -342,6 +342,13 @@
                 <version>${version.docker.maven.plugin}</version>
                 <type>pom</type>
             </dependency>
+
+            <!-- Dependency versions alignment -->
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${version.org.apache.httpcomponents.httpclient}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>
