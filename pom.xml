@@ -74,7 +74,7 @@
         <undertow.version>2.2.5.Final-redhat-00001</undertow.version>
 
         <activemq.version>5.11.0.redhat-630495</activemq.version>
-        <artemis.version>2.16.0.redhat-00013</artemis.version>
+        <artemis.version>2.16.0.redhat-00022</artemis.version>
 
         <version.kafka>2.5.0.redhat-00003</version.kafka>
         <version.kafka.upstream>2.5.0</version.kafka.upstream>
