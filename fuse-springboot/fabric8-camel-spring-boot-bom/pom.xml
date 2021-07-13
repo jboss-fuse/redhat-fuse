@@ -1201,6 +1201,11 @@
 				<artifactId>commons-pool</artifactId>
 				<version>${version.commons-pool}</version>
 			</dependency>
+			<dependency>
+				<groupId>commons-beanutils</groupId>
+				<artifactId>commons-beanutils</artifactId>
+				<version>${version.commons-beanutils}</version>
+			</dependency>
 
 			<dependency>
 				<groupId>io.netty</groupId>

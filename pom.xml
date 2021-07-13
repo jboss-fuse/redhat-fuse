@@ -81,6 +81,7 @@
         <version.kafka.zookeeper>3.5.7</version.kafka.zookeeper>
         <version.kafka.scala>2.12.11</version.kafka.scala>
 
+        <version.commons-beanutils>1.9.4.redhat-00002</version.commons-beanutils>
         <version.commons-codec>1.15</version.commons-codec>
         <version.commons-pool>1.6.0.redhat-9</version.commons-pool>
         <version.netty>4.1.63.Final-redhat-00001</version.netty>
