@@ -541,6 +541,12 @@
                 <artifactId>jetty-openid</artifactId>
                 <version>${version.org.eclipse.jetty}</version>
             </dependency>
+
+            <dependency>
+                <groupId>commons-beanutils</groupId>
+                <artifactId>commons-beanutils</artifactId>
+                <version>${version.commons-beanutils}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
