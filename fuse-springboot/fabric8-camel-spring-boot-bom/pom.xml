@@ -2111,6 +2111,39 @@
 				<version>${version.mongodb}</version>
 			</dependency>
 
+			<!-- Jolokia -->
+
+			<dependency>
+				<groupId>org.jolokia</groupId>
+				<artifactId>jolokia-core</artifactId>
+				<version>${version.jolokia}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jolokia</groupId>
+				<artifactId>jolokia-jvm</artifactId>
+				<version>${version.jolokia}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jolokia</groupId>
+				<artifactId>jolokia-war</artifactId>
+				<version>${version.jolokia}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jolokia</groupId>
+				<artifactId>jolokia-jmx</artifactId>
+				<version>${version.jolokia}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jolokia</groupId>
+				<artifactId>jolokia-jmx-adapter</artifactId>
+				<version>${version.jolokia}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jolokia</groupId>
+				<artifactId>jolokia-jsr160</artifactId>
+				<version>${version.jolokia}</version>
+			</dependency>
+
 			<!-- END OVERRIDES -->
 		</dependencies>
 	</dependencyManagement>
