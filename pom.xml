@@ -113,6 +113,8 @@
         <version.javax.xml.bind>2.3.0</version.javax.xml.bind>
         <version.org.jboss.xnio>3.5.9.Final</version.org.jboss.xnio>
 
+        <version.elasticsearch-rest>6.4.2</version.elasticsearch-rest>
+
         <!-- test frameworks versions -->
         <arquillian.version>1.4.1.Final</arquillian.version>
         <arquillian.cube.version>1.18.2</arquillian.cube.version>
