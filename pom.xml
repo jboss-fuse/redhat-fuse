@@ -65,7 +65,7 @@
 
         <spring.boot.version>2.3.12.RELEASE</spring.boot.version>
         <spring.security.version>5.3.9.RELEASE</spring.security.version>
-        <version.snakeyaml>1.26</version.snakeyaml>
+        <version.snakeyaml>1.28</version.snakeyaml>
 
         <!-- Overridden from snowdrop Spring Boot BOM-->
         <hibernate.version>5.3.20.Final-redhat-00001</hibernate.version>
