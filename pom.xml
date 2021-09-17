@@ -63,8 +63,8 @@
 
         <version.openshift.maven.plugin>1.3.0</version.openshift.maven.plugin>
 
-        <spring.boot.version>2.3.9.RELEASE</spring.boot.version>
-        <spring.security.version>5.3.8.RELEASE</spring.security.version>
+        <spring.boot.version>2.3.12.RELEASE</spring.boot.version>
+        <spring.security.version>5.3.9.RELEASE</spring.security.version>
         <version.snakeyaml>1.26</version.snakeyaml>
 
         <!-- Overridden from snowdrop Spring Boot BOM-->
