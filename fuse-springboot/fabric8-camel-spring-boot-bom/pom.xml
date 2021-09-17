@@ -2144,6 +2144,12 @@
 				<version>${version.jolokia}</version>
 			</dependency>
 
+			<dependency>
+				<groupId>org.glassfish</groupId>
+				<artifactId>jakarta.el</artifactId>
+				<version>${version.glassfish.jakarta.el}</version>
+			</dependency>
+
 			<!-- END OVERRIDES -->
 		</dependencies>
 	</dependencyManagement>

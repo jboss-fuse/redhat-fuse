@@ -118,6 +118,8 @@
         <arquillian.version>1.4.1.Final</arquillian.version>
         <arquillian.cube.version>1.18.2</arquillian.cube.version>
 
+        <version.glassfish.jakarta.el>3.0.3.redhat-00006</version.glassfish.jakarta.el>
+
         <!-- END Overridden from snowdrop Spring Boot BOM-->
 
         <!--
