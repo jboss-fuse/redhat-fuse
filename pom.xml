@@ -112,7 +112,7 @@
         <version.javax.xml.bind>2.3.0</version.javax.xml.bind>
         <version.org.jboss.xnio>3.8.4.Final-redhat-00001</version.org.jboss.xnio>
 
-        <version.jolokia>1.7.0</version.jolokia>
+        <version.jolokia>1.7.1</version.jolokia>
 
         <!-- test frameworks versions -->
         <arquillian.version>1.4.1.Final</arquillian.version>
