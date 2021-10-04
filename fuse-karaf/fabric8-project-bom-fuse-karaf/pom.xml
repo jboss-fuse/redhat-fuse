@@ -15,8 +15,6 @@
     <name>Fabric8 :: Project :: Bom for Fuse Applications on Karaf</name>
     <packaging>pom</packaging>
 
-    <properties></properties>
-
     <dependencyManagement>
         <dependencies>
             <dependency>
