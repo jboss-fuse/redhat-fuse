@@ -114,6 +114,8 @@
 
         <version.jolokia>1.7.1.redhat-00001</version.jolokia>
 
+        <version.elasticsearch-rest>6.4.2</version.elasticsearch-rest>
+
         <!-- test frameworks versions -->
         <arquillian.version>1.4.1.Final</arquillian.version>
         <arquillian.cube.version>1.18.2</arquillian.cube.version>
