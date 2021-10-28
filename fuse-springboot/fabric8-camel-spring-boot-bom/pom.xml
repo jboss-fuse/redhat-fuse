@@ -667,6 +667,49 @@
 				<version>${version.fabric8}</version>
 				<scope>test</scope>
 			</dependency>
+			
+			<!-- Atlasmap -->
+			<dependency>
+				<!-- camel-atlasmap component for Camel 2.x -->
+				<groupId>io.atlasmap</groupId>
+				<artifactId>camel-atlasmap<</artifactId>
+				<version>${version.atlasmap}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.atlasmap</groupId>
+				<artifactId>atlasmap-api<</artifactId>
+				<version>${version.atlasmap}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.atlasmap</groupId>
+				<artifactId>atlasmap-core<</artifactId>
+				<version>${version.atlasmap}</version>
+			</dependency>
+			<dependency>
+			      <groupId>io.atlasmap</groupId>
+			      <artifactId>atlas-dfdl-module</artifactId>
+			      <version>${version.atlasmap}</version>
+			</dependency>
+			<dependency>
+			      <groupId>io.atlasmap</groupId>
+			      <artifactId>atlas-java-module</artifactId>
+			      <version>${version.atlasmap}</version>
+			</dependency>
+			<dependency>
+			      <groupId>io.atlasmap</groupId>
+			      <artifactId>atlas-json-module</artifactId>
+			      <version>${version.atlasmap}</version>
+			</dependency>
+			<dependency>
+			      <groupId>io.atlasmap</groupId>
+			      <artifactId>atlas-xml-module</artifactId>
+			      <version>${version.atlasmap}</version>
+			</dependency>
+			<dependency>
+			      <groupId>io.atlasmap</groupId>
+			      <artifactId>atlas-csv-module</artifactId>
+			      <version>${version.atlasmap}</version>
+			</dependency>
 
 			<!-- OVERRIDES -->
 			<!-- Hibernate Validator -->
