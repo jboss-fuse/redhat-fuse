@@ -672,17 +672,17 @@
 			<dependency>
 				<!-- camel-atlasmap component for Camel 2.x -->
 				<groupId>io.atlasmap</groupId>
-				<artifactId>camel-atlasmap<</artifactId>
+				<artifactId>camel-atlasmap</artifactId>
 				<version>${version.atlasmap}</version>
 			</dependency>
 			<dependency>
 				<groupId>io.atlasmap</groupId>
-				<artifactId>atlasmap-api<</artifactId>
+				<artifactId>atlasmap-api</artifactId>
 				<version>${version.atlasmap}</version>
 			</dependency>
 			<dependency>
 				<groupId>io.atlasmap</groupId>
-				<artifactId>atlasmap-core<</artifactId>
+				<artifactId>atlasmap-core</artifactId>
 				<version>${version.atlasmap}</version>
 			</dependency>
 			<dependency>
