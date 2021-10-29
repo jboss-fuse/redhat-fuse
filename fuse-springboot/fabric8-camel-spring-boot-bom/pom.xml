@@ -1667,6 +1667,8 @@
 				<artifactId>jetty-alpn-conscrypt-server</artifactId>
 				<version>${version.org.eclipse.jetty}</version>
 			</dependency>
+			<!-- These are not productized, because they require JDK9+ -->
+			<!--
 			<dependency>
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-alpn-java-client</artifactId>
@@ -1677,6 +1679,7 @@
 				<artifactId>jetty-alpn-java-server</artifactId>
 				<version>${version.org.eclipse.jetty}</version>
 			</dependency>
+			-->
 			<dependency>
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-alpn-openjdk8-client</artifactId>
