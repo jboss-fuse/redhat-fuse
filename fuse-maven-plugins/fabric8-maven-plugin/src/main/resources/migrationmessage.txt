@@ -1,3 +1,12 @@
 <<<<<<<<<<<<<<<<<<<<<<<<
-migration message
+In Fuse 7.9, the fabric8-maven-plugin was deprecated (https://access.redhat.com/documentation/en-us/red_hat_fuse/7.9/html-single/release_notes_for_red_hat_fuse_7.9/index#deprecatedandremoved-deprecated).    fabric8-maven-plugin has been removed from Fuse 7.10 and future 7.x versions of Fuse, and the jkube openshift-maven-plugin is suggested as the replacement for deploying your Fuse application to OpenShift.
+
+In order to migrate to use the openshift-maven-plugin :
+
+- rename any src/main/fabric8 directories to src/main/jkube
+- change the pom.xml's org.jboss.redhat-fuse:fabric8-maven-plugin dependency to org.jboss.redhat-fuse:openshift-maven-plugin.   See the updated profile here as an example : https://github.com/fabric8-quickstarts/spring-boot-camel/blob/fuse-7.x.sb2.redhat/pom.xml#L164
+- check the dependencies (org.arquillian.cube:arquillian-cube-openshift, org.jboss.arquillian.junit:arquillian-junit-container, io.fabric8:kubernetes-assertions are no longer used in our examples, may no longer be needed)
+- tests may need to be rewritten to reflect the API changes.    See the sample tests used in the quickstarts for examples (https://github.com/fabric8-quickstarts/spring-boot-camel/blob/fuse-7.x.sb2.redhat/src/test/java/io/fabric8/tests/integration/KubernetesIntegrationKT.java)
+
+Documentation : https://www.eclipse.org/jkube/docs/openshift-maven-plugin
 >>>>>>>>>>>>>>>>>>>>>>>>
