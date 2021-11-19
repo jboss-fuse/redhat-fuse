@@ -150,6 +150,7 @@
         <module>fuse-eap</module>
         <module>fuse-springboot</module>
         <module>fuse-maven-plugins</module>
+        <module>fuse-maven-plugins/fabric8-maven-plugin</module>
     </modules>
 
     <repositories>
