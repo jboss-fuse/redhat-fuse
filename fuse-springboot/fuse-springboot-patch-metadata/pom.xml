@@ -48,6 +48,18 @@
           <version>${patch.org.bouncycastle}</version>
         </dependency>
 
+        <!-- https://issues.redhat.com/browse/ENTESB-17968 -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${version.org.apache.logging.log4j2}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${version.org.apache.logging.log4j2}</version>
+        </dependency>
+
     </dependencies>
 
     <build>
