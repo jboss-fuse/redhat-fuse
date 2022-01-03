@@ -40,11 +40,24 @@
     -->
 
     <dependencies>
-<!--        <dependency>-->
-<!--            <groupId>org.eclipse.jetty</groupId>-->
-<!--            <artifactId>jetty-server</artifactId>-->
-<!--            <version>${project.update.org.eclipse.jetty}</version>-->
-<!--        </dependency>-->
+
+        <!-- https://issues.redhat.com/browse/ENTESB-17968 -->
+        <dependency>
+            <groupId>org.ops4j.pax.logging</groupId>
+            <artifactId>pax-logging-api</artifactId>
+            <version>${version.org.ops4j.pax.logging}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ops4j.pax.logging</groupId>
+            <artifactId>pax-logging-log4j2</artifactId>
+            <version>${version.org.ops4j.pax.logging}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ops4j.pax.logging</groupId>
+            <artifactId>pax-logging-log4j2-extra</artifactId>
+            <version>${version.org.ops4j.pax.logging}</version>
+        </dependency>
+
     </dependencies>
 
     <build>
