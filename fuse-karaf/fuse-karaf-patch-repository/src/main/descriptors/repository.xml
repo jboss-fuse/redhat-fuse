@@ -45,6 +45,8 @@
                 <include>org/bouncycastle/bcprov-jdk15on/**</include>
                 <include>org/bouncycastle/bcpkix-jdk15on/**</include>
                 <include>org/apache/aries/proxy/**</include>
+                <include>org/apache/logging/log4j/**</include>
+                <include>org/ops4j/pax/logging/**</include>
             </includes>
         </fileSet>
         <!--

@@ -42,6 +42,7 @@
             <includes>
                 <include>org/jboss/**</include>
                 <include>org/bouncycastle/bcprov-jdk15on/**</include>
+                <include>org/apache/logging/log4j/**</include>
             </includes>
         </fileSet>
     </fileSets>
