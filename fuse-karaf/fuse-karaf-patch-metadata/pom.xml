@@ -39,10 +39,6 @@
            parent POMs for example), but keeping the dependencies here is crucial
     -->
 
-    <properties>
-<!--        <project.update.org.eclipse.jetty>9.4.32.v20200930</project.update.org.eclipse.jetty>-->
-    </properties>
-
     <dependencies>
 <!--        <dependency>-->
 <!--            <groupId>org.eclipse.jetty</groupId>-->
