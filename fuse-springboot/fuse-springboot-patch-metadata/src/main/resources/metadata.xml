@@ -17,12 +17,20 @@
 
 -->
 <metadata xmlns="urn:redhat:fuse:patch-metadata:1">
-    <product-bom groupId="org.jboss.redhat-fuse" artifactId="fuse-springboot-bom" versions="[7.8,7.9)" />
+    <product-bom groupId="org.jboss.redhat-fuse" artifactId="fuse-springboot-bom" versions="[7.9,7.10)" />
     <cves>
-<!--        <cve id="CVE-2020-xyz" description="Jetty ..."-->
-<!--                cve-link="" bz-link="">-->
-<!--            <affects groupId="org.eclipse.jetty" artifactId="jetty-*" versions="[9.4,9.4.32)" fix="9.4.32.v20200930" />-->
-<!--        </cve>-->
+        <!-- https://issues.redhat.com/browse/ENTESB-17968 -->
+        <cve id="CVE-2021-44228" description="log4j-core: remote code execution in Log4j 2.x when logs contain an attacker-controlled string value"
+                cve-link="https://cve.mitre.org/cgi-bin/cvename.cgi?name=2021-44228"
+                bz-link="https://bugzilla.redhat.com/show_bug.cgi?id=2030932">
+            <affects groupId="org.apache.logging.log4j" artifactId="*" versions="[2.0,2.17.1)" fix="2.17.1" />
+        </cve>
+        <!-- https://issues.redhat.com/browse/ENTESB-18055 -->
+        <cve id="CVE-2021-44832" description="log4j-core: remote code execution via JDBC Appender"
+                cve-link="https://cve.mitre.org/cgi-bin/cvename.cgi?name=2021-44832"
+                bz-link="https://bugzilla.redhat.com/show_bug.cgi?id=2035951">
+            <affects groupId="org.apache.logging.log4j" artifactId="*" versions="[2.0,2.17.1)" fix="2.17.1" />
+        </cve>
     </cves>
     <fixes />
 </metadata>
