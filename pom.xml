@@ -22,7 +22,7 @@
 
     <groupId>org.jboss.redhat-fuse</groupId>
     <artifactId>redhat-fuse</artifactId>
-    <version>7.9.0-SNAPSHOT</version>
+    <version>7.10.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Red Hat Fuse :: ${project.artifactId}</name>
@@ -35,27 +35,27 @@
         <!-- Build properties (overridable in profiles) -->
         <enforcer.pluginVersions.banSnapshots>false</enforcer.pluginVersions.banSnapshots>
 
-        <version.camel>2.23.2.fuse-780032</version.camel>
-        <version.camel.extra>2.23.2.fuse-sb2-780032</version.camel.extra>
-        <version.cxf>3.3.6.fuse-780025</version.cxf>
-        <version.cxf.xjc-utils>3.3.1.fuse-780003</version.cxf.xjc-utils>
+        <version.camel>2.23.2.fuse-7_10_0-00020-redhat-00001</version.camel>
+        <version.camel.extra>2.23.2.fuse-sb2-7_10_0-00020-redhat-00001</version.camel.extra>
+        <version.cxf>3.3.6.fuse-7_10_0-00022-redhat-00001</version.cxf>
+        <version.cxf.xjc-utils>3.3.1.fuse-7_10_0-00012-redhat-00001</version.cxf.xjc-utils>
 
         <version.fabric8>3.0.12</version.fabric8>
         <version.fabric8.maven.plugin>4.3.0.fuse-780009</version.fabric8.maven.plugin>
-        <version.fuse-karaf>7.8.0.fuse-780031</version.fuse-karaf>
-        <version.karaf>4.2.9.fuse-780019</version.karaf>
-        <version.wildfly.camel>5.5.0.fuse-770010-redhat-00003</version.wildfly.camel>
-        <version.fusesource.camel.sap>7.8.0.fuse-sb2-780031</version.fusesource.camel.sap>
-        <karaf.plugin.version>4.2.9.fuse-780019</karaf.plugin.version>
+        <version.fuse-karaf>7.10.0.fuse-7_10_0-00011-redhat-00001</version.fuse-karaf>
+        <version.karaf>4.2.12.fuse-7_10_0-00008-redhat-00001</version.karaf>
+        <version.wildfly.camel>5.8.0.fuse-7_10_0-00010-redhat-00001</version.wildfly.camel>
+        <version.fusesource.camel.sap>7.10.0.fuse-sb2-7_10_0-00016-redhat-00001</version.fusesource.camel.sap>
+        <karaf.plugin.version>4.2.12.fuse-7_10_0-00008-redhat-00001</karaf.plugin.version>
 
-        <version.hawtio>2.0.0.fuse-sb2-780019</version.hawtio>
+        <version.hawtio>2.0.0.fuse-sb2-7_10_0-00016-redhat-00001</version.hawtio>
 
         <version.kubernetes.model>4.6.2</version.kubernetes.model>
-        <version.kubernetes.client>4.6.2</version.kubernetes.client>
+        <version.kubernetes.client>4.6.2.fuse-7_10_0-00013-redhat-00001</version.kubernetes.client>
 
-        <version.docker.maven.plugin>0.31.0.fuse-780001</version.docker.maven.plugin>
+        <version.docker.maven.plugin>0.31.0.fuse-7_10_0-00012-redhat-00001</version.docker.maven.plugin>
 
-        <version.narayana-spring-boot>2.1.1.fuse-sb2-780030</version.narayana-spring-boot>
+        <version.narayana-spring-boot>2.1.1.fuse-sb2-7_10_0-00013-redhat-00001</version.narayana-spring-boot>
 
         <version.spring-cloud-kubernetes>1.0.4.RELEASE</version.spring-cloud-kubernetes>
 
@@ -67,7 +67,7 @@
         <spring.security.version>5.3.9.RELEASE</spring.security.version>
         <version.snakeyaml>1.28</version.snakeyaml>
         
-        <version.atlasmap>2.2.3.fuse-790003-redhat-00001</version.atlasmap>
+        <version.atlasmap>2.3.2.fuse-7_10_0-00003-redhat-00001</version.atlasmap>
 
         <!-- Overridden from snowdrop Spring Boot BOM-->
         <hibernate.version>5.3.23.Final-redhat-00001</hibernate.version>
@@ -86,7 +86,7 @@
         <version.commons-beanutils>1.9.4.redhat-00002</version.commons-beanutils>
         <version.commons-codec>1.15.0.redhat-00001</version.commons-codec>
         <version.commons-pool>1.6.0.redhat-10</version.commons-pool>
-        <version.netty>4.1.68.Final-redhat-00001</version.netty>
+        <version.netty>4.1.68.Final-redhat-00002</version.netty>
 
         <version.org.apache.commons.compress>1.21.0.redhat-00001</version.org.apache.commons.compress>
         <version.org.apache.commons.dbcp2>2.8.0</version.org.apache.commons.dbcp2>
@@ -102,7 +102,7 @@
 
         <version.tika>1.24.1</version.tika>
 
-        <version.jackson2>2.12.1</version.jackson2>
+        <version.jackson2>2.12.1.redhat-00002</version.jackson2>
         <version.jackson2.databind>2.12.1</version.jackson2.databind>
         <version.jackson2.jsonSchema>2.12.1</version.jackson2.jsonSchema>
 
@@ -122,7 +122,7 @@
 
         <!-- test frameworks versions -->
         <arquillian.version>1.4.1.Final</arquillian.version>
-        <arquillian.cube.version>1.18.2</arquillian.cube.version>
+        <arquillian.cube.version>1.8.2.fuse-7_10_0-00013-redhat-00001</arquillian.cube.version>
 
         <version.glassfish.jakarta.el>3.0.3.redhat-00007</version.glassfish.jakarta.el>
 
@@ -154,69 +154,15 @@
     </modules>
 
     <repositories>
-        <repository>
-            <id>redhat-ga-repository</id>
-            <url>https://maven.repository.redhat.com/ga</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>redhat-ea-repository</id>
-            <url>https://maven.repository.redhat.com/earlyaccess/all</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>jboss-ea</id>
-            <url>https://repository.jboss.org/nexus/content/groups/ea</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
+        
+        
+        
     </repositories>
 
     <pluginRepositories>
-        <pluginRepository>
-            <id>redhat-ga-repository</id>
-            <url>https://maven.repository.redhat.com/ga</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-        <pluginRepository>
-            <id>redhat-ea-repository</id>
-            <url>https://maven.repository.redhat.com/earlyaccess/all</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-        <pluginRepository>
-            <id>jboss-ea</id>
-            <url>https://origin-repository.jboss.org/nexus/content/groups/ea</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
+        
+        
+        
     </pluginRepositories>
 
     <url>https://developers.redhat.com/products/fuse/overview</url>
@@ -240,6 +186,10 @@
             <organizationUrl>http://jboss.org/</organizationUrl>
         </developer>
     </developers>
+
+    <build>
+    <pluginManagement />
+  </build>
 
     <inceptionYear>2017</inceptionYear>
 
@@ -312,3 +262,6 @@
         </dependencies>
     </dependencyManagement>
 </project>
+<!--
+Modified by POM Manipulation Extension for Maven 4.6 ( SHA: 3006db60 )
+-->
