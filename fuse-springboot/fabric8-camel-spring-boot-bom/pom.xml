@@ -952,11 +952,6 @@
 			</dependency>
 			<dependency>
 				<groupId>org.apache.activemq</groupId>
-				<artifactId>activemq-log4j-appender</artifactId>
-				<version>${activemq.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.activemq</groupId>
 				<artifactId>activemq-openwire-generator</artifactId>
 				<version>${activemq.version}</version>
 			</dependency>
