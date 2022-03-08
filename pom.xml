@@ -41,7 +41,6 @@
         <version.cxf.xjc-utils>3.3.1.fuse-7_10_0-00012-redhat-00001</version.cxf.xjc-utils>
 
         <version.fabric8>3.0.12</version.fabric8>
-        <version.fabric8.maven.plugin>4.3.0.fuse-780009</version.fabric8.maven.plugin>
         <version.fuse-karaf>7.10.0.fuse-7_10_0-00011-redhat-00001</version.fuse-karaf>
         <version.karaf>4.2.12.fuse-7_10_0-00008-redhat-00001</version.karaf>
         <version.wildfly.camel>5.8.0.fuse-7_10_0-00010-redhat-00001</version.wildfly.camel>
