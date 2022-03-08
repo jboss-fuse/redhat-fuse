@@ -114,7 +114,7 @@
         <version.org.slf4j>1.7.32.redhat-00001</version.org.slf4j>
 
         <version.org.postgresql>42.3.3</version.org.postgresql>
-        <version.mysql>8.0.21.redhat-00001</version.mysql>
+        <version.mysql>8.0.28</version.mysql>
 
         <version.javax.xml.bind>2.3.0.redhat-00003</version.javax.xml.bind>
         <version.org.jboss.xnio>3.8.4.Final-redhat-00001</version.org.jboss.xnio>
