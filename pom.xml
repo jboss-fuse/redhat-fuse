@@ -117,7 +117,7 @@
         <version.mysql>8.0.28</version.mysql>
 
         <version.javax.xml.bind>2.3.0.redhat-00003</version.javax.xml.bind>
-        <version.org.jboss.xnio>3.8.4.Final-redhat-00001</version.org.jboss.xnio>
+        <version.org.jboss.xnio>3.8.6.Final-redhat-00001</version.org.jboss.xnio>
 
         <version.jolokia>1.7.1.redhat-00001</version.jolokia>
 
