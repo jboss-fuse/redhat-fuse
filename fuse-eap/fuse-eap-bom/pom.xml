@@ -233,6 +233,12 @@
                 <version>${version.com.google.guava}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.h2database</groupId>
+                <artifactId>h2</artifactId>
+                <version>${version.com.h2database}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 

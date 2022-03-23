@@ -129,6 +129,7 @@
         <version.glassfish.jakarta.el>3.0.3.redhat-00007</version.glassfish.jakarta.el>
 
         <version.org.jsoup>1.14.3</version.org.jsoup>
+        <version.com.h2database>2.1.210</version.com.h2database>
 
         <!-- END Overridden from snowdrop Spring Boot BOM-->
 
