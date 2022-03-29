@@ -22,6 +22,8 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.nio.file.FileVisitResult;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -31,6 +33,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Deque;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
@@ -76,6 +79,7 @@ import org.eclipse.aether.resolution.MetadataResult;
 import org.jboss.fuse.mvnplugins.patch.extensions.ZipWagon;
 import org.jboss.fuse.mvnplugins.patch.model.AffectedArtifactSpec;
 import org.jboss.fuse.mvnplugins.patch.model.CVE;
+import org.jboss.fuse.mvnplugins.patch.model.Fix;
 import org.jboss.fuse.mvnplugins.patch.model.FuseVersion;
 import org.jboss.fuse.mvnplugins.patch.model.PatchMetadata;
 import org.slf4j.Logger;
@@ -221,6 +225,50 @@ public class SecureDependencyManagement extends AbstractMavenLifecycleParticipan
             }
             if (fixCount > 0) {
                 logger.info("[PATCH]  - patch contains {} other {}", fixCount, fixCount > 1 ? "fixes" : "fix");
+            }
+
+            if (cveCount > 0 || fixCount > 0) {
+                // ENTESB-18335: serialize the patch metadata, so it can be read by karaf-maven-plugin when
+                // building custom assembly
+                // We want to pass the below structure to karaf-maven-plugin without any custom objects (maps only):
+                // <cves>
+                //   <!-- https://issues.redhat.com/browse/ENTESB-17968 -->
+                //   <cve id="CVE-2021-44228" description="log4j-core: remote code execution in Log4j 2.x when logs contain an attacker-controlled string value"
+                //           cve-link="https://cve.mitre.org/cgi-bin/cvename.cgi?name=2021-44228"
+                //           bz-link="https://bugzilla.redhat.com/show_bug.cgi?id=2030932">
+                //       <affects groupId="org.apache.logging.log4j" artifactId="*" versions="[2.0,2.17.1)" fix="2.17.1" />
+                //       <affects groupId="org.ops4j.pax.logging" artifactId="*" versions="[1.10.0,1.11.13)" fix="1.11.13" />
+                //   </cve>
+                //   ...
+                // </cves>
+                //
+                // from karaf-maven-plugin and Fuse patching perspective (bundle replacements), wildcard artifactIds
+                // will be changed to originalUri="mvn:groupId/*/[version-range]", so it has to be handled
+                // for all matching bundle URIs to be replaced.
+                Map<String, Object> patchMetaData = new LinkedHashMap<>();
+                List<Map<String, Object>> cvesData = new LinkedList<>();
+                patchMetaData.put("cves", cvesData);
+                List<Map<String, Object>> fixesData = new LinkedList<>();
+                patchMetaData.put("fixes", fixesData);
+                for (CVE cve : patch.getCves()) {
+                    Map<String, Object> cveData = new LinkedHashMap<>();
+                    cvesData.add(cveData);
+                    cveData.put("id", cve.getId());
+                    cveData.put("description", cve.getDescription());
+                    List<Map<String, Object>> changesData = new LinkedList<>();
+                    cveData.put("changes", changesData);
+                    for (AffectedArtifactSpec spec : cve.getAffected()) {
+                        Map<String, Object> specData = new LinkedHashMap<>();
+                        specData.put("groupId", spec.getGroupIdSpec());
+                        specData.put("artifactId", spec.getArtifactIdSpec());
+                        specData.put("versions", spec.getVersionRange());
+                        specData.put("fix", spec.getFixVersion());
+                        changesData.add(specData);
+                    }
+                }
+                for (Fix fix : patch.getFixes()) {
+                }
+                session.getUserProperties().put("__org.jboss.redhat-fuse.patch-metadata", patchMetaData);
             }
 
             if (cveCount > 0) {
@@ -492,6 +540,14 @@ public class SecureDependencyManagement extends AbstractMavenLifecycleParticipan
         m.setProperties(props);
 
         StringVisitorModelInterpolator interpolator = new StringVisitorModelInterpolator();
+        try {
+            // maven 3.8.x
+            Class<?> processorClass = getClass().getClassLoader().loadClass("org.apache.maven.model.interpolation.DefaultModelVersionProcessor");
+            Class<?> parameterClass = getClass().getClassLoader().loadClass("org.apache.maven.model.interpolation.ModelVersionProcessor");
+            Method setVersionPropertiesProcessor = interpolator.getClass().getMethod("setVersionPropertiesProcessor", parameterClass);
+            setVersionPropertiesProcessor.invoke(interpolator, processorClass.newInstance());
+        } catch (ClassNotFoundException | NoSuchMethodException | InstantiationException | IllegalAccessException | InvocationTargetException ignored) {
+        }
         ModelBuildingRequest req = new DefaultModelBuildingRequest();
         req.getSystemProperties().putAll(session.getSystemProperties());
         req.getUserProperties().putAll(session.getUserProperties());
