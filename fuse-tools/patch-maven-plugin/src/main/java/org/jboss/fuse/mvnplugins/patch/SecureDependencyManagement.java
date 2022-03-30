@@ -224,7 +224,7 @@ public class SecureDependencyManagement extends AbstractMavenLifecycleParticipan
                 logger.info("[PATCH]  - patch contains {} CVE {}", cveCount, cveCount > 1 ? "fixes" : "fix");
             }
             if (fixCount > 0) {
-                logger.info("[PATCH]  - patch contains {} other {}", fixCount, fixCount > 1 ? "fixes" : "fix");
+                logger.info("[PATCH]  - patch contains {} patch {}", fixCount, fixCount > 1 ? "fixes" : "fix");
             }
 
             if (cveCount > 0 || fixCount > 0) {
@@ -267,6 +267,20 @@ public class SecureDependencyManagement extends AbstractMavenLifecycleParticipan
                     }
                 }
                 for (Fix fix : patch.getFixes()) {
+                    Map<String, Object> fixData = new LinkedHashMap<>();
+                    fixesData.add(fixData);
+                    fixData.put("id", fix.getId());
+                    fixData.put("description", fix.getDescription());
+                    List<Map<String, Object>> changesData = new LinkedList<>();
+                    fixData.put("changes", changesData);
+                    for (AffectedArtifactSpec spec : fix.getAffected()) {
+                        Map<String, Object> specData = new LinkedHashMap<>();
+                        specData.put("groupId", spec.getGroupIdSpec());
+                        specData.put("artifactId", spec.getArtifactIdSpec());
+                        specData.put("versions", spec.getVersionRange());
+                        specData.put("fix", spec.getFixVersion());
+                        changesData.add(specData);
+                    }
                 }
                 session.getUserProperties().put("__org.jboss.redhat-fuse.patch-metadata", patchMetaData);
             }
@@ -277,6 +291,39 @@ public class SecureDependencyManagement extends AbstractMavenLifecycleParticipan
                 for (CVE cve : patch.getCves()) {
                     logger.info("[PATCH] - {}", cve);
                     for (AffectedArtifactSpec spec : cve.getAffected()) {
+                        logger.info("[PATCH]   Applying change {}", spec);
+                        for (MavenProject project : session.getProjects()) {
+                            logger.info("[PATCH]   Project {}:{}", project.getGroupId(), project.getArtifactId());
+                            if (project.getDependencyManagement() != null) {
+                                for (Dependency dependency : project.getDependencyManagement().getDependencies()) {
+                                    if (spec.matches(dependency)) {
+                                        logger.info("[PATCH]    - managed dependency: {}/{}/{} -> {}",
+                                                dependency.getGroupId(), dependency.getArtifactId(), dependency.getVersion(),
+                                                spec.getFixVersion());
+                                        project.getManagedVersionMap().get(dependency.getManagementKey()).setResolvedVersion(spec.getFixVersion().toString());
+                                        project.getManagedVersionMap().get(dependency.getManagementKey()).setVersion(spec.getFixVersion().toString());
+                                        dependency.setVersion(spec.getFixVersion().toString());
+                                    }
+                                }
+                            }
+                            for (Dependency dependency : project.getDependencies()) {
+                                if (spec.matches(dependency)) {
+                                    logger.info("[PATCH]    - dependency: {}/{}/{} -> {}",
+                                            dependency.getGroupId(), dependency.getArtifactId(), dependency.getVersion(),
+                                            spec.getFixVersion());
+                                    dependency.setVersion(spec.getFixVersion().toString());
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            if (fixCount > 0) {
+                logger.info("[PATCH] Processing managed dependencies to apply patch fixes...");
+
+                for (Fix fix : patch.getFixes()) {
+                    logger.info("[PATCH] - {}", fix);
+                    for (AffectedArtifactSpec spec : fix.getAffected()) {
                         logger.info("[PATCH]   Applying change {}", spec);
                         for (MavenProject project : session.getProjects()) {
                             logger.info("[PATCH]   Project {}:{}", project.getGroupId(), project.getArtifactId());
@@ -720,6 +767,24 @@ public class SecureDependencyManagement extends AbstractMavenLifecycleParticipan
                             spec.setVersionRange(GVS.parseVersionRange(affects.getAttribute("versions")));
                             spec.setFixVersion(GVS.parseVersion(affects.getAttribute("fix")));
                             cve.getAffected().add(spec);
+                        }
+                    }
+                }
+                Xpp3Dom fixesWrapper = dom.getChild("fixes");
+                if (fixesWrapper != null) {
+                    for (Xpp3Dom fixDom : fixesWrapper.getChildren("fix")) {
+                        Fix fix = new Fix();
+                        fix.setId(fixDom.getAttribute("id"));
+                        fix.setDescription(fixDom.getAttribute("description"));
+                        fix.setLink(fixDom.getAttribute("link"));
+                        patch.getFixes().add(fix);
+                        for (Xpp3Dom affects : fixDom.getChildren("affects")) {
+                            AffectedArtifactSpec spec = new AffectedArtifactSpec();
+                            spec.setGroupIdSpec(affects.getAttribute("groupId"));
+                            spec.setArtifactIdSpec(affects.getAttribute("artifactId"));
+                            spec.setVersionRange(GVS.parseVersionRange(affects.getAttribute("versions")));
+                            spec.setFixVersion(GVS.parseVersion(affects.getAttribute("fix")));
+                            fix.getAffected().add(spec);
                         }
                     }
                 }
