@@ -15,6 +15,53 @@
  */
 package org.jboss.fuse.mvnplugins.patch.model;
 
+import java.util.LinkedList;
+import java.util.List;
+
 public class Fix {
+
+    private String id;
+    private String description;
+    private String link;
+
+    private final List<AffectedArtifactSpec> affected = new LinkedList<>();
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public List<AffectedArtifactSpec> getAffected() {
+        return affected;
+    }
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
+
+    @Override
+    public String toString() {
+        String link = this.link != null && !this.link.trim().equals("") ? this.link : null;
+        if (link != null) {
+            return id + ": " + description + " (" + link + ")";
+        } else {
+            return id + ": " + description;
+        }
+    }
 
 }

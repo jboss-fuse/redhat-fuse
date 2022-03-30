@@ -60,6 +60,19 @@
         <xs:attribute name="fix" type="xs:string" />
     </xs:complexType>
 
-    <xs:complexType name="FixesType" />
+    <xs:complexType name="FixesType">
+        <xs:sequence>
+            <xs:element name="fix" type="tns:FixType" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="FixType">
+        <xs:sequence>
+            <xs:element name="affects" type="tns:AffectsType" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required" />
+        <xs:attribute name="description" type="xs:string" use="required" />
+        <xs:attribute name="link" type="xs:string" />
+    </xs:complexType>
 
 </xs:schema>
