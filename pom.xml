@@ -77,6 +77,9 @@
         <activemq.version>5.11.0.redhat-630516</activemq.version>
         <artemis.version>2.16.0.redhat-00042</artemis.version>
 
+        <version.com.hazelcast>3.12</version.com.hazelcast>
+
+
         <version.kafka>2.6.3.redhat-00001</version.kafka>
         <version.kafka.upstream>2.6.3</version.kafka.upstream>
         <version.kafka.zookeeper>3.5.9.redhat-00004</version.kafka.zookeeper>

@@ -2226,6 +2226,27 @@
 				<version>${version.mongodb}</version>
 			</dependency>
 
+			<!-- Hazelcast -->
+
+			<dependency>
+				<groupId>com.hazelcast</groupId>
+				<artifactId>hazelcast</artifactId>
+				<version>${version.com.hazelcast}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.hazelcast</groupId>
+				<artifactId>hazelcast-spring</artifactId>
+				<version>${version.com.hazelcast}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.hazelcast</groupId>
+				<artifactId>hazelcast-client</artifactId>
+				<version>${version.com.hazelcast}</version>
+			</dependency>
+
+
 			<!-- Jolokia -->
 
 			<dependency>
