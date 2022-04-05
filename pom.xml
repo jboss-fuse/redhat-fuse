@@ -104,9 +104,9 @@
 
         <version.tika>1.24.1</version.tika>
 
-        <version.jackson2>2.12.1</version.jackson2>
-        <version.jackson2.databind>2.12.1</version.jackson2.databind>
-        <version.jackson2.jsonSchema>2.12.1</version.jackson2.jsonSchema>
+        <version.jackson2>2.12.6</version.jackson2>
+        <version.jackson2.databind>2.12.6.1</version.jackson2.databind>
+        <version.jackson2.jsonSchema>2.12.6</version.jackson2.jsonSchema>
 
         <version.com.google.guava>27.1-jre</version.com.google.guava>
 
@@ -119,7 +119,7 @@
         <version.mysql>8.0.28</version.mysql>
 
         <version.javax.xml.bind>2.3.0.redhat-00003</version.javax.xml.bind>
-        <version.org.jboss.xnio>3.8.6.Final-redhat-00001</version.org.jboss.xnio>
+        <version.org.jboss.xnio>3.8.6.SP1-redhat-00001</version.org.jboss.xnio>
 
         <version.jolokia>1.7.1.redhat-00001</version.jolokia>
 
