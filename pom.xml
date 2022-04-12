@@ -56,7 +56,7 @@
 
         <version.narayana-spring-boot>2.1.1.fuse-sb2-780030</version.narayana-spring-boot>
 
-        <version.spring-cloud-kubernetes>1.0.4.RELEASE</version.spring-cloud-kubernetes>
+        <version.spring-cloud-kubernetes>2.0.5</version.spring-cloud-kubernetes>
 
         <version.felix.bundle-plugin>3.5.1</version.felix.bundle-plugin>
 
