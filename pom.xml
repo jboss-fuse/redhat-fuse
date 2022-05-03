@@ -102,7 +102,7 @@
         <version.org.eclipse.jetty>9.4.43.v20210629-redhat-00003</version.org.eclipse.jetty>
         <version.org.eclipse.jetty.alpn.jdk9>9.4.43.v20210629-redhat-00002</version.org.eclipse.jetty.alpn.jdk9>
 
-        <version.tika>1.24.1</version.tika>
+        <version.tika>1.28.2</version.tika>
 
         <version.jackson2>2.12.6</version.jackson2>
         <version.jackson2.databind>2.12.6.1</version.jackson2.databind>
