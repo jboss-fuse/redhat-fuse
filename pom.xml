@@ -133,7 +133,7 @@
 
         <version.org.jsoup>1.14.3</version.org.jsoup>
         <version.com.h2database>2.1.210</version.com.h2database>
-
+        <version.org.apache.santuario.xmlsec>2.1.7.redhat-00001</version.org.apache.santuario.xmlsec>
         <!-- END Overridden from snowdrop Spring Boot BOM-->
 
         <!--
@@ -346,6 +346,11 @@
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-simple</artifactId>
                 <version>${version.org.slf4j}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.santuario</groupId>
+                <artifactId>xmlsec</artifactId>
+                <version>${version.org.apache.santuario.xmlsec}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
