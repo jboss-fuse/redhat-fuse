@@ -217,6 +217,14 @@
                 <version>${version.org.slf4j}</version>
             </dependency>
 
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-framework-bom</artifactId>
+                <version>${spring.framework.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+
             <!-- Fuse BOM to import all non-plugin dependencies -->
             <dependency>
                 <groupId>org.wildfly.camel</groupId>
