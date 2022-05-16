@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-     Copyright 2005-2020 Red Hat, Inc.
+     Copyright 2005-2022 Red Hat, Inc.
 
      Red Hat licenses this file to you under the Apache License, version
      2.0 (the "License"); you may not use this file except in compliance
@@ -20,7 +20,7 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.1.0 http://maven.apache.org/xsd/assembly-2.1.0.xsd">
 
-    <id>fuse-springboot-patch-repository</id>
+    <id>fuse-karaf-patch-hf1</id>
 
     <formats>
         <format>zip</format>
@@ -29,20 +29,18 @@
     <includeBaseDirectory>false</includeBaseDirectory>
 
     <fileSets>
-        <!--
-            There is only one file set for Fuse Spring Boot patches - a set that creates Maven repository structure.
-            We always have transitive dependencies in target/patch-repository, but this means we may get some apache
-            or jboss-parent poms we don't need.
-            Remember - this file set impacts the content of actual Fuse patch and it's important to manage the content
-            properly.
-        -->
         <fileSet>
             <outputDirectory>system</outputDirectory>
             <directory>${project.build.directory}/patch-repository</directory>
             <includes>
-                <include>org/jboss/**</include>
-                <include>com/google/**</include>
-                <include>org/apache/camel/**</include>
+                <include>org/apache/camel/camel-jms/**</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <outputDirectory>/</outputDirectory>
+            <directory>${project.build.outputDirectory}</directory>
+            <includes>
+                <include>**/*</include>
             </includes>
         </fileSet>
     </fileSets>

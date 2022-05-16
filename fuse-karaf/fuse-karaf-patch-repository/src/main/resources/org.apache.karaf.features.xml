@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<featuresProcessing xmlns="http://karaf.apache.org/xmlns/features-processing/v1.0.0" xmlns:f="http://karaf.apache.org/xmlns/features/v1.6.0">
+
+    <!-- feature replacements have to match exact Camel version from Fuse 7.10.2 -->
+    <featureReplacements>
+        <replacement mode="replace">
+            <feature name='camel-google-calendar' version='2.23.2.fuse-7_10_2-00001-redhat-00005' start-level='50'>
+                <f:feature version='${version.camel}'>camel-core</f:feature>
+                <f:bundle dependency='true'>mvn:commons-codec/commons-codec/1.15</f:bundle>
+                <f:bundle dependency='true'>mvn:com.fasterxml.jackson.core/jackson-core/2.12.6</f:bundle>
+                <f:bundle dependency='true'>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.commons-httpclient/3.1.0.redhat-7_1</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.api-client/google-api-client/1.34.1</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.apis/google-api-services-calendar/v3-rev291-1.22.0</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client/1.41.8</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client-gson/1.41.8</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client-jackson2/1.41.8</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client-apache-v2/1.41.8</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client/1.33.3</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client-java6/1.33.3</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client-jetty/1.33.3$overwrite=merge&amp;Import-Package=!com.sun.net.httpserver,*</f:bundle>
+                <f:bundle dependency='true'>mvn:com.google.guava/guava/30.1.0.jre-redhat-00003</f:bundle>
+                <f:bundle dependency='true'>mvn:com.google.guava/guava/31.1.0.redhat-00001</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:io.opencensus/opencensus-api/0.21.0</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:io.opencensus/opencensus-contrib-http-util/0.21.0</f:bundle>
+                <f:bundle dependency='true'>mvn:org.apache.httpcomponents/httpcore-osgi/4.4.14.redhat-00001</f:bundle>
+                <f:bundle dependency='true'>mvn:org.apache.httpcomponents/httpclient-osgi/4.5.13.redhat-00002</f:bundle>
+                <f:bundle>mvn:org.apache.camel/camel-google-calendar/${version.camel}</f:bundle>
+            </feature>
+        </replacement>
+        <replacement mode="replace">
+            <feature name='camel-google-sheets' version='2.23.2.fuse-7_10_2-00001-redhat-00005' start-level='50'>
+                <f:feature version='${version.camel}'>camel-core</f:feature>
+                <f:bundle dependency='true'>mvn:commons-codec/commons-codec/1.15</f:bundle>
+                <f:bundle dependency='true'>mvn:com.fasterxml.jackson.core/jackson-core/2.12.6</f:bundle>
+                <f:bundle dependency='true'>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.commons-httpclient/3.1.0.redhat-7_1</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.api-client/google-api-client/1.34.1</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.apis/google-api-services-sheets/v4-rev551-1.22.0</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client/1.41.8</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client-gson/1.41.8</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client-jackson2/1.41.8</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client-apache-v2/1.41.8</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client/1.33.3</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client-java6/1.33.3</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client-jetty/1.33.3$overwrite=merge&amp;Import-Package=!com.sun.net.httpserver,*</f:bundle>
+                <f:bundle dependency='true'>mvn:com.google.guava/guava/30.1.0.jre-redhat-00003</f:bundle>
+                <f:bundle dependency='true'>mvn:com.google.guava/guava/31.1.0.redhat-00001</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:io.opencensus/opencensus-api/0.21.0</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:io.opencensus/opencensus-contrib-http-util/0.21.0</f:bundle>
+                <f:bundle dependency='true'>mvn:org.apache.httpcomponents/httpcore-osgi/4.4.14.redhat-00001</f:bundle>
+                <f:bundle dependency='true'>mvn:org.apache.httpcomponents/httpclient-osgi/4.5.13.redhat-00002</f:bundle>
+                <f:bundle>mvn:org.apache.camel/camel-google-sheets/${version.camel}</f:bundle>
+            </feature>
+        </replacement>
+        <replacement mode="replace">
+            <feature name='camel-google-drive' version='2.23.2.fuse-7_10_2-00001-redhat-00005' start-level='50'>
+                <f:feature version='${version.camel}'>camel-core</f:feature>
+                <f:bundle dependency='true'>mvn:commons-codec/commons-codec/1.15</f:bundle>
+                <f:bundle dependency='true'>mvn:com.fasterxml.jackson.core/jackson-core/2.12.6</f:bundle>
+                <f:bundle dependency='true'>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.commons-httpclient/3.1.0.redhat-7_1</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.api-client/google-api-client/1.34.1</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.apis/google-api-services-drive/v2-rev297-1.22.0</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client/1.41.8</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client-gson/1.41.8</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client-jackson2/1.41.8</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client-apache-v2/1.41.8</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client/1.33.3</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client-java6/1.33.3</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client-jetty/1.33.3$overwrite=merge&amp;Import-Package=!com.sun.net.httpserver,*</f:bundle>
+                <f:bundle dependency='true'>mvn:com.google.guava/guava/30.1.0.jre-redhat-00003</f:bundle>
+                <f:bundle dependency='true'>mvn:com.google.guava/guava/31.1.0.redhat-00001</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:io.opencensus/opencensus-api/0.21.0</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:io.opencensus/opencensus-contrib-http-util/0.21.0</f:bundle>
+                <f:bundle dependency='true'>mvn:org.apache.httpcomponents/httpcore-osgi/4.4.14.redhat-00001</f:bundle>
+                <f:bundle dependency='true'>mvn:org.apache.httpcomponents/httpclient-osgi/4.5.13.redhat-00002</f:bundle>
+                <f:bundle>mvn:org.apache.camel/camel-google-drive/${version.camel}</f:bundle>
+            </feature>
+        </replacement>
+        <replacement mode="replace">
+            <feature name='camel-google-mail' version='2.23.2.fuse-7_10_2-00001-redhat-00005' start-level='50'>
+                <f:feature version='${version.camel}'>camel-core</f:feature>
+                <f:bundle dependency='true'>mvn:commons-codec/commons-codec/1.15</f:bundle>
+                <f:bundle dependency='true'>mvn:com.fasterxml.jackson.core/jackson-core/2.12.6</f:bundle>
+                <f:bundle dependency='true'>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.commons-httpclient/3.1.0.redhat-7_1</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.api-client/google-api-client/1.34.1</f:bundle>
+                <f:bundle dependency='true'>mvn:com.sun.mail/javax.mail/1.6.1.redhat-1</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.apis/google-api-services-gmail/v1-rev81-1.22.0</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client/1.41.8</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client-gson/1.41.8</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client-jackson2/1.41.8</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client-apache-v2/1.41.8</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client/1.33.3</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client-java6/1.33.3</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client-jetty/1.33.3$overwrite=merge&amp;Import-Package=!com.sun.net.httpserver,*</f:bundle>
+                <f:bundle dependency='true'>mvn:com.google.guava/guava/30.1.0.jre-redhat-00003</f:bundle>
+                <f:bundle dependency='true'>mvn:com.google.guava/guava/31.1.0.redhat-00001</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:io.opencensus/opencensus-api/0.21.0</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:io.opencensus/opencensus-contrib-http-util/0.21.0</f:bundle>
+                <f:bundle dependency='true'>mvn:org.apache.httpcomponents/httpcore-osgi/4.4.14.redhat-00001</f:bundle>
+                <f:bundle dependency='true'>mvn:org.apache.httpcomponents/httpclient-osgi/4.5.13.redhat-00002</f:bundle>
+                <f:bundle>mvn:org.apache.camel/camel-google-mail/${version.camel}</f:bundle>
+            </feature>
+        </replacement>
+        <replacement mode="replace">
+            <feature name='camel-google-pubsub' version='2.23.2.fuse-7_10_2-00001-redhat-00005' start-level='50'>
+                <f:feature version='${version.camel}'>camel-core</f:feature>
+                <f:bundle dependency='true'>wrap:mvn:com.google.apis/google-api-services-pubsub/v1-rev12-1.22.0</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.api-client/google-api-client/1.34.1</f:bundle>
+                <f:bundle dependency='true'>mvn:commons-codec/commons-codec/1.15</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client/1.41.8</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client-gson/1.41.8</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client-jackson2/1.41.8</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client-apache-v2/1.41.8</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client/1.33.3</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client-java6/1.33.3</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client-jetty/1.33.3$overwrite=merge&amp;Import-Package=!com.sun.net.httpserver,*</f:bundle>
+                <f:bundle dependency='true'>mvn:com.google.guava/guava/30.1.0.jre-redhat-00003</f:bundle>
+                <f:bundle dependency='true'>mvn:com.google.guava/guava/31.1.0.redhat-00001</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:io.opencensus/opencensus-api/0.21.0</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:io.opencensus/opencensus-contrib-http-util/0.21.0</f:bundle>
+                <f:bundle dependency='true'>mvn:com.fasterxml.jackson.core/jackson-core/2.12.6</f:bundle>
+                <f:bundle dependency='true'>mvn:org.apache.httpcomponents/httpcore-osgi/4.4.14.redhat-00001</f:bundle>
+                <f:bundle dependency='true'>mvn:org.apache.httpcomponents/httpclient-osgi/4.5.13.redhat-00002</f:bundle>
+                <f:bundle dependency='true'>mvn:javax.servlet/javax.servlet-api/3.1.0.redhat-1</f:bundle>
+                <f:bundle>mvn:org.apache.camel/camel-google-pubsub/${version.camel}</f:bundle>
+            </feature>
+        </replacement>
+    </featureReplacements>
+
+</featuresProcessing>

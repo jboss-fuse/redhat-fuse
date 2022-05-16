@@ -1,5 +1,5 @@
 #
-#  Copyright 2005-2020 Red Hat, Inc.
+#  Copyright 2005-2022 Red Hat, Inc.
 #
 #  Red Hat licenses this file to you under the Apache License, version
 #  2.0 (the "License"); you may not use this file except in compliance
@@ -14,9 +14,6 @@
 #  permissions and limitations under the License.
 #
 
-id = fuse-karaf-maintenance-patch-${project.version}
-bundle.0 = mvn:org.apache.camel/camel-google-mail/${version.camel}
-bundle.1 = mvn:org.apache.camel/camel-google-pubsub/${version.camel}
-bundle.2 = mvn:org.apache.camel/camel-google-sheets/${version.camel}
-bundle.3 = mvn:org.apache.camel/camel-jira/${version.camel}
-bundle.count = 4
+id = fuse-karaf-hf1-patch-${project.version}
+bundle.0 = mvn:org.apache.camel/camel-jms/${version.camel}
+bundle.count = 1
