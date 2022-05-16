@@ -43,6 +43,7 @@
                 <include>org/jboss/**</include>
                 <include>com/google/**</include>
                 <include>org/apache/camel/**</include>
+                <include>io/opencensus/**</include>
             </includes>
         </fileSet>
     </fileSets>

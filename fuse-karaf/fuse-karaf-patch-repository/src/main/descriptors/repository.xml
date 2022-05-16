@@ -44,6 +44,7 @@
                 <include>org/jboss/redhat-fuse/**</include>
                 <include>com/google/**</include>
                 <include>org/apache/camel/**</include>
+                <include>io/opencensus/**</include>
             </includes>
         </fileSet>
         <!--

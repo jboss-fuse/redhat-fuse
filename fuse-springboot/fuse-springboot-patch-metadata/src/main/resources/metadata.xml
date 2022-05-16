@@ -32,6 +32,20 @@
             <affects groupId="com.google.http-client" artifactId="google-http-client-gson" versions="[1,1.41.8)" fix="1.41.8" />
             <affects groupId="com.google.http-client" artifactId="google-http-client-jackson2" versions="[1,1.41.8)" fix="1.41.8" />
             <affects groupId="com.google.http-client" artifactId="google-http-client-apache-v2" versions="[1,1.41.8)" fix="1.41.8" />
+            <affects groupId="org.apache.camel" artifactId="camel-google-bigquery" versions="[2.23,2.24)" fix="${version.camel}" />
+            <affects groupId="org.apache.camel" artifactId="camel-google-bigquery-starter" versions="[2.23,2.24)" fix="${version.camel}" />
+            <affects groupId="org.apache.camel" artifactId="camel-google-pubsub" versions="[2.23,2.24)" fix="${version.camel}" />
+            <affects groupId="org.apache.camel" artifactId="camel-google-pubsub-starter" versions="[2.23,2.24)" fix="${version.camel}" />
+            <affects groupId="org.apache.camel" artifactId="camel-google-calendar" versions="[2.23,2.24)" fix="${version.camel}" />
+            <affects groupId="org.apache.camel" artifactId="camel-google-calendar-starter" versions="[2.23,2.24)" fix="${version.camel}" />
+            <affects groupId="org.apache.camel" artifactId="camel-google-drive" versions="[2.23,2.24)" fix="${version.camel}" />
+            <affects groupId="org.apache.camel" artifactId="camel-google-drive-starter" versions="[2.23,2.24)" fix="${version.camel}" />
+            <affects groupId="org.apache.camel" artifactId="camel-google-mail" versions="[2.23,2.24)" fix="${version.camel}" />
+            <affects groupId="org.apache.camel" artifactId="camel-google-mail-starter" versions="[2.23,2.24)" fix="${version.camel}" />
+            <affects groupId="org.apache.camel" artifactId="camel-google-sheets" versions="[2.23,2.24)" fix="${version.camel}" />
+            <affects groupId="org.apache.camel" artifactId="camel-google-sheets-starter" versions="[2.23,2.24)" fix="${version.camel}" />
+            <affects groupId="org.apache.camel" artifactId="camel-jira" versions="[2.23,2.24)" fix="${version.camel}" />
+            <affects groupId="org.apache.camel" artifactId="camel-jira-starter" versions="[2.23,2.24)" fix="${version.camel}" />
         </cve>
     </cves>
     <fixes />
