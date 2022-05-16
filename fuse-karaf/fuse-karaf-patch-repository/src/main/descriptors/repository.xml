@@ -42,8 +42,8 @@
             <includes>
                 <include>org/jboss/fuse/**</include>
                 <include>org/jboss/redhat-fuse/**</include>
-                <include>org/apache/logging/log4j/**</include>
-                <include>org/ops4j/pax/logging/**</include>
+                <include>com/google/**</include>
+                <include>org/apache/camel/**</include>
             </includes>
         </fileSet>
         <!--
