@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<featuresProcessing xmlns="http://karaf.apache.org/xmlns/features-processing/v1.0.0" xmlns:f="http://karaf.apache.org/xmlns/features/v1.6.0">
+
+    <!-- feature replacements have to match exact Camel version from Fuse 7.10.2 -->
+    <featureReplacements>
+        <replacement mode="replace">
+            <feature name='camel-google-calendar' version='2.23.2.fuse-7_10_2-00001-redhat-00005' start-level='50'>
+                <f:feature version='2.23.2.fuse-7_10_2-00001-redhat-00005'>camel-core</f:feature>
+                <f:bundle dependency='true'>mvn:commons-codec/commons-codec/1.15</f:bundle>
+                <f:bundle dependency='true'>mvn:com.fasterxml.jackson.core/jackson-core/2.12.1.redhat-00002</f:bundle>
+                <f:bundle dependency='true'>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.commons-httpclient/3.1.0.redhat-7_1</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.api-client/google-api-client/1.22.0</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.apis/google-api-services-calendar/v3-rev291-1.22.0</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client/1.22.0</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client-jackson2/1.22.0</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client/1.22.0.redhat-00003</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client-java6/1.22.0.redhat-00003</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client-jetty/1.22.0.redhat-00003</f:bundle>
+                <f:bundle>mvn:org.apache.camel/camel-google-calendar/2.23.2.fuse-7_10_2-00001-redhat-00005</f:bundle>
+            </feature>
+        </replacement>
+        <replacement mode="replace">
+            <feature name='camel-google-sheets' version='2.23.2.fuse-7_10_2-00001-redhat-00005' start-level='50'>
+                <f:feature version='2.23.2.fuse-7_10_2-00001-redhat-00005'>camel-core</f:feature>
+                <f:bundle dependency='true'>mvn:commons-codec/commons-codec/1.15</f:bundle>
+                <f:bundle dependency='true'>mvn:com.fasterxml.jackson.core/jackson-core/2.12.1.redhat-00002</f:bundle>
+                <f:bundle dependency='true'>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.commons-httpclient/3.1.0.redhat-7_1</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.api-client/google-api-client/1.22.0</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.apis/google-api-services-sheets/v4-rev551-1.22.0</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client/1.22.0</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client-jackson2/1.22.0</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client/1.22.0.redhat-00003</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client-java6/1.22.0.redhat-00003</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client-jetty/1.22.0.redhat-00003</f:bundle>
+                <f:bundle>mvn:org.apache.camel/camel-google-sheets/${version.camel}</f:bundle>
+            </feature>
+        </replacement>
+        <replacement mode="replace">
+            <feature name='camel-google-drive' version='2.23.2.fuse-7_10_2-00001-redhat-00005' start-level='50'>
+                <f:feature version='2.23.2.fuse-7_10_2-00001-redhat-00005'>camel-core</f:feature>
+                <f:bundle dependency='true'>mvn:commons-codec/commons-codec/1.15</f:bundle>
+                <f:bundle dependency='true'>mvn:com.fasterxml.jackson.core/jackson-core/2.12.1.redhat-00002</f:bundle>
+                <f:bundle dependency='true'>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.commons-httpclient/3.1.0.redhat-7_1</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.api-client/google-api-client/1.22.0</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.apis/google-api-services-drive/v2-rev297-1.22.0</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client/1.22.0</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client-jackson2/1.22.0</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client/1.22.0.redhat-00003</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client-java6/1.22.0.redhat-00003</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client-jetty/1.22.0.redhat-00003</f:bundle>
+                <f:bundle>mvn:org.apache.camel/camel-google-drive/2.23.2.fuse-7_10_2-00001-redhat-00005</f:bundle>
+            </feature>
+        </replacement>
+        <replacement mode="replace">
+            <feature name='camel-google-mail' version='2.23.2.fuse-7_10_2-00001-redhat-00005' start-level='50'>
+                <f:feature version='2.23.2.fuse-7_10_2-00001-redhat-00005'>camel-core</f:feature>
+                <f:bundle dependency='true'>mvn:commons-codec/commons-codec/1.15</f:bundle>
+                <f:bundle dependency='true'>mvn:com.fasterxml.jackson.core/jackson-core/2.12.1.redhat-00002</f:bundle>
+                <f:bundle dependency='true'>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.commons-httpclient/3.1.0.redhat-7_1</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.api-client/google-api-client/1.22.0</f:bundle>
+                <f:bundle dependency='true'>mvn:com.sun.mail/javax.mail/1.6.1.redhat-1</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.apis/google-api-services-gmail/v1-rev81-1.22.0</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client/1.22.0</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client-jackson2/1.22.0</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client/1.22.0.redhat-00003</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client-java6/1.22.0.redhat-00003</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client-jetty/1.22.0.redhat-00003</f:bundle>
+                <f:bundle dependency='true'>mvn:com.google.guava/guava/17.0</f:bundle>
+                <f:bundle>mvn:org.apache.camel/camel-google-mail/2.23.2.fuse-7_10_2-00001-redhat-00005</f:bundle>
+            </feature>
+        </replacement>
+        <replacement mode="replace">
+            <feature name='camel-google-pubsub' version='2.23.2.fuse-7_10_2-00001-redhat-00005' start-level='50'>
+                <f:feature version='2.23.2.fuse-7_10_2-00001-redhat-00005'>camel-core</f:feature>
+                <f:bundle dependency='true'>wrap:mvn:com.google.apis/google-api-services-pubsub/v1-rev12-1.22.0</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.api-client/google-api-client/1.22.0</f:bundle>
+                <f:bundle dependency='true'>mvn:commons-codec/commons-codec/1.15</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client/1.22.0</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.http-client/google-http-client-jackson2/1.22.0</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client/1.22.0.redhat-00003</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client-java6/1.22.0.redhat-00003</f:bundle>
+                <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client-jetty/1.22.0.redhat-00003</f:bundle>
+                <f:bundle dependency='true'>mvn:com.fasterxml.jackson.core/jackson-core/2.12.1.redhat-00002</f:bundle>
+                <f:bundle dependency='true'>mvn:org.apache.httpcomponents/httpcore-osgi/4.4.14.redhat-00001</f:bundle>
+                <f:bundle dependency='true'>mvn:org.apache.httpcomponents/httpclient-osgi/4.5.13.redhat-00002</f:bundle>
+                <f:bundle dependency='true'>mvn:javax.servlet/javax.servlet-api/3.1.0.redhat-1</f:bundle>
+                <f:bundle dependency='true'>mvn:com.google.guava/guava/19.0.0.redhat-1</f:bundle>
+                <f:bundle>mvn:org.apache.camel/camel-google-pubsub/2.23.2.fuse-7_10_2-00001-redhat-00005</f:bundle>
+            </feature>
+        </replacement>
+    </featureReplacements>
+
+</featuresProcessing>

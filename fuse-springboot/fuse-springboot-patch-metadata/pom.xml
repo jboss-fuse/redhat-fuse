@@ -41,21 +41,140 @@
 
     <dependencies>
 
-        <!-- https://issues.redhat.com/browse/ENTESB-17968 -->
+        <!-- https://issues.redhat.com/browse/ENTESB-18995 -->
         <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-api</artifactId>
-            <version>${version.org.apache.logging.log4j2}</version>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-jira</artifactId>
+            <version>${version.camel}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.atlassian.httpclient</groupId>
+                    <artifactId>atlassian-httpclient-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.atlassian.httpclient</groupId>
+                    <artifactId>atlassian-httpclient-library</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.atlassian.sal</groupId>
+                    <artifactId>sal-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.atlassian.event</groupId>
+                    <artifactId>atlassian-event</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-core</artifactId>
-            <version>${version.org.apache.logging.log4j2}</version>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-jira-starter</artifactId>
+            <version>${version.camel}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.atlassian.httpclient</groupId>
+                    <artifactId>atlassian-httpclient-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.atlassian.httpclient</groupId>
+                    <artifactId>atlassian-httpclient-library</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.atlassian.sal</groupId>
+                    <artifactId>sal-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.atlassian.event</groupId>
+                    <artifactId>atlassian-event</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-google-bigquery</artifactId>
+            <version>${version.camel}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-google-bigquery-starter</artifactId>
+            <version>${version.camel}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-google-calendar</artifactId>
+            <version>${version.camel}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-google-calendar-starter</artifactId>
+            <version>${version.camel}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-google-sheets</artifactId>
+            <version>${version.camel}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-google-sheets-starter</artifactId>
+            <version>${version.camel}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-google-drive</artifactId>
+            <version>${version.camel}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-google-drive-starter</artifactId>
+            <version>${version.camel}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-google-mail</artifactId>
+            <version>${version.camel}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-google-mail-starter</artifactId>
+            <version>${version.camel}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-google-pubsub</artifactId>
+            <version>${version.camel}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-google-pubsub-starter</artifactId>
+            <version>${version.camel}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.oauth-client</groupId>
+            <artifactId>google-oauth-client</artifactId>
+            <version>1.22.0.redhat-00003</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.oauth-client</groupId>
+            <artifactId>google-oauth-client-java6</artifactId>
+            <version>1.22.0.redhat-00003</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.oauth-client</groupId>
+            <artifactId>google-oauth-client-jetty</artifactId>
+            <version>1.22.0.redhat-00003</version>
         </dependency>
 
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+
         <pluginManagement>
             <plugins>
                 <plugin>

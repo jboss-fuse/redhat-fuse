@@ -41,21 +41,75 @@
 
     <dependencies>
 
-        <!-- https://issues.redhat.com/browse/ENTESB-17968 -->
+        <!-- https://issues.redhat.com/browse/ENTESB-18995 -->
         <dependency>
-            <groupId>org.ops4j.pax.logging</groupId>
-            <artifactId>pax-logging-api</artifactId>
-            <version>${version.org.ops4j.pax.logging}</version>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-jira</artifactId>
+            <version>${version.camel}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.atlassian.httpclient</groupId>
+                    <artifactId>atlassian-httpclient-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.atlassian.httpclient</groupId>
+                    <artifactId>atlassian-httpclient-library</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.atlassian.sal</groupId>
+                    <artifactId>sal-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.atlassian.event</groupId>
+                    <artifactId>atlassian-event</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
-            <groupId>org.ops4j.pax.logging</groupId>
-            <artifactId>pax-logging-log4j2</artifactId>
-            <version>${version.org.ops4j.pax.logging}</version>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-google-bigquery</artifactId>
+            <version>${version.camel}</version>
         </dependency>
         <dependency>
-            <groupId>org.ops4j.pax.logging</groupId>
-            <artifactId>pax-logging-log4j2-extra</artifactId>
-            <version>${version.org.ops4j.pax.logging}</version>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-google-calendar</artifactId>
+            <version>${version.camel}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-google-sheets</artifactId>
+            <version>${version.camel}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-google-drive</artifactId>
+            <version>${version.camel}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-google-mail</artifactId>
+            <version>${version.camel}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-google-pubsub</artifactId>
+            <version>${version.camel}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.oauth-client</groupId>
+            <artifactId>google-oauth-client</artifactId>
+            <version>1.22.0.redhat-00003</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.oauth-client</groupId>
+            <artifactId>google-oauth-client-java6</artifactId>
+            <version>1.22.0.redhat-00003</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.oauth-client</groupId>
+            <artifactId>google-oauth-client-jetty</artifactId>
+            <version>1.22.0.redhat-00003</version>
         </dependency>
 
     </dependencies>
