@@ -32,7 +32,7 @@
                 <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client/1.22.0.redhat-00003</f:bundle>
                 <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client-java6/1.22.0.redhat-00003</f:bundle>
                 <f:bundle dependency='true'>wrap:mvn:com.google.oauth-client/google-oauth-client-jetty/1.22.0.redhat-00003</f:bundle>
-                <f:bundle>mvn:org.apache.camel/camel-google-sheets/${version.camel}</f:bundle>
+                <f:bundle>mvn:org.apache.camel/camel-google-sheets/2.23.2.fuse-7_10_2-00001-redhat-00005</f:bundle>
             </feature>
         </replacement>
         <replacement mode="replace">
