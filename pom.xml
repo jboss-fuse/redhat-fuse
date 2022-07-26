@@ -35,26 +35,26 @@
         <!-- Build properties (overridable in profiles) -->
         <enforcer.pluginVersions.banSnapshots>false</enforcer.pluginVersions.banSnapshots>
 
-        <version.camel>2.23.2.fuse-7_10_0-00020-redhat-00001</version.camel>
-        <version.camel.extra>2.23.2.fuse-sb2-7_10_0-00020-redhat-00001</version.camel.extra>
-        <version.cxf>3.3.6.fuse-7_10_0-00022-redhat-00001</version.cxf>
-        <version.cxf.xjc-utils>3.3.1.fuse-7_10_0-00012-redhat-00001</version.cxf.xjc-utils>
+        <version.camel>2.23.2.fuse-7_11_0-00037-redhat-00001</version.camel>
+        <version.camel.extra>2.23.2.fuse-sb2-7_11_0-00036-redhat-00001</version.camel.extra>
+        <version.cxf>3.3.6.fuse-7_11_0-00038-redhat-00001</version.cxf>
+        <version.cxf.xjc-utils>3.3.1.fuse-7_11_0-00021-redhat-00001</version.cxf.xjc-utils>
 
         <version.fabric8>3.0.12</version.fabric8>
-        <version.fuse-karaf>7.10.0.fuse-7_10_0-00011-redhat-00001</version.fuse-karaf>
-        <version.karaf>4.2.12.fuse-7_10_0-00008-redhat-00001</version.karaf>
-        <version.wildfly.camel>5.8.0.fuse-7_10_0-00010-redhat-00001</version.wildfly.camel>
-        <version.fusesource.camel.sap>7.10.0.fuse-sb2-7_10_0-00016-redhat-00001</version.fusesource.camel.sap>
-        <karaf.plugin.version>4.2.12.fuse-7_10_0-00008-redhat-00001</karaf.plugin.version>
+        <version.fuse-karaf>7.11.0.fuse-7_11_0-00036-redhat-00001</version.fuse-karaf>
+        <version.karaf>4.2.15.fuse-7_11_0-00023-redhat-00001</version.karaf>
+        <version.wildfly.camel>5.9.0.fuse-7_11_0-00026-redhat-00001</version.wildfly.camel>
+        <version.fusesource.camel.sap>7.11.0.fuse-sb2-7_11_0-00035-redhat-00001</version.fusesource.camel.sap>
+        <karaf.plugin.version>4.2.15.fuse-7_11_0-00023-redhat-00001</karaf.plugin.version>
 
-        <version.hawtio>2.0.0.fuse-sb2-7_10_0-00016-redhat-00001</version.hawtio>
+        <version.hawtio>2.0.0.fuse-sb2-7_11_0-00036-redhat-00001</version.hawtio>
 
         <version.kubernetes.model>4.6.2</version.kubernetes.model>
-        <version.kubernetes.client>4.6.2</version.kubernetes.client>
+        <version.kubernetes.client>4.6.2.fuse-7_11_0-00025-redhat-00001</version.kubernetes.client>
 
-        <version.docker.maven.plugin>0.31.0.fuse-780001</version.docker.maven.plugin>
+        <version.docker.maven.plugin>0.31.0.fuse-7_11_0-00021-redhat-00001</version.docker.maven.plugin>
 
-        <version.narayana-spring-boot>2.1.1.fuse-sb2-780030</version.narayana-spring-boot>
+        <version.narayana-spring-boot>2.1.1.fuse-sb2-7_11_0-00034-redhat-00001</version.narayana-spring-boot>
 
         <version.spring-cloud-kubernetes>2.0.5</version.spring-cloud-kubernetes>
 
@@ -65,9 +65,9 @@
         <spring.boot.version>2.5.13</spring.boot.version>
         <spring.framework.version>5.3.20</spring.framework.version>
         <spring.security.version>5.5.7</spring.security.version>
-        <version.snakeyaml>1.28</version.snakeyaml>
+        <version.snakeyaml>1.28.0.redhat-00001</version.snakeyaml>
         
-        <version.atlasmap>2.2.3.fuse-790003-redhat-00001</version.atlasmap>
+        <version.atlasmap>2.3.18.fuse-7_11_0-00006-redhat-00001</version.atlasmap>
 
         <!-- Overridden from snowdrop Spring Boot BOM-->
         <hibernate.version>5.3.26.Final-redhat-00002</hibernate.version>
@@ -83,29 +83,29 @@
 
         <version.kafka>2.6.3.redhat-00001</version.kafka>
         <version.kafka.upstream>2.6.3</version.kafka.upstream>
-        <version.kafka.zookeeper>3.5.9.redhat-00004</version.kafka.zookeeper>
+        <version.kafka.zookeeper>3.5.9.redhat-00006</version.kafka.zookeeper>
         <version.kafka.scala>2.12.13.redhat-00002</version.kafka.scala>
 
         <version.commons-beanutils>1.9.4.redhat-00002</version.commons-beanutils>
         <version.commons-codec>1.15.0.redhat-00001</version.commons-codec>
         <version.commons-pool>1.6.0.redhat-10</version.commons-pool>
-        <version.netty>4.1.74.Final</version.netty>
+        <version.netty>4.1.74.Final-redhat-00001</version.netty>
 
         <version.org.apache.commons.compress>1.21.0.redhat-00001</version.org.apache.commons.compress>
         <version.org.apache.commons.dbcp2>2.9.0</version.org.apache.commons.dbcp2>
         <version.org.apache.commons.lang3>3.12.0.redhat-00001</version.org.apache.commons.lang3>
-        <version.org.apache.commons.pool2>2.11.1</version.org.apache.commons.pool2>
+        <version.org.apache.commons.pool2>2.11.1.redhat-00001</version.org.apache.commons.pool2>
 
         <version.org.apache.httpcomponents.httpasyncclient>4.1.3.redhat-2</version.org.apache.httpcomponents.httpasyncclient>
         <version.org.apache.httpcomponents.httpclient>4.5.13.redhat-00002</version.org.apache.httpcomponents.httpclient>
         <version.org.apache.httpcomponents.httpcore>4.4.14.redhat-00001</version.org.apache.httpcomponents.httpcore>
 
-        <version.org.eclipse.jetty>9.4.43.v20210629-redhat-00003</version.org.eclipse.jetty>
-        <version.org.eclipse.jetty.alpn.jdk9>9.4.43.v20210629-redhat-00002</version.org.eclipse.jetty.alpn.jdk9>
+        <version.org.eclipse.jetty>9.4.43.v20210629-redhat-00004</version.org.eclipse.jetty>
+        <version.org.eclipse.jetty.alpn.jdk9>9.4.43.v20210629-redhat-00004</version.org.eclipse.jetty.alpn.jdk9>
 
         <version.tika>1.28.2</version.tika>
 
-        <version.jackson2>2.12.6</version.jackson2>
+        <version.jackson2>2.12.6.redhat-00001</version.jackson2>
         <version.jackson2.databind>2.12.6.1</version.jackson2.databind>
         <version.jackson2.jsonSchema>2.12.6</version.jackson2.jsonSchema>
 
@@ -116,8 +116,8 @@
         <version.org.ops4j.pax.logging>1.12.2</version.org.ops4j.pax.logging>
         <version.org.slf4j>1.7.32.redhat-00001</version.org.slf4j>
 
-        <version.org.postgresql>42.3.3</version.org.postgresql>
-        <version.mysql>8.0.28</version.mysql>
+        <version.org.postgresql>42.3.3.redhat-00001</version.org.postgresql>
+        <version.mysql>8.0.28.redhat-00001</version.mysql>
 
         <version.javax.xml.bind>2.3.0.redhat-00003</version.javax.xml.bind>
         <version.org.jboss.xnio>3.8.7.SP1-redhat-00001</version.org.jboss.xnio>
@@ -128,7 +128,7 @@
 
         <!-- test frameworks versions -->
         <arquillian.version>1.4.1.Final</arquillian.version>
-        <arquillian.cube.version>1.18.2</arquillian.cube.version>
+        <arquillian.cube.version>1.8.2.fuse-7_11_0-00025-redhat-00001</arquillian.cube.version>
 
         <version.glassfish.jakarta.el>3.0.3.redhat-00007</version.glassfish.jakarta.el>
 
