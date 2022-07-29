@@ -36,6 +36,34 @@
             <artifactId>fuse-pax-transx-tm-narayana</artifactId>
             <version>${version.fuse-karaf}</version>
         </dependency>
+        <!-- additionally we can include patch mechanism for Karaf to be included in the patch itself -->
+        <dependency>
+            <groupId>org.jboss.fuse.modules.patch</groupId>
+            <artifactId>patch-core-api</artifactId>
+            <version>${version.fuse-karaf}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.fuse.modules.patch</groupId>
+            <artifactId>patch-core</artifactId>
+            <version>${version.fuse-karaf}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.fuse.modules.patch</groupId>
+            <artifactId>patch-commands</artifactId>
+            <version>${version.fuse-karaf}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.fuse.modules.patch</groupId>
+            <artifactId>patch-management</artifactId>
+            <version>${version.fuse-karaf}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.fuse.modules.patch</groupId>
+            <artifactId>patch-features</artifactId>
+            <version>${version.fuse-karaf}</version>
+            <type>xml</type>
+            <classifier>features</classifier>
+        </dependency>
     </dependencies>
 
     <build>

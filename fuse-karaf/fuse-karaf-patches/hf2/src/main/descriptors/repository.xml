@@ -34,6 +34,7 @@
             <directory>${project.build.directory}/patch-repository</directory>
             <includes>
                 <include>org/jboss/fuse/modules/fuse-pax-transx-tm-narayana/**</include>
+                <include>org/jboss/fuse/modules/patch/**</include>
             </includes>
         </fileSet>
         <fileSet>
