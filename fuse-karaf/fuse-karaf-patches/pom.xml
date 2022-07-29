@@ -60,6 +60,7 @@
 
     <modules>
         <module>hf1</module>
+        <module>hf2</module>
     </modules>
 
 </project>
