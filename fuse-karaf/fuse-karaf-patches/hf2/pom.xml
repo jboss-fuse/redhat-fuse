@@ -23,18 +23,18 @@
     <parent>
         <groupId>org.jboss.redhat-fuse</groupId>
         <artifactId>fuse-karaf-patches</artifactId>
-        <version>7.11.0-SNAPSHOT</version>
+        <version>7.11.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>fuse-karaf-patch-hf1</artifactId>
+    <artifactId>fuse-karaf-patch-hf2</artifactId>
     <packaging>pom</packaging>
     <name>Red Hat Fuse :: ${project.artifactId}</name>
 
     <dependencies>
         <dependency>
-            <groupId>org.apache.camel</groupId>
-            <artifactId>camel-jms</artifactId>
-            <version>${version.camel}</version>
+            <groupId>org.jboss.fuse.modules</groupId>
+            <artifactId>fuse-pax-transx-tm-narayana</artifactId>
+            <version>${version.fuse-karaf}</version>
         </dependency>
     </dependencies>
 

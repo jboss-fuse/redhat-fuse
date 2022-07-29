@@ -23,7 +23,7 @@
     <parent>
         <groupId>org.jboss.redhat-fuse</groupId>
         <artifactId>fuse-karaf</artifactId>
-        <version>7.11.1-SNAPSHOT</version>
+        <version>7.11.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>fuse-karaf-patches</artifactId>
@@ -60,6 +60,7 @@
 
     <modules>
         <module>hf1</module>
+        <module>hf2</module>
     </modules>
 
 </project>
