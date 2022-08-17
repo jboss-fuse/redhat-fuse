@@ -22,7 +22,7 @@
 
     <groupId>org.jboss.redhat-fuse</groupId>
     <artifactId>redhat-fuse</artifactId>
-    <version>7.11.1-SNAPSHOT</version>
+    <version>7.11.0.fuse-sb2-7_11_0-00033</version>
     <packaging>pom</packaging>
 
     <name>Red Hat Fuse :: ${project.artifactId}</name>
@@ -35,7 +35,7 @@
         <!-- Build properties (overridable in profiles) -->
         <enforcer.pluginVersions.banSnapshots>false</enforcer.pluginVersions.banSnapshots>
 
-        <version.camel>2.23.2.fuse-7_11_0-00037-redhat-00001</version.camel>
+        <version.camel>2.23.2.fuse-7_11_0-00039</version.camel>
         <version.camel.extra>2.23.2.fuse-sb2-7_11_0-00036-redhat-00001</version.camel.extra>
         <version.cxf>3.3.6.fuse-7_11_0-00038-redhat-00001</version.cxf>
         <version.cxf.xjc-utils>3.3.1.fuse-7_11_0-00021-redhat-00001</version.cxf.xjc-utils>
