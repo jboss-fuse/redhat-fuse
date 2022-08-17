@@ -39,19 +39,17 @@
            parent POMs for example), but keeping the dependencies here is crucial
     -->
 
-    <properties>
-<!--        <project.update.org.eclipse.jetty>9.4.32.v20200930</project.update.org.eclipse.jetty>-->
-    </properties>
+    <properties />
 
-    <dependencies>
-<!--        <dependency>-->
-<!--            <groupId>org.eclipse.jetty</groupId>-->
-<!--            <artifactId>jetty-server</artifactId>-->
-<!--            <version>${project.update.org.eclipse.jetty}</version>-->
-<!--        </dependency>-->
-    </dependencies>
+    <dependencies />
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
         <pluginManagement>
             <plugins>
                 <plugin>
