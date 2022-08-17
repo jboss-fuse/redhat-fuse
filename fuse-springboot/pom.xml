@@ -41,6 +41,7 @@
             <modules>
                 <module>fuse-springboot-patch-metadata</module>
                 <module>fuse-springboot-patch-repository</module>
+                <module>fuse-springboot-patches</module>
             </modules>
         </profile>
     </profiles>
