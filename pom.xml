@@ -70,7 +70,7 @@
         <version.atlasmap>2.3.18.fuse-7_11_0-00006-redhat-00001</version.atlasmap>
 
         <!-- Overridden from snowdrop Spring Boot BOM-->
-        <hibernate.version>5.3.26.Final-redhat-00002</hibernate.version>
+        <hibernate.version>5.3.27.Final-redhat-00001</hibernate.version>
         <hibernate-commons.version>5.0.5.Final-redhat-00002</hibernate-commons.version>
         <hibernate-validator6.version>6.0.23.Final-redhat-00001</hibernate-validator6.version>
         <undertow.version>2.2.19.SP2-redhat-00001</undertow.version>
