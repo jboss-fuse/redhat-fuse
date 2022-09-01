@@ -70,13 +70,13 @@
         <version.atlasmap>2.3.18.fuse-7_11_0-00006-redhat-00001</version.atlasmap>
 
         <!-- Overridden from snowdrop Spring Boot BOM-->
-        <hibernate.version>5.3.26.Final-redhat-00002</hibernate.version>
+        <hibernate.version>5.3.27.Final-redhat-00001</hibernate.version>
         <hibernate-commons.version>5.0.5.Final-redhat-00002</hibernate-commons.version>
         <hibernate-validator6.version>6.0.23.Final-redhat-00001</hibernate-validator6.version>
-        <undertow.version>2.2.17.SP4-redhat-00001</undertow.version>
+        <undertow.version>2.2.19.SP2-redhat-00001</undertow.version>
 
         <activemq.version>5.11.0.redhat-630516</activemq.version>
-        <artemis.version>2.16.0.redhat-00042</artemis.version>
+        <artemis.version>2.16.0.redhat-00046</artemis.version>
 
         <version.com.hazelcast>3.12</version.com.hazelcast>
 
@@ -89,7 +89,7 @@
         <version.commons-beanutils>1.9.4.redhat-00002</version.commons-beanutils>
         <version.commons-codec>1.15.0.redhat-00001</version.commons-codec>
         <version.commons-pool>1.6.0.redhat-10</version.commons-pool>
-        <version.netty>4.1.74.Final-redhat-00001</version.netty>
+        <version.netty>4.1.77.Final-redhat-00001</version.netty>
 
         <version.org.apache.commons.compress>1.21.0.redhat-00001</version.org.apache.commons.compress>
         <version.org.apache.commons.dbcp2>2.9.0</version.org.apache.commons.dbcp2>
@@ -100,16 +100,17 @@
         <version.org.apache.httpcomponents.httpclient>4.5.13.redhat-00002</version.org.apache.httpcomponents.httpclient>
         <version.org.apache.httpcomponents.httpcore>4.4.14.redhat-00001</version.org.apache.httpcomponents.httpcore>
 
-        <version.org.eclipse.jetty>9.4.43.v20210629-redhat-00004</version.org.eclipse.jetty>
-        <version.org.eclipse.jetty.alpn.jdk9>9.4.43.v20210629-redhat-00004</version.org.eclipse.jetty.alpn.jdk9>
+        <version.org.eclipse.jetty>9.4.48.v20220622</version.org.eclipse.jetty>
+        <version.org.eclipse.jetty.alpn.jdk9>9.4.48.v20220622</version.org.eclipse.jetty.alpn.jdk9>
 
         <version.tika>1.28.2</version.tika>
 
         <version.jackson2>2.12.6.redhat-00001</version.jackson2>
-        <version.jackson2.databind>2.12.6.1</version.jackson2.databind>
-        <version.jackson2.jsonSchema>2.12.6</version.jackson2.jsonSchema>
+        <version.jackson2.databind>2.12.6.1-redhat-00004</version.jackson2.databind>
+        <version.jackson2.jsonSchema>2.12.6.redhat-00001</version.jackson2.jsonSchema>
 
         <version.com.google.guava>27.1-jre</version.com.google.guava>
+        <version.com.google.code.gson>2.8.9.redhat-00001</version.com.google.code.gson>
 
         <version.ch.qos.logback>1.2.10</version.ch.qos.logback>
         <version.org.apache.logging.log4j2>2.17.1.redhat-00002</version.org.apache.logging.log4j2>
