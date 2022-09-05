@@ -61,6 +61,7 @@
     <modules>
         <module>hf1</module>
         <module>hf2</module>
+        <module>hf4</module>
     </modules>
 
 </project>
