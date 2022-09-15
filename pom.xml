@@ -65,7 +65,7 @@
         <spring.boot.version>2.5.13</spring.boot.version>
         <spring.framework.version>5.3.20</spring.framework.version>
         <spring.security.version>5.5.7</spring.security.version>
-        <version.snakeyaml>1.28.0.redhat-00001</version.snakeyaml>
+        <version.snakeyaml>1.32.0.redhat-00001</version.snakeyaml>
         
         <version.atlasmap>2.3.18.fuse-7_11_0-00006-redhat-00001</version.atlasmap>
 
