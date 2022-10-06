@@ -1482,6 +1482,18 @@
 <!--			</dependency>-->
 
 			<dependency>
+				<groupId>io.netty</groupId>
+				<artifactId>netty-tcnative</artifactId>
+				<version>${version.netty.tcnative}</version>
+				<classifier>linux-x86_64-fedora</classifier>
+			</dependency>
+			<dependency>
+				<groupId>io.netty</groupId>
+				<artifactId>netty-tcnative-classes</artifactId>
+				<version>${version.netty.tcnative}</version>
+			</dependency>
+
+			<dependency>
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-compress</artifactId>
 				<version>${version.org.apache.commons.compress}</version>
