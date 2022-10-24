@@ -129,6 +129,8 @@
 
         <version.elasticsearch-rest>6.8.13</version.elasticsearch-rest>
 
+        <version.hsqldb>2.7.1</version.hsqldb>
+
         <!-- test frameworks versions -->
         <arquillian.version>1.4.1.Final</arquillian.version>
         <arquillian.cube.version>1.8.2.fuse-7_11_0-00025-redhat-00001</arquillian.cube.version>
