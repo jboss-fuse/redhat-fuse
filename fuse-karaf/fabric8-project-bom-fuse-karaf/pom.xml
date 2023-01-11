@@ -4,14 +4,14 @@
     <parent>
         <groupId>org.jboss.redhat-fuse</groupId>
         <artifactId>fuse-karaf</artifactId>
-        <version>7.11.0-SNAPSHOT</version>
+        <version>7.11.1.fuse-sb2-7_11_1-00017</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.jboss.redhat-fuse</groupId>
     <artifactId>fabric8-project-bom-fuse-karaf</artifactId>
-    <version>7.11.0-SNAPSHOT</version>
+    <version>7.11.1.fuse-sb2-7_11_1-00017</version>
     <name>Fabric8 :: Project :: Bom for Fuse Applications on Karaf</name>
     <packaging>pom</packaging>
 
@@ -222,6 +222,17 @@
 <!--                <version>${version.netty}</version>-->
 <!--                <classifier>linux-aarch64</classifier>-->
 <!--            </dependency>-->
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-tcnative</artifactId>
+                <version>${version.netty.tcnative}</version>
+                <classifier>linux-x86_64-fedora</classifier>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-tcnative-classes</artifactId>
+                <version>${version.netty.tcnative}</version>
+            </dependency>
 
             <dependency>
                 <groupId>org.eclipse.jetty.fcgi</groupId>
@@ -604,6 +615,18 @@
                 <groupId>com.h2database</groupId>
                 <artifactId>h2</artifactId>
                 <version>${version.com.h2database}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.hsqldb</groupId>
+                <artifactId>hsqldb</artifactId>
+                <version>${version.hsqldb}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hsqldb</groupId>
+                <artifactId>hsqldb</artifactId>
+                <version>${version.hsqldb}</version>
+                <classifier>jdk8</classifier>
             </dependency>
 
         </dependencies>
