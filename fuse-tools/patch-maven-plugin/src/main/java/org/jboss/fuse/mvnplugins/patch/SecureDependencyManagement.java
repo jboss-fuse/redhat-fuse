@@ -24,6 +24,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.net.MalformedURLException;
 import java.nio.file.FileVisitResult;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -55,6 +56,7 @@ import org.apache.maven.model.DependencyManagement;
 import org.apache.maven.model.Model;
 import org.apache.maven.model.Plugin;
 import org.apache.maven.model.Profile;
+import org.apache.maven.model.Repository;
 import org.apache.maven.model.building.DefaultModelBuildingRequest;
 import org.apache.maven.model.building.ModelBuildingRequest;
 import org.apache.maven.model.interpolation.StringVisitorModelInterpolator;
@@ -125,6 +127,14 @@ public class SecureDependencyManagement extends AbstractMavenLifecycleParticipan
     @Override
     public void afterSessionStart(MavenSession session) throws MavenExecutionException {
         super.afterSessionStart(session);
+    }
+
+    @Override
+    public void afterSessionEnd(MavenSession session) throws MavenExecutionException {
+        super.afterSessionEnd(session);
+        if (tmpDir != null) {
+            cleanupRepository(tmpDir);
+        }
     }
 
     @Override
@@ -352,9 +362,6 @@ public class SecureDependencyManagement extends AbstractMavenLifecycleParticipan
                 }
             }
         } finally {
-            if (tmpDir != null) {
-                cleanupRepository(tmpDir);
-            }
             logger.info("[PATCH] Done in " + (System.currentTimeMillis() - ts) + "ms\n\n=================================================\n");
         }
     }
@@ -427,6 +434,8 @@ public class SecureDependencyManagement extends AbstractMavenLifecycleParticipan
     private List<RemoteRepository> configureRepositories(MavenSession session) throws MavenExecutionException {
         List<RemoteRepository> repositories = new ArrayList<>();
 
+        RemoteRepository zipRepository = null;
+
         String patch = session.getUserProperties().getProperty("patch");
         if ("true".equals(patch) || (patch != null && "".equals(patch.trim()))) {
             logger.warn("[PATCH] -Dpatch used, but patch location not specified. Are you sure correct -Dpatch=location is used?");
@@ -454,9 +463,10 @@ public class SecureDependencyManagement extends AbstractMavenLifecycleParticipan
                     //     fuse-springboot-patch-metadata-7.8.0.fuse-sb2-781023.xml>patch-3.zip=
                     // and next resolution of org.jboss.redhat-fuse:fuse-springboot-patch-metadata:RELEASE with
                     // different patch of from remote repos would ONLY because the ID of the repo wouldn't match...
-                    RemoteRepository.Builder zipRepository
+                    RemoteRepository.Builder zipRepositoryBuilder
                             = new RemoteRepository.Builder("fuse-patch", "zip", "zip:" + tmpDir.toURI().toString());
-                    repositories.add(zipRepository.build());
+                    zipRepository = zipRepositoryBuilder.build();
+                    repositories.add(zipRepository);
                 }
             }
         }
@@ -471,6 +481,19 @@ public class SecureDependencyManagement extends AbstractMavenLifecycleParticipan
                     repositories.size() > 1 ? "repositories" : "repository");
             for (RemoteRepository r : repositories) {
                 logger.info("[PATCH]  - {}: {}", r.getId(), r.getUrl());
+            }
+        }
+
+        if (zipRepository != null) {
+            Repository r = new Repository();
+            r.setId(zipRepository.getId());
+            r.setLayout("default");
+            try {
+                r.setUrl(tmpDir.toURI().toURL().toString());
+            } catch (MalformedURLException ignored) {
+            }
+            for (MavenProject mp : session.getAllProjects()) {
+                mp.getRemoteProjectRepositories().add(zipRepository);
             }
         }
 

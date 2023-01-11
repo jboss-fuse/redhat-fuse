@@ -23,7 +23,7 @@
     <parent>
         <groupId>org.jboss.redhat-fuse</groupId>
         <artifactId>fuse-springboot</artifactId>
-        <version>7.11.0-SNAPSHOT</version>
+        <version>7.12.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>fuse-springboot-bom</artifactId>
@@ -350,6 +350,12 @@
                 <groupId>com.h2database</groupId>
                 <artifactId>h2</artifactId>
                 <version>${version.com.h2database}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>${version.com.google.code.gson}</version>
             </dependency>
 
         </dependencies>
