@@ -32,7 +32,7 @@
             <affects groupId="org.apache.cxf" artifactId="cxf-rt-transports-http" versions="[3.3.6,${version.cxf})" fix="${version.cxf}" />
         </cve>
         <!-- https://issues.redhat.com/browse/ENTESB-20690 -->
-        <cve id="CVE-2022-36437" description="CXF: Apache CXF: directory listing / code exfiltration"
+        <cve id="CVE-2022-36437" description="hazelcast: Hazelcast connection caching"
              cve-link="https://cve.mitre.org/cgi-bin/cvename.cgi?name=2022-36437"
              bz-link="https://bugzilla.redhat.com/show_bug.cgi?id=2162053">
             <affects groupId="com.hazelcast" artifactId="hazelcast" versions="[3.12,3.12.13)" fix="${project.update.com.hazelcast}" />
