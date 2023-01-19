@@ -15,7 +15,8 @@
 #
 
 id = fuse-karaf-maintenance-patch-${project.version}
-#bundle.0 = mvn:org.apache.commons/commons-lang3/3.11
-#bundle.0.range = [3,4)
-#bundle.count = 1
-bundle.count = 0
+bundle.0 = mvn:org.apache.cxf/cxf-core/${version.cxf}
+bundle.1 = mvn:org.apache.cxf/cxf-rt-transports-http/${version.cxf}
+bundle.2 = mvn:com.hazelcast/hazelcast/${project.update.com.hazelcast}
+bundle.3 = mvn:com.hazelcast/hazelcast-client/${project.update.com.hazelcast}
+bundle.count = 4

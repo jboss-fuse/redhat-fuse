@@ -18,11 +18,26 @@
 -->
 <metadata xmlns="urn:redhat:fuse:patch-metadata:1">
     <product-bom groupId="org.jboss.redhat-fuse" artifactId="fuse-springboot-bom" versions="[7.11,7.12)" />
-    <cves />
-    <fixes>
-        <fix id="HF3" description="Red Hat Fuse 7.11 HF3">
-            <affects groupId="org.apache.camel" artifactId="camel-core" versions="[2.23,${version.camel})" fix="${version.camel}" />
-            <affects groupId="org.apache.camel" artifactId="camel-jpa" versions="[2.23,${version.camel})" fix="${version.camel}" />
-        </fix>
-    </fixes>
+    <cves>
+        <!-- https://issues.redhat.com/browse/ENTESB-20630 -->
+        <cve id="CVE-2022-46364" description="Apache CXF: SSRF Vulnerability"
+             cve-link="https://cve.mitre.org/cgi-bin/cvename.cgi?name=2022-46364"
+             bz-link="https://bugzilla.redhat.com/show_bug.cgi?id=2155682">
+            <affects groupId="org.apache.cxf" artifactId="cxf-core" versions="[3.3.6,${version.cxf})" fix="${version.cxf}" />
+        </cve>
+        <!-- https://issues.redhat.com/browse/ENTESB-20632 -->
+        <cve id="CVE-2022-46363" description="CXF: Apache CXF: directory listing / code exfiltration"
+             cve-link="https://cve.mitre.org/cgi-bin/cvename.cgi?name=2022-46363"
+             bz-link="https://bugzilla.redhat.com/show_bug.cgi?id=2155681">
+            <affects groupId="org.apache.cxf" artifactId="cxf-rt-transports-http" versions="[3.3.6,${version.cxf})" fix="${version.cxf}" />
+        </cve>
+        <!-- https://issues.redhat.com/browse/ENTESB-20690 -->
+        <cve id="CVE-2022-36437" description="CXF: Apache CXF: directory listing / code exfiltration"
+             cve-link="https://cve.mitre.org/cgi-bin/cvename.cgi?name=2022-36437"
+             bz-link="https://bugzilla.redhat.com/show_bug.cgi?id=2162053">
+            <affects groupId="com.hazelcast" artifactId="hazelcast" versions="[3.12,3.12.13)" fix="${project.update.com.hazelcast}" />
+            <affects groupId="com.hazelcast" artifactId="hazelcast-client" versions="[3.12,3.12.13)" fix="${project.update.com.hazelcast}" />
+        </cve>
+    </cves>
+    <fixes />
 </metadata>

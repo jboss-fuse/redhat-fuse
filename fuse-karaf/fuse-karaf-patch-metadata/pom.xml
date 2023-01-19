@@ -40,15 +40,30 @@
     -->
 
     <properties>
-<!--        <project.update.org.eclipse.jetty>9.4.32.v20200930</project.update.org.eclipse.jetty>-->
+        <project.update.com.hazelcast>3.12.13</project.update.com.hazelcast>
     </properties>
 
     <dependencies>
-<!--        <dependency>-->
-<!--            <groupId>org.eclipse.jetty</groupId>-->
-<!--            <artifactId>jetty-server</artifactId>-->
-<!--            <version>${project.update.org.eclipse.jetty}</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.hazelcast</groupId>
+            <artifactId>hazelcast</artifactId>
+            <version>${project.update.com.hazelcast}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.hazelcast</groupId>
+            <artifactId>hazelcast-client</artifactId>
+            <version>${project.update.com.hazelcast}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-core</artifactId>
+            <version>${version.cxf}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-transports-http</artifactId>
+            <version>${version.cxf}</version>
+        </dependency>
     </dependencies>
 
     <build>
