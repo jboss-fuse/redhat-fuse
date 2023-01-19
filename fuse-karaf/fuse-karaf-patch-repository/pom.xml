@@ -34,6 +34,10 @@
         Offline repository with patched artifacts and patch metadata for Fuse Karaf applications
     </description>
 
+    <properties>
+        <project.update.com.hazelcast>3.12.13</project.update.com.hazelcast>
+    </properties>
+
     <dependencies>
         <!--
             fuse-*-patch-repository project should always have only one dependency - related metadata
