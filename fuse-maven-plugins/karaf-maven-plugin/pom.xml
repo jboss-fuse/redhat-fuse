@@ -23,7 +23,7 @@
     <parent>
         <groupId>org.jboss.redhat-fuse</groupId>
         <artifactId>fuse-maven-plugins</artifactId>
-        <version>7.11.1-SNAPSHOT</version>
+        <version>7.11.1.fuse-sb2-7_11_1-00021</version>
     </parent>
 
     <artifactId>karaf-maven-plugin</artifactId>

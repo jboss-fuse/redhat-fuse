@@ -22,7 +22,7 @@
 
     <groupId>org.jboss.redhat-fuse</groupId>
     <artifactId>redhat-fuse</artifactId>
-    <version>7.11.1-SNAPSHOT</version>
+    <version>7.11.1.fuse-sb2-7_11_1-00021</version>
     <packaging>pom</packaging>
 
     <name>Red Hat Fuse :: ${project.artifactId}</name>
@@ -37,15 +37,15 @@
 
         <version.camel>2.23.2.fuse-7_11_1-00015-redhat-00002</version.camel>
         <version.camel.extra>2.23.2.fuse-sb2-7_11_1-00015-redhat-00002</version.camel.extra>
-        <version.cxf>3.3.6.fuse-7_11_1-00015-redhat-00002</version.cxf>
+        <version.cxf>3.3.6.fuse-7_11_1-00017</version.cxf>
         <version.cxf.xjc-utils>3.3.1.fuse-7_11_1-00011-redhat-00001</version.cxf.xjc-utils>
 
         <version.fabric8>3.0.12</version.fabric8>
         <version.fuse-karaf>7.11.1.fuse-7_11_1-00013-redhat-00003</version.fuse-karaf>
-        <version.karaf>4.2.15.fuse-7_11_1-00017-redhat-00001</version.karaf>
+        <version.karaf>4.2.15.fuse-7_11_1-00018</version.karaf>
         <version.wildfly.camel>5.9.0.fuse-7_11_1-00014-redhat-00001</version.wildfly.camel>
         <version.fusesource.camel.sap>7.11.1.fuse-sb2-7_11_1-00013-redhat-00002</version.fusesource.camel.sap>
-        <karaf.plugin.version>4.2.15.fuse-7_11_1-00017-redhat-00001</karaf.plugin.version>
+        <karaf.plugin.version>4.2.15.fuse-7_11_1-00018</karaf.plugin.version>
 
         <version.hawtio>2.0.0.fuse-sb2-7_11_1-00013-redhat-00002</version.hawtio>
 
