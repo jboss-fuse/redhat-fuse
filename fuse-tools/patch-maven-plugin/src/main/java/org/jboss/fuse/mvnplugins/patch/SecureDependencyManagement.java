@@ -276,8 +276,8 @@ public class SecureDependencyManagement extends AbstractMavenLifecycleParticipan
                         Map<String, Object> specData = new LinkedHashMap<>();
                         specData.put("groupId", spec.getGroupIdSpec());
                         specData.put("artifactId", spec.getArtifactIdSpec());
-                        specData.put("versions", spec.getVersionRange());
-                        specData.put("fix", spec.getFixVersion());
+                        specData.put("versions", spec.getVersionRangeString());
+                        specData.put("fix", spec.getFixVersionString());
                         changesData.add(specData);
                     }
                 }
@@ -292,8 +292,8 @@ public class SecureDependencyManagement extends AbstractMavenLifecycleParticipan
                         Map<String, Object> specData = new LinkedHashMap<>();
                         specData.put("groupId", spec.getGroupIdSpec());
                         specData.put("artifactId", spec.getArtifactIdSpec());
-                        specData.put("versions", spec.getVersionRange());
-                        specData.put("fix", spec.getFixVersion());
+                        specData.put("versions", spec.getVersionRangeString());
+                        specData.put("fix", spec.getFixVersionString());
                         changesData.add(specData);
                     }
                 }
