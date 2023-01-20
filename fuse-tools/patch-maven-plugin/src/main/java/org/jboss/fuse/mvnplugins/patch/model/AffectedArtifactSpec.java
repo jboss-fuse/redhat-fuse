@@ -33,11 +33,13 @@ public class AffectedArtifactSpec {
     private String groupIdSpec;
     private String artifactIdSpec;
     // TOCHECK: for now we're sticking to version ranges and no direct version
-    private VersionRange versionRange;
-    private Version fixVersion;
+    private transient VersionRange versionRange;
+    private String versionRangeString;
+    private transient Version fixVersion;
+    private String fixVersionString;
 
-    private Pattern groupIdSpecPattern;
-    private Pattern artifactIdSpecPattern;
+    private transient Pattern groupIdSpecPattern;
+    private transient Pattern artifactIdSpecPattern;
 
     public boolean matches(Dependency dependency) {
         String g = dependency.getGroupId();
@@ -89,16 +91,26 @@ public class AffectedArtifactSpec {
         return versionRange;
     }
 
+    public String getVersionRangeString() {
+        return versionRangeString;
+    }
+
     public void setVersionRange(VersionRange versionRange) {
         this.versionRange = versionRange;
+        this.versionRangeString = versionRange == null ? null : versionRange.toString();
     }
 
     public Version getFixVersion() {
         return fixVersion;
     }
 
+    public String getFixVersionString() {
+        return fixVersionString;
+    }
+
     public void setFixVersion(Version fixVersion) {
         this.fixVersion = fixVersion;
+        this.fixVersionString = fixVersion == null ? null : fixVersion.toString();
     }
 
     @Override
