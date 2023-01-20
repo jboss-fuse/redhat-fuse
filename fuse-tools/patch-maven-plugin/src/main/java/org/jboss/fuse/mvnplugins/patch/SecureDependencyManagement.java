@@ -18,10 +18,14 @@
  */
 package org.jboss.fuse.mvnplugins.patch;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
@@ -31,6 +35,7 @@ import java.nio.file.Path;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.Comparator;
 import java.util.Deque;
 import java.util.HashSet;
@@ -292,7 +297,16 @@ public class SecureDependencyManagement extends AbstractMavenLifecycleParticipan
                         changesData.add(specData);
                     }
                 }
-                session.getUserProperties().put("__org.jboss.redhat-fuse.patch-metadata", patchMetaData);
+                try {
+                    ByteArrayOutputStream baos = new ByteArrayOutputStream();
+                    ObjectOutputStream oos = new ObjectOutputStream(baos);
+                    oos.writeObject(patchMetaData);
+                    oos.close();
+
+                    String encoded = Base64.getEncoder().encodeToString(baos.toByteArray());
+                    session.getUserProperties().put("__org.jboss.redhat-fuse.patch-metadata", encoded);
+                } catch (Throwable ignored) {
+                }
             }
 
             if (cveCount > 0) {
