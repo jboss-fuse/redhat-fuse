@@ -118,7 +118,7 @@
         <version.org.ops4j.pax.logging>2.2.1</version.org.ops4j.pax.logging>
         <version.org.slf4j>1.7.36.redhat-00002</version.org.slf4j>
 
-        <version.org.postgresql>42.4.2</version.org.postgresql>
+        <version.org.postgresql>42.5.2</version.org.postgresql>
         <version.mysql>8.0.28.redhat-00001</version.mysql>
 
         <version.javax.xml.bind>2.3.0.redhat-00003</version.javax.xml.bind>
