@@ -73,7 +73,7 @@
         <hibernate.version>5.3.28.Final-redhat-00001</hibernate.version>
         <hibernate-commons.version>5.0.5.Final-redhat-00002</hibernate-commons.version>
         <hibernate-validator6.version>6.0.23.Final-redhat-00001</hibernate-validator6.version>
-        <undertow.version>2.2.21.Final</undertow.version>
+        <undertow.version>2.2.22.SP3-redhat-00001</undertow.version>
 
         <activemq.version>5.11.0.redhat-630516</activemq.version>
         <artemis.version>2.16.0.redhat-00046</artemis.version>
