@@ -80,10 +80,10 @@
 
         <version.com.hazelcast>3.12.13</version.com.hazelcast>
 
-        <version.kafka>2.6.3.redhat-00001</version.kafka>
-        <version.kafka.upstream>2.6.3</version.kafka.upstream>
-        <version.kafka.zookeeper>3.5.9.redhat-00006</version.kafka.zookeeper>
-        <version.kafka.scala>2.12.13.redhat-00002</version.kafka.scala>
+        <version.kafka>3.1.0.redhat-00009</version.kafka>
+        <version.kafka.upstream>3.1.0</version.kafka.upstream>
+        <version.kafka.zookeeper>3.6.3.redhat-00043</version.kafka.zookeeper>
+        <version.kafka.scala>2.13.6.redhat-00005</version.kafka.scala>
 
         <version.commons-beanutils>1.9.4.redhat-00002</version.commons-beanutils>
         <version.commons-codec>1.15.0.redhat-00001</version.commons-codec>
