@@ -88,7 +88,7 @@
         <version.commons-beanutils>1.9.4.redhat-00002</version.commons-beanutils>
         <version.commons-codec>1.15.0.redhat-00001</version.commons-codec>
         <version.commons-pool>1.6.0.redhat-10</version.commons-pool>
-        <version.netty>4.1.90.Final</version.netty>
+        <version.netty>4.1.91.Final</version.netty>
         <!-- There are no productized native parts, so we're only aligning to upstream version -->
         <version.netty.tcnative>2.0.59.Final</version.netty.tcnative>
 
