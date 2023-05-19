@@ -1962,11 +1962,6 @@
 			</dependency>
 			<dependency>
 				<groupId>org.apache.logging.log4j</groupId>
-				<artifactId>log4j-liquibase</artifactId>
-				<version>${version.org.apache.logging.log4j2}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.logging.log4j</groupId>
 				<artifactId>log4j-mongodb3</artifactId>
 				<version>${version.org.apache.logging.log4j2}</version>
 			</dependency>
