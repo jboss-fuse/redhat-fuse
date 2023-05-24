@@ -179,6 +179,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-cassandra</artifactId>
             <version>${project.update.spring-boot-dependencies}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.typesafe</groupId>
+                    <artifactId>config</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
