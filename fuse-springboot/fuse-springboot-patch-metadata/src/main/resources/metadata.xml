@@ -38,6 +38,11 @@
             <affects groupId="com.hazelcast" artifactId="hazelcast" versions="[3.12,3.12.13)" fix="${project.update.com.hazelcast}" />
             <affects groupId="com.hazelcast" artifactId="hazelcast-client" versions="[3.12,3.12.13)" fix="${project.update.com.hazelcast}" />
         </cve>
+        <cve id="CVE-2023-20883" description="spring-boot: Spring Boot Welcome Page DoS Vulnerability"
+             cve-link="https://cve.mitre.org/cgi-bin/cvename.cgi?name=2023-20883"
+             bz-link="https://bugzilla.redhat.com/show_bug.cgi?id=2209342">
+            <affects groupId="org.springframework.boot" artifactId="spring-boot-*" versions="[2.5,2.5.14)" fix="${project.update.spring-boot-dependencies}" />
+        </cve>
     </cves>
     <fixes />
 </metadata>

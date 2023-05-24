@@ -43,6 +43,7 @@
                 <include>org/jboss/**</include>
                 <include>org/apache/cxf/**</include>
                 <include>com/hazelcast/**</include>
+                <include>org/springframework/boot/**</include>
             </includes>
         </fileSet>
     </fileSets>
