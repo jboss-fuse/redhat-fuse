@@ -35,7 +35,7 @@
 
         <version.junit>4.13.2</version.junit>
         <version.org.apache.logging.log4j>2.17.1.redhat-00002</version.org.apache.logging.log4j>
-        <version.org.apache.maven>3.6.3.redhat-00006</version.org.apache.maven>
+        <version.org.apache.maven>3.6.3.redhat-00009</version.org.apache.maven>
         <version.org.apache.maven.plugin-tools>3.6.0.redhat-00002</version.org.apache.maven.plugin-tools>
         <version.org.apache.maven.resolver>1.4.1</version.org.apache.maven.resolver>
         <version.org.apache.maven.wagon>3.4.1</version.org.apache.maven.wagon>
