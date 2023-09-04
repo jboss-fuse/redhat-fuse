@@ -63,6 +63,7 @@
         <module>hf2</module>
         <module>hf4</module>
         <module>hf5</module>
+        <module>7.11.1-hf1</module>
     </modules>
 
 </project>
