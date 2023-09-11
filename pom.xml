@@ -73,7 +73,7 @@
         <hibernate.version>5.6.14.Final-redhat-00001</hibernate.version>
         <hibernate-commons.version>5.1.2.Final-redhat-00006</hibernate-commons.version>
         <hibernate-validator6.version>6.0.23.Final-redhat-00001</hibernate-validator6.version>
-        <undertow.version>2.2.23.SP2-redhat-00001</undertow.version>
+        <undertow.version>2.2.25.SP3-redhat-00001</undertow.version>
 
         <activemq.version>5.11.0.redhat-630516</activemq.version>
         <artemis.version>2.16.0.redhat-00046</artemis.version>
@@ -101,8 +101,8 @@
         <version.org.apache.httpcomponents.httpclient>4.5.13.redhat-00002</version.org.apache.httpcomponents.httpclient>
         <version.org.apache.httpcomponents.httpcore>4.4.14.redhat-00001</version.org.apache.httpcomponents.httpcore>
 
-        <version.org.eclipse.jetty>9.4.51.v20230217-redhat-00001</version.org.eclipse.jetty>
-        <version.org.eclipse.jetty.alpn.jdk9>9.4.51.v20230217-redhat-00001</version.org.eclipse.jetty.alpn.jdk9>
+        <version.org.eclipse.jetty>9.4.52.v20230823</version.org.eclipse.jetty>
+        <version.org.eclipse.jetty.alpn.jdk9>9.4.52.v20230823</version.org.eclipse.jetty.alpn.jdk9>
 
         <version.tika>1.28.2</version.tika>
 
