@@ -124,7 +124,7 @@
         <version.javax.xml.bind>2.3.0.redhat-00003</version.javax.xml.bind>
         <version.org.jboss.xnio>3.8.7.SP1-redhat-00001</version.org.jboss.xnio>
 
-        <version.jolokia>1.7.1.redhat-00001</version.jolokia>
+        <version.jolokia>1.7.2.redhat-00002</version.jolokia>
 
         <version.elasticsearch-rest>6.8.13</version.elasticsearch-rest>
 
