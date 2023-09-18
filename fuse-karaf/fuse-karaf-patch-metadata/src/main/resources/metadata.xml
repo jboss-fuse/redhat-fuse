@@ -17,12 +17,12 @@
 
 -->
 <metadata xmlns="urn:redhat:fuse:patch-metadata:1">
-    <product-bom groupId="org.jboss.redhat-fuse" artifactId="fuse-karaf-bom" versions="[7.8,7.9)" />
-    <cves>
-<!--        <cve id="CVE-2020-xyz" description="Jetty ..."-->
-<!--                cve-link="" bz-link="">-->
-<!--            <affects groupId="org.eclipse.jetty" artifactId="jetty-*" versions="[9.4,9.4.32)" fix="9.4.32.v20200930" />-->
-<!--        </cve>-->
-    </cves>
-    <fixes />
+    <product-bom groupId="org.jboss.redhat-fuse" artifactId="fuse-karaf-bom" versions="[7.12,7.12.1)" />
+    <cves />
+    <fixes>
+        <fix id="HF1" description="Red Hat Fuse 7.12 HF1 (Pax Logging)">
+            <affects groupId="org.ops4j.pax.logging" artifactId="pax-logging-api" versions="[2.2.2,${version.update.pax-logging})" fix="${version.update.pax-logging}" />
+            <affects groupId="org.ops4j.pax.logging" artifactId="pax-logging-log4j2" versions="[2.2.2,${version.update.pax-logging})" fix="${version.update.pax-logging}" />
+        </fix>
+    </fixes>
 </metadata>

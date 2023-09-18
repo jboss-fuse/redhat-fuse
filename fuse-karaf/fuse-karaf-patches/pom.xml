@@ -59,10 +59,6 @@
     </build>
 
     <modules>
-        <module>hf1</module>
-        <module>hf2</module>
-        <module>hf4</module>
-        <module>hf5</module>
     </modules>
 
 </project>

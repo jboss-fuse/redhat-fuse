@@ -34,6 +34,10 @@
         Offline repository with patched artifacts and patch metadata for Fuse Karaf applications
     </description>
 
+    <properties>
+        <version.update.pax-logging>2.2.4</version.update.pax-logging>
+    </properties>
+
     <dependencies>
         <!--
             fuse-*-patch-repository project should always have only one dependency - related metadata

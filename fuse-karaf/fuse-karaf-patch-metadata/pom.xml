@@ -40,15 +40,20 @@
     -->
 
     <properties>
-<!--        <project.update.org.eclipse.jetty>9.4.32.v20200930</project.update.org.eclipse.jetty>-->
+        <version.update.pax-logging>2.2.4</version.update.pax-logging>
     </properties>
 
     <dependencies>
-<!--        <dependency>-->
-<!--            <groupId>org.eclipse.jetty</groupId>-->
-<!--            <artifactId>jetty-server</artifactId>-->
-<!--            <version>${project.update.org.eclipse.jetty}</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.ops4j.pax.logging</groupId>
+            <artifactId>pax-logging-api</artifactId>
+            <version>${version.update.pax-logging}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ops4j.pax.logging</groupId>
+            <artifactId>pax-logging-log4j2</artifactId>
+            <version>${version.update.pax-logging}</version>
+        </dependency>
     </dependencies>
 
     <build>

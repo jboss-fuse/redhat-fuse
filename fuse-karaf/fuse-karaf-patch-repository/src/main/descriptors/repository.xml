@@ -40,6 +40,7 @@
             <outputDirectory>system</outputDirectory>
             <directory>${project.build.directory}/patch-repository</directory>
             <includes>
+                <include>org/ops4j/pax/logging/**</include>
                 <include>org/jboss/**</include>
             </includes>
         </fileSet>

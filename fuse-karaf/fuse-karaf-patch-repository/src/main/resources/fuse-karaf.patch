@@ -14,8 +14,7 @@
 #  permissions and limitations under the License.
 #
 
-id = fuse-karaf-maintenance-patch-${project.version}
-#bundle.0 = mvn:org.apache.commons/commons-lang3/3.11
-#bundle.0.range = [3,4)
-#bundle.count = 1
-bundle.count = 0
+id = fuse-karaf-hf1-patch-${project.version}
+bundle.0 = mvn:org.ops4j.pax.logging/pax-logging-api/${version.update.pax-logging}
+bundle.1 = mvn:org.ops4j.pax.logging/pax-logging-log4j2/${version.update.pax-logging}
+bundle.count = 2
