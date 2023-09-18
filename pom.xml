@@ -22,7 +22,7 @@
 
     <groupId>org.jboss.redhat-fuse</groupId>
     <artifactId>redhat-fuse</artifactId>
-    <version>7.12.0-SNAPSHOT</version>
+    <version>7.12.0.fuse-7_12_0-00018</version>
     <packaging>pom</packaging>
 
     <name>Red Hat Fuse :: ${project.artifactId}</name>
@@ -41,7 +41,7 @@
         <version.cxf.xjc-utils>3.3.1.fuse-7_12_0-00009-redhat-00003</version.cxf.xjc-utils>
 
         <version.fabric8>3.0.12</version.fabric8>
-        <version.fuse-karaf>7.12.0.fuse-7_12_0-00019-redhat-00001</version.fuse-karaf>
+        <version.fuse-karaf>7.12.0.fuse-7_12_0-00021</version.fuse-karaf>
         <version.karaf>4.4.3.fuse-7_12_0-00014-redhat-00001</version.karaf>
         <version.wildfly.camel>5.10.0.fuse-7_12_0-00017-redhat-00001</version.wildfly.camel>
         <version.fusesource.camel.sap>7.12.0.fuse-7_12_0-00019-redhat-00001</version.fusesource.camel.sap>
