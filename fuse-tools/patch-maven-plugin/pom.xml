@@ -34,6 +34,19 @@
 
     <dependencies>
 
+        <dependency>
+            <groupId>org.jboss.redhat-fuse</groupId>
+            <artifactId>patch-maven-plugin-38</artifactId>
+            <scope>provided</scope>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.redhat-fuse</groupId>
+            <artifactId>patch-maven-plugin-39</artifactId>
+            <scope>provided</scope>
+            <version>${project.version}</version>
+        </dependency>
+
         <!-- Maven -->
 
         <dependency>
@@ -126,6 +139,33 @@
                         <goals>
                             <goal>generate-metadata</goal>
                         </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-zip-repository-layouts</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>unpack</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>org.jboss.redhat-fuse</groupId>
+                                    <artifactId>patch-maven-plugin-38</artifactId>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.jboss.redhat-fuse</groupId>
+                                    <artifactId>patch-maven-plugin-39</artifactId>
+                                </artifactItem>
+                            </artifactItems>
+                            <includes>org/jboss/fuse/mvnplugins/patch/extensions/**</includes>
+                            <outputDirectory>${project.build.directory}/classes</outputDirectory>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
