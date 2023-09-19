@@ -21,15 +21,17 @@ import java.util.Collections;
 import java.util.List;
 
 import org.eclipse.aether.artifact.Artifact;
+import org.eclipse.aether.internal.impl.checksum.Md5ChecksumAlgorithmFactory;
 import org.eclipse.aether.metadata.Metadata;
 import org.eclipse.aether.repository.RemoteRepository;
+import org.eclipse.aether.spi.connector.checksum.ChecksumAlgorithmFactory;
 import org.eclipse.aether.spi.connector.layout.RepositoryLayout;
 
-class ZipRepositoryLayout implements RepositoryLayout {
+class ZipRepositoryLayout39 implements RepositoryLayout {
 
     private final RemoteRepository repository;
 
-    public ZipRepositoryLayout(RemoteRepository repository) {
+    public ZipRepositoryLayout39(RemoteRepository repository) {
         this.repository = repository;
     }
 
@@ -72,14 +74,25 @@ class ZipRepositoryLayout implements RepositoryLayout {
         }
     }
 
+    // methods for Maven Resolver 1.9
+
     @Override
-    public List<Checksum> getChecksums(Artifact artifact, boolean b, URI uri) {
-        return Collections.singletonList(Checksum.forLocation(uri, "MD5"));
+    public List<ChecksumAlgorithmFactory> getChecksumAlgorithmFactories() {
+        return Collections.singletonList(new Md5ChecksumAlgorithmFactory());
     }
 
     @Override
-    public List<Checksum> getChecksums(Metadata metadata, boolean b, URI uri) {
-        return Collections.singletonList(Checksum.forLocation(uri, "MD5"));
+    public boolean hasChecksums(Artifact artifact) {
+        return true;
     }
 
+    @Override
+    public List<ChecksumLocation> getChecksumLocations(Artifact artifact, boolean b, URI uri) {
+        return Collections.singletonList(ChecksumLocation.forLocation(uri, new Md5ChecksumAlgorithmFactory()));
+    }
+
+    @Override
+    public List<ChecksumLocation> getChecksumLocations(Metadata metadata, boolean b, URI uri) {
+        return Collections.singletonList(ChecksumLocation.forLocation(uri, new Md5ChecksumAlgorithmFactory()));
+    }
 }

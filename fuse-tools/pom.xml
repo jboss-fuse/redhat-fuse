@@ -151,6 +151,8 @@
     <modules>
         <module>repackage-maven-plugin</module>
         <module>patch-maven-plugin</module>
+        <module>patch-maven-plugin-38</module>
+        <module>patch-maven-plugin-39</module>
     </modules>
 
     <build>
