@@ -23,7 +23,7 @@
     <parent>
         <groupId>org.jboss.redhat-fuse</groupId>
         <artifactId>fuse-tools</artifactId>
-        <version>7.12.1-SNAPSHOT</version>
+        <version>7.12.1.fuse-7_12_1-00006</version>
     </parent>
 
     <artifactId>patch-maven-plugin-38</artifactId>
