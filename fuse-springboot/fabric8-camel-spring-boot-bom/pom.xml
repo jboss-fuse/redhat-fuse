@@ -492,6 +492,11 @@
 				<artifactId>infinispan-spring5-remote</artifactId>
 				<version>${infinispan.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.infinispan</groupId>
+				<artifactId>infinispan-hibernate-cache-commons</artifactId>
+				<version>${infinispan.version}</version>
+			</dependency>
 
 			<!-- Infinispan Server -->
 			<dependency>
