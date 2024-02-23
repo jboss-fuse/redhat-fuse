@@ -86,13 +86,13 @@
         <version.kafka.scala>2.13.6.redhat-00005</version.kafka.scala>
 
         <version.commons-beanutils>1.9.4.redhat-00002</version.commons-beanutils>
-        <version.commons-codec>1.15.0.redhat-00001</version.commons-codec>
+        <version.commons-codec>1.16.1</version.commons-codec>
         <version.commons-pool>1.6.0.redhat-10</version.commons-pool>
         <version.netty>4.1.100.Final</version.netty>
         <!-- There are no productized native parts, so we're only aligning to upstream version -->
         <version.netty.tcnative>2.0.62.Final</version.netty.tcnative>
 
-        <version.org.apache.commons.compress>1.23.0</version.org.apache.commons.compress>
+        <version.org.apache.commons.compress>1.26.0</version.org.apache.commons.compress>
         <version.org.apache.commons.dbcp2>2.9.0</version.org.apache.commons.dbcp2>
         <version.org.apache.commons.lang3>3.12.0.redhat-00001</version.org.apache.commons.lang3>
         <version.org.apache.commons.pool2>2.11.1.redhat-00001</version.org.apache.commons.pool2>
