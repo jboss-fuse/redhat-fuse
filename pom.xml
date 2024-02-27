@@ -63,7 +63,7 @@
         <version.openshift.maven.plugin>1.14.0</version.openshift.maven.plugin>
 
         <spring.boot.version>2.7.18</spring.boot.version>
-        <spring.framework.version>5.3.31</spring.framework.version>
+        <spring.framework.version>5.3.32</spring.framework.version>
         <spring.security.version>5.7.11</spring.security.version>
         <version.snakeyaml>1.33.0.redhat-00001</version.snakeyaml>
         
