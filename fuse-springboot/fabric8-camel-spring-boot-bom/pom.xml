@@ -57,10 +57,10 @@
 		<javax.inject.version>1.0.0.redhat-00008</javax.inject.version>
 
 		<!-- overidding properties -->
-		<tomcat.version>9.0.85</tomcat.version>
+		<tomcat.version>9.0.86</tomcat.version>
 		<!-- there was no productized version of tomcat-annotations-api 9.0.36.redhat-5
 			 Let's leave separate property in case this situation happens again -->
-		<tomcat-annotations-api.version>9.0.85</tomcat-annotations-api.version>
+		<tomcat-annotations-api.version>9.0.86</tomcat-annotations-api.version>
 		<infinispan.version>9.4.19.Final-redhat-00001</infinispan.version>
 		<version.mongodb>3.12.7</version.mongodb>
 	</properties>
