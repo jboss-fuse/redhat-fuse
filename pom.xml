@@ -60,7 +60,7 @@
 
         <version.felix.bundle-plugin>3.5.1</version.felix.bundle-plugin>
 
-        <version.openshift.maven.plugin>1.7.0</version.openshift.maven.plugin>
+        <version.openshift.maven.plugin>1.16.2</version.openshift.maven.plugin>
 
         <spring.boot.version>2.7.18</spring.boot.version>
         <spring.framework.version>5.3.33</spring.framework.version>
