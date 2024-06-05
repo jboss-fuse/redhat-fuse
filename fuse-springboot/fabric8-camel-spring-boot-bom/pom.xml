@@ -54,7 +54,7 @@
 	</developers>
 
 	<properties>
-		<javax.inject.version>1.0.0.redhat-00008</javax.inject.version>
+		<javax.inject.version>1.0.0.redhat-00013</javax.inject.version>
 
 		<!-- overidding properties -->
 		<tomcat.version>9.0.86</tomcat.version>
@@ -1905,7 +1905,7 @@
 			<dependency>
 				<groupId>wsdl4j</groupId>
 				<artifactId>wsdl4j</artifactId>
-				<version>1.6.3.redhat-2</version>
+				<version>1.6.3.redhat-00007</version>
 			</dependency>
 
 			<!-- log4j2 -->
