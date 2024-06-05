@@ -33,7 +33,8 @@
             <outputDirectory>system</outputDirectory>
             <directory>${project.build.directory}/patch-repository</directory>
             <includes>
-                <include>org/apache/camel/camel-core/**</include>
+                <include>org/apache/cxf/cxf-core/**</include>
+                <include>org/apache/cxf/cxf-rt-transports-http-undertow/**</include>
             </includes>
         </fileSet>
         <fileSet>
