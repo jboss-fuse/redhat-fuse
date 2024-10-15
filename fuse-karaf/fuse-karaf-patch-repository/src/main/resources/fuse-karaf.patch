@@ -24,6 +24,6 @@ bundle.2 = mvn:org.apache.avro/avro-ipc-jetty/${update.org.apache.avro}
 bundle.2.range = [1.11.0,1.12.0)
 bundle.3 = mvn:org.apache.avro/avro-ipc-netty/${update.org.apache.avro}
 bundle.3.range = [1.11.0,1.12.0)
-bundle.4 = mvn:org.apache.servicemix.bundles/${update.org.apache.servicemix.bundles.avro}
+bundle.4 = mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.avro/${update.org.apache.servicemix.bundles.avro}
 bundle.4.range = [1.11.0,1.12.0)
 bundle.count = 5
