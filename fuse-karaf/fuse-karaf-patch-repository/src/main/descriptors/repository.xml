@@ -40,6 +40,7 @@
             <outputDirectory>system</outputDirectory>
             <directory>${project.build.directory}/patch-repository</directory>
             <includes>
+                <include>org/jboss/**</include>
                 <include>org/jboss/fuse/**</include>
                 <include>org/apache/avro/**</include>
                 <include>org/apache/servicemix/bundles/org.apache.servicemix.bundles.avro/**</include>

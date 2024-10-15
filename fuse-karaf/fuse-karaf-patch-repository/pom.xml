@@ -34,6 +34,11 @@
         Offline repository with patched artifacts and patch metadata for Fuse Karaf applications
     </description>
 
+    <properties>
+        <update.org.apache.avro>1.11.4.redhat-00001</update.org.apache.avro>
+        <update.org.apache.servicemix.bundles.avro>1.11.4.1-redhat-00001</update.org.apache.servicemix.bundles.avro>
+    </properties>
+
     <dependencies>
         <!--
             fuse-*-patch-repository project should always have only one dependency - related metadata
