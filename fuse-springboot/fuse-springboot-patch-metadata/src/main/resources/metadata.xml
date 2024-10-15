@@ -17,12 +17,12 @@
 
 -->
 <metadata xmlns="urn:redhat:fuse:patch-metadata:1">
-    <product-bom groupId="org.jboss.redhat-fuse" artifactId="fuse-springboot-bom" versions="[7.11,7.12)" />
-    <cves />
-    <fixes>
-        <fix id="HF3" description="Red Hat Fuse 7.11 HF3">
-            <affects groupId="org.apache.camel" artifactId="camel-core" versions="[2.23,${version.camel})" fix="${version.camel}" />
-            <affects groupId="org.apache.camel" artifactId="camel-jpa" versions="[2.23,${version.camel})" fix="${version.camel}" />
-        </fix>
-    </fixes>
+    <product-bom groupId="org.jboss.redhat-fuse" artifactId="fuse-springboot-bom" versions="[7.13,7.14)" />
+    <cves>
+        <cve id="CVE-2024-47561" description="org.apache.avro/avro: Schema parsing may trigger Remote Code Execution (RCE)"
+                cve-link="https://access.redhat.com/security/cve/CVE-2024-47561" bz-link="https://bugzilla.redhat.com/show_bug.cgi?id=2316116">
+            <affects groupId="org.apache.avro" artifactId="avro*" versions="[1.11.0,1.11.4)" fix="${update.org.apache.avro}" />
+        </cve>
+    </cves>
+    <fixes />
 </metadata>

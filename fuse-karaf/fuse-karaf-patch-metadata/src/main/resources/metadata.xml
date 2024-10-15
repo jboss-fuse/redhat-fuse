@@ -17,12 +17,13 @@
 
 -->
 <metadata xmlns="urn:redhat:fuse:patch-metadata:1">
-    <product-bom groupId="org.jboss.redhat-fuse" artifactId="fuse-karaf-bom" versions="[7.8,7.9)" />
+    <product-bom groupId="org.jboss.redhat-fuse" artifactId="fuse-karaf-bom" versions="[7.13,7.14)" />
     <cves>
-<!--        <cve id="CVE-2020-xyz" description="Jetty ..."-->
-<!--                cve-link="" bz-link="">-->
-<!--            <affects groupId="org.eclipse.jetty" artifactId="jetty-*" versions="[9.4,9.4.32)" fix="9.4.32.v20200930" />-->
-<!--        </cve>-->
+        <cve id="CVE-2024-47561" description="org.apache.avro/avro: Schema parsing may trigger Remote Code Execution (RCE)"
+                cve-link="https://access.redhat.com/security/cve/CVE-2024-47561" bz-link="https://bugzilla.redhat.com/show_bug.cgi?id=2316116">
+            <affects groupId="org.apache.avro" artifactId="avro*" versions="[1.11.0,1.11.4)" fix="${update.org.apache.avro}" />
+            <affects groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.avro" versions="[1.11.0,1.11.4)" fix="${update.org.apache.servicemix.bundles.avro}" />
+        </cve>
     </cves>
     <fixes />
 </metadata>
