@@ -23,7 +23,7 @@
     <parent>
         <groupId>org.jboss.redhat-fuse</groupId>
         <artifactId>fuse-maven-plugins</artifactId>
-        <version>7.13.0-SNAPSHOT</version>
+        <version>7.13.0.fuse-7_13_0-00019</version>
     </parent>
 
     <artifactId>cxf-wsdl-validator-plugin</artifactId>
