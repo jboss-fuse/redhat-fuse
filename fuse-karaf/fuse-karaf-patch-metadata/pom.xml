@@ -40,7 +40,7 @@
     -->
 
     <properties>
-        <update.org.apache.avro>1.11.4.redhat-00001</update.org.apache.avro>
+        <update.org.apache.avro>1.11.4</update.org.apache.avro>
         <update.org.apache.servicemix.bundles.avro>1.11.4.1-redhat-00001</update.org.apache.servicemix.bundles.avro>
     </properties>
 
@@ -54,6 +54,12 @@
             <groupId>org.apache.avro</groupId>
             <artifactId>avro-ipc</artifactId>
             <version>${update.org.apache.avro}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.xerial.snappy</groupId>
+                    <artifactId>snappy-java</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.apache.avro</groupId>
