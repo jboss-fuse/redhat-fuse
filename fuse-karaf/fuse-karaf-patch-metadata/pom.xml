@@ -41,7 +41,7 @@
 
     <properties>
         <update.org.apache.avro>1.11.4</update.org.apache.avro>
-        <update.org.apache.servicemix.bundles.avro>1.11.4.1-redhat-00001</update.org.apache.servicemix.bundles.avro>
+        <update.org.apache.servicemix.bundles.avro>1.11.4.1-redhat-00002</update.org.apache.servicemix.bundles.avro>
     </properties>
 
     <dependencies>
